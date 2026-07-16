@@ -9,7 +9,7 @@ export class BillingController {
   rewardCredit(
     @Body() body: { userId: string },
   ) {
-    return this.billing.rewardCredit(
+    return this.billingService.rewardCredit(
       body.userId,
       1,
     );
