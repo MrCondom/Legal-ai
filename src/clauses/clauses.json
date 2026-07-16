@@ -1,0 +1,111 @@
+[
+    {
+        "title": "vacant possession clause",
+        "family": "deed",
+        "documents": [
+            "deed of assignment",
+            "deed of conveyance"
+        ],
+        "keywords": [
+        "possession",
+        "immediate",
+        "impediments"
+        ],
+        "premium": false,
+        "content": "To put the purchaser into immediate possession of the property and remove all the impediments in the way of such possession."
+    },
+
+    {
+        "title": "quiet enjoyment clause",
+        "family": "deed",
+        "documents": [
+            "deed of assignment",
+            "deed of conveyance",
+            "lease",
+            "tenancy agreement",
+            "deed of mortgage"
+        ],
+        "keywords": [
+        "possession",
+        "ownership",
+        "interruption"
+        ],
+        "premium": false,
+        "content": "The PURCHASER shall at all times have quiet and peaceful possession of the property without any interruption and or interference whatsoever by or from the VENDOR or any other person claiming by title paramount or in trust."
+    },
+
+    {
+        "title": "quiet enjoyment clause 2",
+        "family": "deed",
+        "documents": [
+            "deed of assignment",
+            "deed of conveyance"
+        ],
+        "keywords": [
+        "possession",
+        "ownership",
+        "interruption"
+        ],
+        "premium": false,
+        "content": "The PURCHASER shall at all times have quiet and peaceful possession and ownership of the property without any interruption and or interference whatsoever by or from the VENDOR or any other person claiming by title paramount or in trust."
+    },
+
+    {
+        "title": "release of interest clause",
+        "family": "deed",
+        "documents": [
+            "deed of assignment",
+            "deed of conveyance",
+            "deed of gift",
+            "deed of partition",
+            "assent",
+            "release deed"
+        ],
+        "keywords": [
+        "rights",
+        "estates",
+        "interest"
+        ],
+        "premium": false,
+        "content": "To completely divest himself of all rights, estates, interests and or claims on the property."
+    },
+
+    {
+        "title": "further assurance clause",
+        "family": "deed",
+        "documents": [
+            "deed of assignment",
+            "deed of conveyance",
+            "power of attorney",
+            "deed of mortgage",
+            "lease"
+        ],
+        "keywords": [
+        "consent",
+        "authority",
+        "transfer"
+        ],
+        "premium": false,
+        "content": "To assist the purchaser to obtain any consent, instrument or authority that may be required or necessary for the purpose of effectual transfer of the piece or parcel of land herein conveyed."
+    },
+
+    {
+        "title": "indemnity clause",
+        "family": "deed",
+        "documents": [
+            "deed of assignment",
+            "deed of conveyance",
+            "lease",
+            "joint-venture agreement",
+            "sale agreement"
+
+        ],
+        "keywords": [
+        "indemnify",
+        "expenses",
+        "costs"
+        ],
+        "premium": false,
+        "content": "To indemnify the purchaser, his executors, assigns and successors-in-title with the entire purchase price, expenses, costs and all other demand incidental to the purchase price and development of the piece or parcel of land conveyed, in the event of any defects in the Vendors' title to the property or right to convey the same, or the vendor unsuccessfully defending his rights against any claimants or claimants."
+    }
+]

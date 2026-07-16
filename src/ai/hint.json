@@ -1,0 +1,78 @@
+[
+{
+"type":"deed",
+
+"checks":[
+
+"Parties identified",
+
+"Occupation stated",
+
+"Address stated",
+
+"Date inserted",
+
+"Consideration stated",
+
+"Governor consent where applicable",
+
+"Execution block present",
+
+"Witnesses present",
+
+"Schedule attached"
+
+]
+
+},
+
+{
+
+"type":"tenancy agreement",
+
+"checks":[
+
+"Term specified",
+
+"Rent specified",
+
+"Commencement date",
+
+"Renewal clause",
+
+"Quiet enjoyment clause",
+
+"Forfeiture clause",
+
+"Repair covenant",
+
+"Execution block"
+
+]
+
+},
+
+{
+
+"type":"resolution",
+
+"checks":[
+
+"Company name",
+
+"CAC number",
+
+"Date",
+
+"Meeting type",
+
+"Quorum if any",
+
+"Resolution wording",
+
+"Director signatures"
+
+]
+
+}
+]

@@ -1,0 +1,46 @@
+{
+    "fields": [
+
+        {
+            "name": "date",
+            "label": "Execution Date",
+            "type": "date",
+            "required": "true"
+        },
+
+        {
+            "name": "vendor",
+            "label": "Vendor Name",
+            "type": "text",
+            "required": "true"
+        },
+
+        {
+            "name": "vendorAddress",
+            "label": "Vendor Address",
+            "type": "textarea",
+            "required": "true"
+        },
+
+        {
+            "name": "purchaser",
+            "label": "Purchaser Name",
+            "type": "text",
+            "required": "true"
+        },
+
+        {
+            "name": "purchaserAddress",
+            "label": "Purchaser Address",
+            "type": "textarea",
+            "required": "true"
+        },
+
+        {
+            "name": "amount",
+            "label": "Purchase Price",
+            "type": "currency",
+            "required": "true"
+        }
+    ]
+}

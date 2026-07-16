@@ -1,0 +1,114 @@
+{
+"deed_of_conveyance": {
+	"title": "deed of conveyance",
+	"sections": [
+		        {
+                    "type": "heading",
+                    "value": "THIS DEED OF CONVEYANCE is made on the {{date}}. "
+                },
+                {
+                "type": "sectionTitle",
+                "value": "BETWEEN"
+            },
+
+            {
+                "type": "text",
+                "value": "{{vendor}}, a Banker of No. 22 jailey street, rumuekini community, Port harcourt, Rivers State (VENDOR) of the ONE PART"
+
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "AND"
+            },
+
+            {
+                "type": "text",
+                "value": "{{purchaser}}, a Businessman of No. 23 Abaje Street, Lagos State (PURCHASER) of the OTHER PART."
+            },
+            {
+                    "type": "sectionTitle",
+                    "value": "BACKGROUND:"
+            },
+                {
+                    "type": "text",
+                    "value": ["1. By virtue of the partitioning of the Olor Family lands at Ohia-Izo, New Layout, Igwuruta, in Ikwerre Local Government Area, and allotment under Ikwerre Native Law and Custom, the VENDOR is the beneficial owner in possession of the whole piece or parcel of land described in the schedule to this deed.\n\n",
+                    "2. The VENDOR having acquired interest over the said parcel of land is now desirous of alienating his entire interest in the said property to the PURCHASER for valuable consideration.\n\n",
+                    "3. The VENDOR having a valid title and being in possession free from encumbrances has agreed with the PURCHASER to alienate and transfer all his rights and interest in and over ALL THAT piece or parcel of land described in the schedule hereto.\n\n",
+                    "4. The parties hereto have agreed to enter into these presents with the intent that same be used in support of an application for a Statutory Certificate of Occupancy to the Governor of Rivers State."]
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "THIS DEED WITNESSETH AS FOLLOWS:"
+                },
+                 {
+                    "type": "text",
+                    "value": ["IN PURSUANCE of the said understanding and in consideration of the sum of {{amount}} now paid by the PURCHASER to the VENDOR (the receipt of which the VENDOR hereby acknowledges); the VENDOR conveys unto the PURCHASER ALL that piece or parcel of land, measuring approximately 423.612 square metres, situate at Ihia-Izo, New Layout, Igwuruta, in Ikwerre Local Government Area of Rivers State, Nigeria which property is particularly described in the schedule to this Deed, the same is delineated and coloured Red on the survey plan No. CCN/RV 036/2015 annexed to this Deed, TO HOLD the same unto the purchaser absolutely, free from all encumbrances however called without any right of reversion."]
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "THE VENDOR COVENANTS AS FOLLOWS:"
+                },
+                {
+                    "type": ["{{clauses}}"]
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "THE SCHEDULE REFERRED TO"
+                },
+                {
+                    "type": "text",
+                    "value": "ALL THAT piece or parcel of land with all the appurtenances thereto commonly known as and locally called Ohia-Izo situate in New Layout, Igwuruta, Ikwerre Local Government Area of Rivers State of Nigeria, measuring approximately an area of 423.612 square meters which piece or parcel of land is more particularly described, delineated and verged red in survey Plan No. CCN/RV0 36/2015 and dated 9/9/2016, drawn by one Surveyor Emmanuel Akomas, a Licensed Surveyor of 5 East/West Road, Rumuokoro, Port Harcourt and bounded by Pillars Nos. SC/P/89; SC/P/66; SC/L/1272; SC/C/5760 on the Survey Plan."
+                },
+                {
+                    "type": "text",
+                    "value": "IN WITNESS OF WHICH the parties have execute this deed in the manner below the day and year first above written."
+                },
+                {
+                    "type": "heading",
+                    "value": ["SIGNED, SEALED AND DELIVERED\n\n",
+                    "By the Vendor\n\n",
+                    "_________________\n",
+                    "{{vendor}}"]
+                },
+               {
+                    "type": "address",
+                    "value": [
+                            "In the presence of:\n\n",
+                            "NAME: __________________\n",
+                            "ADDRESS:___________________\n",
+                            "OCCUPATION:__________________\n",
+                            "SIGNATURE:__________________\n\n"]
+                },
+                {
+                    "type": "heading",
+                    "value": ["SIGNED, SEALED AND DELIVERED\n\n",
+                    "By the Purchaser\n\n",
+                    "________________\n",
+                    "{{purchaser}}"]
+                },
+               {
+                    "type": "address",
+                    "value": [
+                            "In the presence of:\n\n",
+                            "NAME: __________________\n",
+                            "ADDRESS:___________________\n",
+                            "OCCUPATION:__________________\n",
+                            "SIGNATURE:__________________\n\n"]
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "Franked By;"
+                },
+                {
+                    "type": "address",
+                    "value": ["J. J Esq\n",
+                    "J&J Chambers\n",
+                    "Legal Practitioners And Solicitors\n",
+                    "Suite 18, 3rd Floor, Unity Plaza, 15 Ahmadu Bello Way, Victoria Island, Lagos, Nigeria.\n",
+                    "legalizezone@gmail.com\n",
+                    "+23481xxxxxxxx"]
+                }
+        ]      
+}
+}

@@ -1,0 +1,8 @@
+export const CREDIT_COST = {
+  DRAFT: 1,
+  INVALID_QUERY: 1,
+  REVIEW: 1,
+  IMPROVEMENT: 1,
+  QUICK_DRAFT: 1,
+  CUSTOM_DRAFT:2,
+} as const;
