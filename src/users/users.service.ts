@@ -83,6 +83,7 @@ export class UsersService {
         credits: true,
 
         subscription: true,
+        everSubscribed: true,
         subscriptionExpiry: true,
 
         lastBillingCycleId: true,

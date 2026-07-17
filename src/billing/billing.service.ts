@@ -83,11 +83,12 @@ export class BillingService {
         where: { id: userId },
         data: {
           subscription: true,
+          everSubscribed: true,
           subscriptionId: purchaseToken,
           subscriptionExpiry: expiryDate,
           plan,
           credits: {
-            increment: plan === 'BASIC' ? 50 : 250,
+            increment: plan === 'BASIC' ? 150 : 600,
           },
           creditResetAt: new Date(),
           lastBillingCycleId: billingCycleId,

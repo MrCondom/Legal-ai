@@ -50,6 +50,7 @@ model User {
   email     String   @unique
   name      String?
   subscription Boolean  @default(false)
+  everSubscribed Boolean @default(false)
   subscriptionExpiry  DateTime?
   subscriptionId  String?
   plan String?          

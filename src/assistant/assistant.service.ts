@@ -118,11 +118,26 @@ What can I draft for you today?`,
       user = await this.users.getProfile(userId);
     }
   
-    const subscriptionExpired =
-      !user.subscription;
+    const noCredits = (user.credits ?? 0) <= 0;
     
-    const noCredits =
-      (user.credits ?? 0) <= 0;
+    if (!user.everSubscribed) {
+    
+      if (noCredits) {
+        return {
+          allowed: false,
+          reason: "NO_CREDITS",
+          user,
+        };
+      }
+    
+      return {
+        allowed: true,
+        reason: null,
+        user,
+      };
+    }
+    
+    const subscriptionExpired = !user.subscription;
     
     if (subscriptionExpired && noCredits) {
       return {
