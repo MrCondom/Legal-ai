@@ -50,6 +50,14 @@ export class UsersService {
       },
     });
   }
+  
+  async clearDraftHistory(userId: string) {
+    return this.prisma.draft.deleteMany({
+      where: {
+        userId,
+      },
+    });
+  }
 
   async deleteDraft(draftId: string, userId: string) {
     const draft = await this.prisma.draft.findUnique({

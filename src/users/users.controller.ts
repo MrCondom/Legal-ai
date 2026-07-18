@@ -31,6 +31,13 @@ export class UsersController {
   getDraftHistory(@Param('id') id: string) {
     return this.usersService.getDraftHistory(id);
   }
+  
+  @Delete("profile/:id/drafts")
+  clearDraftHistory(
+    @Param("id") userId: string,
+  ) {
+    return this.usersService.clearDraftHistory(userId);
+  }
 
   @Delete('profile/:id/drafts/:draftId')
   deleteDraft(
