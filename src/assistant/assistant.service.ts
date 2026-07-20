@@ -84,6 +84,7 @@ export class AssistantService {
     await this.clauses.seedClauses();
 
     const user = await this.users.getProfile(userId);
+    const credit = await this.checkCredits(userId);
 
     return {
       message: `Hello ${user?.name ?? 'there'}.
@@ -160,7 +161,7 @@ What can I draft for you today?`,
     if (noCredits) {
       return {
         allowed: false,
-        reason: "NO_CREDITS",
+        reason: "NO_CREDIT",
         user,
       };
     }
