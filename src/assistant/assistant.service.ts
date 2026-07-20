@@ -288,9 +288,12 @@ What can I draft for you today?`,
     }
 
     if (workflow.status === 'NO_CREDIT') {
+      const credit = await this.checkCredits(userId);
       return {
         status: 'NO_CREDIT',
+        reason: credit.reason,
         message: workflow.message,
+        user: credit.user,
       };
     }
 
