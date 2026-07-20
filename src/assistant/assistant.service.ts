@@ -95,6 +95,8 @@ What can I draft for you today?`,
       plan: user?.plan,
 
       subscription: user?.subscription,
+
+      reason: credit.reason,
     };
   }
 
