@@ -485,9 +485,9 @@ What can I draft for you today?`,
   async reviewExistingDocument(userId: string, document: string) {
     const user = await this.users.getProfile(userId);
 
-    if (user.plan !== 'PRO') {
-     throw new ForbiddenException('Feature available only for PRO users');
-      }
+    //if (user.plan !== 'PRO') {
+     //throw new ForbiddenException('Feature available only for PRO users');
+     //}
 
     await this.billing.consumeCredits(userId, CREDIT_COST.REVIEW);
 
@@ -501,12 +501,12 @@ What can I draft for you today?`,
     file: Express.Multer.File,
   ) {
 
-    const user = await this.users.getProfile(userId);
+    //const user = await this.users.getProfile(userId);
 
 
-    if (!user) {
-      throw new NotFoundException('User not found');
-       }
+    //if (!user) {
+      //throw new NotFoundException('User not found');
+      // }
 
     //if (user.plan !== 'PRO') {
       //throw new ForbiddenException({
@@ -570,11 +570,11 @@ What can I draft for you today?`,
   ////////////////////////////////////////////
 
   async suggestImprovements(userId: string, document: string, review: any,) {
-    const user = await this.users.getProfile(userId);
+    //const user = await this.users.getProfile(userId);
 
-    if (!user) {
-      throw new NotFoundException('User not found');
-       }
+    //if (!user) {
+      //throw new NotFoundException('User not found');
+      // }
 
     //if (user.plan !== 'PRO') {
       //throw new ForbiddenException({
