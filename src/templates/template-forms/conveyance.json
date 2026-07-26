@@ -9,42 +9,29 @@
         },
 
         {
-            "name": "vendor",
-            "label": "Is the vendor a corporate body?",
-            "type": "yes/no",
-            "fields": "corporate body",
-            "required": "true"
+          "name": "vendorCapacity",
+          "label": "Select the Vendor's Capacity?",
+          "type": "select",
+          "options": [
+            "Individual",
+            "Corporate Body",
+            "Infant",
+            "Illiterate",
+            "Attorney",
+            "Family Property"
+          ]
         },
 
         {
-            "name": "vendorCompanyName",
-            "label": "Corporate Name?",
-            "type": "text",
-            "required": "true",
-
-            "showIf": {
-              "field": "vendor",
-              "equals": "corporate body"
-            }
-        },
-
-        {
-            "name": "vendor",
+            "name": "vendorName",
             "label": "Vendor's Legal Name?",
             "type": "text",
-            "required": "true",
+        
 
             "dontShowIf": {
-              "field": "vendor",
-              "equals": "corporate body"
+              "field": "vendorType",
+              "equals": "no"
             }
-        },
-
-        {
-            "name": "vendor",
-            "label": "Vendor's Legal Name?",
-            "type": "text",
-            "required": "true"
         },
 
         {
@@ -136,6 +123,81 @@
             "label": "Law firm name, address and email address?",
             "type": "franking",
             "required": "false"
+        },
+
+        {
+          "name": "vendorExecution",
+          "label": "Which best describes the Vendor?",
+          "type": "select",
+          "options": [
+            "Individual",
+            "Company",
+            "Infant",
+            "Illiterate",
+            "Attorney",
+            "Family Property"
+          ],
+          "required": true
+        },
+        
+        {
+          "name": "purchaserExecution",
+          "label": "Which best describes the Purchaser?",
+          "type": "select",
+          "options": [
+            "Individual",
+            "Company",
+            "Infant",
+            "Illiterate",
+            "Attorney",
+            "Family Property"
+          ],
+          "required": true
+        },
+
+        {
+          "name":"vendorIndividualName",
+          "label":"Vendor's legal name",
+          "showIf":{
+              "field":"vendorExecution",
+              "equals":"Individual"
+          }
+        },
+        
+        {
+          "name":"vendorCompanyName",
+          "label":"Company name",
+          "showIf":{
+              "field":"vendorExecution",
+              "equals":"Company"
+          }
+        },
+        
+        {
+          "name":"vendorInterpreterName",
+          "label":"Interpreter's name",
+          "showIf":{
+              "field":"vendorExecution",
+              "equals":"Illiterate"
+          }
+        },
+        
+        {
+          "name":"vendorAttorneyName",
+          "label":"Attorney's full name",
+          "showIf":{
+              "field":"vendorExecution",
+              "equals":"Attorney"
+          }
+        },
+        
+        {
+          "name":"familyHead",
+          "label":"Family Head",
+          "showIf":{
+              "field":"vendorExecution",
+              "equals":"Family Property"
+          }
         }
     ]
 }

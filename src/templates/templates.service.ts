@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import executions from '../constants/execution';
 import deedTemplate from './template-files/deed-of-conveyance.json';
 import conveyanceForm from './template-forms/conveyance.json';
 
@@ -74,6 +75,30 @@ export class TemplatesService {
       },
     });
   }
+
+  getExecutionBlock(type: string) {
+      return executions[type] ?? executions.individual;
+  }
+  injectExecution(
+      template: any,
+      execution: any
+  ) {
+      return {
+          ...template,
+          deed_of_conveyance: {
+              ...template.deed_of_conveyance,
+              sections: template.deed_of_conveyance.sections.flatMap(section => {
+  
+                  if (section.type !== "execution") {
+                      return section;
+                  }
+  
+                  return execution.content;
+              })
+          }
+      };
+  }
+
 
   async seedTemplates() {
     const count = await this.prisma.template.count();

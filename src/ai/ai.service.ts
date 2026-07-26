@@ -371,8 +371,7 @@ However Briefly Modify For Deed:
 1. Contents of BACKGROUND as per what is provided in the source of title.
 2. Execution part as the case may be.
 3. Where parties title are totally different from the requested draft. or where words used in a template is totally different from what the user is demanding e.g user requested for a deed of conveyance, but deed of assignment was presented.
-4. Modify the execution part where either party is a corporate body, organization, infant or illeterate. in this case use any of this format in the execution part.
-e.g, for an illiterate: "The content of this document having been first read and interpreted to him in ___ language from ____ language by me, {name of interpreter} (sworn interpreter) of {interpreter's address}, and he appeared perfectly to understand it before affixing his thumbprint."
+4. Modify the execution part where either party is a corporate body, organization, infant or illeterate.
 
 
 -Do Not modify For Resolution:
