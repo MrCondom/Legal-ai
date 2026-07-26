@@ -335,11 +335,16 @@ Do not modify section numbering.
 
 Do NOT alter legal intent.
 
-Do Not modify for deed:
+
+-Do Not modify for deed:
 
 NOW THIS DEED WITNESSETH AS FOLLOWS
 
 THIS DEED WITNESSETH AS FOLLOWS
+
+THIS DEED RECITES AS FOLLOWS:
+
+ACKNOWLEDGEMENT FOR SAFE CUSTODY AND PRODUCTION OF DOCUMENT
 
 WHEREAS
 
@@ -361,7 +366,16 @@ IN WITNESS OF WHICH
 
 SIGNED, SEALED AND DELIVERED
 
-Do Not modify for resolution:
+
+However Briefly Modify For Deed:
+1. Contents of BACKGROUND as per what is provided in the source of title.
+2. Execution part as the case may be.
+3. Where parties title are totally different from the requested draft. or where words used in a template is totally different from what the user is demanding e.g user requested for a deed of conveyance, but deed of assignment was presented.
+4. Modify the execution part where either party is a corporate body, organization, infant or illeterate. in this case use any of this format in the execution part.
+e.g, for an illiterate: "The content of this document having been first read and interpreted to him in ___ language from ____ language by me, {name of interpreter} (sworn interpreter) of {interpreter's address}, and he appeared perfectly to understand it before affixing his thumbprint."
+
+
+-Do Not modify For Resolution:
 
 FEDERAL REPUBLIC OF NIGERIA
 
@@ -708,11 +722,17 @@ Target 50 - 200 words.
 
 For deed:
 
-Do not substantially increase word count.
+-Do not substantially increase word count.
 
-Dates should be in word.
+-Dates should be like this; e.g 2nd October, 2020.
 
-Amounts should be in figure and in words.
+-Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
+
+-Amounts should carry a currency sign. if no currency is provided the default is Naira.
+
+-If no state is provided, use property state, or vendor's, seller's, lessor's, assignor's, donor's, mortgagor's state.
+
+-Franking is totally optional, and can be left blank.
 
 For affidavit:
 

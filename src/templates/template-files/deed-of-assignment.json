@@ -1,0 +1,117 @@
+{
+
+    "title": "deed of assignment",
+    "section": [
+        {
+            "type": "text3",
+            "value": "THIS DEED OF ASSIGNMENT is made on the {{date}}. "
+        },
+                    {
+        "type": "sectionTitle",
+        "value": "BETWEEN"
+    },
+
+    {
+        "type": "text",
+        "value": "{{assignor}}, a {{assignorOccupation}} of {{assignorAddress}} (assignor) of the ONE PART"
+
+    },
+
+    {
+        "type": "sectionTitle",
+        "value": "AND"
+    },
+
+    {
+        "type": "text",
+        "value": "{{assignee}}, a {{assigneeOccupation}} of {{assigneeAddress}} (assignee) of the OTHER PART."
+    },
+    {
+            "type": "sectionTitle",
+            "value": "THIS DEED RECITES AS FOLLOWS:"
+    },
+        {
+            "type": "text",
+            "value": ["1. {{sourceOfTitle}}\n\n",
+              "2. The Assignor is the legal owner of {{propertyDescription}} situate at {{propertyAddress}}.\n\n",
+            "3. The Assignor is willing to alienate his interest, while the Assignee is willing to buy, subject to the conditions stated herein"]
+        },
+         {
+            "type": "sectionTitle",
+            "value": "THIS DEED WITNESSETH AS FOLLOWS:"
+        },
+         {
+            "type": "text",
+            "value": ["In consideration of the sum of {{amount}}, Paid to the assignor by the assignee (the receipt of which the assignor hereby acknowledges), the assignor as the BENEFICIAL OWNER hereby assigns ALL THAT PARCEL of {{propertyDescription}} and covered by a {{CofODetails}} and {{surveyPlanDetails}} and more particularly described in the survey plan prepared by a licensed surveyor {{surveyorParticulars}} attached to the schedule with all rights, easements and appurtenances. TO HOLD UNTO the Assignee as holder of a Statutory right of Occupancy for the term unexpired on the Certificate of Occupancy."]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "ACKNOWLEDGEMENT FOR SAFE CUSTODY AND PRODUCTION OF DOCUMENT"
+        },
+        {
+            "type": "text",
+            "value": ["The assignor undertakes with the assignee for the safe custody of the documents listed in the schedule and acknowledges his right to the production of the documents for inspection/copying.\n\n",
+            "IN WITNESS OF WHICH the parties have executed this deed in the manner below the day and year first above written."]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "SCHEDULE"
+        },
+        {
+            "type": "text",
+            "value": ["1. Survey Plan\n\n",
+        "2. Certificate of occupancy (C of O)\n\n"]
+        },
+         {
+            "type": "heading",
+            "value": ["SIGNED, SEALED AND DELIVERED\n\n",
+            "By the Assignor\n\n",
+            "_________________\n",
+            "{{assignor}}"]
+        },
+       {
+            "type": "address",
+            "value": [
+                    "In the presence of:\n\n",
+                    "NAME: __________________\n",
+                    "ADDRESS:___________________\n",
+                    "OCCUPATION:__________________\n",
+                    "SIGNATURE:__________________\n\n"]
+        },
+        {
+            "type": "heading",
+            "value": ["SIGNED, SEALED AND DELIVERED\n\n",
+            "By the Assignee\n\n",
+            "________________\n",
+            "{{assignee}}"]
+        },
+       {
+            "type": "address",
+            "value": [
+                    "In the presence of:\n\n",
+                    "NAME: __________________\n",
+                    "ADDRESS:___________________\n",
+                    "OCCUPATION:__________________\n",
+                    "SIGNATURE:__________________\n\n"]
+        },
+        {
+            "type": "heading",
+            "value": ["I CONSENT TO THIS AGREEMENT\n",
+            "________________\n\n",
+            "DATED THE ____ DAY OF ____, 20__ \n\n",
+            "GOVERNOR OF {{state}} "]
+        },
+         {
+            "type": "sectionTitle",
+            "value": "Franked By;"
+        },
+        {
+            "type": "address",
+            "value": ["{{lawyerName}} \n",
+            "{{lawFirm}} \n",
+            "{{lawFirmAddress}} \n",
+            "{{lawFirmEmail}}"
+            ]
+        }
+    ]
+}

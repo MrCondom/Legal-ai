@@ -3,44 +3,139 @@
 
         {
             "name": "date",
-            "label": "Execution Date",
+            "label": "Execution Date?",
             "type": "date",
             "required": "true"
         },
 
         {
             "name": "vendor",
-            "label": "Vendor Name",
+            "label": "Is the vendor a corporate body?",
+            "type": "yes/no",
+            "fields": "corporate body",
+            "required": "true"
+        },
+
+        {
+            "name": "vendorCompanyName",
+            "label": "Corporate Name?",
+            "type": "text",
+            "required": "true",
+
+            "showIf": {
+              "field": "vendor",
+              "equals": "corporate body"
+            }
+        },
+
+        {
+            "name": "vendor",
+            "label": "Vendor's Legal Name?",
+            "type": "text",
+            "required": "true",
+
+            "dontShowIf": {
+              "field": "vendor",
+              "equals": "corporate body"
+            }
+        },
+
+        {
+            "name": "vendor",
+            "label": "Vendor's Legal Name?",
             "type": "text",
             "required": "true"
         },
 
         {
+            "name": "vendorOccupation",
+            "label": "Vendor's Occupation?" ,
+            "type": "occupation",
+            "required": "true"
+        },
+
+        {
             "name": "vendorAddress",
-            "label": "Vendor Address",
+            "label": "Vendor's Address?",
             "type": "textarea",
             "required": "true"
         },
 
         {
             "name": "purchaser",
-            "label": "Purchaser Name",
+            "label": "Purchaser's Legal Name?",
             "type": "text",
             "required": "true"
         },
 
         {
+            "name": "purchaserOccupation",
+            "label": "Purchaser's Occupation?" ,
+            "type": "occupation",
+            "required": "true"
+        },
+
+        {
             "name": "purchaserAddress",
-            "label": "Purchaser Address",
+            "label": "Purchaser's Address?",
             "type": "textarea",
             "required": "true"
         },
 
         {
             "name": "amount",
-            "label": "Purchase Price",
+            "label": "Purchase Price?",
             "type": "currency",
             "required": "true"
+        },
+
+        {
+            "name": "sourceOfTitle",
+            "label": "How did the Vendor acquire the Property?",
+            "type": "textarea",
+            "required": "true"
+        },
+
+        {
+            "name": "propertyDescription",
+            "label": "How would you describe the Property?",
+            "type": "property",
+            "required": "true"
+        },
+
+        {
+            "name": "surveyPlanDetails & surveyPlanNumber",
+            "label": "Provide the survey plan number and details?",
+            "type": "textarea",
+            "required": "true"
+        },
+
+        {
+            "name": "propertyAddress",
+            "label": "What is the property's address?",
+            "type": "address",
+            "required": "true"
+        },
+
+        {
+            "name": "surveyorParticulars",
+            "label": "Provide the surveyor's name and address?",
+            "type": "textarea",
+            "required": "true"
+        },
+
+        {
+            "name": "lawyerName",
+            "label": "Lawyer's full name?",
+            "type": "franking",
+            "required": "true"
+        },
+
+        {
+            "name": "lawFirm, lawFirmAddress & lawFirmEmail",
+            "label": "Law firm name, address and email address?",
+            "type": "franking",
+            "required": "false"
         }
     ]
 }
