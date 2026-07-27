@@ -196,7 +196,7 @@ export class TemplatesService {
         },
       });
 
-      if (!exist) {
+      if (!exists) {
         await template.seed();
         console.log(
           `Seeded ${template.slug}`

@@ -382,21 +382,23 @@ What can I draft for you today?`,
     const clauses = await this.clauses.getByIds(
       clauseIds.filter(id => allowedIds.includes(id))
     );
-
-    const rootKey = Object.keys(template.content)[0];
     
-    const document = template.content[rootKey];
+    const content = template.content as Record<string, any>;
+
+    const rootKey = Object.keys(content)[0];
+    
+    const templateDocument = content[rootKey];
 
     const execution = this.templates.buildExecution(
-      document, answers);
+      templateDocument, answers);
 
     const templateWithExecution = this.templates.injectExecution(
-      template.content, execution);
+      content, execution);
 
-    const document = this.templates.flattenTemplate(templateWithExecution);
+    const finalDocument = this.templates.flattenTemplate(templateWithExecution);
 
     const enhanced = await this.ai.customDraftEnhancer(
-      document,
+      finalDocument,
 
       clauses.map((c) => c.content),
 
