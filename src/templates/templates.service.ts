@@ -97,7 +97,7 @@ export class TemplatesService {
   
     const execution = [] as any[];
   
-    for (const party of template.parties) {
+    for (const party of template.parties ?? []) {
   
       const prefix = party.id;
   
@@ -175,13 +175,33 @@ export class TemplatesService {
 
 
   async seedTemplates() {
-    const count = await this.prisma.template.count();
 
-    if (count > 0) {
-      return;
+    const templates = [
+      {
+        slug: 'deed-of-conveyance',
+        seed: () => this.seedDeedOfConveyance(),
+      },
+      {
+        slug: 'deed-of-assignment',
+        seed: () => this.seedDeedOfAssignment(),
+      },
+
+      //add more templates
+    ];
+
+    for (const template of templates) {
+      const exists = await this.prisma.template.findUnique({
+        where: {
+          slug: template.slug,
+        },
+      });
+
+      if (!exist) {
+        await template.seed();
+        console.log(
+          `Seeded ${template.slug}`
+        );
+      }
     }
-
-    await this.seedDeedOfConveyance();
-    await this.seedDeedOfAssignment();
   }
 }

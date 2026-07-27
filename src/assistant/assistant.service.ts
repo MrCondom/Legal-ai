@@ -383,8 +383,12 @@ What can I draft for you today?`,
       clauseIds.filter(id => allowedIds.includes(id))
     );
 
+    const rootKey = Object.keys(template.content)[0];
+    
+    const document = template.content[rootKey];
+
     const execution = this.templates.buildExecution(
-      template.content, answers);
+      document, answers);
 
     const templateWithExecution = this.templates.injectExecution(
       template.content, execution);
