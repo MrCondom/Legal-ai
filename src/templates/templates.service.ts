@@ -97,7 +97,7 @@ export class TemplatesService {
   
     const execution = [] as any[];
   
-    for (const party of document.parties) {
+    for (const party of template.parties) {
   
       const prefix = party.id;
   
