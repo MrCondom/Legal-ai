@@ -2,8 +2,8 @@
     "fields": [
 
       {
-        "name": "vendorExecution",
-        "label": "Which best describes the Vendor?",
+        "name": "partyOneExecution",
+        "label": "Which best describes Party One (Vendor)?",
         "type": "select",
         "options": [
           "Individual",
@@ -18,8 +18,8 @@
 
       
       {
-        "name": "purchaserExecution",
-        "label": "Which best describes the Purchaser?",
+        "name": "partyTwoExecution",
+        "label": "Which best describes Party Two (Purchaser)?",
         "type": "select",
         "options": [
           "Individual",
@@ -40,50 +40,50 @@
         },
 
         {
-            "name": "vendorName",
-            "label": "Vendor's Legal Name?",
+            "name": "partyOneName",
+            "label": "Party One (Vendor)'s Legal Name?",
             "type": "text",
         
             "showIf":{
-                "field":"vendorExecution",
+                "field":"partyOneExecution",
                 "equals":"Individual"
             }
         },
 
         {
-            "name": "vendorOccupation",
-            "label": "Vendor's Occupation?" ,
+            "name": "partyOneOccupation",
+            "label": "Party One (Vendor)'s Occupation?" ,
             "type": "occupation",
             "required": true
         },
 
         {
-            "name": "vendorAddress",
-            "label": "Vendor's Address?",
+            "name": "partyOneAddress",
+            "label": "Party One (Vendor)'s Address?",
             "type": "textarea",
             "required": true
         },
 
         {
-            "name": "purchaserName",
-            "label": "Purchaser's Legal Name?",
+            "name": "partyTwoName",
+            "label": "Party Two (Purchaser)'s Legal Name?",
             "type": "text",
             "showIf":{
-                "field":"purchaserExecution",
+                "field":"partyTwoExecution",
                 "equals":"Individual"
             }
         },
 
         {
-            "name": "purchaserOccupation",
-            "label": "Purchaser's Occupation?" ,
+            "name": "partyTwoOccupation",
+            "label": "Party Two (Purchaser)'s Occupation?" ,
             "type": "occupation",
             "required": true
         },
 
         {
-            "name": "purchaserAddress",
-            "label": "Purchaser's Address?",
+            "name": "partyTwoAddress",
+            "label": "Party Two (Purchaser)'s Address?",
             "type": "textarea",
             "required": true
         },
@@ -97,7 +97,7 @@
 
         {
             "name": "sourceOfTitle",
-            "label": "How did the Vendor acquire the Property?",
+            "label": "How did Party One (Vendor) acquire the Property?",
             "type": "textarea",
             "required": true
         },
@@ -166,17 +166,17 @@
         },
         
         {
-          "name":"vendorCompanyName",
-          "label":"Company name",
+          "name":"partyOneCompanyName",
+          "label":"Company name?",
           "showIf":{
-              "field":"vendorExecution",
+              "field":"partyOneExecution",
               "equals":"Company"
           }
         },
 
         {
-          "name":"purchaserCompanyName",
-          "label":"Company name",
+          "name":"partyTwoCompanyName",
+          "label":"Company name?",
           "showIf":{
               "field":"purchaserExecution",
               "equals":"Company"
@@ -184,46 +184,55 @@
         },
         
         {
-          "name":"vendorInterpreterName",
-          "label":"Interpreter's name",
+          "name":"partyOneInterpreterName",
+          "label":"Interpreter's name?",
           "showIf":{
-              "field":"vendorExecution",
+              "field":"partyOneExecution",
               "equals":"Illiterate"
           }
         },
 
         {
-          "name":"purchaserInterpreterName",
-          "label":"Interpreter's name",
+          "name":"partyTwoInterpreterName",
+          "label":"Interpreter's name?",
           "showIf":{
-              "field":"purchaserExecution",
+              "field":"partyTwoExecution",
               "equals":"Illiterate"
           }
         },
         
         {
-          "name":"vendorAttorneyName",
-          "label":"Attorney's full name",
+          "name":"partyOneAttorneyName",
+          "label":"Attorney's full name?",
           "showIf":{
-              "field":"vendorExecution",
+              "field":"partyOneExecution",
               "equals":"Attorney"
           }
         },
 
         {
-          "name":"purchaserAttorneyName",
-          "label":"Attorney's full name",
+          "name":"partyTwoAttorneyName",
+          "label":"Attorney's full name?",
           "showIf":{
-              "field":"purchaserExecution",
+              "field":"partyTwoExecution",
               "equals":"Attorney"
           }
         },
         
         {
-          "name":"familyHead",
-          "label":"Family Head",
+          "name":"partyOnefamilyHead",
+          "label":"Family Head's full name?",
           "showIf":{
-              "field":"vendorExecution",
+              "field":"partyOneExecution",
+              "equals":"Family Property"
+          }
+        },
+
+        {
+          "name":"partyTwofamilyHead",
+          "label":"Family Head's full name?",
+          "showIf":{
+              "field":"partyTwoExecution",
               "equals":"Family Property"
           }
         }

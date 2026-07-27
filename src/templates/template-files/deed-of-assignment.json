@@ -1,6 +1,16 @@
 {
 
     "title": "deed of assignment",
+    "parties": [
+        {
+            "id": "partyOne",
+            "role": "Assignor"
+        },
+        {
+            "id": "partyTwo",
+            "role": "Assignee"
+        }
+    ],
     "section": [
         {
             "type": "text3",
@@ -13,7 +23,7 @@
 
     {
         "type": "text",
-        "value": "{{assignorName}}, a {{assignorOccupation}} of {{assignorAddress}} (assignor) of the ONE PART"
+        "value": "{{partyOneName}}, a {{partyOneOccupation}} of {{partyOneAddress}} (assignor) of the ONE PART"
 
     },
 
@@ -24,7 +34,7 @@
 
     {
         "type": "text",
-        "value": "{{assigneeName}}, a {{assigneeOccupation}} of {{assigneeAddress}} (assignee) of the OTHER PART."
+        "value": "{{partyTwoName}}, a {{partyTwoOccupation}} of {{partyTwoAddress}} (assignee) of the OTHER PART."
     },
     {
             "type": "sectionTitle",
