@@ -34,7 +34,7 @@
 
     {
         "type": "text",
-        "value": "{{partyTwoName}}, a {{partyTwoOccupation}} of {{partyTwoAddress}} (assignee) of the OTHER PART."
+        "value": "{{partyTwo.name}}, a {{partyTwo,occupation}} of {{partyTwo.address}} (assignee) of the OTHER PART."
     },
     {
             "type": "sectionTitle",

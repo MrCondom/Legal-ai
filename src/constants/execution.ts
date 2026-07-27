@@ -5,9 +5,9 @@ const executions =
       {
         "type": "heading",
         "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-          "By the Assignor\n\n",
+          "By the {{role}}\n\n",
           "_________________\n",
-          "{{assignorName}} "]
+          "{{name}} "]
       },
       {
         "type": "address",
@@ -21,9 +21,9 @@ const executions =
       {
         "type": "heading",
         "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-          "By the Assignee\n\n",
+          "By the {{role}} \n\n",
           "________________\n",
-          "{{assigneeName}} "]
+          "{{name}} "]
       },
       {
         "type": "address",
@@ -41,7 +41,7 @@ const executions =
     "content": [
       {
         "type": "text",
-        "value": ["THE COMMON SEAL OF {{companyName}} PURSUANT TO A RESOLUTION HELD ON {{resolutionDate}}, WAS AFFIXED TO THIS DEED AND DELIVERED\n\n",
+        "value": ["THE COMMON SEAL OF {{name}} PURSUANT TO A RESOLUTION HELD ON {{resolutionDate}}, WAS AFFIXED TO THIS DEED AND DELIVERED\n\n",
           "In the presence of;"]
       },
       {
@@ -62,7 +62,7 @@ const executions =
       {
         "type": "text",
         "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-          "By the Assignor\n",
+          "By the {{role}} \n",
           "_________________\n",
           "{{illiterate}} \n\n\n",
           "The content of this document having been first read and interpreted to him in {{interpretedLanguage}} from English language by me, {{interpreterName}} (sworn interpreter) of {{interpreterAddress}}, and he appeared perfectly to understand it before affixing his thumbprint."]
@@ -82,9 +82,9 @@ const executions =
       {
         "type": "text",
         "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-          "By the Assignor\n",
+          "By the {{role}}\n",
           "_________________\n\n",
-          "{{assignorName}} through his true and lawful attorney {{attorneyName}}, by virtue of a power of attorney dated this {{powerOfAttorneyExecutionDate}}, registered {{date&placeOfRegistrationOfPowerOfAttorney}}."]
+          "{{name}} through his true and lawful attorney {{attorneyName}}, by virtue of a power of attorney dated this {{powerOfAttorneyExecutionDate}}, registered {{date&placeOfRegistrationOfPowerOfAttorney}}."]
       },
       {
         "type": "address",
@@ -103,7 +103,7 @@ const executions =
       {
         "type": "text",
         "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-          "By the within named Assignors\n",
+          "By the within named {{role}} \n",
           "_________________\n",
           "{{familyHead}} \n\n",
           "(Family Head)"]
@@ -111,14 +111,14 @@ const executions =
       {
         "type": "text",
         "value": ["_________________\n",
-          "Bruce jabman\n\n",
+          "{{memberName}} \n\n",
           "(Family Member)"
         ]
       },
       {
         "type": "text",
         "value": ["_________________\n",
-          "{{familyMember}}\n\n",
+          "{{memberName}}\n\n",
           "(Family Member)"
         ]
       },
