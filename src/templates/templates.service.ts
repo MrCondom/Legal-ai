@@ -92,6 +92,63 @@ export class TemplatesService {
     });
   }
 
+  
+  buildExecution(template: any, answers: any) {
+  
+    const execution = [];
+  
+    for (const party of template.parties) {
+  
+      const prefix = party.id;
+  
+      const executionType =
+        answers[`${prefix}Execution`]?.toLowerCase().replace(/\s+/g, "");
+  
+      const block = this.getExecutionBlock(executionType);
+  
+      execution.push(
+        this.renderExecution(block, {
+          role: party.role,
+          name: answers[`${prefix}Name`],
+          companyName: answers[`${prefix}CompanyName`],
+          interpreterName: answers[`${prefix}InterpreterName`],
+          attorneyName: answers[`${prefix}AttorneyName`],
+          familyHead: answers[`${prefix}FamilyHead`]
+        })
+      );
+    }
+  
+    return execution.flat();
+  }
+  
+
+  renderExecution(block: any, values: Record<string, any>) {
+  
+    return block.content.map(item => {
+  
+      const copy = JSON.parse(JSON.stringify(item));
+  
+      const replace = (text: string) =>
+        text.replace(/\{\{(.*?)\}\}/g, (_, key) => {
+  
+          return values[key.trim()] ?? "";
+        });
+  
+      if (typeof copy.value === "string") {
+  
+        copy.value = replace(copy.value);
+  
+      } else if (Array.isArray(copy.value)) {
+  
+        copy.value = copy.value.map(replace);
+      }
+  
+      return copy;
+    });
+  
+  }
+  
+
   getExecutionBlock(type: string) {
       return executions[type] ?? executions.individual;
   }
@@ -110,7 +167,7 @@ export class TemplatesService {
                       return section;
                   }
   
-                  return execution.content;
+                  return execution;
               })
           }
       };

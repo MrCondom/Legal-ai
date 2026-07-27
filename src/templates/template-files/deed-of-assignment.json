@@ -11,7 +11,7 @@
             "role": "Assignee"
         }
     ],
-    "section": [
+    "sections": [
         {
             "type": "text3",
             "value": "THIS DEED OF ASSIGNMENT is made on the {{date}}. "
