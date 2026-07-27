@@ -3,6 +3,7 @@ import { PrismaService } from '../prisma/prisma.service';
 import executions from '../constants/execution';
 import deedTemplate from './template-files/deed-of-conveyance.json';
 import conveyanceForm from './template-forms/conveyance.json';
+import assignmentTemplate from './template-files/deed-of-assignment.json';
 
 @Injectable()
 export class TemplatesService {
@@ -76,6 +77,19 @@ export class TemplatesService {
     });
   }
 
+  async seedDeedOfAssignment() {
+    return this.prisma.template.create({
+      data: {
+        slug: 'deed-of-assignment',
+        title: 'Deed of Assignment',
+        documentFamily: 'deed',
+        tags: ['property, land, ownership, assignment, transfer of title'],
+        content: assignmentTemplate,
+        formSchema: conveyanceForm,
+      },
+    });
+  }
+
   getExecutionBlock(type: string) {
       return executions[type] ?? executions.individual;
   }
@@ -83,11 +97,12 @@ export class TemplatesService {
       template: any,
       execution: any
   ) {
+    const rootKey = Object.keys(template)[0];
       return {
           ...template,
-          deed_of_conveyance: {
-              ...template.deed_of_conveyance,
-              sections: template.deed_of_conveyance.sections.flatMap(section => {
+          [rootKey]: {
+              ...template.[rootKey],
+              sections: template.[rootKey].sections.flatMap(section => {
   
                   if (section.type !== "execution") {
                       return section;
@@ -108,5 +123,6 @@ export class TemplatesService {
     }
 
     await this.seedDeedOfConveyance();
+    await this.seedDeedOfAssignment();
   }
 }

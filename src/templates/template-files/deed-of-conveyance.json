@@ -66,36 +66,7 @@
                     "value": "IN WITNESS OF WHICH the parties have execute this deed in the manner below the day and year first above written."
                 },
                 {
-                    "type": "heading",
-                    "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-                    "By the Vendor\n\n",
-                    "_________________\n",
-                    "{{vendor}}"]
-                },
-               {
-                    "type": "address",
-                    "value": [
-                            "In the presence of:\n\n",
-                            "NAME: __________________\n",
-                            "ADDRESS:___________________\n",
-                            "OCCUPATION:__________________\n",
-                            "SIGNATURE:__________________\n\n"]
-                },
-                {
-                    "type": "heading",
-                    "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-                    "By the Purchaser\n\n",
-                    "________________\n",
-                    "{{purchaser}}"]
-                },
-               {
-                    "type": "address",
-                    "value": [
-                            "In the presence of:\n\n",
-                            "NAME: __________________\n",
-                            "ADDRESS:___________________\n",
-                            "OCCUPATION:__________________\n",
-                            "SIGNATURE:__________________\n\n"]
+                    "type": "execution"
                 },
                 {
                     "type": "sectionTitle",
@@ -110,28 +81,4 @@
                     ]
                 }
         ]
-},
-{
-   "id": "execution and attestation by an illiterate",
-    "title": "2. execution and attestation by an illiterate",
-    "content": [
-         {
-            "type": "text",
-            "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-            "By the Assignor\n",
-            "_________________\n",
-            "JAXMAN JACK\n\n\n",
-        "The content of this document having been first read and interpreted to him in yoruba language from English language by me, Abraham Okoro (sworn interpreter) of No. 4 Ajibade street, Lagos State, and he appeared perfectly to understand it before affixing his thumbprint."]
-        },
-       {
-            "type": "heading",
-            "value": [
-                    "BEFORE ME:\n",
-                    "_________________\n\n",
-                    "CHIEF MAGISTRATE FOLUKE GRACE."]
-        }
-    ]
-},
 }
-
-

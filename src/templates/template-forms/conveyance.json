@@ -1,6 +1,37 @@
 {
     "fields": [
 
+      {
+        "name": "vendorExecution",
+        "label": "Which best describes the Vendor?",
+        "type": "select",
+        "options": [
+          "Individual",
+          "Company",
+          "Infant",
+          "Illiterate",
+          "Attorney",
+          "Family Property"
+        ],
+        "required": true
+      },
+
+      
+      {
+        "name": "purchaserExecution",
+        "label": "Which best describes the Purchaser?",
+        "type": "select",
+        "options": [
+          "Individual",
+          "Company",
+          "Infant",
+          "Illiterate",
+          "Attorney",
+          "Family Property"
+        ],
+        "required": true
+      },
+
         {
             "name": "date",
             "label": "Execution Date?",
@@ -9,28 +40,13 @@
         },
 
         {
-          "name": "vendorCapacity",
-          "label": "Select the Vendor's Capacity?",
-          "type": "select",
-          "options": [
-            "Individual",
-            "Corporate Body",
-            "Infant",
-            "Illiterate",
-            "Attorney",
-            "Family Property"
-          ]
-        },
-
-        {
             "name": "vendorName",
             "label": "Vendor's Legal Name?",
             "type": "text",
         
-
-            "dontShowIf": {
-              "field": "vendorType",
-              "equals": "no"
+            "showIf":{
+                "field":"vendorExecution",
+                "equals":"Individual"
             }
         },
 
@@ -52,7 +68,10 @@
             "name": "purchaser",
             "label": "Purchaser's Legal Name?",
             "type": "text",
-            "required": "true"
+            "showIf":{
+                "field":"purchaserExecution",
+                "equals":"Individual"
+            }
         },
 
         {
@@ -124,51 +143,21 @@
             "type": "franking",
             "required": "false"
         },
-
-        {
-          "name": "vendorExecution",
-          "label": "Which best describes the Vendor?",
-          "type": "select",
-          "options": [
-            "Individual",
-            "Company",
-            "Infant",
-            "Illiterate",
-            "Attorney",
-            "Family Property"
-          ],
-          "required": true
-        },
-        
-        {
-          "name": "purchaserExecution",
-          "label": "Which best describes the Purchaser?",
-          "type": "select",
-          "options": [
-            "Individual",
-            "Company",
-            "Infant",
-            "Illiterate",
-            "Attorney",
-            "Family Property"
-          ],
-          "required": true
-        },
-
-        {
-          "name":"vendorIndividualName",
-          "label":"Vendor's legal name",
-          "showIf":{
-              "field":"vendorExecution",
-              "equals":"Individual"
-          }
-        },
         
         {
           "name":"vendorCompanyName",
           "label":"Company name",
           "showIf":{
               "field":"vendorExecution",
+              "equals":"Company"
+          }
+        },
+
+        {
+          "name":"purchaserCompanyName",
+          "label":"Company name",
+          "showIf":{
+              "field":"purchaserExecution",
               "equals":"Company"
           }
         },
@@ -181,12 +170,30 @@
               "equals":"Illiterate"
           }
         },
+
+        {
+          "name":"purchaserInterpreterName",
+          "label":"Interpreter's name",
+          "showIf":{
+              "field":"purchaserExecution",
+              "equals":"Illiterate"
+          }
+        },
         
         {
           "name":"vendorAttorneyName",
           "label":"Attorney's full name",
           "showIf":{
               "field":"vendorExecution",
+              "equals":"Attorney"
+          }
+        },
+
+        {
+          "name":"purchaserAttorneyName",
+          "label":"Attorney's full name",
+          "showIf":{
+              "field":"purchaserExecution",
               "equals":"Attorney"
           }
         },

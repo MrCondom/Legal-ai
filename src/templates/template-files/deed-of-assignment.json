@@ -63,37 +63,8 @@
         "2. Certificate of occupancy (C of O)\n\n"]
         },
          {
-            "type": "heading",
-            "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-            "By the Assignor\n\n",
-            "_________________\n",
-            "{{assignor}}"]
-        },
-       {
-            "type": "address",
-            "value": [
-                    "In the presence of:\n\n",
-                    "NAME: __________________\n",
-                    "ADDRESS:___________________\n",
-                    "OCCUPATION:__________________\n",
-                    "SIGNATURE:__________________\n\n"]
-        },
-        {
-            "type": "heading",
-            "value": ["SIGNED, SEALED AND DELIVERED\n\n",
-            "By the Assignee\n\n",
-            "________________\n",
-            "{{assignee}}"]
-        },
-       {
-            "type": "address",
-            "value": [
-                    "In the presence of:\n\n",
-                    "NAME: __________________\n",
-                    "ADDRESS:___________________\n",
-                    "OCCUPATION:__________________\n",
-                    "SIGNATURE:__________________\n\n"]
-        },
+             "type": "execution"
+         },
         {
             "type": "heading",
             "value": ["I CONSENT TO THIS AGREEMENT\n",
