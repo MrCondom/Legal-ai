@@ -94,10 +94,14 @@ export class TemplatesService {
 
   
   buildExecution(template: any, answers: any) {
+    
+    const rootKey = Object.keys(template)[0];
+
+    const document = template[rootKey];
   
     const execution = [];
   
-    for (const party of template.parties) {
+    for (const party of document.parties) {
   
       const prefix = party.id;
   

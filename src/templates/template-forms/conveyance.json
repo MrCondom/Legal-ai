@@ -178,7 +178,7 @@
           "name":"partyTwoCompanyName",
           "label":"Company name?",
           "showIf":{
-              "field":"purchaserExecution",
+              "field":"partyTwoExecution",
               "equals":"Company"
           }
         },
@@ -220,7 +220,7 @@
         },
         
         {
-          "name":"partyOnefamilyHead",
+          "name":"partyOneFamilyHead",
           "label":"Family Head's full name?",
           "showIf":{
               "field":"partyOneExecution",
@@ -229,7 +229,7 @@
         },
 
         {
-          "name":"partyTwofamilyHead",
+          "name":"partyTwoFamilyHead",
           "label":"Family Head's full name?",
           "showIf":{
               "field":"partyTwoExecution",

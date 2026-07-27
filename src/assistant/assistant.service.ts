@@ -383,7 +383,13 @@ What can I draft for you today?`,
       clauseIds.filter(id => allowedIds.includes(id))
     );
 
-    const document = this.templates.flattenTemplate(template.content);
+    const execution = this.templates.buildExecution(
+      template.content, answers);
+
+    const templateWithExecution = this.templates.injectExecution(
+      template.content, execution);
+
+    const document = this.templates.flattenTemplate(templateWithExecution);
 
     const enhanced = await this.ai.customDraftEnhancer(
       document,

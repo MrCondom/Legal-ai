@@ -23,7 +23,7 @@
 
     {
         "type": "text",
-        "value": "{{partyOneName}}, a {{partyOneOccupation}} of {{partyOneAddress}} (assignor) of the ONE PART"
+        "value": "{{partyOne.name}}, a {{partyOne.occupation}} of {{partyOne.address}} (assignor) of the ONE PART"
 
     },
 
@@ -34,7 +34,7 @@
 
     {
         "type": "text",
-        "value": "{{partyTwo.name}}, a {{partyTwo,occupation}} of {{partyTwo.address}} (assignee) of the OTHER PART."
+        "value": "{{partyTwo.name}}, a {{partyTwo.occupation}} of {{partyTwo.address}} (assignee) of the OTHER PART."
     },
     {
             "type": "sectionTitle",

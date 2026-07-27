@@ -53,13 +53,33 @@ export class DraftsService {
       };
     };
 
-    const sections = parsedTemplate.deed_of_conveyance.sections;
+    const rootKey = Object.keys(parsedTemplate)[0];
+
+    const document = parsedTemplate[rootKey];
+
+    const execution = this.templates.buildExecution(document, data);
+
+    const finalTemplate = this.templates.injectExecution(
+      parsedTemplate,
+      execution
+    );
+
+    const root = Object.keys(finalTemplate)[0];
+    const sections = finalTemplate[root].sections;
     // 4. BUILD OUTPUT
     let generatedText = '';
 
     // only replace strings
     for (const section of sections) {
       const value = section.value;
+
+      if (typeof section.left === "string") {
+        generateText += section.left + " ";
+      }
+
+      if (typeof section.right === "string") {
+        generateText += section.right + \n\n;
+      }
 
       // STRING
       if (typeof value === 'string') {
