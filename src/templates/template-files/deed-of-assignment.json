@@ -13,7 +13,7 @@
 
     {
         "type": "text",
-        "value": "{{assignor}}, a {{assignorOccupation}} of {{assignorAddress}} (assignor) of the ONE PART"
+        "value": "{{assignorName}}, a {{assignorOccupation}} of {{assignorAddress}} (assignor) of the ONE PART"
 
     },
 
@@ -24,7 +24,7 @@
 
     {
         "type": "text",
-        "value": "{{assignee}}, a {{assigneeOccupation}} of {{assigneeAddress}} (assignee) of the OTHER PART."
+        "value": "{{assigneeName}}, a {{assigneeOccupation}} of {{assigneeAddress}} (assignee) of the OTHER PART."
     },
     {
             "type": "sectionTitle",

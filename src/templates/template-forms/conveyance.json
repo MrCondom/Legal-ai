@@ -36,7 +36,7 @@
             "name": "date",
             "label": "Execution Date?",
             "type": "date",
-            "required": "true"
+            "required": true
         },
 
         {
@@ -54,18 +54,18 @@
             "name": "vendorOccupation",
             "label": "Vendor's Occupation?" ,
             "type": "occupation",
-            "required": "true"
+            "required": true
         },
 
         {
             "name": "vendorAddress",
             "label": "Vendor's Address?",
             "type": "textarea",
-            "required": "true"
+            "required": true
         },
 
         {
-            "name": "purchaser",
+            "name": "purchaserName",
             "label": "Purchaser's Legal Name?",
             "type": "text",
             "showIf":{
@@ -78,49 +78,56 @@
             "name": "purchaserOccupation",
             "label": "Purchaser's Occupation?" ,
             "type": "occupation",
-            "required": "true"
+            "required": true
         },
 
         {
             "name": "purchaserAddress",
             "label": "Purchaser's Address?",
             "type": "textarea",
-            "required": "true"
+            "required": true
         },
 
         {
             "name": "amount",
             "label": "Purchase Price?",
             "type": "currency",
-            "required": "true"
+            "required": true
         },
 
         {
             "name": "sourceOfTitle",
             "label": "How did the Vendor acquire the Property?",
             "type": "textarea",
-            "required": "true"
+            "required": true
         },
 
         {
             "name": "propertyDescription",
             "label": "How would you describe the Property?",
             "type": "property",
-            "required": "true"
+            "required": true
         },
 
         {
-            "name": "surveyPlanDetails & surveyPlanNumber",
-            "label": "Provide the survey plan number and details?",
+            "name": "surveyPlanDetails",
+            "label": "Provide the survey plan details?",
             "type": "textarea",
-            "required": "true"
+            "required": true
+        },
+
+        {
+            "name": "surveyPlanNumber",
+            "label": "Provide the survey plan number?",
+            "type": "textarea",
+            "required": true
         },
 
         {
             "name": "propertyAddress",
             "label": "What is the property's address?",
             "type": "address",
-            "required": "true"
+            "required": true
         },
 
         {
@@ -138,8 +145,22 @@
         },
 
         {
-            "name": "lawFirm, lawFirmAddress & lawFirmEmail",
-            "label": "Law firm name, address and email address?",
+            "name": "lawFirm",
+            "label": "Law firm name ?",
+            "type": "franking",
+            "required": "false"
+        },
+
+        {
+            "name": "lawFirmAddress",
+            "label": "Law firm address?",
+            "type": "franking",
+            "required": "false"
+        },
+
+        {
+            "name": "lawFirmEmail",
+            "label": "Law firm email address?",
             "type": "franking",
             "required": "false"
         },

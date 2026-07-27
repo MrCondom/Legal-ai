@@ -13,7 +13,7 @@
 
             {
                 "type": "text",
-                "value": "{{vendor}}, a {{vendorOccupation}} of {{vendorAddress}} (VENDOR) of the ONE PART"
+                "value": "{{vendorName}}, a {{vendorOccupation}} of {{vendorAddress}} (VENDOR) of the ONE PART"
 
             },
 
@@ -24,7 +24,7 @@
 
             {
                 "type": "text",
-                "value": "{{purchaser}}, a {{purchaserOccupation}} of {{purchaserAddress}} (PURCHASER) of the OTHER PART."
+                "value": "{{purchaserName}}, a {{purchaserOccupation}} of {{purchaserAddress}} (PURCHASER) of the OTHER PART."
             },
             {
                     "type": "sectionTitle",
@@ -81,4 +81,5 @@
                     ]
                 }
         ]
+    }
 }

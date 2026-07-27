@@ -51,8 +51,10 @@ export class TemplatesService {
   }
 
   flattenTemplate(content: any) {
+    
+    const rootKey = Object.keys(content)[0];
 
-    const document = content.deed_of_conveyance;
+    const document = content[rootKey];
 
     return document.sections.map(section => {
 
@@ -101,8 +103,8 @@ export class TemplatesService {
       return {
           ...template,
           [rootKey]: {
-              ...template.[rootKey],
-              sections: template.[rootKey].sections.flatMap(section => {
+              ...template[rootKey],
+              sections: template[rootKey].sections.flatMap(section => {
   
                   if (section.type !== "execution") {
                       return section;
