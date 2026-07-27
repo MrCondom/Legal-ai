@@ -4,11 +4,15 @@ import {
   ForbiddenException,
 } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import { TemplatesService } from '../templates/templates.service';
 import { CREDIT_COST } from '../constants/credits';
 
 @Injectable()
 export class DraftsService {
-  constructor(private prisma: PrismaService) {}
+  constructor(
+    private prisma: PrismaService,
+    private templates: TemplatesService,
+  ) { }
 
   async createDraft(body: {
     templateId: string;
@@ -74,11 +78,11 @@ export class DraftsService {
       const value = section.value;
 
       if (typeof section.left === "string") {
-        generateText += section.left + " ";
+        generatedText += section.left + " ";
       }
 
       if (typeof section.right === "string") {
-        generateText += section.right + \n\n;
+        generatedText += section.right + "\n\n";
       }
 
       // STRING

@@ -98,7 +98,7 @@ const executions =
     ]
   },
 
-  "familyProperty": {
+  "familyproperty": {
     "content": [
       {
         "type": "text",

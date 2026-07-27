@@ -94,12 +94,8 @@ export class TemplatesService {
 
   
   buildExecution(template: any, answers: any) {
-    
-    const rootKey = Object.keys(template)[0];
-
-    const document = template[rootKey];
   
-    const execution = [];
+    const execution = [] as any[];
   
     for (const party of document.parties) {
   
