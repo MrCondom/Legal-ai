@@ -1,5 +1,5 @@
 {
-
+  "deed_of_assignment": {
     "title": "deed of assignment",
     "parties": [
         {
@@ -95,4 +95,5 @@
             ]
         }
     ]
+  }
 }

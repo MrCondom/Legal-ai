@@ -54,7 +54,7 @@
                 },
                  {
                     "type": "text",
-                    "value": ["IN PURSUANCE of the said understanding and in consideration of the sum of {{amount}} now paid by the PURCHASER to the VENDOR (the receipt of which the VENDOR hereby acknowledges); the VENDOR conveys unto the PURCHASER ALL that piece or parcel of land, measuring approximately {{propertyDescription}} which property is particularly described in the schedule to this Deed, the same is delineated and coloured Red on the survey plan No. {{surveyPlanNumber}} annexed to this Deed, TO HOLD the same unto the purchaser absolutely, free from all encumbrances however called without any right of reversion."]
+                    "value": ["IN PURSUANCE of the said understanding and in consideration of the sum of {{amount}} now paid by the PURCHASER to the VENDOR (the receipt of which the VENDOR hereby acknowledges); the VENDOR conveys unto the PURCHASER ALL that piece or parcel of land, measuring approximately {{propertyDescription}} which property is particularly described in the schedule to this Deed, the same is delineated and coloured Red on the survey plan No. {{surveyPlanDetails}} annexed to this Deed, TO HOLD the same unto the purchaser absolutely, free from all encumbrances however called without any right of reversion."]
                 },
                 {
                     "type": "sectionTitle",

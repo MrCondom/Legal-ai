@@ -46,7 +46,13 @@
         
             "showIf":{
                 "field":"partyOneExecution",
-                "equals":"Individual"
+                "equals":[
+                  "Individual",
+                  "Infant",
+                  "Illiterate",
+                  "Family",
+                  "Attorney"
+                ] 
             }
         },
 
@@ -54,7 +60,16 @@
             "name": "partyOneOccupation",
             "label": "Party One (Vendor)'s Occupation?" ,
             "type": "occupation",
-            "required": true
+            "required": true,
+            "showIf":{
+                "field":"partyTwoExecution",
+                "equals":[
+                  "Individual",
+                  "Illiterate",
+                  "Family",
+                  "Attorney"
+                ]
+            }
         },
 
         {
@@ -70,15 +85,48 @@
             "type": "text",
             "showIf":{
                 "field":"partyTwoExecution",
-                "equals":"Individual"
+                "equals":[
+                  "Individual",
+                  "Infant",
+                  "Illiterate",
+                  "Family",
+                  "Attorney"
+                ]
             }
         },
 
         {
+          "name":"partyOneCompanyName",
+          "label":"Company name?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Company"
+          }
+        },
+
+        {
+          "name":"partyTwoCompanyName",
+          "label":"Company name?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Company"
+          }
+        },
+        
+        {
             "name": "partyTwoOccupation",
             "label": "Party Two (Purchaser)'s Occupation?" ,
             "type": "occupation",
-            "required": true
+            "required": true,
+            "showIf":{
+                "field":"partyTwoExecution",
+                "equals":[
+                  "Individual",
+                  "Illiterate",
+                  "Family",
+                  "Attorney"
+                ]
+            }
         },
 
         {
@@ -117,13 +165,6 @@
         },
 
         {
-            "name": "surveyPlanNumber",
-            "label": "Provide the survey plan number?",
-            "type": "textarea",
-            "required": true
-        },
-
-        {
             "name": "propertyAddress",
             "label": "What is the property's address?",
             "type": "address",
@@ -135,6 +176,28 @@
             "label": "Provide the surveyor's name and address?",
             "type": "textarea",
             "required": "true"
+        },
+
+        {
+            "name": "resolutionDate",
+            "label": "On what date did the company pass the resolution approving this transaction?",
+            "type": "date",
+            "required": true,
+            "showIf":{
+                "field":"partyTwoExecution",
+                "equals":"Company"
+            }
+        },
+
+        {
+            "name": "resolutionDate",
+            "label": "On what date did the company pass the resolution approving this transaction?",
+            "type": "date",
+            "required": true,
+            "showIf":{
+                "field":"partyOneExecution",
+                "equals":"Company"
+            }
         },
 
         {
@@ -163,24 +226,6 @@
             "label": "Law firm email address?",
             "type": "franking",
             "required": "false"
-        },
-        
-        {
-          "name":"partyOneCompanyName",
-          "label":"Company name?",
-          "showIf":{
-              "field":"partyOneExecution",
-              "equals":"Company"
-          }
-        },
-
-        {
-          "name":"partyTwoCompanyName",
-          "label":"Company name?",
-          "showIf":{
-              "field":"partyTwoExecution",
-              "equals":"Company"
-          }
         },
         
         {
