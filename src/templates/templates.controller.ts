@@ -10,9 +10,9 @@ export class TemplatesController {
     return this.templatesService.getTemplates();
   }
 
-  @Post('seed-deed')
+  @Post('seed')
   seed() {
-    return this.templatesService.seedDeedOfConveyance();
+    return this.templatesService.seedTemplates();
   }
 
   @Delete()

@@ -45,7 +45,7 @@
             "type": "text",
         
             "showIf":{
-                "field":"partyOneExecution",
+                 "field":"partyOneExecution",
                 "equals":[
                   "Individual",
                   "Infant",
