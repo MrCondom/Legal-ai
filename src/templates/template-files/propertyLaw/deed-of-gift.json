@@ -103,7 +103,7 @@
     {
         "type": "instructions:",
         "value": "Use this information to enhance the draft: {{CofODetails}} \n"
-    },
+    }
     ]
   }
 }

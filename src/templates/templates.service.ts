@@ -113,7 +113,7 @@ export class TemplatesService {
   async seedDeedOfShares() {
     return this.prisma.template.create({
       data: {
-        slug: 'deed-of-tansfer-of-shares',
+        slug: 'deed-of-transfer-of-shares',
         title: 'Deed of Transfer of Shares',
         documentFamily: 'deed',
         tags: ['property, ownership, transfer of title, corporate issues, transfer of shares,'],

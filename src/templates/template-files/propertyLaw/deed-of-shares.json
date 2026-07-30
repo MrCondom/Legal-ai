@@ -102,7 +102,7 @@
           {
               "type": "instructions:",
               "value": "Use this information to enhance the draft: The transferor acquired his shares {{sourceOfTitle}} \n"
-          },
+          }
 
         ]
     }
