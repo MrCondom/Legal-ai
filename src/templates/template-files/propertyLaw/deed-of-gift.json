@@ -1,0 +1,110 @@
+{
+  "deed_of_gift": {
+    "title": "deed of gift",
+    "parties": [
+        {
+            "id": "partyOne",
+            "role": "Donor"
+        },
+        {
+            "id": "partyTwo",
+            "role": "Donee"
+        }
+    ],
+    "sections": [
+      {
+        "type": "heading",
+        "value": "THIS DEED OF GIFT is made this {{date}}"
+      },
+      {
+        "type": "sectionTitle",
+        "value": "BETWEEN"
+      },
+      {
+        "type": "text",
+        "value": "{{partyOne.name}}, a {{partyOne.occupation}} of {{partyOne.address}} (hereinafter called 'THE DONOR' which expression shall where the context so admits include his heirs, executors, administrators and assigns) of the one part."
+      },
+      {
+        "type": "sectionTitle",
+        "value": "AND"
+      },
+      {
+        "type": "text",
+        "value": "{{partyTwo.name}}, a {{partyTwo.occupation}} of {{partyTwo.address}} (hereinafter called 'THE DONEE' which expression shall where the context so admits include his heirs, executors, administrators and assigns) of the other part."
+      },
+      {
+        "type": "sectionTitle",
+        "value": "WHEREAS"
+      },
+      {
+        "type": "text",
+        "value": [
+          "1. The Donor herein is the sole and beneficial owner of the {{propertyDescription}} situate at {{propertyAddress}} free from all encumbrances, described in Survey Plan No.{{surveyPlanDetails}} annexed hereto.\n\n",
+          "2. {{sourceOfTitle}}.\n\n",
+          "3. The Donor desires to grant the said parcel of land situated at {{propertyAddress}} and more fully described in Survey Plan No. {{surveyPlanDetails}} to the Donee as a gift in consideration of the Donee's long service and loyalty to the Donor, and the Donee has accepted the gift.\n\n",
+          "4. The Donor, being the beneficial owner of the parcel of land hereinafter described, is desirous of conveying the said parcel of land to the Donee by way of gift."
+        ]
+      },
+      {
+        "type": "sectionTitle",
+        "value": "NOW THIS DEED WITNESSES AS FOLLOWS:"
+      },
+      {
+        "type": "sectionTitle",
+        "value": "Gift and Conveyance"
+      },
+      {
+        "type": "text",
+        "value": "In consideration and appreciation of the long meritorious service and loyalty of the Donee to the Donor, the Donor hereby grants, transfers, and conveys unto the Donee by way of gift ALL THAT {{propertyDescription}} situate at {{propertyAddress}} more particularly delineated in the area verged red in Survey Plan No. {{surveyPlanDetails}}, drawn by {{surveyorParticulars}}, TO HOLD the same unto the Donee as the beneficial owner free from all encumbrances, customary or otherwise."
+      },
+      {
+        "type": "sectionTitle",
+        "value": "IN WITNESS WHEREOF"
+      },
+      {
+        "type": "text",
+        "value": "The parties have set their hands and seals the day and year first above written."
+      },
+      {
+          "type": "execution"
+      },
+      {
+        "type": "sectionTitle",
+        "value": "GOVERNOR'S CONSENT"
+      },
+      {
+        "type": "text",
+        "value": [
+          "IN THE EXERCISE OF ALL POWERS ENABLING ME IN THAT BEHALF, I CONSENT TO THE TRANSACTION HEREIN CONTAINED.\n\n",
+          "Dated this ____ day of _____ 20___."
+        ]
+      },
+      {
+        "type": "heading",
+        "value": [
+          "________________\n",
+          "EXECUTIVE GOVERNOR\n",
+          "{{state}} OF NIGERIA"
+        ]
+      },
+
+      {
+         "type": "sectionTitle",
+         "value": "Franked By;"
+     },
+     {
+         "type": "address",
+         "value": ["{{lawyerName}} \n",
+         "{{lawFirm}} \n",
+         "{{lawFirmAddress}} \n",
+         "{{lawFirmEmail}}"
+         ]
+     },
+    {
+        "type": "instructions:",
+        "value": "Use this information to enhance the draft: {{CofODetails}} \n"
+    },
+    ]
+  }
+}
+

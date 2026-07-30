@@ -4,7 +4,8 @@
         "family": "deed",
         "documents": [
             "deed of assignment",
-            "deed of conveyance"
+            "deed of conveyance", 
+            "deed of gift",
         ],
         "keywords": [
         "possession",
@@ -22,6 +23,7 @@
             "deed of assignment",
             "deed of conveyance",
             "lease",
+            "deed of gift",
             "tenancy agreement",
             "deed of mortgage"
         ],
@@ -35,19 +37,22 @@
     },
 
     {
-        "title": "quiet enjoyment clause 2",
+        "title": "covenant to pay outgoings",
         "family": "deed",
         "documents": [
             "deed of assignment",
-            "deed of conveyance"
+            "deed of conveyance",
+            "deed of gift"
         ],
         "keywords": [
         "possession",
         "ownership",
-        "interruption"
+        "interruption",
+        "rates",
+        "levies"
         ],
         "premium": false,
-        "content": "The PURCHASER shall at all times have quiet and peaceful possession and ownership of the property without any interruption and or interference whatsoever by or from the VENDOR or any other person claiming by title paramount or in trust."
+        "content": "The Donee hereby covenants with the Donor to pay all lawful rates and levies in respect of the said property as may be prescribed by the Government from time to time."
     },
 
     {
@@ -78,7 +83,9 @@
             "deed of conveyance",
             "power of attorney",
             "deed of mortgage",
-            "lease"
+            "lease",
+            "deed of gift",
+            "transfer of shares"
         ],
         "keywords": [
         "consent",
@@ -97,7 +104,8 @@
             "deed of conveyance",
             "lease",
             "joint-venture agreement",
-            "sale agreement"
+            "sale agreement",
+            "transfer of shares"
 
         ],
         "keywords": [

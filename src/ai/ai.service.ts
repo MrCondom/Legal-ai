@@ -372,6 +372,7 @@ However Briefly Modify For Deed:
 2. Execution part as the case may be.
 3. Where parties title are totally different from the requested draft. or where words used in a template is totally different from what the user is demanding e.g user requested for a deed of conveyance, but deed of assignment was presented.
 4. Modify the execution part where either party is a corporate body, organization, infant or illeterate.
+5. Clause or covenants. e.g a Mortgage clause bears vendor or something else, modify to mortgagor.
 
 
 -Do Not modify For Resolution:
@@ -693,6 +694,8 @@ Do not return JSON.
 
 Enhance the draft.
 
+Enhance the draft as per the instructions at the bottom of each templates. Also ensure you erase the entire instruction's section after enhancement.
+
 Integrate the supplied clauses naturally.
 
 Preserve legal intent.
@@ -732,6 +735,16 @@ For deed:
 -If no state is provided, use property state, or vendor's, seller's, lessor's, assignor's, donor's, mortgagor's state.
 
 -Franking is totally optional, and can be left blank.
+
+-All clauses or covenants should be replaced in the '{{clause}}' placeholder or in a clause or cvenant's section.
+
+-All clauses or convenants should be numbered.
+
+-If some covenants or clauses do not belong in the same Heading, create a Heading for that clause or covenant. eg Donor's clauses & Donee's clauses.
+
+-Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
+
+
 
 For affidavit:
 

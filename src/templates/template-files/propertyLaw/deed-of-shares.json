@@ -1,0 +1,109 @@
+{
+    "deed_of_transfer_of_shares": {
+        "title": "deed of transfer of shares",
+        "parties": [
+            {
+                "id": "partyOne",
+                "role": "Transferor"
+            },
+            {
+                "id": "partyTwo",
+                "role": "Transferee"
+            }
+        ],
+        "sections": [
+            {
+                "type": "heading",
+                "value": "THIS DEED OF TRANSFER is made this {{date}}"
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "BETWEEN"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyOne.name}}, a {{partyOne.occupation}} of {{partyOne.address}} (hereinafter referred to as 'the transferor') of the one part"
+
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "AND"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyTwo.name}}, a {{partyTwo.occupation}} of {{partyTwo.address}} (hereinafter referred to as 'the transferee') of the other part."
+            },
+            {
+                "type": "sectionTitle",
+                "value": "Whereas"
+            },
+            {
+                "type": "text",
+                "value":[
+                    "1. The transferor is the registered holder of {{numberOfSharesHeld}} ordinary shares of {{amountOfSharesHeld}} in {{company}}, a company duly incorporated under the companies and allied matters act 2020, (hereinafter referred to as 'the company'). \n \n",
+                    "2. The transferor has agreed to transfer the said shares to the transferee, and the transferee has agreed to accept the transfer of the said shares subject to the terms and conditions herein contained."
+            ]
+                
+            },
+            {
+                "type": "sectionTitle",
+                "value": "NOW THIS DEED WITNESSETH AS FOLLOWS:"
+            },
+            {
+                "type": "sectionTitle",
+                "value": "Transfer Of Shares"
+            },
+            {
+                "type": "text",
+                "value": "The transferor, as the beneficial owner, hereby transfers to the transferee {{numberOfSharesTransfered}} ordinary shares of {{amountOfSharesTransfered}} each in the company, together with all rights, title, and interest attached thereto."
+            },
+           {
+            "type": "sectionTitle",
+            "value": "Consideration"
+           },
+           {
+            "type": "text",
+            "value": "The transfer of the said shares is made for the sum of {{amount}} (the receipt of which the transferor hereby acknowledges)."
+           },
+           {
+            "type": "sectionTitle",
+            "value": "Transferee's Covenant"
+           },
+           {
+            "type": "text",
+            "value": "The transferee hereby agrees to accept the said shares subject to the provisions of the Memorandum and articles of association of the company and undertakes to be bound by the same."
+           },
+           {
+            "type": "text",
+            "value": [
+                "The parties agree to execute all such further documents and do all such acts as may be necessary to give full effect to this transfer.\n\n\n ",
+                "IN WITNESS OF WHICH the parties have executed this deed, the day and year first above written."
+            ]
+           },
+           {
+               "type": "execution"
+           },
+           {
+              "type": "sectionTitle",
+              "value": "Franked By;"
+          },
+          {
+              "type": "address",
+              "value": ["{{lawyerName}} \n",
+              "{{lawFirm}} \n",
+              "{{lawFirmAddress}} \n",
+              "{{lawFirmEmail}}"
+              ]
+          },
+          {
+              "type": "instructions:",
+              "value": "Use this information to enhance the draft: The transferor acquired his shares {{sourceOfTitle}} \n"
+          },
+
+        ]
+    }
+}

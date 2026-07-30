@@ -1,9 +1,14 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import executions from '../constants/execution';
-import deedTemplate from './template-files/deed-of-conveyance.json';
-import conveyanceForm from './template-forms/conveyance.json';
-import assignmentTemplate from './template-files/deed-of-assignment.json';
+import deedTemplate from './template-files/propertyLaw/deed-of-conveyance.json';
+import conveyanceForm from './template-forms/propertySchema/conveyance.json';
+import assignmentTemplate from './template-files/propertyLaw/deed-of-assignment.json';
+import assignmentForm from './template-forms/propertySchema/assignment.json';
+import giftTemplate from './template-files/propertyLaw/deed-of-gift.json';
+import giftForm from './template-forms/propertySchema/giftSchema.json';
+import sharesTemplate from './template-files/propertyLaw/deed-of-shares.json';
+import sharesForm from './template-forms/propertySchema/sharesSchema.json';
 
 @Injectable()
 export class TemplatesService {
@@ -51,7 +56,7 @@ export class TemplatesService {
   }
 
   flattenTemplate(content: any) {
-    
+
     const rootKey = Object.keys(content)[0];
 
     const document = content[rootKey];
@@ -87,25 +92,51 @@ export class TemplatesService {
         documentFamily: 'deed',
         tags: ['property, land, ownership, assignment, transfer of title'],
         content: assignmentTemplate,
-        formSchema: conveyanceForm,
+        formSchema: assignmentForm,
       },
     });
   }
 
-  
+  async seedDeedOfGift() {
+    return this.prisma.template.create({
+      data: {
+        slug: 'deed-of-gift',
+        title: 'Deed of Gift',
+        documentFamily: 'deed',
+        tags: ['property, ownership, gift, transfer of title, no consideration'],
+        content: giftTemplate,
+        formSchema: giftForm,
+      },
+    });
+  }
+
+  async seedDeedOfShares() {
+    return this.prisma.template.create({
+      data: {
+        slug: 'deed-of-tansfer-of-shares',
+        title: 'Deed of Transfer of Shares',
+        documentFamily: 'deed',
+        tags: ['property, ownership, transfer of title, corporate issues, transfer of shares,'],
+        content: sharesTemplate,
+        formSchema: sharesForm,
+      },
+    });
+  }
+
+
   buildExecution(template: any, answers: any) {
-  
+
     const execution = [] as any[];
-  
+
     for (const party of template.parties ?? []) {
-  
+
       const prefix = party.id;
-  
+
       const executionType =
         answers[`${prefix}Execution`]?.toLowerCase().replace(/\s+/g, "");
-  
+
       const block = this.getExecutionBlock(executionType);
-  
+
       execution.push(
         this.renderExecution(block, {
           role: party.role,
@@ -117,37 +148,37 @@ export class TemplatesService {
         })
       );
     }
-  
+
     return execution.flat();
   }
-  
+
 
   renderExecution(block: any, values: Record<string, any>) {
-  
+
     return block.content.map(item => {
-  
+
       const copy = JSON.parse(JSON.stringify(item));
-  
+
       const replace = (text: string) =>
         text.replace(/\{\{(.*?)\}\}/g, (_, key) => {
-  
+
           return values[key.trim()] ?? "";
         });
-  
+
       if (typeof copy.value === "string") {
-  
+
         copy.value = replace(copy.value);
-  
+
       } else if (Array.isArray(copy.value)) {
-  
+
         copy.value = copy.value.map(replace);
       }
-  
+
       return copy;
     });
-  
+
   }
-  
+
 
   getExecutionBlock(type: string) {
       return executions[type] ?? executions.individual;
@@ -162,11 +193,11 @@ export class TemplatesService {
           [rootKey]: {
               ...template[rootKey],
               sections: template[rootKey].sections.flatMap(section => {
-  
+
                   if (section.type !== "execution") {
                       return section;
                   }
-  
+
                   return execution;
               })
           }
@@ -184,6 +215,14 @@ export class TemplatesService {
       {
         slug: 'deed-of-assignment',
         seed: () => this.seedDeedOfAssignment(),
+      },
+      {
+        slug: 'deed-of-gift',
+        seed: () => this.seedDeedOfGift(),
+      },
+      {
+        slug: 'deed-of-transfer-of-shares',
+        seed: () => this.seedDeedOfShares(),
       },
 
       //add more templates
