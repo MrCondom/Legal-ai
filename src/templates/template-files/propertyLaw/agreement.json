@@ -1,10 +1,20 @@
 {
   "agreement_template": {
     "title": "agreement",
+    "parties": [
+        {
+            "id": "partyOne",
+            "role": "Party one"
+        },
+        {
+            "id": "partyTwo",
+            "role": "Party two"
+        }
+    ],
     "sections": [
         {
-            "type": "text3",
-            "value": "THIS {{title}} is made on the {{date}}. "
+            "type": "text",
+            "value": "THIS {{title}} is made on the {{date}}."
         },
         {
         "type": "sectionTitle",
@@ -28,11 +38,11 @@
     },
     {
             "type": "sectionTitle",
-            "value": "BACKGROUND:"
+            "value": "BACKGROUND"
     },
          {
             "type": "sectionTitle",
-            "value": "COVENANTS:"
+            "value": "COVENANTS"
         },
         {
             "type": "sectionTitle",
@@ -43,10 +53,10 @@
          },
          {
           "type": "instructions",
-          "value": ["Use this information to enhance the draft: {{fullAgreement}}. The draft should be within 50 - 130 words\n\n",
-            "Use this {{additionalParties}}"
+          "value": ["Use this information to enhance the draft: {{fullAgreement}}. The draft should be within 50 - 130 words.\n\n",
+            "Use this {{additionalParties}}.\n\n",
             "Also the roles of the parties, should be clearly stated. eg partners, or buyer & seller. etc\n\n",
-            "Additional information: {{additionalInformation}}. Where there are more than one parties, the execution part should include them accordingly\n\n",
+            "Additional information: {{additionalInformation}}. Where there are more than one parties, the execution part should include them accordingly.\n\n",
             "Use today's date to fill the date placeholders.\n\n",
             "The title of the agreement could be 'Partnership Agreement', 'Shareholder's Agreement', 'Sale of land Agreement', 'Buyer and Seller Agreement' etc, Enhance where neccessary."]
          }
