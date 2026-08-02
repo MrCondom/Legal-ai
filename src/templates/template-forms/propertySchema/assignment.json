@@ -34,7 +34,7 @@
                   "Individual",
                   "Infant",
                   "Illiterate",
-                  "Family",
+                  "Family Property",
                   "Attorney"
                 ] 
             }
@@ -46,11 +46,11 @@
             "type": "occupation",
             "required": true,
             "showIf":{
-                "field":"partyTwoExecution",
+                "field":"partyOneExecution",
                 "equals":[
                   "Individual",
                   "Illiterate",
-                  "Family",
+                  "Family Property",
                   "Attorney"
                 ]
             }
@@ -68,7 +68,7 @@
         {
             "name": "partyOneAddress",
             "label": "Party One (Assignor)'s Address?",
-            "type": "textarea",
+            "type": "address",
             "required": true
         },
 
@@ -98,7 +98,7 @@
                   "Individual",
                   "Infant",
                   "Illiterate",
-                  "Family",
+                  "Family Property",
                   "Attorney"
                 ]
             }
@@ -123,7 +123,7 @@
                 "equals":[
                   "Individual",
                   "Illiterate",
-                  "Family",
+                  "Family Property",
                   "Attorney"
                 ]
             }
@@ -132,7 +132,7 @@
         {
             "name": "partyTwoAddress",
             "label": "Party Two (Assignee)'s Address?",
-            "type": "textarea",
+            "type": "address",
             "required": true
         },
 
@@ -160,14 +160,14 @@
         {
             "name": "surveyPlanDetails",
             "label": "Provide the survey plan details?",
-            "type": "textarea",
+            "type": "surveyPlan",
             "required": true
         },
 
         {
             "name": "CofODetails",
             "label": "Provide the C of O (Certificate of Occupancy) details?",
-            "type": "textarea",
+            "type": "CofO",
             "required": true
         },
 
@@ -181,7 +181,7 @@
         {
             "name": "surveyorParticulars",
             "label": "Provide the surveyor's name and address?",
-            "type": "textarea",
+            "type": "surveyor",
             "required": "true"
         },
 
@@ -216,21 +216,7 @@
 
         {
             "name": "lawFirm",
-            "label": "Law firm name?",
-            "type": "franking",
-            "required": "false"
-        },
-
-        {
-            "name": "lawFirmAddress",
-            "label": "Law firm address?",
-            "type": "franking",
-            "required": "false"
-        },
-
-        {
-            "name": "lawFirmEmail",
-            "label": "Law firm email address?",
+            "label": "Law firm name and address?",
             "type": "franking",
             "required": "false"
         },

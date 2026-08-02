@@ -15,88 +15,10 @@ export class AiService {
     apiKey: process.env.OPENAI_API_KEY,
   });
 
-  async extractLegalData(prompt: string) {
-    const response = await this.openai.chat.completions.create({
-      model: 'gpt-4.1-mini',
-
-      messages: [
-        {
-          role: 'system',
-
-          content: `
-You are a Nigerian legal draft parser .
-
-Extract all identifiable drafting variables.
-
-Examples:
-
-vendor
-purchaser
-lessor
-lessee
-landlord
-tenant
-assignor
-assignee
-donor
-donee
-mortgagor
-mortgagee
-defendant
-claimant
-applicant
-applicant/defendant's name
-applicant/claimant's name
-garnishee's name
-director name
-secretary name
-CAC number
-property address
-property price
-date
-survey number
-amount
-
-Return ONLY JSON.
-
-Never explain.
-
-Never wrap JSON in markdown.
-
-Use null for missing values.
-
-Normalize monetary values.
-
-Extract both numeric and textual amounts.
-
-Extract locations.
-
-Extract occupations.
-
-Extract company names.
-
-Extract CAC numbers.
-
-Unkown values should be null.
-
-`,
-        },
-
-        {
-          role: 'user',
-          content: prompt,
-        },
-      ],
-    });
-
-    const content = response.choices?.[0]?.message?.content ?? '{}';
-
-    return this.parseJson(content);
-  }
 
   async inferTemplate(request: string) {
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-4.1-mini',
+      model: 'gpt-5-mini',
 
       messages: [
         {
@@ -117,12 +39,10 @@ DOCUMENT_IMPROVEMENT
 INVALID
 
 
-Available families
+Available families are:
 
-deed;
-if user requests
-Deed of Assignment
-Deed of Conveyance
+1. DEED
+eg Deed of assignment, Deed of lease, Deed of mortgage etc
 
 Return
 {
@@ -130,20 +50,33 @@ Return
 "intent": "DRAFT"
 }
 
+2. AGREEMENT
+eg Hire purchase agreement, agreement etc
 
-motion
+Return
+{
+"type": "agreement",
+"intent": "DRAFT"
+}
 
-affidavit
+3. WILLS
+eg Wills
 
-letter
+Return
+{
+"type": "wills",
+"intent": "DRAFT"
+}
 
-resolution
+4. LEGAL_OPINION
+eg Legal opinion
 
-petition
+Return
+{
+"type": "legal_opinion",
+"intent": "DRAFT"
+}
 
-summons
-
-corporate notice
 
 
 
@@ -254,7 +187,7 @@ or
       .join('\n');
 
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-4.1-mini',
+      model: 'gpt-5-mini',
 
       messages: [
         {
@@ -305,7 +238,7 @@ or
 
   async polishDraft(draft: string) {
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-4.1-mini',
+      model: 'gpt-5-mini',
 
       messages: [
         {
@@ -403,7 +336,7 @@ Return only the polished document.
     const draftingHintsText = JSON.stringify(hints, null, 2);
 
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-4.1-mini',
+      model: 'gpt-5',
 
       messages: [
         {
@@ -424,6 +357,8 @@ Return only the polished document.
           Possible types:
           
           DEED
+          WILLS
+          AGREEMENT
           LETTER
           LEGAL_OPINION
           RESOLUTION
@@ -434,61 +369,11 @@ Return only the polished document.
           
           
           Review according to its document type.
-          
       
           For DEEDS:
-          Check:
-          - missing operative clauses
-          - missing covenants
-          - missing consideration
-          - missing schedules
-          - title defects
-
-          Available families
-          
-          DEED
-          
-          Examples include:
-          
-          - Deed of Assignment
-          - Deed of Conveyance
-          - Deed of Partition
-          - Deed of Gift
-          - Deed of Mortgage
-          - Deed of Release
-          - Deed of Surrender
-          - Deed of Rectification
-          - Deed of Exchange
-          - Deed of Variation
           
           Any legal document beginning with "Deed of..."
           belongs to the DEED family.
-          
-          
-          For LETTERS:
-          Check:
-          - clarity
-          - legal position
-          - missing facts
-          - tone
-          - requested relief
-          
-          
-          For LEGAL OPINIONS:
-          Check:
-          - legal reasoning
-          - authorities
-          - conclusions
-          - assumptions
-          
-          
-          For RESOLUTIONS:
-          Check:
-          - company law compliance
-          - authority
-          - signatures
-          - meeting requirements
-          
           
           
           Return JSON only.
@@ -542,7 +427,7 @@ Return only the polished document.
 
   async suggestImprovements(document: string, review: any) {
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-4.1-mini',
+      model: 'gpt-5-mini',
 
       messages: [
         {
@@ -619,7 +504,7 @@ Return only the polished document.
 
   async quickDraftEnhancer(draft: string) {
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-4.1-mini',
+      model: 'gpt-5-mini',
 
       messages: [
         {
@@ -639,23 +524,18 @@ Improve punctuation.
 
 Do not increase document length.
 
-Replace all placeholders.
+Replace all placeholders with realistics name, address, occupation and scenerio. eg never leave {{propertyDescription}}, {{propertyAddress}} etc.
 
-Never leave:
-
-{{vendor}}
-{{purchaser}}
-{{amount}}
-{{date}}
+Quick draft should be direct, sweet, professional, moderately small, accurate and easy to understand.
 
 Generate realistics Nigerian examples.
-Examples:
 
-vendor: Jackson Jax
-purchaser: Benjamin Akwu
-address: No. 6 Hailey Street, Port-Harcourt, No. 4 Harrison Lane, Lugbe, Abuja
-amount: Five Million Naira, Thirty Million Naira
-date: 13th July, 2026
+FOR DEED:
+1. Input at least 1 or 2 covenants, and where covenants are more than 3 reduce it.
+2. Create an execution part, where none is provided.
+
+FOR LEGAL_OPINION:
+1. Create realistics Nigerian scenerio.
 
 Return only the completed legal document.
 
@@ -684,7 +564,7 @@ Do not return JSON.
     answers: Record<string, string>,
   ) {
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-4.1-mini',
+      model: 'gpt-5-mini',
 
       messages: [
         {
@@ -710,40 +590,45 @@ Preserve clause numbering.
 
 Maintain sequence.
 
-For letters:
+FOR DEED:
+1. Do not substantially increase word count.
+2. Dates should be like this; e.g 2nd October, 2020.
+3. Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
+4. Amounts should carry a currency sign. if no currency is provided the default is Naira.
+5. If no state is provided, use property state, or vendor's, seller's, lessor's, assignor's, donor's, mortgagor's state.
+6. Franking is totally optional, and can be left blank.
+7. All clauses or covenants should be replaced in the '{{clause}}' placeholder or in a clause or cvenant's section.
+8. All clauses or convenants should be numbered.
+9. If some covenants or clauses do not belong in the same Heading, create a Heading for that clause or covenant. eg Donor's clauses & Donee's clauses.
+10. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
 
-Target 100 - 400 words.
+FOR LEGAL_OPINION:
+Laws that may be of assistance, if no laws are provided.
+1. 1999 Constitution Of Nigeria.
+2. Nigeria Land Use Act.
+3. Companies And Alied Matters Act 2020.
+4. International Treaties And Conventions.
+5. Tenancy Laws.
+6. Recovery Of Premises Laws.
+7. Wills Act.
+8. Cybercrime Act.
+9. Terrorism Act.
+10. Evidence Act.
+11. Criminal And Penal Act.
+12. Administration Of Criminal Justice Act.
+13. Trade Union Act.
+14. Labour Act.
+15. Other Relevant Laws as the case may be
 
-For legal opinion:
-
-Target 500 - 900 words.
-
-For Resolutions:
-
-Target 50 - 200 words.
-
-For deed:
-
--Do not substantially increase word count.
-
--Dates should be like this; e.g 2nd October, 2020.
-
--Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
-
--Amounts should carry a currency sign. if no currency is provided the default is Naira.
-
--If no state is provided, use property state, or vendor's, seller's, lessor's, assignor's, donor's, mortgagor's state.
-
--Franking is totally optional, and can be left blank.
-
--All clauses or covenants should be replaced in the '{{clause}}' placeholder or in a clause or cvenant's section.
-
--All clauses or convenants should be numbered.
-
--If some covenants or clauses do not belong in the same Heading, create a Heading for that clause or covenant. eg Donor's clauses & Donee's clauses.
-
--Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
-
+FOR AGREEMENT:
+1. Do not substantially increase word count.
+2. Dates should be like this; e.g 2nd October, 2020.
+3. Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
+4. Amounts should carry a currency sign. if no currency is provided the default is Naira.
+5. All clauses or covenants should be replaced in the '{{clause}}' placeholder or in a clause or cvenant's section.
+6. All clauses or convenants should be numbered.
+7. If some covenants or clauses do not belong in the same Heading, create a Heading for that clause or covenant. eg Donor's clauses & Donee's clauses.
+8. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
 
 
 For affidavit:
@@ -792,7 +677,7 @@ Never leave {{}} placeholders.
     templateStructure: string,
   ) {
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-4.1-mini',
+      model: 'gpt-5-mini',
 
       messages: [
         {

@@ -1,0 +1,57 @@
+{
+   "will": {
+    "title": "will",
+    "sections": [
+        {
+            "type": "text3",
+            "value": "THIS IS THE LAST WILL of me, {{testatorName}} , a {{testatorOccupation}}, {{testatorAddress}}."
+        },
+         {
+            "type": "text",
+            "value":["I REVOKE all former Wills and testamentary dispositions made by me.\n\n",
+            "I APPOINT {{executorName}}, a {{executorOccupation}}, {{executorAddress}} .\n\n",
+            "And I DECLARE that the expression my executors and trustees shall include {{executorName}} and the survivor of him and any other executors or executors for the time being of the executors of this my will.\n\n",
+            "1. I GIVE to  .\n\n",
+            "2. I GIVE the following legacies:"]
+        },
+       
+        {
+            "type": "text",
+            "value":["3. I hereby give all other properties, not specifically disposed, by this will or any codicil, including any property over which i may have, power of disposition by will, to all my surviving children in equal shares.\n\n",
+            "In witness of which I, {{testatorName}} have signed my name this {{date}} .\n\n",
+            "_______________\n\n",
+            "Signed by the Testator\n\n"]
+        },
+        {
+        "type": "heading",
+        "value": "In Our Joint Presence And Attested By Us;"
+        },
+        {
+            "type": "address",
+            "value": ["NAME:___________\n\n",
+            "ADDRESS:_________\n\n",
+            "OCCUPATION:_________\n\n",
+            "SIGNATURE:_______________\n\n",
+            "DATE:_____________\n\n"]
+        },
+        {
+            "type": "address",
+            "value": ["NAME:___________\n\n",
+            "ADDRESS:_________\n\n",
+            "OCCUPATION:_________\n\n",
+            "SIGNATURE:_______________\n\n",
+            "DATE:_____________"]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Prepared by:"
+    },
+    {
+      "type": "instructions",
+      "value": ["Use this information to enhance the draft: enhance the body of this draft, it should be sweet and understandable. The draft should be within 50 - 600 words\n\n",
+        "Use this information to enhance the draft: {{will}}.\n\n ",
+        "Also use this information, where there are more than 1 executors, or else ignore: {{executorsDetails}}"]
+    }
+   ]
+ }
+}

@@ -10,12 +10,11 @@
 
       {
         "name": "partyOneExecution",
-        "label": "Which best describes Party One (Vendor)?",
+        "label": "Which best describes Party One (Mortgagor)?",
         "type": "select",
         "options": [
           "Individual",
           "Company",
-          "Infant",
           "Illiterate",
           "Attorney",
           "Family Property"
@@ -25,14 +24,13 @@
 
         {
             "name": "partyOneName",
-            "label": "Party One (Vendor)'s Legal Name?",
+            "label": "Party One (Mortgagor)'s Legal Name?",
             "type": "text",
         
             "showIf":{
                  "field":"partyOneExecution",
                 "equals":[
                   "Individual",
-                  "Infant",
                   "Illiterate",
                   "Family Property",
                   "Attorney"
@@ -42,7 +40,7 @@
 
         {
             "name": "partyOneOccupation",
-            "label": "Party One (Vendor)'s Occupation?" ,
+            "label": "Party One (Mortgagor)'s Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -67,20 +65,19 @@
 
         {
             "name": "partyOneAddress",
-            "label": "Party One (Vendor)'s Address?",
-            "type": "address",
+            "label": "Party One (Mortgagor)'s Address?",
+            "type": "textarea",
             "required": true
         },
 
         
         {
           "name": "partyTwoExecution",
-          "label": "Which best describes Party Two (Purchaser)?",
+          "label": "Which best describes Party Two (Mortgagee)?",
           "type": "select",
           "options": [
             "Individual",
             "Company",
-            "Infant",
             "Illiterate",
             "Attorney",
             "Family Property"
@@ -90,13 +87,12 @@
 
         {
             "name": "partyTwoName",
-            "label": "Party Two (Purchaser)'s Legal Name?",
+            "label": "Party Two (Mortgagee)'s Legal Name?",
             "type": "text",
             "showIf":{
                 "field":"partyTwoExecution",
                 "equals":[
                   "Individual",
-                  "Infant",
                   "Illiterate",
                   "Family Property",
                   "Attorney"
@@ -115,7 +111,7 @@
         
         {
             "name": "partyTwoOccupation",
-            "label": "Party Two (Purchaser)'s Occupation?" ,
+            "label": "Party Two (Mortgagee)'s Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -131,23 +127,87 @@
 
         {
             "name": "partyTwoAddress",
-            "label": "Party Two (Purchaser)'s Address?",
-            "type": "address",
+            "label": "Party Two (Mortgagee)'s Address?",
+            "type": "textarea",
             "required": true
         },
 
         {
+          "name":"guarantorName",
+          "label":"Guarantor's legal name?",
+          "type": "text",
+          "required": true
+        },
+
+        {
+          "name":"guarantorOccupation",
+          "label":"Guarantor's occupation?",
+          "type": "occupation",
+          "required": true
+        },
+
+        {
+          "name":"guarantorAddress",
+          "label":"Guarantor's address?",
+          "type": "address",
+          "required": true
+        },
+
+        {
+          "name":"guarantorPropertyDescription",
+          "label":"How would you describe the Guarantor's Property?",
+          "type": "property",
+          "required": true
+        },
+
+        {
             "name": "amount",
-            "label": "Purchase Price?",
+            "label": "What is the principal sum Party One (Mortgagor) intends to borrow?",
             "type": "currency",
             "required": true
         },
 
         {
-            "name": "sourceOfTitle",
-            "label": "Explain how Party One (Vendor) acquired the Property?",
-            "type": "textarea",
+            "name": "interestRate",
+            "label": "What is the applicable annual interest rate (per annum)?",
+            "type": "percentage",
             "required": true
+        },
+
+        {
+            "name": "penaltyInterestRate",
+            "label": "What is the penalty interest rate applicable in the event of default?",
+            "type": "percentage",
+            "required": true
+        },
+
+        {
+            "name": "dateDue",
+            "label": "What is the maturity date of the loan?",
+            "type": "date",
+            "required": true
+        },
+
+        {
+            "name": "landedProperty",
+            "label": "Is the subject property a landed a property?",
+            "type": "select",
+            "options": [
+              "Yes",
+              "No"
+            ],
+            "required": true
+        },
+
+        {
+            "name": "sourceOfTitle",
+            "label": "Explain how Party One (Mortgagor) acquired the Property?",
+            "type": "textarea",
+            "required": true,
+            "showIf":{
+                "field":"landedProperty",
+                "equals":"Yes"
+            }
         },
 
         {
@@ -161,7 +221,22 @@
             "name": "surveyPlanDetails",
             "label": "Provide the survey plan details?",
             "type": "surveyPlan",
-            "required": true
+            "required": true,
+            "showIf":{
+                "field":"landedProperty",
+                "equals":"Yes"
+            }
+        },
+
+        {
+            "name": "CofODetails",
+            "label": "Provide the C of O (Certificate of Occupancy) details?",
+            "type": "CofO",
+            "required": true,
+            "showIf":{
+                "field":"landedProperty",
+                "equals":"Yes"
+            }
         },
 
         {
@@ -169,13 +244,6 @@
             "label": "What is the property's address?",
             "type": "address",
             "required": true
-        },
-
-        {
-            "name": "surveyorParticulars",
-            "label": "Provide the surveyor's name and address?",
-            "type": "surveyor",
-            "required": "true"
         },
 
         {

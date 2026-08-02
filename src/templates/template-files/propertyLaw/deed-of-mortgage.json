@@ -1,0 +1,86 @@
+{
+      "deed_of_mortgage": {
+            "title": "deed of mortgage",
+              "parties": [
+                {
+                  "id": "partyOne",
+                  "role": "mortgagor"
+                },
+                {
+                  "id": "partyTwo",
+                  "role": "mortgagee"
+                }
+              ],
+              "sections": [
+                {
+                    "type": "text3",
+                    "value": "THIS DEED OF LEGAL MORTGAGE is made this {{date}},"
+                },
+             {
+                "type": "sectionTitle",
+                "value": "BETWEEN"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyOne.name}}, a {{partyOne.occupation}}, of {{partyOne.address}} (Mortgagor) of the one part,"
+
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "AND"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyTwo.name}}, a {{partyTwo.occupation}}, of {{partyTwo.address}} (Mortgagee) of the other part."
+            },
+            {
+                "type":  "Background"
+           },
+            
+            {
+                    "type": "sectionTitle",
+                    "value": "NOW THIS DEED WITNESSETH AS FOLLOWS:"
+            },
+                {
+                    "type": "text",
+                    "value": ["The Mortgagor covenants to repay the principal sum of {{amount}} and the interest at the rate {{penaltyInterestRate}} or at {{interestRate}} if he pays promptly, repayable on or before the  {{dateDue}} .\n\n",
+                    "The Mortgagor as BENEFICIAL OWNER hereby SUB-DEMISES to the mortgagee ALL THAT PROPERTY {{propertyDescription}} situate at {{propertyAddress}}."]
+                },
+                 {
+                    "type": "sectionTitle",
+                    "value": "THE MORTGAGOR COVENANTS WITH THE MORTGAGEE AS FOLLOWS:"
+                },
+                 {
+                    "type": "clauses"
+                },
+                {
+                    "type": "text",
+                    "value": "IN WITNESS OF WHICH the parties have executed this Deed of Mortgage in the manner below the day and year first above written."
+                },
+                {
+                  "type": "execution"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "Prepared By;"
+                },
+                {
+                  "type": "address",
+                  "value": [
+                    "{{lawyerName}} \n",
+                    "{{lawFirm}}\n"
+                  ]
+                },
+                {
+                  "type": "instructions",
+                  "value": ["Use this information to enhance the draft: enhance the convenant's in this draft, it should be sweet and understandable. The draft should be within 30 - 100 words\n\n",
+                          "If its a landed property, use this to enhance the draft or just ignore. Source of Title: {{sourceOfTitle}}, CofO: {{CofODetails}} and Survey Plan: {{surveyPlanDetails}}.\n\n",
+                          "If its a landed property, provide Governors Consent Signatory, using this format, or else ignore."
+                  ]
+                }
+            ]
+        }
+    }

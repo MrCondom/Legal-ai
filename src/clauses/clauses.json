@@ -63,8 +63,8 @@
             "deed of conveyance",
             "deed of gift",
             "deed of partition",
-            "assent",
-            "release deed"
+            "deed of assent",
+            "deed of transfer of shares"
         ],
         "keywords": [
         "rights",
@@ -73,6 +73,39 @@
         ],
         "premium": false,
         "content": "To completely divest himself of all rights, estates, interests and or claims on the property."
+    },
+
+    {
+        "title": "insurance clause",
+        "family": "deed",
+        "documents": [
+            "tenancy agreement",
+            "hire purchase agreement",
+            "deed of lease"
+        ],
+        "keywords": [
+        "insure",
+        "fire",
+        "destruction"
+        ],
+        "premium": true,
+        "content": "To insure the property against fire with {{insuranceCompany}} to the tune of {{insuranceAmount}} to be paid by the lessee and in the event of the property being damaged, all monies received in respect of the insurance shall be put into repairing the premises in a good and substantial manner."
+    },
+
+    {
+        "title": "option to renew clause",
+        "family": "deed",
+        "documents": [
+            "tenancy agreement",
+            "deed of lease"
+        ],
+        "keywords": [
+        "renew",
+        "tenancy",
+        "lease"
+        ],
+        "premium": true,
+        "content": "Upon the lessee paying the rent and observing all the terms & covenants in the lease and upon 3 months before the expiration of the present lease, the lessors may grant a further term of five years at a rent & terms to be agreed by the lessor and the lessee."
     },
 
     {
@@ -85,7 +118,7 @@
             "deed of mortgage",
             "lease",
             "deed of gift",
-            "transfer of shares"
+            "deed of transfer of shares"
         ],
         "keywords": [
         "consent",
@@ -105,7 +138,7 @@
             "lease",
             "joint-venture agreement",
             "sale agreement",
-            "transfer of shares"
+            "deed of transfer of shares"
 
         ],
         "keywords": [

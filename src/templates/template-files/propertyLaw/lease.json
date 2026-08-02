@@ -1,0 +1,107 @@
+{
+           "deed_of_lease": {
+            "title": "deed of lease",
+            "parties": [
+                     {
+                       "id": "partyOne",
+                       "role": "lessor"
+                     },
+                     {
+                       "id": "partyTwo",
+                       "role": "lessee"
+                     }
+                   ],
+            "sections": [
+                {
+                    "type": "text3",
+                    "value": "THIS LEASE is made this {{date}}"
+                },
+                            {
+                "type": "sectionTitle",
+                "value": "BETWEEN"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyOne.name}}, a {{partyOne.occupation}}, of {{partyOne.address}} (Lessor) of the one part,"
+
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "AND"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyTwo.name}}, a {{partyTwo.occupation}}, of {{partyTwo.address}}, (Lessee) of the other part."
+            },
+            {
+                    "type": "sectionTitle",
+                    "value": "THIS LEASE RECITES AS FOLLOWS:"
+            },
+                {
+                    "type": "text",
+                    "value": ["1. The Lessor is the beneficial owner of the property, {{propertyDescription}} situate at {{propertyAddress}}, by virtue of a {{sourceOfTitle}}.\n\n",
+                    "2. The Lessor desires to lease the property to the lessee for a term of {{term}} and the lessee has agreed to take the lease."]
+                },
+                 {
+                    "type": "sectionTitle",
+                    "value": "IT IS AGREED AS FOLLOWS:"
+                },
+                 {
+                    "type": "text",
+                    "value": ["The lessor demises to the lessee ALL THAT {{propertyDescription}} situate at {{propertyAddress}}, to hold the same to the lessee from the {{date}} for the term of {{term}} to end on {{date}} . YIELDING AND PAYING the yearly rent of {{amount}} clear of all deductions by yearly payment in advance; the first of such Payment to be made on the {{date}} clear of all deductions. The rent is subject to review in accordance with the provisions in the schedule to the lease.\n\n",
+                    "THE LESSEE COVENANTS with the lessor as follows:"]
+                },
+                {
+                    "type": "texta",
+                    "value": ["1. To pay the rent reserved in this lease on the day mentioned.\n\n",
+                    "2. To pay all rates, taxes, assessment, charges and outgoings now or as may be Imposed later whether payable by the landlord or not.\n\n",
+                    "3. Not to assign, sublet, charge or otherwise part with possession of the property or any part thereof without first obtaining the written consent of the lessor, such consent not to be unreasonably withheld for a respectable and responsible person.\n\n",
+                    "4. Not to make any alteration to the property except for installation of Air conditioners and burglary proof without the consent of the lessor and restore the property to its original position at the end of the lease.\n\n",
+                    "5. To keep the premises in a good state of repairs, fair wear and tear excepted and to deliver up possession of the property at the end of the term.\n\n",
+                    "6.To use the property for residential purposes only."]
+                },
+                {
+                    "type": "text",
+                    "value": "THE LESSOR COVENANTS with the lessee as follows:"
+                },
+                {
+                    "type": "texta",
+                    "value": "The lessee shall have a quiet enjoyment of the property free from disturbance by the lessor or his agents.\n\n"
+                },
+                {
+                    "type": "text",
+                    "value": "PROVIDED ALWAYS that if the rent reserved or any part of it shall be unpaid for twenty-one days after becoming payable and demand is made for it or if the lessee commits a breach of the covenants in the lease, it shall be lawful for the lessor to re-enter the premises and immediately the terms shall cease and determine."
+                },
+                {
+                    "type": "text",
+                    "value": "IN WITNESS OF WHICH the parties have executed this Deed of Lease in the manner below the day and year first above written."
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "SCHEDULE"
+                },
+                {
+                  "type": "execution"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "Prepared By;"
+                },
+                {
+                  "type": "address",
+                  "value": [
+                    "{{lawyerName}} \n",
+                    "{{lawFirm}}\n"
+                  ]
+                },
+                {
+                  "type": "instructions",
+                  "value": "Use this information to enhance the draft: enhance the convenant's in this draft, it should be sweet and understandable. The draft should be within 40 - 200 words"
+                }
+            ]
+           }
+        }
+

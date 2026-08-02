@@ -1,0 +1,125 @@
+{
+    "fields": [
+
+      {
+            "name": "date",
+            "label": "Execution Date?",
+            "type": "date",
+            "required": true
+        },
+
+        {
+            "name": "executorName",
+            "label": "Executor's Legal Name?",
+            "type": "executorName",
+            "required": true
+        },
+
+        {
+            "name": "executorOccupation",
+            "label": "Executor's Occupation?",
+            "type": "occupation",
+            "required": true
+        },
+
+        {
+            "name": "executorAddress",
+            "label": "Executor's Address?",
+            "type": "address",
+            "required": true
+        },
+
+        {
+            "name": "purchaserName",
+            "label": "Purchaser's Legal Name?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+            "name": "purchaserOccupation",
+            "label": "Purchaser's Occupation?",
+            "type": "occupation",
+            "required": true
+        },
+
+        {
+            "name": "purchaserAddress",
+            "label": "Purchaser's Address?",
+            "type": "address",
+            "required": true
+        },
+
+        {
+            "name": "propertyDescription",
+            "label": "How would you describe the Property?",
+            "type": "property",
+            "required": true
+        },
+
+        {
+            "name": "propertyAddress",
+            "label": "What is the property's address?",
+            "type": "address",
+            "required": true
+        },
+
+        {
+            "name": "deceasedName",
+            "label": "Testator's Legal Name?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+            "name": "deceasedAddress",
+            "label": "Testator's Address?",
+            "type": "address",
+            "required": true
+        },
+
+        {
+            "name": "dateOFDeath",
+            "label": "State the date of the testator's death?",
+            "type": "date",
+            "required": true
+        },
+        
+        {
+          "name": "executors",
+          "label": "Is there more than one executors?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+
+        {
+            "name": "executorsDetails",
+            "label": "State the full names, occupation and addresses of the other executor(s)?",
+            "type": "executorsName",
+            "showIf":{
+                "field":"executors",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+
+        {
+            "name": "lawyerName",
+            "label": "Lawyer's full name?",
+            "type": "franking",
+            "required": "true"
+        },
+
+        {
+            "name": "lawFirm",
+            "label": "Law firm name and address?",
+            "type": "franking",
+            "required": "false"
+        }
+    ]
+}

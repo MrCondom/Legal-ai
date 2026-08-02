@@ -2,15 +2,8 @@
     "fields": [
 
       {
-            "name": "date",
-            "label": "Execution Date?",
-            "type": "date",
-            "required": true
-        },
-
-      {
         "name": "partyOneExecution",
-        "label": "Which best describes Party One (Vendor)?",
+        "label": "Which best describes Party One ?",
         "type": "select",
         "options": [
           "Individual",
@@ -25,7 +18,7 @@
 
         {
             "name": "partyOneName",
-            "label": "Party One (Vendor)'s Legal Name?",
+            "label": "Party One's Legal Name?",
             "type": "text",
         
             "showIf":{
@@ -42,7 +35,7 @@
 
         {
             "name": "partyOneOccupation",
-            "label": "Party One (Vendor)'s Occupation?" ,
+            "label": "Party One's Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -67,7 +60,7 @@
 
         {
             "name": "partyOneAddress",
-            "label": "Party One (Vendor)'s Address?",
+            "label": "Party One's Address?",
             "type": "address",
             "required": true
         },
@@ -75,7 +68,7 @@
         
         {
           "name": "partyTwoExecution",
-          "label": "Which best describes Party Two (Purchaser)?",
+          "label": "Which best describes Party Two?",
           "type": "select",
           "options": [
             "Individual",
@@ -90,7 +83,7 @@
 
         {
             "name": "partyTwoName",
-            "label": "Party Two (Purchaser)'s Legal Name?",
+            "label": "Party Two's Legal Name?",
             "type": "text",
             "showIf":{
                 "field":"partyTwoExecution",
@@ -115,7 +108,7 @@
         
         {
             "name": "partyTwoOccupation",
-            "label": "Party Two (Purchaser)'s Occupation?" ,
+            "label": "Party Two's Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -131,52 +124,63 @@
 
         {
             "name": "partyTwoAddress",
-            "label": "Party Two (Purchaser)'s Address?",
+            "label": "Party Two's Address?",
             "type": "address",
             "required": true
         },
 
         {
-            "name": "amount",
-            "label": "Purchase Price?",
-            "type": "currency",
+          "name": "parties",
+          "label": "Are there any additional parties to this transaction?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+
+        {
+            "name": "additionalParties",
+            "label": "State the full names, occupation and addresses of the other party/parties?",
+            "type": "executorsName",
+            "showIf":{
+                "field":"parties",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+
+        {
+            "name": "fullAgreement",
+            "label": "Provide a full description of the agreement, including its key terms and obligations?",
+            "type": "agreement",
             "required": true
         },
 
         {
-            "name": "sourceOfTitle",
-            "label": "Explain how Party One (Vendor) acquired the Property?",
-            "type": "textarea",
-            "required": true
+          "name": "information",
+          "label": "Is there any other information you would like considered in the agreement?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
         },
-
+        
         {
-            "name": "propertyDescription",
-            "label": "How would you describe the Property?",
-            "type": "property",
-            "required": true
-        },
-
-        {
-            "name": "surveyPlanDetails",
-            "label": "Provide the survey plan details?",
-            "type": "surveyPlan",
-            "required": true
-        },
-
-        {
-            "name": "propertyAddress",
-            "label": "What is the property's address?",
-            "type": "address",
-            "required": true
-        },
-
-        {
-            "name": "surveyorParticulars",
-            "label": "Provide the surveyor's name and address?",
-            "type": "surveyor",
-            "required": "true"
-        },
+            "name": "additionalInformation",
+            "label": "Provide any additional information?",
+            "type": "agreement",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        }
 
         {
             "name": "resolutionDate",
@@ -198,19 +202,6 @@
                 "field":"partyOneExecution",
                 "equals":"Company"
             }
-        },
-
-        {
-            "name": "lawyerName",
-            "label": "Lawyer's full name?",
-            "type": "franking",
-            "required": "true"
-        },
-        {
-            "name": "lawFirm",
-            "label": "Law firm name and address?",
-            "type": "franking",
-            "required": "false"
         },
         
         {

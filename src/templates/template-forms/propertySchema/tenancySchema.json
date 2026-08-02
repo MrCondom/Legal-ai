@@ -10,22 +10,22 @@
 
       {
         "name": "partyOneExecution",
-        "label": "Which best describes Party One (Vendor)?",
+        "label": "Which best describes Party One (Landlord)?",
         "type": "select",
         "options": [
           "Individual",
           "Company",
-          "Infant",
           "Illiterate",
           "Attorney",
-          "Family Property"
+          "Family Property",
+          "Infant"
         ],
         "required": true
       },
 
         {
             "name": "partyOneName",
-            "label": "Party One (Vendor)'s Legal Name?",
+            "label": "Party One (Landlord)'s Legal Name?",
             "type": "text",
         
             "showIf":{
@@ -42,7 +42,7 @@
 
         {
             "name": "partyOneOccupation",
-            "label": "Party One (Vendor)'s Occupation?" ,
+            "label": "Party One (Landlord)'s Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -67,7 +67,7 @@
 
         {
             "name": "partyOneAddress",
-            "label": "Party One (Vendor)'s Address?",
+            "label": "Party One (Landlord)'s Address?",
             "type": "address",
             "required": true
         },
@@ -75,30 +75,26 @@
         
         {
           "name": "partyTwoExecution",
-          "label": "Which best describes Party Two (Purchaser)?",
+          "label": "Which best describes Party Two (Tenant)?",
           "type": "select",
           "options": [
             "Individual",
             "Company",
-            "Infant",
             "Illiterate",
-            "Attorney",
-            "Family Property"
+            "Attorney"
           ],
           "required": true
         },
 
         {
             "name": "partyTwoName",
-            "label": "Party Two (Purchaser)'s Legal Name?",
+            "label": "Party Two (Tenant)'s Legal Name?",
             "type": "text",
             "showIf":{
                 "field":"partyTwoExecution",
                 "equals":[
                   "Individual",
-                  "Infant",
                   "Illiterate",
-                  "Family Property",
                   "Attorney"
                 ]
             }
@@ -115,7 +111,7 @@
         
         {
             "name": "partyTwoOccupation",
-            "label": "Party Two (Purchaser)'s Occupation?" ,
+            "label": "Party Two (Tenant)'s Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -123,7 +119,6 @@
                 "equals":[
                   "Individual",
                   "Illiterate",
-                  "Family Property",
                   "Attorney"
                 ]
             }
@@ -131,22 +126,15 @@
 
         {
             "name": "partyTwoAddress",
-            "label": "Party Two (Purchaser)'s Address?",
+            "label": "Party Two (Tenant)'s Address?",
             "type": "address",
             "required": true
         },
 
         {
             "name": "amount",
-            "label": "Purchase Price?",
+            "label": "What is the agreed rent amount?",
             "type": "currency",
-            "required": true
-        },
-
-        {
-            "name": "sourceOfTitle",
-            "label": "Explain how Party One (Vendor) acquired the Property?",
-            "type": "textarea",
             "required": true
         },
 
@@ -156,14 +144,7 @@
             "type": "property",
             "required": true
         },
-
-        {
-            "name": "surveyPlanDetails",
-            "label": "Provide the survey plan details?",
-            "type": "surveyPlan",
-            "required": true
-        },
-
+        
         {
             "name": "propertyAddress",
             "label": "What is the property's address?",
@@ -172,15 +153,15 @@
         },
 
         {
-            "name": "surveyorParticulars",
-            "label": "Provide the surveyor's name and address?",
-            "type": "surveyor",
-            "required": "true"
+            "name": "term",
+            "label": "State the term of the tenancy agreement (in months or years)?",
+            "type": "duration",
+            "required": true
         },
-
+        
         {
             "name": "resolutionDate",
-            "label": "On what date did the company pass the resolution approving this transaction?",
+            "label": "On what date did the company pass the resolution approving this agreement?",
             "type": "date",
             "required": true,
             "showIf":{
@@ -191,26 +172,13 @@
 
         {
             "name": "resolutionDate",
-            "label": "On what date did the company pass the resolution approving this transaction?",
+            "label": "On what date did the company pass the resolution approving this agreement?",
             "type": "date",
             "required": true,
             "showIf":{
                 "field":"partyOneExecution",
                 "equals":"Company"
             }
-        },
-
-        {
-            "name": "lawyerName",
-            "label": "Lawyer's full name?",
-            "type": "franking",
-            "required": "true"
-        },
-        {
-            "name": "lawFirm",
-            "label": "Law firm name and address?",
-            "type": "franking",
-            "required": "false"
         },
         
         {

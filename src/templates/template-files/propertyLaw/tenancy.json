@@ -1,0 +1,104 @@
+{
+"tenancy_agreement": {
+	"title": "tenancy agreement",
+	"parties": [
+          {
+            "id": "partyOne",
+            "role": "landlord"
+          },
+          {
+            "id": "partyTwo",
+            "role": "tenant"
+          }
+        ],
+	"sections": [
+		{
+                    "type": "heading",
+                    "value": "THIS TENANCY AGREEMENT is made this {{date}};"
+                },
+                            {
+                "type": "sectionTitle",
+                "value": "BETWEEN"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyOne.name}}, a {{partyOne.occupation}}, of {{partyOne.address}} (Hereinafter called the “LANDLORD” which expression shall where the context so admits include his Legal and Personal Representatives, assigns and successors-in-title) of the ONE PART."
+
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "AND"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyTwo.name}}, a {{partyTwo.occupation}}, of {{partyTwo.address}}. (hereinafter called the “TENANT” which expression shall where the context so admits include his Legal and Personal Representatives, assigns and successors-in-title) of the OTHER PART."
+            },
+            {
+                    "type": "sectionTitle",
+                    "value": "WHEREAS:"
+            },
+                {
+                    "type": "text",
+                    "value": ["The Landlord is the owner of the {{propertyDescription}} situate at {{propertyAddress}} , which the Landlord has agreed to let and the Tenant has agreed to take the property at a fixed rent of {{amount}} ).\n\n",
+                    "The Landlord and Tenant have agreed to observe the covenants herein contained."]
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "NOW IT IS HEREBY AGREED AS FOLLOWS:"
+            },
+                {
+                    "type": "text",
+                    "value": "IN PURSUANCE of the said agreement and in consideration of the rent herein reserved and the covenants on the part of the Landlord and Tenant herein contained, the Landlord hereby let UNTO the Tenant ALL THAT  {{propertyDescription}} situate at {{propertyAddress}}; (herein referred to as THE PROPERTY) TO HOLD same UNTO the Tenant for A FIXED term of {{term}} YEAR (BEGINNING FROM {{date}} AND ENDING ON {{date}} ) at a fixed rent of {{amount}} payable in advance at the commencement of this agreement, the receipt of which the landlord acknowledges."
+                },
+                 {
+                    "type": "sectionTitle",
+                    "value": "THE TENANT HEREBY COVENANTS WITH THE LANDLORD AS FOLLOWS:"
+                },
+                 {
+                    "type": "texta",
+                    "value": ["1. To pay all electricity charges and fees, and to ensure that all charges applicable in respect of the said demised premises are promptly paid and produce evidence of payment every three months or upon the demand of the LandLord or his agents.\n\n",
+                    "2. To pay for security charges and dues where necessary, of which all occupants in the building are expected to contribute to the security of the building.\n\n",
+                    "3. To cooperate with other co-tenants in keeping the premises in good and tenantable condition and repair particularly by making arrangements for the cleaning of the building and its premises regularly.\n\n",
+                    "4. To use the premises only for residential purposes.\n\n",
+                    "5. Not to assign, sub-let, charge or part with the possession of the demised premises or any part thereof or carry out any alteration in the apartment without obtaining previous consent from the Landlord.\n\n",
+                    "6. To keep the exterior and interior of the apartment and all outbuildings in good and tenantable condition, so as to deliver the same at the expiration of the term of the tenancy in a very good state.\n\n",
+                    "7. To maintain standards of sanitary conditions consistent with the standards prevailing in the neighborhood.\n\n",
+                    "8. Not to make any alteration in the property that will substantially affect the structure of the apartment without seeking the permission and consent of the Landlord in writing.\n\n",
+                    "9. To co-operate fully with other tenants and/or occupiers of the building within the compound in the security arrangement and other necessary incidental matters thereto.\n\n",
+                    "10. The Tenant shall be responsible and pay for the cost of any physical damages to the apartment caused by him or his dependents.\n\n",
+                    "11. To keep the let property including the fixtures, fittings and other conveniences constituting the demised property in good and tenant-like repair and condition (fair wear and tear excepted) throughout the term hereby granted, and to replace any damaged or missing fittings or fixtures caused by him.\n\n",
+                    "12. To use the demised property for a fixed term of one year starting from {{date}} after which the tenancy automatically expires.\n\n",
+                    "13. After the expiration of the tenancy and the tenant refuses, neglects or fails to deliver up possession, the tenant shall pay to the Landlord the sum of {{penaltyFee}} per day as mesne profit until possession of the demised property is delivered up.\n\n",
+                    "14. Where the tenant desires to renew the tenancy before the expiration of this tenancy, the tenant is desirous of renewing the tenancy for a further term, the tenant shall give notice to the Landlord or his agents of his intention to renew the tenancy for further term 30 days before the expiration date.\n\n",  
+                    "15. At the renewal of the tenancy, parties shall draw and execute a new agreement before the commencement of the new term. However, where a new tenancy agreement is not drawn before the commencement of a further term, this agreement shall regulate the tenancy pending the execution of a new tenancy agreement is drawn. FOR THE AVOIDANCE OF DOUBT, THIS TENANCY CYCLE SHALL COMMENCE ON {{date}} AND END {{date}} .\n\n",
+                    "16. To peaceably yield up the let property to the Landlord or his Agents at the expiration of the tenancy."]
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "THE LANDLORD HEREBY COVENANTS WITH THE TENANT AS FOLLOWS:"
+                },
+                {
+                    "type": "texta",
+                    "value": ["1. That the Tenant paying the said rent and performing the covenants on his part hereinbefore contained, shall peaceably hold and enjoy the property during the said term without any interruption by the Landlord or any person claiming from, under or in trust for him.\n\n",
+                    "2. Not to unreasonably withhold consent sought by the tenant herein.\n\n",
+                    "3. That to give one month's notice before the expiration of the tenancy to deliver vacant possession. Such notice shall be sufficient for recovery of possession of the demised property. This agreement shall serve as sufficient notice subject to the applicable law."]
+                },
+                {
+                    "type": "text",
+                    "value": "IN WITNESS OF WHICH the parties have executed this Agreement in the manner below, day and year first above written."
+                },
+                {
+                  "type": "execution"
+                },
+                {
+                  "type": "instructions",
+                  "value": ["Use this information to enhance the draft: enhance the convenant's in this draft, it should be sweet and understandable. The draft should be within 30 - 100 words\n",
+                    "Always do the math. eg if the term is one year, 1st january, it ends 31st december."]
+                }
+
+        ]      
+}
+}

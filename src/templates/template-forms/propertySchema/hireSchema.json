@@ -10,7 +10,7 @@
 
       {
         "name": "partyOneExecution",
-        "label": "Which best describes Party One (Vendor)?",
+        "label": "Which best describes Party One (Owner)?",
         "type": "select",
         "options": [
           "Individual",
@@ -25,7 +25,7 @@
 
         {
             "name": "partyOneName",
-            "label": "Party One (Vendor)'s Legal Name?",
+            "label": "Party One (Owner)'s Legal Name?",
             "type": "text",
         
             "showIf":{
@@ -42,7 +42,7 @@
 
         {
             "name": "partyOneOccupation",
-            "label": "Party One (Vendor)'s Occupation?" ,
+            "label": "Party One (Owner)'s Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -67,7 +67,7 @@
 
         {
             "name": "partyOneAddress",
-            "label": "Party One (Vendor)'s Address?",
+            "label": "Party One (Owner)'s Address?",
             "type": "address",
             "required": true
         },
@@ -75,7 +75,7 @@
         
         {
           "name": "partyTwoExecution",
-          "label": "Which best describes Party Two (Purchaser)?",
+          "label": "Which best describes Party Two (Hirer)?",
           "type": "select",
           "options": [
             "Individual",
@@ -90,7 +90,7 @@
 
         {
             "name": "partyTwoName",
-            "label": "Party Two (Purchaser)'s Legal Name?",
+            "label": "Party Two (Hirer)'s Legal Name?",
             "type": "text",
             "showIf":{
                 "field":"partyTwoExecution",
@@ -115,7 +115,7 @@
         
         {
             "name": "partyTwoOccupation",
-            "label": "Party Two (Purchaser)'s Occupation?" ,
+            "label": "Party Two (Hirer)'s Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -131,22 +131,8 @@
 
         {
             "name": "partyTwoAddress",
-            "label": "Party Two (Purchaser)'s Address?",
+            "label": "Party Two (Hirer)'s Address?",
             "type": "address",
-            "required": true
-        },
-
-        {
-            "name": "amount",
-            "label": "Purchase Price?",
-            "type": "currency",
-            "required": true
-        },
-
-        {
-            "name": "sourceOfTitle",
-            "label": "Explain how Party One (Vendor) acquired the Property?",
-            "type": "textarea",
             "required": true
         },
 
@@ -158,24 +144,31 @@
         },
 
         {
-            "name": "surveyPlanDetails",
-            "label": "Provide the survey plan details?",
-            "type": "surveyPlan",
+            "name": "amount",
+            "label": "Purchase Price?",
+            "type": "currency",
             "required": true
         },
 
         {
-            "name": "propertyAddress",
-            "label": "What is the property's address?",
-            "type": "address",
+            "name": "modeOfPayment",
+            "label": "What is the payment frequency under the Hire Purchase Agreement?",
+            "type": "frequency",
             "required": true
         },
 
         {
-            "name": "surveyorParticulars",
-            "label": "Provide the surveyor's name and address?",
-            "type": "surveyor",
-            "required": "true"
+            "name": "period",
+            "label": "Over what period will the Hire Purchase installments be paid?",
+            "type": "period",
+            "required": true
+        },
+
+        {
+            "name": "dateOfFirstPayment",
+            "label": "On what date is the first installment payable under the Hire Purchase agreement?",
+            "type": "date",
+            "required": true
         },
 
         {
@@ -206,6 +199,7 @@
             "type": "franking",
             "required": "true"
         },
+
         {
             "name": "lawFirm",
             "label": "Law firm name and address?",

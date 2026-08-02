@@ -1,0 +1,52 @@
+{
+"legal_opinion": {
+	"title": "legal opinion",
+	"sections": [
+		{
+		"type": "heading"
+		},
+		{
+		"type": "sectionTitle",
+		"value": "1. Introduction"
+		},
+		{
+		"type": "sectionTitle",
+		"value": "2. Facts of the case"
+		},
+		{
+		"type": "sectionTitle",
+		"value": "3. Prayers"
+		},
+		{
+		"type": "sectionTitle",
+		"value": "4. Issues for determination"
+		},
+		{
+		"type": "sectionTitle",
+		"value": "5. Applicable laws"
+		},
+		{
+		"type": "sectionTitle",
+		"value": "6. Legal opinion"
+		},
+		{
+		"type": "sectionTitle",
+		"value": "7. Conclusion and Recommendations"
+		},
+		{
+		"type": "address",
+		"value": [" {{counselName}}\n",
+		"{{date}}"]
+		},
+		{
+             "type": "instructions",
+             "value": ["Use this information to enhance the draft:\n",
+               "Full Facts: {{facts}} \n\n",
+               "Other Relevant Information: {{information}}\n\n ",
+               "Use today's date, to fill the date section.",]
+   }
+
+	]
+}
+}
+

@@ -1,0 +1,102 @@
+{
+    "hire_purchase_agreement": {
+        "title": "hire purchase agreement",
+        "parties": [
+          {
+            "id": "partyOne",
+            "role": "owner"
+          },
+          {
+            "id": "partyTwo",
+            "role": "hirer"
+          }
+        ],
+        "sections": [
+            {
+                "type": "heading",
+                "value": "THIS HIRE PURCHASE AGREEMENT is made this {{date}} "
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "BETWEEN"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyOne.name}}, a {{partyOne.occupation}}, of {{partyOne.address}},  (hereinafter called 'THE OWNER') of the one part"
+
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "AND"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyTwo.name}}, a {{partyTwo.occupation}}, of {{partyTwo.address}}, (hereinafter called 'THE HIRER') of the other part."
+            },
+            {
+                "type": "sectionTitle",
+                "value": "Whereas"
+            },
+            {
+                "type": "text",
+                "value":[
+                    "1. the hirer is desirous of purchasing an {{propertyDescription}} and she has approached the Owner to take the {{propertyDescription}} on hire-purchase.\n\n",
+                    "2. the owner has acquired the said {{propertyDescription}} from the dealer for the abovementioned purpose and in consideration of the above, the owner has agreed to give the {{propertyDescription}} to the hirer on hire-purchase in accordance with the terms of this hire-purchase agreement."
+            ]
+                
+            },
+            {
+                "type": "sectionTitle",
+                "value": "NOW THIS HIRE PURCHASE AGREEMENT WITNESSETH AS FOLLOWS:"
+            },
+            {
+                "type": "text",
+                "value": ["1. The owner shall let and the hirer shall take on hire the {{propertyDescription}}, more particularly described in the 1st Schedule of this agreement on the following terms and conditions.\n\n",
+            "2. The hirer shall pay to the owner on the execution of this conditions, pursuant to the option to purchase contained herein the sum of {{amount}} on a {{modeOfPayment}} for a period of {{period}} by way of rent for the hire of the said {{propertyDescription}}, the first payment to be made on the {{dateOfFirstPayment}} and each subsequent payment on a {{modeOfPayment}}, until the agreement sooner expires or is determined.\n\n",
+            "3. The hirer during the continuance of the hiring, will not sell, assign, pledge, mortgage, underlet, lend or part with possession of the said {{propertyDescription}} or otherwise deal with the said {{propertyDescription}} and will not take the same out of the city of {{state}}, without the owner's written consent.\n\n",
+            "4. The hirer during the continuance of the hiring shall keep the said {{propertyDescription}} in good repair and working condition and working order (reasonable wear and tear excepted) and will permit the owner, his servants or agents to have access to the said {{propertyDescription}} for the purpose of inspecting the condition thereof.\n\n",
+            "5. The hirer shall pay all cost and fees, payable in respect of the maintenance of the said {{propertyDescription}}.\n\n",
+            "6. The hirer may at any time terminate the hiring by returning the said {{propertyDescription}} at his own cost and risk to the owner at his place of address for the time being.\n\n",
+            "7. If the hirer shall make default in payment of any {{modeOfPayment}} sum payable hereunder for a period of two weeks after the same shall have become due or shall fail to observe the terms and conditions of this agreement or if the hirer becomes bankrupt or a receiver is appointed over his property or if distress or execution is levied upon his property or if the hirer shall do or cause to be done or permit or suffer any act or thing whereby the owner's rights in the said {{propertyDescription}} may be prejudiced, the owner may without prejudice to the owner's claim for arrears of hire or damages for breach of this contract, terminate the hiring without notice and retake possession of the said {{propertyDescription}} and it shall be lawful for the owner, his agents or servants to enter upon any premises where the said {{propertyDescription}} may be and seize and take possession thereof. upon determination of the hiring as aforesaid the hirer will remain liable for the arrears of hire payments or for damages for breach of this agreement and the owner may enforce such claim by action or otherwise.\n\n",
+            "8. The hirer shall use the said {{propertyDescription}} for business purposes only and will not allow the same to be used for private purposes.\n\n",
+            "9. The hirer has examined or has caused to be examined the said {{propertyDescription}} and satisfied herself as to its condition and no warranty shall be implied on the part of the owner as to the quality or state of the {{propertyDescription}} as to its fitness for any purpose, whatsoever.\n\n",
+            "10. If the hirer shall duly perform and observe all the stipulations and conditions in this agreement contained on his part to be performed and observed and shall pay to the owner {{modeOfPayment}} by way of rent amounting, together with the sum paid for the option to purchase, to the total sum of {{amount}} and shall also pay all other sums of money which may become payable to the owner by the hirer under this agreement, the hiring shall come to an end and the said {{propertyDescription}} shall become the property of the hirer and the owner will assign and make over all his rights and interest in the same to the hirer but until all such payments as aforesaid have been made, the said {{propertyDescription}} will remain the property of the owner and shall not be assignable to a third party.\n\n",
+            "11. That upon the payment of the last installment the ownership of the said {{propertyDescription}} shall automatically pass to the hirer and the owner shall be under an obligation to effect a change of ownership and handover all original documents."]
+            },
+           {
+            "type": "text",
+            "value": [
+                "12. Any notices required to be given herein shall be given to the parties hereto in writing and by either Registered Post duly Acknowledged by the parties or by hand delivery at the addresses stated above or at such other addresses as the parties hereto may hereafter substitute by notice in writing.\n\n\n ",
+                "IN WITNESS WHEREOF the parties have executed this hire purchase agreement the day and year first above written."
+            ]
+           },
+           {
+                "type": "sectionTitle",
+                "value": "SCHEDULE"
+            },
+           {
+             "type": "execution"
+           },
+           {
+               "type": "sectionTitle",
+               "value": "Prepared By;"
+           },
+           {
+             "type": "address",
+             "value": [
+               "{{lawyerName}} \n",
+               "{{lawFirm}}\n"
+             ]
+           },
+           {
+             "type": "instructions",
+             "value": "Use this information to enhance the draft: enhance the body of this draft, it should be sweet and understandable. The draft should be within 80 - 300 words"
+           }
+
+        ]
+    }
+}

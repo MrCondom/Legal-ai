@@ -1,0 +1,57 @@
+{
+"deed_of_assent": {
+"title": "deed of assent",
+"sections": [
+   {
+       "type": "text",
+       "value": ["I {{executorName}}, a {{executorOcuupation}}, of {{executorAddress}} the personal representatives of {{deceasedName}} of {{deceasedAddress}}, who died on {{dateOFDeath}} and whose WILL was proved by me on the {{date}}, in the Probate Registry of the High Court of {{state}}, where the probate was granted to us.\n\n",
+       "Do Hereby as personal representatives, on this {{date}} :\n\n",
+       "ASSENT to the vesting on {{purchaserName}} a {{purchaserOccupation}}, of {{purchaserAddress}} , ALL THAT {{propertyDescription}} situate {{propertyAddress}}, for all the estate and interest in it existing at the time of the death of the deceased.\n\n",
+       "The beneficiary covenants with the personal representatives, that he will;"]
+   },
+    {
+       "type": "texta",
+       "value":["1. Perform and observe any restrictive covenants and conditions to which the property is subject.\n\n",
+       "2. Compensate the personal representatives and each of them and the estate of the deceased in full for any liability on them."]
+   },
+  {
+       "type": "text",
+       "value": ["AND we acknowledge the rights of {{purchaserName}}, to the production of the will and probate of the deceased and to deliver copies thereof.\n\n",
+       "AND WE DECLARE that we have not previously given or made any assent or conveyance in respect of any legal estate in the premises or any part of it.\n\n",
+       "IN WITNESS OF WHICH I {{executorName}} have set our respective hands and seal here.\n\n"]
+   },
+   {
+       "type": "heading",
+       "value": ["SIGNED, SEALED AND DELIVERED:\n\n",
+       "By the within named Personal Representative\n\n",
+       "______________\n",
+       "{{executorName}}"]
+   },
+   {
+       "type": "address",
+       "value": [
+               "In the presence of;\n\n",
+               "NAME: __________________\n",
+               "ADDRESS:___________________\n",
+               "OCCUPATION:__________________\n",
+               "SIGNATURE__________________\n\n"]
+   },
+   {
+       "type": "sectionTitle",
+       "value": "Prepared by:"
+},
+{
+ "type": "address",
+ "value": [
+   "{{lawyerName}} \n",
+   "{{lawFirm}}\n"
+ ]
+},
+{
+ "type": "instructions",
+ "value": ["Use this information to enhance the draft: enhance the body of this draft, it should be sweet and understandable. The draft should be within 50 - 130 words\n\n",
+   "Also use this information, where there are more than 1 executors, or else ignore: {{executorsDetails}} "]
+}
+]
+}
+}

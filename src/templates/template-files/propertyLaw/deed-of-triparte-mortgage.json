@@ -1,0 +1,105 @@
+{
+      "deed_of_triparte_mortgage": {
+            "title": "deed of triparte mortgage",
+              "parties": [
+                {
+                  "id": "partyOne",
+                  "role": "mortgagor"
+                },
+                {
+                  "id": "partyTwo",
+                  "role": "mortgagee"
+                }
+              ],
+              "sections": [
+                {
+                    "type": "text3",
+                    "value": "THIS DEED OF LEGAL MORTGAGE is made this {{date}},"
+                },
+                            {
+                "type": "sectionTitle",
+                "value": "BETWEEN"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyOne.name}}, a {{partyOne.occupation}}, of {{partyOne.address}} (Mortgagor) of the One part,"
+
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "AND"
+            },
+
+            {
+                "type": "text",
+                "value": "{{guarantorName}}, a {{guarantorOccupation}}, of {{guarantorAddress}} (Guarantor) of the Second part,"
+
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "AND"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyTwo.name}}, a {{partyTwo.occupation}}, of {{partyTwo.address}} (Mortgagee) of the Third part."
+            },
+            {
+                "type": "sectionTitle",
+                "value": "Background"
+           },
+            {
+               "type": "text",
+               "value":[ "1. The guarantor is the holder {{guarantorPropertyDescription}} .\n\n",
+                       "2. A loan Agreement between the Mortgagor, guarantor, and mortgagee, whereby the sum of {{amount}}, was advanced to the mortgagor by the mortgagee, on the {{date}} .\n\n",
+                       "3. The guarantor agreed therein, to secure the repayment of the loan obtained by the mortgagor on the property {{guarantorPropertyDescription}}.\n\n",
+                       "4. The Mortgagor has agreed to obtain the loan and the mortgagee has agreed to advance same, while the guarantor is acting as surety, for the repayment of the loan, using the said property as collateral security."]
+             },
+            {
+                    "type": "sectionTitle",
+                    "value": "NOW THIS DEED WITNESSETH AS FOLLOWS:"
+            },
+                {
+                    "type": "text",
+                    "value": ["The Mortgagor covenants to repay the principal sum of {{amount}} and the interest at the rate {{penaltyInterestRate}} or at {{interestRate}} if he pays promptly, repayable on or before the  {{dateDue}} .\n\n",
+                    "The Mortgagor as BENEFICIAL OWNER hereby SUB-DEMISES to the mortgagee ALL THAT PROPERTY {{propertyDescription}} situate at {{propertyAddress}}."]
+                },
+                 {
+                    "type": "sectionTitle",
+                    "value": "THE MORTGAGOR COVENANTS WITH THE MORTGAGEE AS FOLLOWS:"
+                },
+                 {
+                    "type": "clauses"
+                },
+                {
+                    "type": "text",
+                    "value": "IN WITNESS OF WHICH the parties have executed this Deed of Mortgage in the manner below the day and year first above written."
+                },
+                {
+                  "type": "execution"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "Prepared By;"
+                },
+                {
+                  "type": "address",
+                  "value": [
+                    "{{lawyerName}} \n",
+                    "{{lawFirm}}\n"
+                  ]
+                },
+                {
+                  "type": "instructions",
+                  "value": ["Use this information to enhance the draft: enhance the convenant's in this draft, it should be sweet and understandable. The draft should be within 30 - 100 words\n\n",
+                          "If its a landed property, use this to enhance the draft or just ignore. Source of Title: {{sourceOfTitle}}, CofO: {{CofODetails}} and Survey Plan: {{surveyPlanDetails}}.\n\n",
+                          "If its a landed property, provide Governors Consent Signatory, using this format, or else ignore.\n\n",
+                          "Provide Signatory for the guarantor using his information."
+                  ]
+                }
+            ]
+        }
+    }

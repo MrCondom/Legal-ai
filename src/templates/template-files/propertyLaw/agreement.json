@@ -1,0 +1,55 @@
+{
+  "agreement_template": {
+    "title": "agreement",
+    "sections": [
+        {
+            "type": "text3",
+            "value": "THIS {{title}} is made on the {{date}}. "
+        },
+        {
+        "type": "sectionTitle",
+        "value": "BETWEEN"
+    },
+
+    {
+        "type": "text",
+        "value": "{{partyOne.name}}, a {{partyOne.occupation}} of {{partyOne.address}} of the ONE PART"
+
+    },
+
+    {
+        "type": "sectionTitle",
+        "value": "AND"
+    },
+
+    {
+        "type": "text",
+        "value": "{{partyTwo.name}}, a {{partyTwo.occupation}} of {{partyTwo.address}} of the OTHER PART."
+    },
+    {
+            "type": "sectionTitle",
+            "value": "BACKGROUND:"
+    },
+         {
+            "type": "sectionTitle",
+            "value": "COVENANTS:"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "SCHEDULE"
+        },
+         {
+             "type": "execution"
+         },
+         {
+          "type": "instructions",
+          "value": ["Use this information to enhance the draft: {{fullAgreement}}. The draft should be within 50 - 130 words\n\n",
+            "Use this {{additionalParties}}"
+            "Also the roles of the parties, should be clearly stated. eg partners, or buyer & seller. etc\n\n",
+            "Additional information: {{additionalInformation}}. Where there are more than one parties, the execution part should include them accordingly\n\n",
+            "Use today's date to fill the date placeholders.\n\n",
+            "The title of the agreement could be 'Partnership Agreement', 'Shareholder's Agreement', 'Sale of land Agreement', 'Buyer and Seller Agreement' etc, Enhance where neccessary."]
+         }
+    ]
+  }
+}

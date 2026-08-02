@@ -23,6 +23,8 @@ import { DraftsService } from '../drafts/drafts.service';
 
 import { CREDIT_COST } from '../constants/credits';
 
+import { getConversationMessage } from '../constants/conversation';
+
 export interface WorkflowFound {
   status: 'FOUND';
 
@@ -85,12 +87,11 @@ export class AssistantService {
 
     const user = await this.users.getProfile(userId);
     const credit = await this.checkCredits(userId);
+    const history = await this.getHistory(userId);
 
     return {
-      message: `Hello ${user?.name ?? 'there'}.
-
-What can I draft for you today?`,
-
+      message: getConversationMessage(user, history),
+      
       credits: user?.credits,
 
       plan: user?.plan,
@@ -330,8 +331,6 @@ What can I draft for you today?`,
 
     const polished = await this.ai.polishDraft(enhanced);
 
-    const review = await this.ai.reviewDocument(polished);
-
     await this.billing.consumeCredits(userId, CREDIT_COST.QUICK_DRAFT);
 
     const draft = await this.drafts.createAssistantDraft({
@@ -348,8 +347,6 @@ What can I draft for you today?`,
       draftId: draft.id,
 
       draft: polished,
-
-      review,
     };
   }
 
@@ -407,8 +404,6 @@ What can I draft for you today?`,
 
     const polished = await this.ai.polishDraft(enhanced);
 
-    const review = await this.ai.reviewDocument(polished);
-
     await this.billing.consumeCredits(userId, CREDIT_COST.CUSTOM_DRAFT);
 
     const draft = await this.drafts.createAssistantDraft({
@@ -425,8 +420,6 @@ What can I draft for you today?`,
       draftId: draft.id,
 
       draft: polished,
-
-      review,
     };
   }
 
@@ -457,8 +450,6 @@ What can I draft for you today?`,
 
     const polished = await this.ai.polishDraft(generated);
 
-    const review = await this.ai.reviewDocument(polished);
-
     await this.billing.consumeCredits(userId, CREDIT_COST.DRAFT);
 
     const draft = await this.drafts.createAssistantDraft({
@@ -476,7 +467,6 @@ What can I draft for you today?`,
 
       draft: polished,
 
-      review,
     };
   }
 

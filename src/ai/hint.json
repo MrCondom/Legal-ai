@@ -1,30 +1,46 @@
 [
-{
-"type":"deed",
+  {
+    "type":"deed",
+    checks":[
+    "Parties identified",
+    "Occupation stated",
+    "Address stated",
+    "Execution date inserted",
+    "Consideration stated",
+    "Governor consent where applicable",
+    "Execution block present",
+    "Witnesses present",
+    "Schedule attached",
+    "Missing operative clauses",
+    "Missing covenants",
+    "Missing schedules",
+    "Title defects",
+    "Root of title is clear",
+    "Properly executed, where illiterates, companies, or family property is involved",
+    "Ambigious sentences"
+    ]
+  },
 
-"checks":[
-
-"Parties identified",
-
-"Occupation stated",
-
-"Address stated",
-
-"Date inserted",
-
-"Consideration stated",
-
-"Governor consent where applicable",
-
-"Execution block present",
-
-"Witnesses present",
-
-"Schedule attached"
-
-]
-
-},
+  {
+    "type":"legal_opinion",
+    checks":[
+    "1. 1999 Constitution Of Nigeria.",
+    "2. Nigeria Land Use Act.",
+    "3. Companies And Alied Matters Act 2020.",
+    "4. International Treaties And Conventions.",
+    "5. Tenancy Laws.",
+    "6. Recovery Of Premises Laws.",
+    "7. Wills Act.",
+    "8. Cybercrime Act.",
+    "9. Terrorism Act.",
+    "10. Evidence Act.",
+    "11. Criminal And Penal Act.",
+    "12. Administration Of Criminal Justice Act.",
+    "13. Trade Union Act.",
+    "14. Labour Act.",
+    "15. Other Relevant Laws as the case may be",
+    ]
+  },
 
 {
 
@@ -76,3 +92,4 @@
 
 }
 ]
+

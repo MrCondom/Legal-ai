@@ -1,0 +1,81 @@
+{
+  "deed_of_release_mortgage": {
+        "title": "deed of release mortgage",
+          "parties": [
+            {
+              "id": "partyOne",
+              "role": "mortgagee"
+            },
+            {
+              "id": "partyTwo",
+              "role": "mortgagor"
+            }
+          ],
+          "sections": [
+            {
+                "type": "text3",
+                "value": "THIS DEED OF LEGAL MORTGAGE is made this {{date}},"
+            },
+            {
+                "type": "sectionTitle",
+                "value": "BETWEEN"
+            },
+            {
+                "type": "text",
+                "value": "{{partyOne.name}}, a {{partyOne.occupation}}, of {{partyOne.address}} (Mortgagee) of the other part."
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "AND"
+            },
+              {
+                "type": "text",
+                "value": "{{partyTwo.name}}, a {{partyTwo.occupation}}, of {{partyTwo.address}} (Mortgagor) of the one part,"
+
+            },
+            {
+                    "type": "sectionTitle",
+                    "value": "WHEREAS:"
+            },
+                {
+                    "type": "text",
+                    "value": ["1. By a Mortgage Deed (hereinafter called The Principal Deed) dated {{executionDate}} and made between the Mortgagor and the Mortgagee, the property hereinafter described was charged by way of a legal mortgage with payment to the Mortgagee of all the principal money, with interest and other charges stipulated therein.\n\n",
+                    "2. The Mortgagee being satisfied with the full payment of the principal money, with the interest and all other charges as stipulated in the Principal Deed has agreed to release therefrom the property hereinafter described."]
+                },
+                 {
+                    "type": "sectionTitle",
+                    "value": "NOW THIS DEED WITNESSETH AS FOLLOWS:"
+                },
+                 {
+                    "type": "text",
+                    "value": ["That in pursuance of the said agreement and in consideration of the sum of {{amount}} paid by the Mortgagor to the Mortgagee (the receipt of which sum the Mortgagee hereby acknowledges), the Mortgagee HEREBY RELEASES unto the Borrower ALL that {{propertyDescription}} situate at {{propertyAddress}}.\n",
+                    "TO HOLD unto the Borrower fixed and discharged from the Principal Deed and all principal moneys, interest and other charges thereby secured and all claims and demands thereunder."]
+                },
+                {
+                    "type": "text",
+                    "value": "IN WITNESS OF WHICH the parties have executed this Deed of release of Mortgage in the manner below the day and year first above written."
+                },
+                {
+                  "type": "execution"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "Prepared By;"
+                },
+                {
+                  "type": "address",
+                  "value": [
+                    "{{lawyerName}} \n",
+                    "{{lawFirm}}\n"
+                  ]
+                },
+                {
+                  "type": "instructions",
+                  "value": ["Use this information to enhance the draft: The draft should be within 30 - 100 words\n\n",
+                          "Due date the mortgage amount was paid {{dateDue}} "
+                  ]
+                }
+            ]
+        }
+   }

@@ -16,7 +16,7 @@
             "type": "text3",
             "value": "THIS DEED OF ASSIGNMENT is made on the {{date}}. "
         },
-                    {
+        {
         "type": "sectionTitle",
         "value": "BETWEEN"
     },
@@ -89,9 +89,7 @@
         {
             "type": "address",
             "value": ["{{lawyerName}} \n",
-            "{{lawFirm}} \n",
-            "{{lawFirmAddress}} \n",
-            "{{lawFirmEmail}}"
+            "{{lawFirm}} \n"
             ]
         }
     ]

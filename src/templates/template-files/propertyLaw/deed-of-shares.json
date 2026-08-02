@@ -89,14 +89,12 @@
            },
            {
               "type": "sectionTitle",
-              "value": "Franked By;"
+              "value": "Prepared By;"
           },
           {
               "type": "address",
               "value": ["{{lawyerName}} \n",
-              "{{lawFirm}} \n",
-              "{{lawFirmAddress}} \n",
-              "{{lawFirmEmail}}"
+              "{{lawFirm}} \n"
               ]
           },
           {

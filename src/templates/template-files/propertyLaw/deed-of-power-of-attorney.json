@@ -1,0 +1,73 @@
+{
+  "deed_of_power_attorney": {
+   "title": "deed of power of attorney",
+   "parties": [
+            {
+              "id": "partyOne",
+              "role": "donor"
+            },
+            {
+              "id": "partyTwo",
+              "role": "donee"
+            }
+          ],
+  "sections": [
+        {
+          "type": "text3",
+          "value": "BY THIS POWER OF ATTORNEY MADE this {{date}} ,"
+        },
+       {
+                "type": "text",
+                "value":"{{partyOne.name}}, a {{partyOne.occupation}}, of {{partyOne.address}} (DONOR)"
+
+            },
+
+            {
+                "type": "sectionTitle",
+                "value": "APPOINTS"
+            },
+
+            {
+                "type": "text",
+                "value": "{{partyTwo.name}}, a {{partyTwo.occupation}}, of {{partyTwo.address}} (DONEE) to be my true and lawful Attorney and in my name and on my behalf to do all or any of the following acts or things namely:"
+            },
+            {
+                    "type": "sectionTitle",
+                    "value": "THIS DEED RECITES AS FOLLOWS:"
+            },
+                {
+                    "type": "texta",
+                    "value": ["{{vestedPowers}}"]
+                },
+                {
+                    "type": "text",
+                    "value": "COVENANTS"
+                },
+                 {
+                    "type": "text",
+                    "value": ["AND to do all things necessary and incidental to the matters above as I may lawfully do.\n\n",
+                    "AND IT IS DECLARED that this Power of Attorney shall be irrevocable for a period of {{months}} from {{date}} .\n\n",
+                    "IN WITNESS OF WHICH I, the Donor, have executed this Power of Attorney in the manner below on the day and year first above written."]
+                },
+                {
+                  "type": "execution"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "Prepared By;"
+                },
+                {
+                  "type": "address",
+                  "value": [
+                    "{{lawyerName}} \n",
+                    "{{lawFirm}}\n"
+                  ]
+                },
+                {
+                  "type": "instructions",
+                  "value": ["Use this information to enhance the draft: The draft should be within 30 - 500 words.\n\n",
+                    "If it is for a consideration add and enhance, with this format or else ignore, 'AND IT IS DECLARED that in consideration of the sum of {{amount}} already paid by the donee to the donor (the receipt of which the donor acknowledges), this power of attorney shall be irrevocable for a period of {{months}} from the {{date}}.' "]
+                }
+            ]
+           }
+        }

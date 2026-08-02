@@ -1,14 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import executions from '../constants/execution';
-import deedTemplate from './template-files/propertyLaw/deed-of-conveyance.json';
-import conveyanceForm from './template-forms/propertySchema/conveyance.json';
-import assignmentTemplate from './template-files/propertyLaw/deed-of-assignment.json';
-import assignmentForm from './template-forms/propertySchema/assignment.json';
-import giftTemplate from './template-files/propertyLaw/deed-of-gift.json';
-import giftForm from './template-forms/propertySchema/giftSchema.json';
-import sharesTemplate from './template-files/propertyLaw/deed-of-shares.json';
-import sharesForm from './template-forms/propertySchema/sharesSchema.json';
+import { templateRegistry } from '../constants/template.registry';
+
 
 @Injectable()
 export class TemplatesService {
@@ -71,58 +65,18 @@ export class TemplatesService {
       .join('\n\n');
   }
 
-  async seedDeedOfConveyance() {
+  async seedTemplate(template: any) {
     return this.prisma.template.create({
       data: {
-        slug: 'deed-of-conveyance',
-        title: 'Deed of Conveyance',
-        documentFamily: 'deed',
-        tags: ['property, land, ownership, conveyance, transfer of title'],
-        content: deedTemplate,
-        formSchema: conveyanceForm,
+        slug: template.slug,
+        title: template.title,
+        documentFamily: template.documentFamily,
+        tags: template.tags,
+        content: template.template,
+        formSchema: template.formSchema,
       },
     });
   }
-
-  async seedDeedOfAssignment() {
-    return this.prisma.template.create({
-      data: {
-        slug: 'deed-of-assignment',
-        title: 'Deed of Assignment',
-        documentFamily: 'deed',
-        tags: ['property, land, ownership, assignment, transfer of title'],
-        content: assignmentTemplate,
-        formSchema: assignmentForm,
-      },
-    });
-  }
-
-  async seedDeedOfGift() {
-    return this.prisma.template.create({
-      data: {
-        slug: 'deed-of-gift',
-        title: 'Deed of Gift',
-        documentFamily: 'deed',
-        tags: ['property, ownership, gift, transfer of title, no consideration'],
-        content: giftTemplate,
-        formSchema: giftForm,
-      },
-    });
-  }
-
-  async seedDeedOfShares() {
-    return this.prisma.template.create({
-      data: {
-        slug: 'deed-of-transfer-of-shares',
-        title: 'Deed of Transfer of Shares',
-        documentFamily: 'deed',
-        tags: ['property, ownership, transfer of title, corporate issues, transfer of shares,'],
-        content: sharesTemplate,
-        formSchema: sharesForm,
-      },
-    });
-  }
-
 
   buildExecution(template: any, answers: any) {
 
@@ -204,43 +158,19 @@ export class TemplatesService {
       };
   }
 
-
   async seedTemplates() {
-
-    const templates = [
-      {
-        slug: 'deed-of-conveyance',
-        seed: () => this.seedDeedOfConveyance(),
-      },
-      {
-        slug: 'deed-of-assignment',
-        seed: () => this.seedDeedOfAssignment(),
-      },
-      {
-        slug: 'deed-of-gift',
-        seed: () => this.seedDeedOfGift(),
-      },
-      {
-        slug: 'deed-of-transfer-of-shares',
-        seed: () => this.seedDeedOfShares(),
-      },
-
-      //add more templates
-    ];
-
-    for (const template of templates) {
+    for (const template of templateRegistry) {
       const exists = await this.prisma.template.findUnique({
         where: {
           slug: template.slug,
         },
       });
-
+  
       if (!exists) {
-        await template.seed();
-        console.log(
-          `Seeded ${template.slug}`
-        );
+        await this.seedTemplate(template);
+        console.log(`Seeded ${template.slug}`);
       }
     }
   }
+
 }

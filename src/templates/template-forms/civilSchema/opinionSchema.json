@@ -1,0 +1,42 @@
+{
+    "fields": [
+
+        {
+            "name": "counselName",
+            "label": "State your full name?",
+            "type": "counselname",
+            "required": true
+        },
+
+        {
+            "name": "facts",
+            "label": "Provide a full detailed account of the facts, events, and circumstances giving rise to this request for legal opinion?",
+            "type": "facts",
+            "required": true
+        },
+
+        {
+          "name": "information",
+          "label": "Is there any other information you would like considered in the legal opinion?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+        
+        {
+            "name": "information",
+            "label": "Provide any additional information, issues, or specific points you would like addressed in the legal opinion?",
+            "type": "facts",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        }
+        
+    ]
+}

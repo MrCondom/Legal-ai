@@ -1,0 +1,84 @@
+{
+    "fields": [
+
+      {
+            "name": "date",
+            "label": "Execution Date?",
+            "type": "date",
+            "required": true
+        },
+
+        {
+            "name": "testatorName",
+            "label": "Testator's Legal Name?",
+            "type": "testatorName",
+            "required": true
+        },
+
+        {
+            "name": "testatorOccupation",
+            "label": "Testator's Occupation?",
+            "type": "occupation",
+            "required": true
+        },
+
+        {
+            "name": "testatorAddress",
+            "label": "Testator's Address?",
+            "type": "address",
+            "required": true
+        },
+
+        {
+            "name": "executorName",
+            "label": "Executor's Legal Name?",
+            "type": "executorName",
+            "required": true
+        },
+
+        {
+            "name": "executorOccupation",
+            "label": "Executor's Occupation?",
+            "type": "occupation",
+            "required": true
+        },
+
+        {
+            "name": "executorAddress",
+            "label": "Executor's Address?",
+            "type": "address",
+            "required": true
+        },
+        
+        {
+          "name": "executors",
+          "label": "Is there more than one executors?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+
+        {
+            "name": "executorsDetails",
+            "label": "State the full names, occupation and addresses of the other executor(s)?",
+            "type": "executorsName",
+            "showIf":{
+                "field":"executors",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+
+        {
+            "name": "will",
+            "label": "State how you wish your property and assets to be distributed upon your death?",
+            "type": "wills",
+            "required": true
+        }
+        
+    ]
+}
