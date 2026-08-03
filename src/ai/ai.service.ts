@@ -169,19 +169,19 @@ or
       .map(
         (t, i) => `
   ${i + 1}
-  
+
   id:
   ${t.id}
-  
+
   title:
   ${t.title}
-  
+
   tags:
   ${t.tags}
-  
+
   family:
   ${t.documentFamily}
-  
+
   `,
       )
       .join('\n');
@@ -194,38 +194,38 @@ or
           role: 'system',
 
           content: `
-  
+
   User requested:
-  
+
   ${request}
-  
-  
+
+
   Available templates:
-  
+
   ${available}
-  
-  
+
+
   Choose the most suitable template.
-  
+
   Use both:
-  
+
   • title
-  
+
   • tags
-  
+
   • document family
-  
-  
+
+
   Return only JSON.
-  
+
   Example:
-  
+
   {
-  
+
   "id":"abc123"
-  
+
   }
-  
+
   `,
         },
       ],
@@ -268,45 +268,17 @@ Do not modify section numbering.
 
 Do NOT alter legal intent.
 
-
--Do Not modify for deed:
-
-NOW THIS DEED WITNESSETH AS FOLLOWS
-
-THIS DEED WITNESSETH AS FOLLOWS
-
-THIS DEED RECITES AS FOLLOWS:
-
-ACKNOWLEDGEMENT FOR SAFE CUSTODY AND PRODUCTION OF DOCUMENT
-
-WHEREAS
-
-BACKGROUND
-
-in consideration of
-
-the receipt of which the ... hereby acknowledges
-
-the ... conveys (or assigns) unto the ... ALL that
-
-TO HOLD the same unto the
-
-THE SCHEDULE REFERRED TO
-
-ALL THAT
-
-IN WITNESS OF WHICH
-
-SIGNED, SEALED AND DELIVERED
-
-
-However Briefly Modify For Deed:
+FOR DEED:
+Polish and modify
 1. Contents of BACKGROUND as per what is provided in the source of title.
 2. Execution part as the case may be.
 3. Where parties title are totally different from the requested draft. or where words used in a template is totally different from what the user is demanding e.g user requested for a deed of conveyance, but deed of assignment was presented.
 4. Modify the execution part where either party is a corporate body, organization, infant or illeterate.
 5. Clause or covenants. e.g a Mortgage clause bears vendor or something else, modify to mortgagor.
 
+FOR LEGAL_OPINION:
+Polish
+1. Contents of CONCLUSION
 
 -Do Not modify For Resolution:
 
@@ -345,17 +317,17 @@ Return only the polished document.
           content: `
 
           You are a senior Nigerian legal reviewer.
-          
+
           Use this draft hints.
-          
+
           ${draftingHintsText}
-          
+
           Review document.
-          
+
           First identify the document type.
-          
+
           Possible types:
-          
+
           DEED
           WILLS
           AGREEMENT
@@ -366,16 +338,16 @@ Return only the polished document.
           MOTION
           PETITION
           OTHER
-          
-          
+
+
           Review according to its document type.
-      
+
           For DEEDS:
-          
+
           Any legal document beginning with "Deed of..."
           belongs to the DEED family.
-          
-          
+
+
           Return JSON only.
 
       Format:
@@ -447,13 +419,13 @@ Return only the polished document.
         4. Do not repeat the overall review.
         5. Do not rewrite the document.
         6. Briefly suggest improvement.
-        
+
 
     Return only this JSON structure:
     Do not add other keys.
     Format:
   {
-  
+
       "recommendations": [
           {
           "issue": "",
@@ -473,8 +445,8 @@ Return only the polished document.
           "suggestion": ""
           }
     ],
-      
-    
+
+
    }
 
 `,
@@ -533,6 +505,21 @@ Generate realistics Nigerian examples.
 FOR DEED:
 1. Input at least 1 or 2 covenants, and where covenants are more than 3 reduce it.
 2. Create an execution part, where none is provided.
+3. Do not modify these;
+NOW THIS DEED WITNESSETH AS FOLLOWS
+THIS DEED WITNESSETH AS FOLLOWS
+THIS DEED RECITES AS FOLLOWS:
+ACKNOWLEDGEMENT FOR SAFE CUSTODY AND PRODUCTION OF DOCUMENT
+WHEREAS
+BACKGROUND
+in consideration of
+the receipt of which the ... hereby acknowledges
+the ... conveys (or assigns) unto the ... ALL that
+TO HOLD the same unto the
+THE SCHEDULE REFERRED TO
+ALL THAT
+IN WITNESS OF WHICH
+SIGNED, SEALED AND DELIVERED
 
 FOR LEGAL_OPINION:
 1. Create realistics Nigerian scenerio.
@@ -601,6 +588,21 @@ FOR DEED:
 8. All clauses or convenants should be numbered.
 9. If some covenants or clauses do not belong in the same Heading, create a Heading for that clause or covenant. eg Donor's clauses & Donee's clauses.
 10. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
+11. Do not modify these;
+NOW THIS DEED WITNESSETH AS FOLLOWS
+THIS DEED WITNESSETH AS FOLLOWS
+THIS DEED RECITES AS FOLLOWS:
+ACKNOWLEDGEMENT FOR SAFE CUSTODY AND PRODUCTION OF DOCUMENT
+WHEREAS
+BACKGROUND
+in consideration of
+the receipt of which the ... hereby acknowledges
+the ... conveys (or assigns) unto the ... ALL that
+TO HOLD the same unto the
+THE SCHEDULE REFERRED TO
+ALL THAT
+IN WITNESS OF WHICH
+SIGNED, SEALED AND DELIVERED
 
 FOR LEGAL_OPINION:
 Laws that may be of assistance, if no laws are provided.

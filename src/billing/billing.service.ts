@@ -72,11 +72,11 @@ export class BillingService {
       let credits = 0;
 
       if (plan === 'BASIC') {
-        credits = 50;
+        credits = 100;
       }
 
       if (plan === 'PRO') {
-        credits = 250;
+        credits = 350;
       }
 
       await this.prisma.user.update({
@@ -88,7 +88,7 @@ export class BillingService {
           subscriptionExpiry: expiryDate,
           plan,
           credits: {
-            increment: plan === 'BASIC' ? 150 : 600,
+            increment: plan === 'BASIC' ? 100 : 350,
           },
           creditResetAt: new Date(),
           lastBillingCycleId: billingCycleId,

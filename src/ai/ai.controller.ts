@@ -6,16 +6,6 @@ import { AiService } from './ai.service';
 export class AiController {
   constructor(private readonly aiService: AiService) {}
 
-  @Post('extract')
-  extract(
-    @Body()
-    body: {
-      prompt: string;
-    },
-  ) {
-    return this.aiService.extractLegalData(body.prompt);
-  }
-
   @Post('infer-template')
   inferTemplate(
     @Body()

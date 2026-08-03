@@ -32,7 +32,7 @@ import leaseTemplate from "../templates/template-files/propertyLaw/lease.json";
 import leaseSchema from "../templates/template-forms/propertySchema/leaseSchema.json";
 
 import tenancyTemplate from "../templates/template-files/propertyLaw/tenancy.json";
-import tenancySchema from "../templates/template-forms/propertySchema/tenancy.json";
+import tenancySchema from "../templates/template-forms/propertySchema/tenancySchema.json";
 
 import hireTemplate from "../templates/template-files/propertyLaw/hire-purchase.json";
 import hireSchema from "../templates/template-forms/propertySchema/hireSchema.json";
@@ -86,7 +86,7 @@ export const templateRegistry = [
       "representatives",
       "executors",
       "transfer of title",
-      "deceased"
+      "deceased",
     ],
     template: assentTemplate,
     formSchema: assentSchema,
@@ -114,7 +114,7 @@ export const templateRegistry = [
     tags: [
       "testator",
       "testamentory instrument",
-      "last wish"
+      "last wish",
       "codicil",
       "letter of wishes",
     ],
@@ -129,7 +129,7 @@ export const templateRegistry = [
     tags: [
       "3 years and above tenancy",
       "property",
-      "reversionary interest"
+      "reversionary interest",
       "lessor",
       "no governor's consent",
     ],
@@ -144,7 +144,7 @@ export const templateRegistry = [
     tags: [
       "3 years below",
       "property",
-      "reversionary interest"
+      "reversionary interest",
       "landlord",
       "tenant",
     ],
@@ -159,7 +159,7 @@ export const templateRegistry = [
     tags: [
       "hire",
       "hirer",
-      "installmental payments"
+      "installmental payments",
       "hire and buy",
       "transfer of interest",
     ],
@@ -208,7 +208,7 @@ export const templateRegistry = [
       "loan",
       "borrow",
       "guarantor",
-      "three party mortgage"
+      "three party mortgage",
     ],
     template: triparteTemplate,
     formSchema: triparteSchema,
@@ -253,7 +253,7 @@ export const templateRegistry = [
       "joint-venture agreement",
       "memorandum of understanding",
       "confidentiality agreement",
-      "agreement"
+      "agreement",
     ],
     template: agreementTemplate,
     formSchema: agreementSchema,
@@ -267,9 +267,9 @@ export const templateRegistry = [
     tags: [
       "legal advice",
       "advice a party",
-      "advice an office"
+      "advice a senior officer",
     ],
     template: opinionTemplate,
     formSchema: opinionSchema,
-  },
+  }
 ];
