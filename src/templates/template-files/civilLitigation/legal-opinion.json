@@ -3,9 +3,6 @@
 	"title": "legal opinion",
 	"sections": [
 		{
-		"type": "heading"
-		},
-		{
 		"type": "sectionTitle",
 		"value": "1. Introduction"
 		},
@@ -43,7 +40,7 @@
              "value": ["Use this information to enhance the draft:\n",
                "Full Facts: {{facts}} \n\n",
                "Other Relevant Information: {{information}}\n\n ",
-               "Use today's date, to fill the date section.",]
+               "Use today's date, to fill the date section."]
    }
 
 	]
