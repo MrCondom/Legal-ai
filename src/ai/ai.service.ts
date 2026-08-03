@@ -266,6 +266,8 @@ Only polish language.
 
 Do not modify section numbering.
 
+Ensure you number and paragraph sentences, where applicable, to enhance readability.
+
 Do NOT alter legal intent.
 
 FOR DEED:
@@ -523,6 +525,7 @@ SIGNED, SEALED AND DELIVERED
 
 FOR LEGAL_OPINION:
 1. Create realistics Nigerian scenerio.
+
 
 Return only the completed legal document.
 
