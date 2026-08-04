@@ -44,6 +44,9 @@ import agreementSchema from "../templates/template-forms/propertySchema/agreemen
 import opinionTemplate from "../templates/template-files/civilLitigation/legal-opinion.json";
 import opinionSchema from "../templates/template-forms/civilSchema/opinionSchema.json";
 
+import exparteTemplate from "../templates/template-files/civilLitigation/motion-exparte.json";
+import exparteSchema from "../templates/template-forms/civilSchema/exparteSchema.json";
+
 
 export const templateRegistry = [
   {
@@ -271,5 +274,20 @@ export const templateRegistry = [
     ],
     template: opinionTemplate,
     formSchema: opinionSchema,
+  },
+
+  {
+    slug: "motion-ex-parte",
+    title: "motion ex parte",
+    documentFamily: "motion",
+    tags: [
+      "interim injunction",
+      "mareva injunction",
+      "anton piller injunction",
+      "substituted service",
+      "motion for leave"
+    ],
+    template: exparteTemplate,
+    formSchema: exparteSchema,
   }
 ];
