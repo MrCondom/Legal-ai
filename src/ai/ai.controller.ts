@@ -51,10 +51,11 @@ export class AiController {
   enhanceQuick(
     @Body()
     body: {
-      draft: string;
+        draft: string;
+        request: string;
     },
   ) {
-    return this.aiService.quickDraftEnhancer(body.draft);
+    return this.aiService.quickDraftEnhancer(body.draft, body.request,);
   }
 
   @Post('custom-enhance')

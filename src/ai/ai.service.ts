@@ -476,7 +476,10 @@ Return only the polished document.
     return this.parseJson(content);
   }
 
-  async quickDraftEnhancer(draft: string) {
+  async quickDraftEnhancer(
+    request: string,
+    draft: string,
+  ) {
     const response = await this.openai.chat.completions.create({
       model: 'gpt-5-mini',
 
@@ -487,6 +490,20 @@ Return only the polished document.
           content: `
 
 This is a quick draft.
+
+The original user request is provided together with a base template.
+
+Treat the user's request as the primary instruction.
+
+Use the base template only as the legal structure.
+
+Where the user's request specifies:
+-the type or title of the document,
+-the relationship between the parties,
+-the number of parties,
+-the subject matter,
+-or any relevant details,
+those instructions override any assumptions contained in the base template.
 
 Make it look professionally drafted.
 
@@ -538,7 +555,13 @@ Do not return JSON.
         {
           role: 'user',
 
-          content: draft,
+          content: `
+          ORIGINAL USER REQUEST
+         ${request}
+        
+        BASE TEMPLATE
+       ${draft} 
+       `,
         },
       ],
     });

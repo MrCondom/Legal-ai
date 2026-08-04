@@ -288,6 +288,8 @@ export class AssistantService {
         clauses,
 
         modeSelection: true,
+
+        request,
       };
     }
 
@@ -309,6 +311,8 @@ export class AssistantService {
       generated: true,
 
       modeSelection: true,
+      
+      request,
     };
   }
 
@@ -318,6 +322,8 @@ export class AssistantService {
     templateId: string,
 
     userId: string,
+
+    request: string,
   ) {
     const template = await this.templates.getTemplateById(templateId);
 
@@ -327,7 +333,7 @@ export class AssistantService {
 
     const document = this.templates.flattenTemplate(template.content);
 
-    const enhanced = await this.ai.quickDraftEnhancer(document);
+    const enhanced = await this.ai.quickDraftEnhancer(request, document);
 
     const polished = await this.ai.polishDraft(enhanced);
 

@@ -22,8 +22,8 @@ export class AssistantController {
   }
 
   @Post('quick')
-  quick(@Body() body: { templateId: string; userId: string }) {
-    return this.assistantService.createQuickDraft(body.templateId, body.userId);
+  quick(@Body() body: { templateId: string; userId: string; request: string; }) {
+    return this.assistantService.createQuickDraft(body.templateId, body.userId, body.request,);
   }
 
   @Post('custom')
