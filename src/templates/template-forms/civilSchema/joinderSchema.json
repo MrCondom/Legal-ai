@@ -37,38 +37,10 @@
         },
 
         {
-          "name": "party",
-          "label": "Is there a Party Three in this application?" ,
-          "type": "select",
-          "options": [
-            "Yes",
-            "No"
-          ],
-          "required": true
-        },
-
-        {
-            "name": "partyThree",
-            "label": "Provide the full name(s) of all the parties comprising Party Three?",
+            "name": "soughtToBeJoined",
+            "label": "Provide the full name(s) of all parties sought to be joined in this application?",
             "type": "name",
-            "showIf":{
-                "field":"party",
-                "equals":[
-                  "Yes"
-                ]
-            }
-        },
-
-        {
-            "name": "partThreeRole",
-            "label": "What is Party Three's role in this matter?",
-            "type": "role",
-            "showIf":{
-                "field":"party",
-                "equals":[
-                  "Yes"
-                ]
-            }
+            "required": true
         },
 
         {

@@ -10,65 +10,15 @@
 
         {
             "name": "nameOfPartyOne",
-            "label": "Provide the full name(s) of all the parties comprising Party One?",
+            "label": "Provide the full name(s) of all Applicants?",
             "type": "name",
             "required": true
         },
-
-        {
-          "name": "partyOneRole",
-          "label": "What is Party One's role in this matter? (eg Claimant/Applicant)",
-          "type": "role",
-          "required": true
-        },
-
         {
             "name": "nameOfPartyTwo",
-            "label": "Provide the full name(s) of all the parties comprising Party Two?",
+            "label": "Provide the full name(s) of all the Respondents?",
             "type": "name",
             "required": true
-        },
-
-        {
-          "name": "partyTwoRole",
-          "label": "What is Party Two's role in this matter?",
-          "type": "role",
-          "required": true
-        },
-
-        {
-          "name": "party",
-          "label": "Is there a Party Three in this application?" ,
-          "type": "select",
-          "options": [
-            "Yes",
-            "No"
-          ],
-          "required": true
-        },
-
-        {
-            "name": "partyThree",
-            "label": "Provide the full name(s) of all the parties comprising Party Three?",
-            "type": "name",
-            "showIf":{
-                "field":"party",
-                "equals":[
-                  "Yes"
-                ]
-            }
-        },
-
-        {
-            "name": "partThreeRole",
-            "label": "What is Party Three's role in this matter?",
-            "type": "role",
-            "showIf":{
-                "field":"party",
-                "equals":[
-                  "Yes"
-                ]
-            }
         },
 
         {

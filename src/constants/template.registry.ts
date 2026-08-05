@@ -46,6 +46,16 @@ import opinionSchema from "../templates/template-forms/civilSchema/opinionSchema
 
 import exparteTemplate from "../templates/template-files/civilLitigation/motion-exparte.json";
 import exparteSchema from "../templates/template-forms/civilSchema/exparteSchema.json";
+import motionTemplate from "../templates/template-files/civilLitigation/motion-on-notice.json";
+
+import garnisheeTemplate from "../templates/template-files/civilLitigation/garnishee.json";
+import garnisheeSchema from "../templates/template-forms/civilSchema/garnisheeSchema.json";
+
+import humanTemplate from "../templates/template-files/civilLitigation/human-right.json";
+import humanSchema from "../templates/template-forms/civilSchema/humanSchema.json";
+
+import joinderTemplate from "../templates/template-files/civilLitigation/joinder-parties.json";
+import joinderSchema from "../templates/template-forms/civilSchema/joinderSchema.json";
 
 
 export const templateRegistry = [
@@ -289,5 +299,62 @@ export const templateRegistry = [
     ],
     template: exparteTemplate,
     formSchema: exparteSchema,
+  },
+
+  {
+    slug: "motion-on-notice",
+    title: "motion on notice",
+    documentFamily: "motion",
+    tags: [
+      "interlocutory injunction",
+      "preliminary objection challenging the jurisdiction of the court",
+      "motion for summary judgment",
+      "motion for trinity prayers",
+      "motion"
+    ],
+    template: motionTemplate,
+    formSchema: exparteSchema,
+  },
+
+  {
+    slug: "garnishee-order",
+    title: "garnishee order",
+    documentFamily: "motion",
+    tags: [
+      "garnishee order",
+      "motion to set aside a garnishee order",
+      "judgment creditor",
+      "order nisi",
+      "enforcing judgment"
+    ],
+    template: garnisheeTemplate,
+    formSchema: garnisheeSchema,
+  },
+
+  {
+    slug: "joinder-of-parties",
+    title: "joinder of parties",
+    documentFamily: "motion",
+    tags: [
+      "joinder of parties",
+      "misjoinder of parties",
+      "party sought to be joined",
+    ],
+    template: joinderTemplate,
+    formSchema: joinderSchema,
+  },
+
+  {
+    slug: "originating-motion",
+    title: "originating-motion",
+    documentFamily: "motion",
+    tags: [
+      "originating motion",
+      "originating application",
+      "enforcement of human rights",
+    ],
+    template: humanTemplate,
+    formSchema: humanSchema,
   }
+  
 ];

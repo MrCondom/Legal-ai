@@ -77,6 +77,15 @@ Return
 "intent": "DRAFT"
 }
 
+5. MOTION
+eg motion ex parte, motion on notice, motion for joinder of party, garnishee order etc
+
+Return
+{
+"type": "motion",
+"intent": "DRAFT"
+}
+
 
 
 
@@ -270,24 +279,6 @@ Ensure you number and paragraph sentences, where applicable, to enhance readabil
 
 Do NOT alter legal intent.
 
-FOR DEED:
-Polish and modify
-1. Contents of BACKGROUND as per what is provided in the source of title.
-2. Execution part as the case may be.
-3. Where parties title are totally different from the requested draft. or where words used in a template is totally different from what the user is demanding e.g user requested for a deed of conveyance, but deed of assignment was presented.
-4. Modify the execution part where either party is a corporate body, organization, infant or illeterate.
-5. Clause or covenants. e.g a Mortgage clause bears vendor or something else, modify to mortgagor.
-
-FOR LEGAL_OPINION:
-Polish
-1. Contents of CONCLUSION
-
--Do Not modify For Resolution:
-
-FEDERAL REPUBLIC OF NIGERIA
-
-IN THE COMPANIES AND ALLIED MATTERS ACT 2020
-
 
 
 Return only the polished document.
@@ -345,9 +336,24 @@ Return only the polished document.
           Review according to its document type.
 
           For DEEDS:
-
           Any legal document beginning with "Deed of..."
           belongs to the DEED family.
+
+          For AGREEMENTS:
+          Any legal document having contents bearing "Agreement"
+          belongs to the AGREEMENT family.
+
+          For MOTIONS:
+          Any legal document with contents like  "An Order ..", "A Declaration", "Motion on ..", "Injunction"
+          belongs to the MOTION family.
+
+          For LEGAL_OPINION:
+          Any legal document with contents like "Legal opinion", "Legal advice"
+          belongs to the LEGAL_OPINION family.
+
+          For WILLS:
+          Any legal document with contents like "wills", "codicil", "probate", "letters of administrations"
+          belongs to the WILLS family.
 
 
           Return JSON only.
@@ -513,6 +519,8 @@ Do not substantially rewrite.
 
 Improve punctuation.
 
+Always get rid of the instructions section at the bottom of the template.
+
 Do not increase document length.
 
 Replace all placeholders with realistics name, address, occupation and scenerio. eg never leave {{propertyDescription}}, {{propertyAddress}} etc.
@@ -539,9 +547,44 @@ THE SCHEDULE REFERRED TO
 ALL THAT
 IN WITNESS OF WHICH
 SIGNED, SEALED AND DELIVERED
+12. Enhance contents of BACKGROUND as per what is provided in the source of title.
+13. Enhance execution part as the case may be.
+14. Enhance clause or covenants. e.g a Mortgage clause bears vendor or something else, modify to mortgagor.
+
+FOR AGREEMENT:
+1. Do not substantially increase word count.
+2. Dates should be like this; e.g 2nd October, 2020.
+3. Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
+4. Amounts should carry a currency sign. if no currency is provided the default is Naira.
+5. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
 
 FOR LEGAL_OPINION:
 1. Create realistics Nigerian scenerio.
+
+FOR MOTION
+1. The HEADING should be, in full capital letter and should be centralised.
+2. The SUIT NO: ___, should be located at the right hand side.
+3. Party role should be directly opposite the name, that is at the right hand side.
+4. Motion ex parte has no service. i.e the motion is not served on the other party.
+5. All motion ex parte are filled together with a motion on notice. so most times, it is stated in the ex parte motion. eg for an Interim Injunction: AN ORDER restraining ___ pending the hearing of the Motion on notice already filed before the court and AN ORDER restraining ___ pending the determination of the substantive suit.
+6. For Anton Piller: AN ORDER ___ restraining the ___ for destroying copyright materials, that is to be used as evidence.
+7. For Mareva injunction: AN ORDER ___ restraining the ___ from removing his assets from jurisdiction.
+8. For Misjoinder: AN ORDER ___ striking out ___ in this suit.
+9. For Renewal of writ: AN ORDER ___ extending the lifespan of the writ of summons and other originating processes in the suit for three (3) months.
+10. For Substituted service: AN ORDER ___ granting leave on the ____ to effect substituted service on the ____, by way of advertising in two (2) daily national newspapers.
+11. For Amending a writ: AN ORDER ___ granting leave to the __ to amend his writ of summons, as stated in the proposed amended writ of of summons.
+12. For Joinder of party(s): AN ORDER ___ joining ___ as ___ in this suit.
+13. For Leave to sue in representative capacity: AN ORDER ___ granting leave to the ___ to commence this action in a representative capacity on behalf of himself and the ___.
+14. For Jurisdiction: AN ORDER __ striking this suit for lack of jurisdiction.
+15. For Summary judgement: AN ORDER ___ to be entered for the ___ enabling him to recover ___ owed to him by the ___.
+16. For Garnishee order: A GARNISHEE ORDER NISI attaching the sum of ___, standing to the credit of the judgment debtor in Account number: ___, at the ___ branch of the garnishee, in satisfaction of the judgment in favour of the judgment creditor/applicant in this case.
+17. For Enforcement of Fundamental Human Rights: A DECLARATION that the arrest of the applicant by the ___ is unlawful and unconstitutional and AN ORDER __ compelling the ___ to release the applicant from prison.
+18. For Trinity Prayers: AN ORDER FOR EXTENSION OF TIME to seek leave to appeal the decision of the __ high court delivered by honourable Justice __ on the __ in suit No: ____, AN ORDER GRANTING LEAVE TO APPEAL, and AN ORDER FOR EXTENSION OF TIME WITHIN WHICH TO FILE AN APPEAL.
+19. For Setting aside garnishee order: AN ORDER setting aside the garnishee order nisi made on the ___.
+20. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
+21. The date should look like this, eg Dated this 31st day of january, 2026.
+22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant).
+23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
 
 
 Return only the completed legal document.
@@ -558,9 +601,9 @@ Do not return JSON.
           content: `
           ORIGINAL USER REQUEST
          ${request}
-        
+
         BASE TEMPLATE
-       ${draft} 
+       ${draft}
        `,
         },
       ],
@@ -629,6 +672,9 @@ THE SCHEDULE REFERRED TO
 ALL THAT
 IN WITNESS OF WHICH
 SIGNED, SEALED AND DELIVERED
+12. Enhance contents of BACKGROUND as per what is provided in the source of title.
+13. Enhance execution part as the case may be.
+14. Enhance clause or covenants. e.g a Mortgage clause bears vendor or something else, modify to mortgagor.
 
 FOR LEGAL_OPINION:
 Laws that may be of assistance, if no laws are provided.
@@ -646,7 +692,8 @@ Laws that may be of assistance, if no laws are provided.
 12. Administration Of Criminal Justice Act.
 13. Trade Union Act.
 14. Labour Act.
-15. Other Relevant Laws as the case may be
+15. Fundamental Rights (Enforcement Procedure) Rules.
+16. Other Relevant Laws as the case may be
 
 FOR AGREEMENT:
 1. Do not substantially increase word count.
@@ -657,6 +704,34 @@ FOR AGREEMENT:
 6. All clauses or convenants should be numbered.
 7. If some covenants or clauses do not belong in the same Heading, create a Heading for that clause or covenant. eg Donor's clauses & Donee's clauses.
 8. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
+
+FOR MOTION
+1. The HEADING should be, in full capital letter and should be centralised.
+2. The SUIT NO: ___, should be located at the right hand side.
+3. Party role should be directly opposite the name, that is at the right hand side.
+4. Motion ex parte has no service. i.e the motion is not served on the other party.
+5. All motion ex parte are filled together with a motion on notice. so most times, it is stated in the ex parte motion. eg for an Interim Injunction: AN ORDER restraining ___ pending the hearing of the Motion on notice already filed before the court and AN ORDER restraining ___ pending the determination of the substantive suit.
+6. For Anton Piller: AN ORDER ___ restraining the ___ for destroying copyright materials, that is to be used as evidence.
+7. For Mareva injunction: AN ORDER ___ restraining the ___ from removing his assets from jurisdiction.
+8. For Misjoinder: AN ORDER ___ striking out ___ in this suit.
+9. For Renewal of writ: AN ORDER ___ extending the lifespan of the writ of summons and other originating processes in the suit for three (3) months.
+10. For Substituted service: AN ORDER ___ granting leave on the ____ to effect substituted service on the ____, by way of advertising in two (2) daily national newspapers.
+11. For Amending a writ: AN ORDER ___ granting leave to the __ to amend his writ of summons, as stated in the proposed amended writ of of summons.
+12. For Joinder of party(s): AN ORDER ___ joining ___ as ___ in this suit.
+13. For Leave to sue in representative capacity: AN ORDER ___ granting leave to the ___ to commence this action in a representative capacity on behalf of himself and the ___.
+14. For Jurisdiction: AN ORDER __ striking this suit for lack of jurisdiction.
+15. For Summary judgement: AN ORDER ___ to be entered for the ___ enabling him to recover ___ owed to him by the ___.
+16. For Garnishee order: A GARNISHEE ORDER NISI attaching the sum of ___, standing to the credit of the judgment debtor in Account number: ___, at the ___ branch of the garnishee, in satisfaction of the judgment in favour of the judgment creditor/applicant in this case.
+17. For Enforcement of Fundamental Human Rights: A DECLARATION that the arrest of the applicant by the ___ is unlawful and unconstitutional and AN ORDER __ compelling the ___ to release the applicant from prison.
+18. For Trinity Prayers: AN ORDER FOR EXTENSION OF TIME to seek leave to appeal the decision of the __ high court delivered by honourable Justice __ on the __ in suit No: ____, AN ORDER GRANTING LEAVE TO APPEAL, and AN ORDER FOR EXTENSION OF TIME WITHIN WHICH TO FILE AN APPEAL.
+19. For Setting aside garnishee order: AN ORDER setting aside the garnishee order nisi made on the ___.
+20. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
+21. The date should look like this, eg Dated this 31st day of january, 2026.
+22. Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
+23. Amounts should carry a currency sign. if no currency is provided the default is Naira.
+22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant).
+23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
+
 
 
 For affidavit:

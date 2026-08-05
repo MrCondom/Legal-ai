@@ -1,13 +1,13 @@
 {
-   "motion_ex_parte": {
-    "title": "motion ex parte",
+   "application_for_garnishee_order":{
+    "title": "application for garnishee order",
     "sections": [
-        {
-            "type": "heading", 
-            "value": ["IN THE {{court}} \n",
-                    "IN THE __ JUDICIAL DIVISION\n",
-                         "HOLDEN AT __"]
-        },
+      {
+          "type": "heading", 
+          "value": ["IN THE {{court}} \n",
+                  "IN THE __ JUDICIAL DIVISION\n",
+                       "HOLDEN AT __"]
+      },
         {
             "type": "suit",
             "value": "SUIT NO: ________"
@@ -18,8 +18,8 @@
         },
         {
             "type": "row",
-            "left": "{{nameOfPartyOne}}",
-            "right": "{{partyOneRole}}"
+            "left": "{{judgmentCreditor}} ",
+            "right": "JUDGMENT CREDITOR/{{creditorRole}}"
         },
         {
             "type": "sectionTitle",
@@ -27,12 +27,21 @@
         },
         {
             "type": "row",
-            "left": "{{nameOfPartyTwo}}",
-            "right": "{{partyTwoRole}}"
+            "left": "{{judgmentDebtor}} ",
+            "right": "JUDGMENT DEBTOR/{{debtorRole}}"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "AND"
+        },
+        {
+            "type": "row",
+            "left": "{{garnishee}} ",
+            "right": "GARNISHEE/{{garnisheeRole}}"
         },
         {
             "type": "heading",
-            "value": "MOTION EX PARTE"
+            "value": "MOTION EX PARTE "
         },
         {
             "type": "sectionTitle",
@@ -44,7 +53,7 @@
         },
         {
             "type": "text",
-            "value": "AN ORDER of {{orderSought}} ."
+            "value": "{{orderSought}} ."
         },
         {
             "type": "text",
@@ -70,17 +79,14 @@
             "{{lawFirm}}"
         ]
         },
-
         {
                    "type": "instructions",
                    "value": ["Use this information to enhance the draft:\n",
-                     "Default role is 'Applicant & Respondent', use if not specify.\n\n",
+                     "Default role is 'Judgment Creditor, Judgment Debtor & Garnishee'.\n\n",
                      "The orders sought can be so many. Hence it should begin with, 'AN ORDER..', 'A DECLARATION' etc.\n\n",
-                     "Always complete this 'counsel to the ___'. it is always the Applicant. so it could be Claimant/Applicant, Defendant/Applicant, Applicant.\n\n",
+                     "Always complete this 'counsel to the ___'. it is always the Applicant. so it could be Judgment Creditor/Applicant, Judgment Debtor/Applicant, Garnishee/Applicant.\n\n",
                      "The Title of this template can be modified to something related to the instructions. eg MOTION EX PARTE FOR ..., etc\n\n",
                      "If no {{grounds}} is provided, remove the entire block, including the sectionTitle.\n\n ",
-                     "if there is a party three, include it like this eg BETWEEN Jackson(Applicant) and John(Defendant) and johnson(party sought to be joined).\n\n",
-                     "{{partyThree}} {{partThreeRole}}.\n\n",
                      "Use today's date, to fill the date section."]
          }
     ]

@@ -9,66 +9,45 @@
         },
 
         {
-            "name": "nameOfPartyOne",
-            "label": "Provide the full name(s) of all the parties comprising Party One?",
+            "name": "judgmentCreditor",
+            "label": "Provide the full name(s) of all Judgment Creditor(s)?",
             "type": "name",
             "required": true
         },
 
         {
-          "name": "partyOneRole",
-          "label": "What is Party One's role in this matter? (eg Claimant/Applicant)",
+          "name": "creditorRole",
+          "label": "What is the Judgment Creditor's role in this matter? (eg Applicant)",
           "type": "role",
           "required": true
         },
 
         {
-            "name": "nameOfPartyTwo",
-            "label": "Provide the full name(s) of all the parties comprising Party Two?",
+            "name": "judgmentDebtor",
+            "label": "Provide the full name(s) of all Judgment Debitor(s)?",
             "type": "name",
             "required": true
         },
 
         {
-          "name": "partyTwoRole",
-          "label": "What is Party Two's role in this matter?",
+          "name": "debtorRole",
+          "label": "What is the Judgment Debtor's role in this matter?",
           "type": "role",
           "required": true
         },
 
         {
-          "name": "party",
-          "label": "Is there a Party Three in this application?" ,
-          "type": "select",
-          "options": [
-            "Yes",
-            "No"
-          ],
-          "required": true
-        },
-
-        {
-            "name": "partyThree",
-            "label": "Provide the full name(s) of all the parties comprising Party Three?",
+            "name": "garnishee",
+            "label": "What is the full name of the Garnishee?",
             "type": "name",
-            "showIf":{
-                "field":"party",
-                "equals":[
-                  "Yes"
-                ]
-            }
+            "required": true
         },
 
         {
-            "name": "partThreeRole",
-            "label": "What is Party Three's role in this matter?",
-            "type": "role",
-            "showIf":{
-                "field":"party",
-                "equals":[
-                  "Yes"
-                ]
-            }
+          "name": "debtorRole",
+          "label": "What is the Garnishee's role in this matter?",
+          "type": "role",
+          "required": true
         },
 
         {

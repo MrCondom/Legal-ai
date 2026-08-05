@@ -32,7 +32,7 @@
         },
         {
             "type": "heading",
-            "value": "MOTION EX PARTE"
+            "value": "MOTION ON NOTICE"
         },
         {
             "type": "sectionTitle",
@@ -70,6 +70,10 @@
             "{{lawFirm}}"
         ]
         },
+        {
+            "type": "text",
+            "value": "FOR SERVICE:"
+        },
 
         {
                    "type": "instructions",
@@ -77,7 +81,7 @@
                      "Default role is 'Applicant & Respondent', use if not specify.\n\n",
                      "The orders sought can be so many. Hence it should begin with, 'AN ORDER..', 'A DECLARATION' etc.\n\n",
                      "Always complete this 'counsel to the ___'. it is always the Applicant. so it could be Claimant/Applicant, Defendant/Applicant, Applicant.\n\n",
-                     "The Title of this template can be modified to something related to the instructions. eg MOTION EX PARTE FOR ..., etc\n\n",
+                     "The Title of this template can be modified to something related to the instructions. eg MOTION ON NOTICE FOR ..., etc\n\n",
                      "If no {{grounds}} is provided, remove the entire block, including the sectionTitle.\n\n ",
                      "if there is a party three, include it like this eg BETWEEN Jackson(Applicant) and John(Defendant) and johnson(party sought to be joined).\n\n",
                      "{{partyThree}} {{partThreeRole}}.\n\n",
