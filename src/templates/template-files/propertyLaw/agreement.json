@@ -53,7 +53,7 @@
          },
          {
           "type": "instructions",
-          "value": ["Use this information to enhance the draft: {{fullAgreement}}. The draft should be within 50 - 260 words.\n\n",
+          "value": ["Use this information to enhance the draft: {{fullAgreement}}. The draft should be within 500 - 10000 words.\n\n",
             "Use this to enhance the draft: {{additionalParties}}.\n\n",
             "Also the roles of the parties, should be clearly stated. eg partners, or buyer & seller. etc\n\n",
             "Additional information: {{additionalInformation}}. Where there are more than one parties, the execution part should include them accordingly.\n\n",

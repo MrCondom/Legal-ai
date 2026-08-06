@@ -275,7 +275,9 @@ Only polish language.
 
 Do not modify section numbering.
 
-Ensure you number and paragraph sentences, where applicable, to enhance readability.
+Maintain compact legal document formatting with minimal spacing around headings.
+
+Ensure you number and paragraph sentences, where applicable, to enhance readability, except lead sentences or lead-in-phrases eg 'TAKE NOTICE', 'I APPOINT', 'LET ALL PARTIES', etc 
 
 Do NOT alter legal intent.
 
@@ -585,6 +587,7 @@ FOR MOTION
 21. The date should look like this, eg Dated this 31st day of january, 2026.
 22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant).
 23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
+24. if the content of the draft is related to criminal law, SUIT NO: should become CHARGE NO: eg motion for bail.
 
 
 Return only the completed legal document.
@@ -693,7 +696,8 @@ Laws that may be of assistance, if no laws are provided.
 13. Trade Union Act.
 14. Labour Act.
 15. Fundamental Rights (Enforcement Procedure) Rules.
-16. Other Relevant Laws as the case may be
+16. Electoral Act.
+17. Other Relevant Laws as the case may be
 
 FOR AGREEMENT:
 1. Do not substantially increase word count.
@@ -731,6 +735,7 @@ FOR MOTION
 23. Amounts should carry a currency sign. if no currency is provided the default is Naira.
 22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant).
 23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
+24. if the content of the draft is related to criminal law, SUIT NO: should become CHARGE NO: eg motion for bail.
 
 
 

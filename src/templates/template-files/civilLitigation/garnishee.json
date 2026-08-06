@@ -87,6 +87,7 @@
                      "Always complete this 'counsel to the ___'. it is always the Applicant. so it could be Judgment Creditor/Applicant, Judgment Debtor/Applicant, Garnishee/Applicant.\n\n",
                      "The Title of this template can be modified to something related to the instructions. eg MOTION EX PARTE FOR ..., etc\n\n",
                      "If no {{grounds}} is provided, remove the entire block, including the sectionTitle.\n\n ",
+                     "The draft should be within 500-3000 words.\n\n",
                      "Use today's date, to fill the date section."]
          }
     ]

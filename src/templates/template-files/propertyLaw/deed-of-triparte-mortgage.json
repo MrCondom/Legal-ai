@@ -94,7 +94,7 @@
                 },
                 {
                   "type": "instructions",
-                  "value": ["Use this information to enhance the draft: enhance the convenant's in this draft, it should be sweet and understandable. The draft should be within 30 - 100 words\n\n",
+                  "value": ["Use this information to enhance the draft: enhance the convenant's in this draft, it should be sweet and understandable. The draft should be within 500 - 6000 words\n\n",
                           "If its a landed property, use this to enhance the draft or just ignore. Source of Title: {{sourceOfTitle}}, CofO: {{CofODetails}} and Survey Plan: {{surveyPlanDetails}}.\n\n",
                           "If its a landed property, provide Governors Consent Signatory, using this format, or else ignore.\n\n",
                           "Provide Signatory for the guarantor using his information."

@@ -48,7 +48,7 @@
     },
     {
       "type": "instructions",
-      "value": ["Use this information to enhance the draft: enhance the body of this draft, it should be sweet and understandable. The draft should be within 50 - 600 words\n\n",
+      "value": ["Use this information to enhance the draft: enhance the body of this draft, it should be sweet and understandable. The draft should be within 500 - 30000 words\n\n",
         "Use this information to enhance the draft: {{will}}.\n\n ",
         "Also use this information, where there are more than 1 executors, or else ignore: {{executorsDetails}}"]
     }

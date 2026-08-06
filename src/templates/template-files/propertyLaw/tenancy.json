@@ -95,7 +95,7 @@
                 },
                 {
                   "type": "instructions",
-                  "value": ["Use this information to enhance the draft: enhance the convenant's in this draft, it should be sweet and understandable. The draft should be within 30 - 100 words\n",
+                  "value": ["Use this information to enhance the draft: enhance the convenant's in this draft, it should be sweet and understandable. The draft should be within 500 - 5000 words\n",
                     "Always do the math. eg if the term is one year, 1st january, it ends 31st december."]
                 }
 
