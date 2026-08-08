@@ -1,0 +1,135 @@
+{
+    "fields": [
+
+        {
+            "name": "counselName",
+            "label": "State your full name?",
+            "type": "counselname",
+            "required": true
+        },
+
+        {
+            "name": "court",
+            "label": "State the name of the court and the state in which the application is brought?",
+            "type": "court",
+            "required": true
+        },
+
+        {
+            "name": "nameOfPartyOne",
+            "label": "Provide the full name(s) of all the parties comprising Party One?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+          "name": "partyOneRole",
+          "label": "What is Party One's role in this matter? (eg Claimant/Applicant)",
+          "type": "role",
+          "required": true
+        },
+
+        {
+            "name": "nameOfPartyTwo",
+            "label": "Provide the full name(s) of all the parties comprising Party Two?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+          "name": "partyTwoRole",
+          "label": "What is Party Two's role in this matter?",
+          "type": "role",
+          "required": true
+        },
+
+        {
+          "name": "party",
+          "label": "Is there a Party Three in this application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+
+        {
+            "name": "partyThree",
+            "label": "Provide the full name(s) of all the parties comprising Party Three?",
+            "type": "name",
+            "showIf":{
+                "field":"party",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+
+        {
+            "name": "partThreeRole",
+            "label": "What is Party Three's role in this matter?",
+            "type": "role",
+            "showIf":{
+                "field":"party",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+
+        {
+            "name": "fullFacts",
+            "label": "Provide a full detailed account of the facts, events, and circumstances giving rise to this application?",
+            "type": "facts",
+            "required": true
+        },
+
+        {
+          "name": "argument",
+          "label": "Do you have any legal argument to provide in support of this application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+
+        {
+            "name": "argument",
+            "label": "Provide the legal arguments in support of this application?",
+            "type": "facts",
+            "showIf":{
+                "field":"argument",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+
+        {
+          "name": "information",
+          "label": "Is there any other information you would like considered in the application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+        
+        {
+            "name": "information",
+            "label": "Provide any additional information, issues, or specific points you would like addressed in the application?",
+            "type": "facts",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        }
+        
+    ]
+}

@@ -40,7 +40,7 @@
             "right": "PARTY SOUGHT TO BE JOINED"
         },
         {
-            "type": "heading",
+            "type": "subHeading",
             "value": "MOTION ON NOTICE"
         },
         {
@@ -90,7 +90,7 @@
                      "Default role is 'Applicant, Respondent & Party sought to be joined', use if not specify.\n\n",
                      "The orders sought can be so many. Hence it should begin with, 'AN ORDER..', 'A DECLARATION' etc.\n\n",
                      "Always complete this 'counsel to the ___'. it is always the Applicant. so it could be Claimant/Applicant, Defendant/Applicant, Applicant.\n\n",
-                     "The Title of this template can be modified to something related to the instructions. eg MOTION ON NOTICE FOR ..., etc\n\n",
+                     "The subHeading of this template can be modified to something related to the instructions. eg MOTION ON NOTICE FOR ..., etc\n\n",
                      "If no {{grounds}} is provided, remove the entire block, including the sectionTitle.\n\n ",
                      "The draft should be within 500-3000 words.\n\n",
                      "Use today's date, to fill the date section."]

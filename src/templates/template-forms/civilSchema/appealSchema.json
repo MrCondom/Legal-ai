@@ -1,0 +1,93 @@
+{
+    "fields": [
+
+      {
+          "name": "counselName",
+          "label": "State your full name?",
+          "type": "counselname",
+          "required": true
+      },
+
+      {
+          "name": "appellantName",
+          "label": "Provide the full name(s) of all Appellant(s)?",
+          "type": "name",
+          "required": true
+      },
+
+      {
+          "name": "appellantAddress",
+          "label": "Appellant's Address?",
+          "type": "address",
+          "required": true
+      },
+
+      {
+          "name": "respondentName",
+          "label": "Provide the full name(s) of all Respondent(s)?",
+          "type": "name",
+          "required": true
+      },
+
+      {
+          "name": "respondentAddress",
+          "label": "Respondent's Address?",
+          "type": "address",
+          "required": true
+      },
+
+      {
+          "name": "court",
+          "label": "State the name of the trial court?",
+          "type": "trialCourt",
+          "required": true
+      },
+
+      {
+          "name": "judgeName",
+          "label": "What is the name of the Honourable Justice who delivered the judgment at the trial court?",
+          "type": "name",
+          "required": true
+      },
+      {
+          "name": "dateOfJudgment",
+          "label": "What was the date on which the judgment was delivered?",
+          "type": "date",
+          "required": true
+      },
+        {
+            "name": "decisionAppealed",
+            "label": "What judgment, ruling, or order is the subject of this appeal?",
+            "type": "text",
+            "required": true
+        },
+
+        {
+            "name": "facts",
+            "label": "Provide a full detailed account of the facts, events, and circumstances giving rise to this appeal?",
+            "type": "facts",
+            "required": true
+        },
+
+        {
+            "name": "grounds",
+            "label": "State the grounds upon which this appeal is brought?",
+            "type": "text",
+            "required": true
+        },
+
+        {
+            "name": "reliefsSought",
+            "label": "State the relief(s) sought in this appeal?",
+            "type": "relief",
+            "required": true
+        },
+        {
+            "name": "lawFirm",
+            "label": "Law firm name and address?",
+            "type": "address",
+            "required": "false"
+        }
+        
+    ]
+}

@@ -43,7 +43,7 @@
            "right": "RESPONDENT"
        },
        {
-           "type": "heading",
+           "type": "subHeading",
            "value": "ORIGINATING MOTION"
        },
        {
@@ -93,7 +93,7 @@
                     "This is an originating motion, so default role is always 'Applicant & Respondent'.\n\n",
                     "The orders sought can be so many. Hence it should begin with, 'AN ORDER..', 'A DECLARATION' etc.\n\n",
                     "Always complete this 'counsel to the ___'. it is always the Applicant.\n\n",
-                    "The Title of this template can be modified to something related to the instructions. eg ORIGINATING MOTION ..., etc\n\n",
+                    "The subHeading of this template can be modified to something related to the instructions. eg ORIGINATING MOTION ..., etc\n\n",
                     "If no {{grounds}} is provided, remove the entire block, including the sectionTitle.\n\n ",
                     "If the content of the document has nothing to do with Fundamental Human Right, remove the entire block.\n\n",
                     "The draft should be within 500-6000 words.\n\n",

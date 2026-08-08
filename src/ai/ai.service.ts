@@ -86,6 +86,42 @@ Return
 "intent": "DRAFT"
 }
 
+6. SUMMONS
+eg summons, writ of summons, originating summons etc
+
+Return
+{
+"type": "summons",
+"intent": "DRAFT"
+}
+
+7. AFFIDAVIT
+eg affidavit
+
+Return
+{
+"type": "affidavit",
+"intent": "DRAFT"
+}
+
+8. WRITTEN ADDRESS
+eg written address, final address 
+
+Return
+{
+"type": "written address",
+"intent": "DRAFT"
+}
+
+9. APPEAL
+eg notice of appeal
+
+Return
+{
+"type": "appeal",
+"intent": "DRAFT"
+}
+
 
 
 
@@ -566,7 +602,7 @@ FOR LEGAL_OPINION:
 FOR MOTION
 1. The HEADING should be, in full capital letter and should be centralised.
 2. The SUIT NO: ___, should be located at the right hand side.
-3. Party role should be directly opposite the name, that is at the right hand side.
+3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Applicant
 4. Motion ex parte has no service. i.e the motion is not served on the other party.
 5. All motion ex parte are filled together with a motion on notice. so most times, it is stated in the ex parte motion. eg for an Interim Injunction: AN ORDER restraining ___ pending the hearing of the Motion on notice already filed before the court and AN ORDER restraining ___ pending the determination of the substantive suit.
 6. For Anton Piller: AN ORDER ___ restraining the ___ for destroying copyright materials, that is to be used as evidence.
@@ -585,7 +621,7 @@ FOR MOTION
 19. For Setting aside garnishee order: AN ORDER setting aside the garnishee order nisi made on the ___.
 20. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
 21. The date should look like this, eg Dated this 31st day of january, 2026.
-22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant).
+22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
 23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
 24. if the content of the draft is related to criminal law, SUIT NO: should become CHARGE NO: eg motion for bail.
 
@@ -712,7 +748,7 @@ FOR AGREEMENT:
 FOR MOTION
 1. The HEADING should be, in full capital letter and should be centralised.
 2. The SUIT NO: ___, should be located at the right hand side.
-3. Party role should be directly opposite the name, that is at the right hand side.
+3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Applicant
 4. Motion ex parte has no service. i.e the motion is not served on the other party.
 5. All motion ex parte are filled together with a motion on notice. so most times, it is stated in the ex parte motion. eg for an Interim Injunction: AN ORDER restraining ___ pending the hearing of the Motion on notice already filed before the court and AN ORDER restraining ___ pending the determination of the substantive suit.
 6. For Anton Piller: AN ORDER ___ restraining the ___ for destroying copyright materials, that is to be used as evidence.
@@ -731,12 +767,9 @@ FOR MOTION
 19. For Setting aside garnishee order: AN ORDER setting aside the garnishee order nisi made on the ___.
 20. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
 21. The date should look like this, eg Dated this 31st day of january, 2026.
-22. Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
-23. Amounts should carry a currency sign. if no currency is provided the default is Naira.
-22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant).
+22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
 23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
 24. if the content of the draft is related to criminal law, SUIT NO: should become CHARGE NO: eg motion for bail.
-
 
 
 For affidavit:

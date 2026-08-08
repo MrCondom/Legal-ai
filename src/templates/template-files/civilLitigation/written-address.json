@@ -1,0 +1,77 @@
+{
+   "written_address": {
+    "title": "written address",
+    "sections": [
+      {
+          "type": "heading", 
+          "value": ["IN THE {{court}} \n",
+                  "IN THE __ JUDICIAL DIVISION\n",
+                       "HOLDEN AT __"]
+      },
+        {
+            "type": "suit",
+            "value": "SUIT NO: ________"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "BETWEEN"
+        },
+        {
+            "type": "row",
+            "left": "{{nameOfPartyOne}}",
+            "right": "{{partyOneRole}}"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "AND"
+        },
+        {
+            "type": "row",
+            "left": "{{nameOfPartyTwo}}",
+            "right": "{{partyTwoRole}}"
+        },
+        {
+            "type": "subHeading",
+            "value": "WRITTEN ADDRESS"
+        },
+        {
+            "type": "sectionTitle",
+            "value": ["1. INTRODUCTION\n",
+            "2. SUMMARY OF FACTS\n",
+            "3. ISSUES FOR DETERMINATION\n",
+            "4. LEGAL ARGUMENT\n",
+            "5. CONCLUSION\n",
+            "6. LIST OF AUTHORITIES"]
+        },
+        {
+            "type": "text",
+            "value":["DATED this, {{date}} \n\n",
+              "____________________"]
+       },
+       {
+           "type": "address",
+           "value": ["{{counselName}} \n",
+           "The ____ solicitor\n",
+           "{{lawFirm}}"
+       ]
+       },
+       {
+           "type": "text",
+           "value": "FOR SERVICE:"
+       },
+       {
+                  "type": "instructions",
+                  "value": ["Use this information to enhance the draft:\n",
+                    "Default role is 'Applicant & Respondent', use if not specify.\n\n",
+                    "Full facts: {{fullFacts}}.\n\n",
+                    "Legal argument: {{argument}}.\n\n",
+                    "The subHeading of this template can be modified to something related to the instructions. eg WRITTEN ADDRESS IN SUPPORT..., etc\n\n",
+                    "Other relevant information: {{information}}.\n\n ",
+                    "if there is a party three, include it like this eg BETWEEN Jackson(Applicant) and John(Defendant) and johnson(party sought to be joined).\n\n",
+                    "Party Three: {{partyThree}} {{partThreeRole}}.\n\n",
+                    "The draft should be within 500-13000 words.\n\n",
+                    "Use today's date, to fill the date section."]
+        }
+   ]
+  }
+}

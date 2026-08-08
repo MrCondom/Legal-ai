@@ -57,6 +57,18 @@ import humanSchema from "../templates/template-forms/civilSchema/humanSchema.jso
 import joinderTemplate from "../templates/template-files/civilLitigation/joinder-parties.json";
 import joinderSchema from "../templates/template-forms/civilSchema/joinderSchema.json";
 
+import affidavitTemplate from "../templates/template-files/civilLitigation/affidavit.json";
+import affidavitSchema from "../templates/template-forms/civilSchema/affidavitSchema.json";
+
+import appealTemplate from "../templates/template-files/civilLitigation/appeal.json";
+import appealSchema from "../templates/template-forms/civilSchema/appealSchema.json";
+
+import writtenTemplate from "../templates/template-files/civilLitigation/written-address.json";
+import writtenSchema from "../templates/template-forms/civilSchema/writtenSchema.json";
+
+import summonsTemplate from "../templates/template-files/civilLitigation/summons.json";
+import summonsSchema from "../templates/template-forms/civilSchema/summonsSchema.json";
+
 
 export const templateRegistry = [
   {
@@ -350,11 +362,62 @@ export const templateRegistry = [
     documentFamily: "motion",
     tags: [
       "originating motion",
-      "originating application",
+      "originating motion ex parte",
       "enforcement of human rights",
+      "originating motion on notice"
     ],
     template: humanTemplate,
     formSchema: humanSchema,
+  },
+
+  {
+    slug: "affidavit",
+    title: "affidavit",
+    documentFamily: "affidavit",
+    tags: [
+      "affidavit",
+      "document supporting motions"
+    ],
+    template: affidavitTemplate,
+    formSchema: affidavitSchema,
+  },
+
+  {
+    slug: "written-address",
+    title: "written address",
+    documentFamily: "written address",
+    tags: [
+      "written address",
+      "final address",
+      "document supporting motions"
+    ],
+    template: writtenTemplate,
+    formSchema: writtenSchema,
+  },
+
+  {
+    slug: "summons",
+    title: "summons",
+    documentFamily: "summons",
+    tags: [
+      "summons",
+      "interpleader summons",
+      "motion in the north",
+    ],
+    template: summonsTemplate,
+    formSchema: summonsSchema,
+  },
+
+  {
+    slug: "notice-of-appeal",
+    title: "notice of appeal",
+    documentFamily: "appeal",
+    tags: [
+      "notice of appeal",
+      "appeal document"
+    ],
+    template: appealTemplate,
+    formSchema: appealSchema,
   }
   
 ];

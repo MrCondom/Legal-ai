@@ -1,0 +1,147 @@
+{
+    "fields": [
+
+      {
+        "name": "organization",
+        "label": "Is Party One an organisation, company, group of individuals or other entity?",
+        "type": "select",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true
+      },
+      
+        {
+            "name": "nameOfPartyOne",
+            "label": "Provide the full name(s) of all the parties comprising Party One?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+          "name": "partyOneRole",
+          "label": "What is Party One's role in this matter? (eg Claimant/Applicant)",
+          "type": "role",
+          "required": true
+        },
+
+        {
+            "name": "appellantAddress",
+            "label": "Party One's Occupation, Religion, and Address ?",
+            "type": "address",
+            "showIf":{
+                "field":"organization",
+                "equals":[
+                  "No"
+                ]
+            }
+        },
+
+        {
+            "name": "appellantAddress",
+            "label": "State the deponent's full name, occupation, religion and residential address?",
+            "type": "address",
+            "showIf":{
+                "field":"organization",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+
+        {
+            "name": "nameOfPartyTwo",
+            "label": "Provide the full name(s) of all the parties comprising Party Two?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+          "name": "partyTwoRole",
+          "label": "What is Party Two's role in this matter?",
+          "type": "role",
+          "required": true
+        },
+
+        {
+          "name": "party",
+          "label": "Is there a Party Three in this application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+
+        {
+            "name": "partyThree",
+            "label": "Provide the full name(s) of all the parties comprising Party Three?",
+            "type": "name",
+            "showIf":{
+                "field":"party",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+
+        {
+            "name": "partThreeRole",
+            "label": "What is Party Three's role in this matter?",
+            "type": "role",
+            "showIf":{
+                "field":"party",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+
+        {
+            "name": "court",
+            "label": "State the name of the court and the state in which the application is brought?",
+            "type": "court",
+            "required": true
+        },
+
+        {
+            "name": "order",
+            "label": "State the Order and Rule under which this application is brought?",
+            "type": "law",
+            "required": true
+        },
+
+        {
+            "name": "facts",
+            "label": "Provide a full detailed account of the facts, events, and circumstances giving rise to this affidavit?",
+            "type": "facts",
+            "required": true
+        },
+
+        {
+          "name": "information",
+          "label": "Is there any other information you would like considered in this application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+        
+        {
+            "name": "information",
+            "label": "Provide any additional information, facts, or grounds relevant to this application?",
+            "type": "facts",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        }
+        
+    ]
+}
