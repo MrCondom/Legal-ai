@@ -31,7 +31,7 @@ export function getConversationMessage(user?: any, history?: any[]) {
   
   // Account based greetings
 
-  const latestDraft = history[0];
+  const latestDraft = history?.[0];
   
   if (user?.plan === "PRO") {
     if (latestDraft?.template?.title) {

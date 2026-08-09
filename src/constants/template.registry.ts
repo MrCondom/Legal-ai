@@ -70,10 +70,10 @@ import summonsTemplate from "../templates/template-files/civilLitigation/summons
 import summonsSchema from "../templates/template-forms/civilSchema/summonsSchema.json";
 
 import claimTemplate from "../templates/template-files/civilLitigation/claim.json";
-import statementTemplate from "../templates/template-files/civilLitigation/statement-of-claim.json";
+import statementTemplate from "../templates/template-files/civilLitigation/statement-of-claims.json";
 import claimSchema from "../templates/template-forms/civilSchema/claimSchema.json";
 
-import defenceTemplate from "../templates/template-files/civilLitigation/statement-defense.json";
+import defenceTemplate from "../templates/template-files/civilLitigation/statement-of-defense.json";
 import defenceSchema from "../templates/template-forms/civilSchema/defenceSchema.json";
 
 import setoffTemplate from "../templates/template-files/civilLitigation/set-off.json";
@@ -439,7 +439,7 @@ export const templateRegistry = [
     documentFamily: "pleadings",
     tags: [
       "particulars of claim",
-      "claim,
+      "claim",
       "simple claim",
       "claim at the magistrate courts",
       "claim at the area courts",
