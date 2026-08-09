@@ -69,6 +69,19 @@ import writtenSchema from "../templates/template-forms/civilSchema/writtenSchema
 import summonsTemplate from "../templates/template-files/civilLitigation/summons.json";
 import summonsSchema from "../templates/template-forms/civilSchema/summonsSchema.json";
 
+import claimTemplate from "../templates/template-files/civilLitigation/claim.json";
+import statementTemplate from "../templates/template-files/civilLitigation/statement-of-claim.json";
+import claimSchema from "../templates/template-forms/civilSchema/claimSchema.json";
+
+import defenceTemplate from "../templates/template-files/civilLitigation/statement-defense.json";
+import defenceSchema from "../templates/template-forms/civilSchema/defenceSchema.json";
+
+import setoffTemplate from "../templates/template-files/civilLitigation/set-off.json";
+import setoffSchema from "../templates/template-forms/civilSchema/setoffSchema.json";
+
+import counterTemplate from "../templates/template-files/civilLitigation/counter-claim.json";
+import counterSchema from "../templates/template-forms/civilSchema/counterSchema.json";
+
 
 export const templateRegistry = [
   {
@@ -418,6 +431,68 @@ export const templateRegistry = [
     ],
     template: appealTemplate,
     formSchema: appealSchema,
+  },
+  
+  {
+    slug: "claim",
+    title: "claim",
+    documentFamily: "pleadings",
+    tags: [
+      "particulars of claim",
+      "claim,
+      "simple claim",
+      "claim at the magistrate courts",
+      "claim at the area courts",
+    ],
+    template: claimTemplate,
+    formSchema: claimSchema,
+  },
+  
+  {
+    slug: "statement-of-claim",
+    title: "statement of claim",
+    documentFamily: "pleadings",
+    tags: [
+      "statement of claim",
+      "claim at the High courts",
+    ],
+    template: statementTemplate,
+    formSchema: claimSchema,
+  },
+
+  {
+    slug: "set-off",
+    title: "set-off",
+    documentFamily: "pleadings",
+    tags: [
+      "set-off",
+      "monetary claim against the claimant",
+    ],
+    template: setoffTemplate,
+    formSchema: setoffSchema,
+  },
+
+  {
+    slug: "statement-of-defence",
+    title: "statement of defence",
+    documentFamily: "pleadings",
+    tags: [
+      "statement of defence",
+    ],
+    template: defenceTemplate,
+    formSchema: defenceSchema,
+  },
+
+  {
+    slug: "counter-claim",
+    title: "counter claim",
+    documentFamily: "pleadings",
+    tags: [
+      "defendant's claim",
+      "counter-claim",
+    ],
+    template: counterTemplate,
+    formSchema: counterSchema,
   }
   
 ];

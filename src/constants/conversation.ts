@@ -30,8 +30,15 @@ export function getConversationMessage(user?: any, history?: any[]) {
   }
   
   // Account based greetings
+
+  const latestDraft = history[0];
   
   if (user?.plan === "PRO") {
+    if (latestDraft?.template?.title) {
+  
+      return `Welcome back ${userName}. I noticed your recent ${latestDraft.template.title}. Your cDRAFT AI Premium assistant is ready to help.`;
+    }
+    
     return `Welcome back ${userName}. Your cDRAFT AI premium assistant is ready to help with your legal drafting today.`;
   }
   
@@ -42,20 +49,11 @@ export function getConversationMessage(user?: any, history?: any[]) {
   
   
   if (!user?.everSubscribed) {
-    return `Welcome ${userName}. cDRAFT AI is ready to help you create professional legal documents.`;
-  }
-
-  // Recent draft awareness
-  
-  if (history && history.length > 0) {
-  
-    const latestDraft = history[0];
-  
     if (latestDraft?.template?.title) {
-  
       return `Welcome back ${userName}. I noticed your recent ${latestDraft.template.title}. What would you like to draft today?`;
-  
     }
+    
+    return `Welcome ${userName}. cDRAFT AI is ready to help you create professional legal documents.`;
   }
 
   // Normal greetings

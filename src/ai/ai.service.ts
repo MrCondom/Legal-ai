@@ -87,7 +87,7 @@ Return
 }
 
 6. SUMMONS
-eg summons, writ of summons, originating summons etc
+eg summons, writ of summons, originating summons
 
 Return
 {
@@ -119,6 +119,15 @@ eg notice of appeal
 Return
 {
 "type": "appeal",
+"intent": "DRAFT"
+}
+
+10. PLEADINGS
+eg claim, statement of claim, statement of defence, counter-claim etc
+
+Return
+{
+"type": "pleadings",
 "intent": "DRAFT"
 }
 
@@ -601,7 +610,7 @@ FOR LEGAL_OPINION:
 
 FOR MOTION
 1. The HEADING should be, in full capital letter and should be centralised.
-2. The SUIT NO: ___, should be located at the right hand side.
+2. The HEADING should look like this, eg 'IN THE HIGH COURT OF LAGOS STATE', 'IN THE LAGOS JUDICIAL DIVISION or IN THE IKEJA JUDICIAL DIVISION', 'HOLDEN IN LAGOS or HOLDEN AT IKEJA', or for magistrate courts 'IN THE MAGISTRATES' COURT OF LAGOS STATE', 'IN THE LAGOS MAGISTRATE DISTRICT or IN THE IKEJA MAGISTERIAL DISTRICT', 'HOLDEN AT LAGOS'.
 3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Applicant
 4. Motion ex parte has no service. i.e the motion is not served on the other party.
 5. All motion ex parte are filled together with a motion on notice. so most times, it is stated in the ex parte motion. eg for an Interim Injunction: AN ORDER restraining ___ pending the hearing of the Motion on notice already filed before the court and AN ORDER restraining ___ pending the determination of the substantive suit.
@@ -624,6 +633,18 @@ FOR MOTION
 22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
 23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
 24. if the content of the draft is related to criminal law, SUIT NO: should become CHARGE NO: eg motion for bail.
+25. Motions are served to the other party except Ex Parte motion. so 'For Service:' should always end like this eg 'For Service', 'The Respondent'.
+
+
+FOR PLEADINGS
+1. The HEADING should be, in full capital letter and should be centralised.
+2. The HEADING should look like this, eg 'IN THE HIGH COURT OF LAGOS STATE', 'IN THE LAGOS JUDICIAL DIVISION or IN THE IKEJA JUDICIAL DIVISION', 'HOLDEN IN LAGOS or HOLDEN AT IKEJA', or for magistrate courts 'IN THE MAGISTRATES' COURT OF LAGOS STATE', 'IN THE LAGOS MAGISTRATE DISTRICT or IN THE IKEJA MAGISTERIAL DISTRICT', 'HOLDEN AT LAGOS'.
+3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Claimant.
+4. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
+5. The date should look like this, eg Dated this 31st day of january, 2026.
+6. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
+7. All pleadings are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
+
 
 
 Return only the completed legal document.
@@ -747,7 +768,7 @@ FOR AGREEMENT:
 
 FOR MOTION
 1. The HEADING should be, in full capital letter and should be centralised.
-2. The SUIT NO: ___, should be located at the right hand side.
+2. The HEADING should look like this, eg 'IN THE HIGH COURT OF LAGOS STATE', 'IN THE LAGOS JUDICIAL DIVISION or IN THE IKEJA JUDICIAL DIVISION', 'HOLDEN IN LAGOS or HOLDEN AT IKEJA', or for magistrate courts 'IN THE MAGISTRATES' COURT OF LAGOS STATE', 'IN THE LAGOS MAGISTRATE DISTRICT or IN THE IKEJA MAGISTERIAL DISTRICT', 'HOLDEN AT LAGOS'.
 3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Applicant
 4. Motion ex parte has no service. i.e the motion is not served on the other party.
 5. All motion ex parte are filled together with a motion on notice. so most times, it is stated in the ex parte motion. eg for an Interim Injunction: AN ORDER restraining ___ pending the hearing of the Motion on notice already filed before the court and AN ORDER restraining ___ pending the determination of the substantive suit.
@@ -770,6 +791,17 @@ FOR MOTION
 22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
 23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
 24. if the content of the draft is related to criminal law, SUIT NO: should become CHARGE NO: eg motion for bail.
+25. Motions are served to the other party except Ex Parte motion. so 'For Service:' should always end like this eg 'For Service', 'The Respondent'.
+
+
+FOR PLEADINGS
+1. The HEADING should be, in full capital letter and should be centralised.
+2. The HEADING should look like this, eg 'IN THE HIGH COURT OF LAGOS STATE', 'IN THE LAGOS JUDICIAL DIVISION or IN THE IKEJA JUDICIAL DIVISION', 'HOLDEN IN LAGOS or HOLDEN AT IKEJA', or for magistrate courts 'IN THE MAGISTRATES' COURT OF LAGOS STATE', 'IN THE LAGOS MAGISTRATE DISTRICT or IN THE IKEJA MAGISTERIAL DISTRICT', 'HOLDEN AT LAGOS'.
+3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Claimant.
+4. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
+5. The date should look like this, eg Dated this 31st day of january, 2026.
+6. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
+7. All pleadings are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
 
 
 For affidavit:

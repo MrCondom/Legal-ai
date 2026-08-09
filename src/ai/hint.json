@@ -41,8 +41,30 @@
     "13. Trade Union Act.",
     "14. Labour Act.",
     "15. Fundamental Rights (Enforcement Procedure) Rules",
-    "15. Other Relevant Laws as the case may be"
+    "16. Child Rights Act",
+    "17. Electoral Act",
+    "18. Other Relevant Laws as the case may be"
     ]
+  },
+
+  {
+
+  "type":"pleadings",
+  "checks":[
+    "Sentences are clear",
+    "Affixing of Nigerian Bar Association (NBA) stamp",
+    "Address for service",
+    "Date",
+    "Facts are clear",
+    "Jurisdiction, i.e cause of action in a state, but claim is brought in another state",
+    "Is it a claim that should be settled out of court?",
+    "Immunity, i.e president, diplomats etc",
+    "With regards to fresh claims and where it involves an organisation or company, was pre action notice given?",
+    "Cause of action",
+    "Limitation period. eg for defamation claims - 3 years, simple contract - 6 years, contract under seal - 12 years, land matters for individuals in the north and east - 12 years, west - 10 years and state government - 20 years. public officers - 3 months.",
+    "Locus standi",
+    "Complies with relevant state high court rules"
+  ]
   },
 
 {
@@ -92,4 +114,3 @@
 ]
 }
 ]
-
