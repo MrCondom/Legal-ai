@@ -109,7 +109,7 @@ import writSchema from "../templates/template-forms/civilSchema/writSchema.json"
 import originatingTemplate from "../templates/template-files/civilLitigation/originating-summons.json";
 import originatingSchema from "../templates/template-forms/civilSchema/originatingSchema.json";
 
-import appearanceTemplate from "../templates/template-files/civilLitigation/memorandum-of-appearance.json";
+import appearanceTemplate from "../templates/template-files/civilLitigation/momorandum-of-appearance.json";
 import appearanceSchema from "../templates/template-forms/civilSchema/appearanceSchema.json";
 
 
