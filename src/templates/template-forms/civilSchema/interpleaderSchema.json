@@ -1,0 +1,82 @@
+{
+    "fields": [
+
+        {
+            "name": "counselName",
+            "label": "State your full name?",
+            "type": "counselname",
+            "required": true
+        },
+
+        {
+            "name": "applicantName",
+            "label": "Provide the full name of the Applicant",
+            "type": "name",
+            "required": true
+        },
+        {
+            "name": "claimantName",
+            "label": "Provide the full name(s) of all the Claimants?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+            "name": "claimantAddress",
+            "label": "Claimant(s) Address?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+            "name": "court",
+            "label": "State the name of the court and the state in which the application is brought?",
+            "type": "court",
+            "required": true
+        },
+
+        {
+            "name": "order",
+            "label": "State the Order and Rule under which this application is brought?",
+            "type": "law",
+            "required": true
+        },
+
+        {
+            "name": "claim",
+            "label": "State the property or interest claimed by the claimants",
+            "type": "text",
+            "required": true
+        },
+
+        {
+          "name": "information",
+          "label": "Is there any other information you would like considered in this application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+        
+        {
+            "name": "information",
+            "label": "Provide any additional information, or facts, relevant to this application?",
+            "type": "facts",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
+        {
+            "name": "lawFirm",
+            "label": "Law firm name and address?",
+            "type": "address",
+            "required": "false"
+        }
+        
+    ]
+}

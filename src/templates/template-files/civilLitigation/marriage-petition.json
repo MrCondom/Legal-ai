@@ -1,0 +1,127 @@
+{
+   "petition_for_dissolution":{
+    "title": "petition for dissolution",
+    "sections": [
+      {
+          "type": "heading", 
+          "value": ["IN THE {{court}} \n",
+                  "IN THE __ JUDICIAL DIVISION\n",
+                       "HOLDEN AT __"]
+      },
+        {
+            "type": "suit",
+            "value": "Petition no:________"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "BETWEEN"
+        },
+        {
+            "type": "row",
+            "left": " {{petitionerName}} ",
+            "right": "Petitioner"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "AND"
+        },
+        {
+            "type": "row",
+            "left": " {{respondentName}}",
+            "right": "Respondent"
+        },
+        {
+            "type": "heading",
+            "value": "PETITION FOR DISSOLUTION"
+        },
+        {
+            "type": "text",
+            "value": ["TO: The above named high court\n\n",
+            "The petitioner {{petitionerName}} {{petitionerOccupation}} whose {{petitionerAddress}}, petitions the court for a decree of dissolution of marriage against the respondent {{respondentName}}  {{respondentOccupation}}, whose {{respondentAddress}}."]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "MARRIAGE"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "BIRTH OF PETITIONER AND RESPONDENT"
+        },
+        {
+            "type": "text",
+            "value":"{{dateOfBirthPetitioner}} and {{dateOfBirthRespondent}}"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "RESIDENCE"
+        },
+        {
+            "type": "text",
+            "value":"{{petitionerAddress}}"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "COHABITATION"
+        },
+        {
+            "type": "text",
+            "value":"The particulars of the place and the periods, which the petitioner and respondent has cohabited and ceased to cohabit are as follows;"
+        },
+       {
+            "type": "sectionTitle",
+            "value": "PREVIOUS PROCEEDINGS"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "CONDONATION, CONNIVANCE AND COLLUSION"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "CHILDREN"
+        },
+        {
+            "type": "text",
+            "value":"The petitioner has not condoned or conived at the grounds specified above and is not guilty of collusion, in presenting this petition."
+        },
+        {
+            "type": "sectionTitle",
+            "value": "ORDER SOUGHT"
+        },
+        {
+            "type": "text",
+            "value":"8. The petitioner seeks the following order;"
+        },
+         {
+            "type": "texta",
+            "value":"{{orderSought}} "
+        },
+        {
+            "type": "text",
+            "value":["DATED this, {{date}} \n\n",
+              "____________________"]
+       },
+        {
+            "type": "text",
+            "value":["The petition was setled by {{counselName}} {{lawFirm}}\n\n",
+            "Filed on the, {{date}}  by {{counselName}} unbehalf of the petitioner whose address for service is {{petitionerAddress}}"]
+        },
+         {
+            "type": "right",
+            "value":["_______________\n",
+            "Petitioner"]
+        },
+        {
+                   "type": "instructions",
+                   "value": ["Use this information to enhance the draft:\n",
+                     "The role is 'Petitioner & Respondent'.\n\n",
+                     "The common grounds for an dissolution of marriage petition includes: 'That the respondent has willfully and persistently refused to consumate the marriage.', 'That since the marriage, the respondent has committed adultery and that the petitioner finds it intolerable to live with the respondent.', 'That since the marriage, the respondent has behaved in such a way that the petitioner cannot be expected to live with him or her.', 'That the respondent has deserted the petitioner for a continuous period of at least one year immediately preceding the presentation of the petition.', 'That the parties to the marriage have lived apart for a continuous period of at least two years immediately preceding the presentation of the petition and the respondent does not object to a decree being granted.', 'That the parties to the marriage have lived apart for a continuous period of at least three years immediately preceding the presentation of the petition.', 'That the other party to the marriage has for a period of not less than one year, failed to comply with a decree of restitution of conjugal rights.' etc .\n\n",
+                     "Full facts: {{fullFacts}}.\n\n ",
+                     "Other relevant information: {{information}}.\n\n ",
+                     "'MARRIAGE' here means, when and how they got married.\n\n",
+                     "The draft should be within 500-10000 words.\n\n",
+                     "Use today's date, to fill the date section."]
+         }
+    ]
+}
+}
+

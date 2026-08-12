@@ -1,0 +1,74 @@
+{
+   "reply-to-petition": {
+    "title": "reply to petition",
+    "sections": [
+      {
+          "type": "heading", 
+          "value": ["{{court}} \n",
+                  "HOLDEN AT {{state}} "]
+      },
+      {
+          "type": "right",
+          "value": "Petition no:________"
+      },
+      {
+          "type": "text3",
+          "value": "Election to the {{office}} held on {{dateElectionWasHeld}} "
+      },
+      {
+          "type": "sectionTitle",
+          "value": "BETWEEN"
+      },
+      {
+          "type": "row",
+          "left": " {{petitionerName}} ",
+          "right": "Petitioner"
+      },
+      {
+          "type": "sectionTitle",
+          "value": "AND"
+      },
+      {
+          "type": "row",
+          "left": " {{respondentName}}",
+          "right": "Respondent"
+      },
+        {
+            "type": "heading1",
+            "value": "REPLY TO PETITION"
+        },
+        {
+            "type": "text",
+            "value": "{{admits&deny&state}} "
+        },
+        {
+            "type": "text",
+            "value":["DATED this, {{date}} \n\n",
+              "____________________"]
+       },
+       {
+          "type": "address",
+          "value": ["{{counselName}} \n",
+          "The ____ solicitor\n",
+          "{{lawFirm}}"
+       ]
+       },
+       {
+          "type": "text",
+          "value": "FOR SERVICE:"
+       },
+       {
+                 "type": "instructions",
+                 "value": ["Use this information to enhance the draft:\n",
+                   "The role is 'Petitioner & Respondent'.\n\n",
+                   "Reply is usually direct, eg 'The 1st respondent admits to the facts contained in the petition, only to the extent as it relates, to the holding, date and results of the elections and no more', 'The 1st respondent denies the fact...', 'Your 1st respondent shall at the hearing, of the petition pray that the court should dismiss the petition with substantial cost.', etc.\n\n",
+                   "There are few tribunals or court that can handle election petitions, they include, 'IN THE COURT OF APPEAL for the office of the president', 'IN THE GOVERNORSHIP ELECTION TRIBUNAL OF __ STATE for governorship election', 'IN THE NATIONAL AND STATE HOUSES OF ASSEMBLY ELECTION TRIBUNAL for election in the senate'.\n\n ",
+                   "Usually Petitioners are; The candidate(s) and the political party. so it should be like '1st petitioner' & '2nd petitioner', likewise respondents.\n\n",
+                   "Independent national electoral commission (INEC) is usually the last respondent in any election petion, unless the petition is challenging a primary election in a political party.\n\n",
+                   "The draft should be within 300-10000 words.\n\n",
+                   "Use today's date, to fill the date section."]
+       }
+
+    ]
+}
+}

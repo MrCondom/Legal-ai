@@ -1,0 +1,119 @@
+{
+    "fields": [
+
+      {
+          "name": "counselName",
+          "label": "State your full name?",
+          "type": "counselname",
+          "required": true
+      },
+
+      {
+          "name": "petitionerName",
+          "label": "Provide the full name of the Petitioner.",
+          "type": "name",
+          "required": true
+      },
+
+      {
+          "name": "petitionerAddress",
+          "label": "Petitioner's Address?",
+          "type": "address",
+          "required": true
+      },
+
+      {
+          "name": "petitionerOccupation",
+          "label": "Petitioner's Occupation?",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "dateOfBirthPetitioner",
+          "label": "State the Petitioner's date of birth.",
+          "type": "date",
+          "required": true
+      },
+
+      {
+          "name": "respondentName",
+          "label": "Provide the full name of the Respondent.",
+          "type": "name",
+          "required": true
+      },
+
+      {
+          "name": "respondentAddress",
+          "label": "Respondent's Address?",
+          "type": "address",
+          "required": true
+      },
+
+      {
+          "name": "respondentOccupation",
+          "label": "Respondent's Occupation?",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "dateOfBirthRespondent",
+          "label": "State the Respondent's date of birth.",
+          "type": "date",
+          "required": true
+      },
+
+      {
+          "name": "court",
+          "label": "State the name of the court and the state in which this petition is brought?",
+          "type": "court",
+          "required": true
+      },
+
+          {
+              "name": "fullFacts",
+              "label": "Provide a full detailed account of the facts, events, and circumstances giving rise to this petition?",
+              "type": "facts",
+              "required": true
+          },
+  
+          {
+              "name": "orderSought",
+              "label": "State the relief(s) sought in this petition?",
+              "type": "relief",
+              "required": true
+          },
+
+          {
+            "name": "information",
+            "label": "Is there any other information you would like considered in this petition?" ,
+            "type": "select",
+            "options": [
+              "Yes",
+              "No"
+            ],
+            "required": true
+          },
+          
+          {
+              "name": "information",
+              "label": "Provide any additional information, or grounds relevant to this petition?",
+              "type": "facts",
+              "showIf":{
+                  "field":"information",
+                  "equals":[
+                    "Yes"
+                  ]
+              }
+          },
+          
+        {
+            "name": "lawFirm",
+            "label": "Law firm name and address?",
+            "type": "address",
+            "required": "false"
+        }
+        
+    ]
+}

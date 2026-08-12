@@ -1,0 +1,66 @@
+{
+   "memorandum_of_appearance": {
+    "title": "memorandum of appearance",
+    "sections": [
+      {
+          "type": "heading", 
+          "value": ["IN THE {{court}} \n",
+                  "IN THE __ JUDICIAL DIVISION\n",
+                       "HOLDEN AT __"]
+      },
+        {
+            "type": "suit",
+            "value": "SUIT NO: ________"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "BETWEEN"
+        },
+        {
+            "type": "row",
+            "left": "{{claimantName}} ",
+            "right": "CLAIMANT"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "AND"
+        },
+        {
+            "type": "row",
+            "left": "{{defendantName}} ",
+            "right": "DEFENDANT"
+        },
+        {
+            "type": "heading1",
+            "value": "MEMORANDUM OF APPEARANCE"
+        },
+        {
+            "type": "text",
+            "value": ["Kindly cause an appearance to be entered for {{defendantName}}, being sued as the defendant in this suit.\n\n",
+                    "DATED this, {{date}} \n\n",
+                        "____________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+            "The ____ solicitor\n",
+            "{{lawFirm}}"
+        ]
+        },
+         {
+             "type": "text",
+             "value": "FOR SERVICE:"
+         },
+         {
+                    "type": "instructions",
+                    "value": ["Use this information to enhance the draft:\n",
+                      "The role is 'Claimant & Defendant', use if not specify.\n\n",
+                      "Other relevant information: {{information}}.\n\n",
+                      "'MEMORANDUM OF APPEARANCE' can be conditional or unconditional.\n\n",
+                      "'CONDITIONAL MEMORANDUM OF APPEARANCE' is when the defendant is entering an appearance to challenge the suit on grounds of jurisdiction etc.\n\n",
+                      "The draft should be within 100-1000 words.\n\n",
+                      "Use today's date, to fill the date section."]
+          }
+     ]
+    }
+ }

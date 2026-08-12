@@ -1,0 +1,55 @@
+{
+    "fields": [
+
+        {
+            "name": "counselName",
+            "label": "State your full name?",
+            "type": "counselname",
+            "required": true
+        },
+
+        
+        {
+            "name": "nameOfPartyOne",
+            "label": "Provide the full name(s) of all the Claimants?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+            "name": "nameOfPartyTwo",
+            "label": "Provide the full name(s) of all the Defendants?",
+            "type": "name",
+            "required": true
+        },
+
+        {
+            "name": "addressOfPartyTwo",
+            "label": "Defendant(s) Address?",
+            "type": "address",
+            "required": true
+        },
+
+        {
+            "name": "court",
+            "label": "State the name of the court and the state in which the application is brought.",
+            "type": "court",
+            "required": true
+        },
+
+        {
+            "name": "reliefsSought",
+            "label": "State the relief(s) or order(s) sought in this writ.",
+            "type": "relief",
+            "required": true
+        },
+
+        {
+            "name": "lawFirm",
+            "label": "Law firm name and address?",
+            "type": "address",
+            "required": "false"
+        }
+        
+    ]
+}

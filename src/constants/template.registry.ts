@@ -66,7 +66,7 @@ import appealSchema from "../templates/template-forms/civilSchema/appealSchema.j
 import writtenTemplate from "../templates/template-files/civilLitigation/written-address.json";
 import writtenSchema from "../templates/template-forms/civilSchema/writtenSchema.json";
 
-import summonsTemplate from "../templates/template-files/civilLitigation/summons.json";
+import summonsTemplate from "../templates/template-files/civilLitigation/summonsNorth.json";
 import summonsSchema from "../templates/template-forms/civilSchema/summonsSchema.json";
 
 import claimTemplate from "../templates/template-files/civilLitigation/claim.json";
@@ -81,6 +81,36 @@ import setoffSchema from "../templates/template-forms/civilSchema/setoffSchema.j
 
 import counterTemplate from "../templates/template-files/civilLitigation/counter-claim.json";
 import counterSchema from "../templates/template-forms/civilSchema/counterSchema.json";
+
+import electionTemplate from "../templates/template-files/civilLitigation/election-petition.json";
+import electionSchema from "../templates/template-forms/civilSchema/petitionElectionSchema.json";
+
+import interpleaderTemplate from "../templates/template-files/civilLitigation/interpleader-summons.json";
+import interpleaderSchema from "../templates/template-forms/civilSchema/interpleaderSchema.json";
+
+import replyTemplate from "../templates/template-files/civilLitigation/reply.json";
+import replySchema from "../templates/template-forms/civilSchema/replySchema.json";
+
+import petitionReplyTemplate from "../templates/template-files/civilLitigation/petition-reply.json";
+import petitionReplySchema from "../templates/template-forms/civilSchema/petitionReplySchema.json";
+
+import marriageTemplate from "../templates/template-files/civilLitigation/marriage-petition.json";
+import marriageSchema from "../templates/template-forms/civilSchema/marriageSchema.json";
+
+import petitionTemplate from "../templates/template-files/civilLitigation/petition.json";
+import petitionSchema from "../templates/template-forms/civilSchema/petitionSchema.json";
+
+import discontinuanceTemplate from "../templates/template-files/civilLitigation/notice-of-discontinuance.json";
+import discontinuanceSchema from "../templates/template-forms/civilSchema/discontinuanceSchema.json";
+
+import writTemplate from "../templates/template-files/civilLitigation/writ-of-summons.json";
+import writSchema from "../templates/template-forms/civilSchema/writSchema.json";
+
+import originatingTemplate from "../templates/template-files/civilLitigation/originating-summons.json";
+import originatingSchema from "../templates/template-forms/civilSchema/originatingSchema.json";
+
+import appearanceTemplate from "../templates/template-files/civilLitigation/memorandum-of-appearance.json";
+import appearanceSchema from "../templates/template-forms/civilSchema/appearanceSchema.json";
 
 
 export const templateRegistry = [
@@ -189,7 +219,7 @@ export const templateRegistry = [
     template: tenancyTemplate,
     formSchema: tenancySchema,
   },
-  
+
   {
     slug: "hire-purchase-agreement",
     title: "Hire Purchase agreement",
@@ -409,13 +439,23 @@ export const templateRegistry = [
   },
 
   {
-    slug: "summons",
-    title: "summons",
-    documentFamily: "summons",
+    slug: "motion-in-the-north",
+    title: "motion in the north",
+    documentFamily: "motion",
     tags: [
-      "summons",
-      "interpleader summons",
       "motion in the north",
+      "bail motion in the north",
+    ],
+    template: summonsTemplate,
+    formSchema: summonsSchema,
+  },
+
+  {
+    slug: "interpleader-summons",
+    title: "interpleader summons",
+    documentFamily: "pleadings",
+    tags: [
+      "interpleader summons",
     ],
     template: summonsTemplate,
     formSchema: summonsSchema,
@@ -432,7 +472,7 @@ export const templateRegistry = [
     template: appealTemplate,
     formSchema: appealSchema,
   },
-  
+
   {
     slug: "claim",
     title: "claim",
@@ -447,7 +487,7 @@ export const templateRegistry = [
     template: claimTemplate,
     formSchema: claimSchema,
   },
-  
+
   {
     slug: "statement-of-claim",
     title: "statement of claim",
@@ -493,6 +533,115 @@ export const templateRegistry = [
     ],
     template: counterTemplate,
     formSchema: counterSchema,
+  },
+
+  {
+    slug: "reply",
+    title: "reply",
+    documentFamily: "pleadings",
+    tags: [
+      "claimant's reply",
+      "reply",
+    ],
+    template: replyTemplate,
+    formSchema: replySchema,
+  },
+
+  {
+    slug: "petition",
+    title: "petition",
+    documentFamily: "petitions",
+    tags: [
+      "petition",
+    ],
+    template: petitionTemplate,
+    formSchema: petitionSchema,
+  },
+
+  {
+    slug: "election-petition",
+    title: "election petition",
+    documentFamily: "petitions",
+    tags: [
+      "election petition",
+    ],
+    template: electionTemplate,
+    formSchema: electionSchema,
+  },
+
+  {
+    slug: "marriage-petition",
+    title: "marriage petition",
+    documentFamily: "petitions",
+    tags: [
+      "dissolution of marriage",
+      "marriage petition"
+    ],
+    template: marriageTemplate,
+    formSchema: marriageSchema,
+  },
+
+  {
+    slug: "reply-to-petition",
+    title: "reply to petition",
+    documentFamily: "petitions",
+    tags: [
+      "reply to election petition",
+      "respondent's reply to election petition"
+    ],
+    template: petitionReplyTemplate,
+    formSchema: petitionReplySchema,
+  },
+
+  {
+    slug: "memorandum-of-appearance",
+    title: "memorandum of appearance",
+    documentFamily: "pleadings",
+    tags: [
+      "memorandum of appearance",
+      "conditional memorandum of appearance",
+      "unconditional memorandum of appearance",
+      "entering an appearance for the defendant"
+    ],
+    template: appearanceTemplate,
+    formSchema: appearanceSchema,
+  },
+
+  {
+    slug: "notice-of-discontinuance",
+    title: "notice of discontinuance",
+    documentFamily: "pleadings",
+    tags: [
+      "notice of discontinuance",
+      "claimant's notice to discontinue the suit"
+    ],
+    template: discontinuanceTemplate,
+    formSchema: discontinuanceSchema,
+  },
+
+  {
+    slug: "writ-of-summons",
+    title: "writ of summons",
+    documentFamily: "pleadings",
+    tags: [
+      "writ of summons",
+      "commencement of an action in the high court",
+      "summons"
+    ],
+    template: writTemplate,
+    formSchema: writSchema,
+  },
+
+  {
+    slug: "originating-summons",
+    title: "originating summons",
+    documentFamily: "pleadings",
+    tags: [
+      "originating summons",
+      "interpreting a law,document, etc"
+    ],
+    template: originatingTemplate,
+    formSchema: originatingSchema,
   }
-  
+
 ];

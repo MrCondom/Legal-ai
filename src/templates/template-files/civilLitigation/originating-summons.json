@@ -1,0 +1,110 @@
+{
+   "originating_summons":{
+    "title": "originating summons",
+    "sections": [
+      {
+          "type": "heading", 
+          "value": ["IN THE {{court}} \n",
+                  "IN THE __ JUDICIAL DIVISION\n",
+                       "HOLDEN AT __"]
+      },
+        {
+            "type": "suit",
+            "value": "SUIT NO: ________"
+        },
+
+        {
+            "type": "sectionTitle",
+            "value": "In the matter of the ________________"
+        },
+        
+        {
+            "type": "sectionTitle",
+            "value": "BETWEEN"
+        },
+        {
+            "type": "row",
+            "left": "{{nameOfPartyOne}}",
+            "right": "CLAIMANT"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "AND"
+        },
+        {
+            "type": "row",
+            "left": "{{nameOfPartyTwo}}",
+            "right": "DEFENDANT"
+        },
+        {
+            "type": "subHeading",
+            "value": "ORIGINATING SUMMONS"
+        },
+
+        {
+            "type": "sectionTitle",
+            "value": "BROUGHT PURSUANT TO ORDER {{order}} AND UNDER THE INHERENT JURISDICTION OF THIS HONOURABLE COURT"
+        },
+        
+        {
+            "type": "text",
+            "value": "LET {{nameOfPartyTwo}} of {{addressOfPartyTwo}} attend at the {{court}} , within twenty-one (21) days after service of this summons on him, inclusive of the day of such service, cause an appearance to be entered for him to this summons, which is issued on the application of {{nameOfPartyOne}} of {{addressOfPartyOne}}, and who will seek for the determination of the following questions:"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "QUESTIONS FOR DETERMINATION"
+        },
+
+        {
+            "type": "text",
+            "value": "{{questions}}"
+         },
+
+        {
+            "type": "sectionTitle",
+            "value": "RELIEF SOUGHT BY THE CLAIMANT"
+        },
+        {
+            "type": "text",
+            "value": "A DECLARATION of {{orderSought}} ."
+        },
+
+        {
+            "type": "text",
+            "value": "TAKE NOTE that parties shall remain status quo."
+        },
+        
+         {
+             "type": "text",
+             "value":["DATED this, {{date}} \n\n",
+               "____________________"]
+        },
+
+        {
+            "type": "sectionTitle",
+            "value": ["___________________ \n",
+            "Registrar"
+        ]
+        },
+        
+        {
+            "type": "address",
+            "value": "THIS SUMMONS was taken by {{counselName}} of {{lawFirm}} legal practitioner to the above named claimant."
+        },
+        {
+            "type": "text",
+            "value": "FOR SERVICE:"
+        },
+        {
+                   "type": "instructions",
+                   "value": ["Use this information to enhance the draft:\n",
+                     "The role is 'Claimant & Defendant'.\n\n",
+                     "In FCT it is 14 days after service, while in Lagos it is always 42 days after service, outside jurisdiction is 42 days for both.\n\n",
+                     "To be on the safer side, if the state is located on the southern part of Nigeria, use 42 days.\n\n",
+                     "If Defendant's address is outside jurisdiction, then use this clause before the date 'This writ of summons (or as the case may be) is to be served out of ____ state of nigeria and in the ,  _____ state of nigeria.'\n\n.",
+                     "The draft should be within 500-10000 words.\n\n",
+                     "Use today's date, to fill the date section."]
+         }
+    ]
+   }
+}
