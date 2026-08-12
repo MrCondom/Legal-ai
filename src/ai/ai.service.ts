@@ -318,11 +318,11 @@ Preserve legal language.
 
 Only polish language.
 
-Do not modify section numbering.
-
 Maintain compact legal document formatting with minimal spacing around headings.
 
-Ensure you number and paragraph sentences, where applicable, to enhance readability, except lead sentences or lead-in-phrases eg 'TAKE NOTICE', 'I APPOINT', 'LET ALL PARTIES', etc 
+Use a clear and consistent hierarchical numbering system for all sections and clauses, to enhance readability, except lead sentences or lead-in-phrases eg 'TAKE NOTICE', 'I APPOINT', 'LET ALL PARTIES', 'NOTICE IS HEREBY GIVEN' etc.
+
+Use Arabic numerals (1, 2, 3 ...) for main sections, Roman numerals (i, ii, iii ...) for subsections, and lowercase letters (a,b,c ...) for sub-subsections. Maintain this numbering structure consistently throughout the document.
 
 Do NOT alter legal intent.
 
@@ -566,6 +566,8 @@ Do not substantially rewrite.
 
 Improve punctuation.
 
+Do not refer to the user's request, drafting instructions, AI, counsel requesting the draft, template, existence of placeholders.
+
 Always get rid of the instructions section at the bottom of the template.
 
 Do not increase document length.
@@ -607,6 +609,9 @@ FOR AGREEMENT:
 
 FOR LEGAL_OPINION:
 1. Create realistics Nigerian scenerio.
+2. The output must read as a completed legal opinion, not as an explanation of how the opinion was generated.
+3. Do not invent facts that are not contained in the supplied material.
+4. The 'intoduction' must introduce the subject matter, purpose and background of the legal opinion. it must not describe who requested the opinion or how the opinion was prepared.
 
 FOR MOTION
 1. The HEADING should be, in full capital letter and should be centralised.
@@ -700,6 +705,8 @@ Use professional drafting language.
 
 Do not duplicate clauses.
 
+Do not refer to the user's request, drafting instructions, AI, counsel requesting the draft, template, existence of placeholders.
+
 Do not introduce contradictory provisions.
 
 Preserve clause numbering.
@@ -755,6 +762,11 @@ Laws that may be of assistance, if no laws are provided.
 15. Fundamental Rights (Enforcement Procedure) Rules.
 16. Electoral Act.
 17. Other Relevant Laws as the case may be
+18. The output must read as a completed legal opinion, not as an explanation of how the opinion was generated.
+19. Do not invent facts that are not contained in the supplied material.
+20. The 'intoduction' must introduce the subject matter, purpose and background of the legal opinion. it must not describe who requested the opinion or how the opinion was prepared.
+21. The supplied 'full facts' and 'other relevant information' are source materials, not headings or sections to be reproduced.
+
 
 FOR AGREEMENT:
 1. Do not substantially increase word count.
