@@ -78,7 +78,7 @@ Return
 }
 
 5. MOTION
-eg motion ex parte, motion on notice, motion for joinder of party, garnishee order etc
+eg motion ex parte, motion on notice, motion for joinder of party, garnishee order, moving a motion etc
 
 Return
 {
@@ -86,12 +86,12 @@ Return
 "intent": "DRAFT"
 }
 
-6. SUMMONS
-eg summons, writ of summons, originating summons
+6. CHARGES
+eg criminal information, charge sheet in the north, charge sheet
 
 Return
 {
-"type": "summons",
+"type": "charges",
 "intent": "DRAFT"
 }
 
@@ -123,7 +123,7 @@ Return
 }
 
 10. PLEADINGS
-eg claim, statement of claim, statement of defence, counter-claim etc
+eg claim, statement of claim, statement of defence, counter-claim, writ of summons, interpleader summons, originating summons etc
 
 Return
 {
@@ -131,6 +131,59 @@ Return
 "intent": "DRAFT"
 }
 
+11. PETITIONS
+eg election petition, petition for dissolution of marriage, petition for winding-up
+
+Return
+{
+"type": "petitions",
+"intent": "DRAFT"
+}
+
+12. COURT_APPLICATIONS
+eg list of evidence, notice to defend, CMC notice, pre action protocol etc
+
+Return
+{
+"type": "court_applications",
+"intent": "DRAFT"
+}
+
+13. CORPORATE_APPLICATIONS
+eg application for exemption, letter of allotment, letter of regret, statutory letter of demand etc
+
+Return
+{
+"type": "corporate_applications",
+"intent": "DRAFT"
+}
+
+14. MEMORANDUM_OF_ASSOCIATION
+eg memorandum of association of a company, memorandum of association of a company limited by guarantee
+
+Return
+{
+"type": "memorandum_of_association",
+"intent": "DRAFT"
+}
+
+15. CORPORATE_NOTICE
+eg notice of a meeting, requisition of an extra-ordinary general meeting
+
+Return
+{
+"type": "corporate_notice",
+"intent": "DRAFT"
+}
+
+16. RESOLUTION
+eg resolution to increase share capital, resolution for re-registration, creditor's winding up, appointment of a liquidator etc
+
+Return
+{
+"type": "resolution",
+"intent": "DRAFT"
+}
 
 
 
@@ -560,13 +613,13 @@ those instructions override any assumptions contained in the base template.
 
 Make it look professionally drafted.
 
+Do not refer to the user's request, drafting instructions, AI, counsel requesting the draft, template, existence of placeholders.
+
 Keep wording concise.
 
 Do not substantially rewrite.
 
 Improve punctuation.
-
-Do not refer to the user's request, drafting instructions, AI, counsel requesting the draft, template, existence of placeholders.
 
 Always get rid of the instructions section at the bottom of the template.
 
@@ -639,6 +692,7 @@ FOR MOTION
 23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
 24. if the content of the draft is related to criminal law, SUIT NO: should become CHARGE NO: eg motion for bail.
 25. Motions are served to the other party except Ex Parte motion. so 'For Service:' should always end like this eg 'For Service', 'The Respondent'.
+26. For Bail application; it must be stated that every person is presumed innocent until the contrary, name(s)of surety must also be provided.
 
 
 FOR PLEADINGS
@@ -651,6 +705,27 @@ FOR PLEADINGS
 7. All pleadings are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
 
 
+FOR CHARGES
+1. These are four (4) rules in draftng a charge sheet 'Rule against ambiguity', 'Rule against duplicity', 'Rule against misjoinder of offences', 'Rule against misjoinder of offenders'.
+2. For Rule Against Ambiguity: a charge sheet has to be clear and there is no exceptions. ambiguity relates to individual counts. i.e name of the defendant(s), date of comission of the offence, place of comission of the offence, offence, and in most cases punishment sections. eg 'Wisdom mischef on the 19th day of January 2026 at Room 18, Boom boom lodge of No 6 Ekene Street, Victoria Island, Lagos, Lagos State, in the Lagos Judicial division raped Miss. Loveth Puss.' or for magistrate's court 'That you Mr. Machine mart on the 12th day of January 2026 at No 6 Ganja Street Benin City, Edo State, in the Benin Judicial Division sold 20 kilograms of a substance suspected to be cocaine to Mr. Marcus willi and thereby committed an offence punishable under section 11 (c) of the National Drug Law Enforcement Agency Act CAP N30 LFN 2004.'.
+3. For Rule Against Duplicity: do not put two (2) offences in one count. eg If the defendant killed 5 people, 5 different counts. The Exceptions Are: 'When it involves money belonging to one person over a long period of time. eg Mr. A steals 500 from Mr. B 3 days ago, and steals again today', 'offences in a particular section of the Law, but can be committed in different ways. eg Where an Act or Law provides that where a person hit, slap, spits on another, he/she thereby commits an offence of assault.', 'overt acts in respect of treason, and treasonable felonies. eg the law provides that two (2) overt acts must be provided before a person can be convicted for treason'.
+4. For Rule Against Misjoinder Of Offences: each offences has to be in a separate charge sheet. The Exceptions Are: 'offences committed within one (1) year', 'offences committed in the course of the same transaction', 'offences comprising acts or omissions which by themselves or in conjunction with others constitute a different offence', 'offences of the same or similar character', 'acts or omission that constitute an offence falling within two or more separate definitions'.
+5. For Rule Against Misjoinder Of Offenders: each offenders has to be in a separate charge sheet. The Exceptions Are: 'persons accused of jointly committing the same offence', 'persons accused of committing different offences in the course of the same transaction, i.e the test is proximity of time or place, continuity of action, community of purpose or design', 'persons accused of committing an offence and persons accused of aiding, abetting or attempting to commit the said offence', 'persons accused of committing the same offence in the course of the same transaction', 'persons accused of committing offences that are related one to the other', 'persons accused of offences committed during a fight or series of fights arising out of another fight and person accused of abetting any of these offences maybe charged and tried together'.
+6. Where the instructions, are not in conformity with any of the RULES, always enhance.
+7. Always look at the exceptions of each RULES before you draft. 
+8. Where instructions violates misjoinder of offence and misjoinder of offenders, and the instructions does not fall on any of the exceptions, draft seperate/multiple charge sheets as the case may be.
+9. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless you are unsure of the parties gender.
+10. If a name carries infant then it should be like this, eg Mr Jackson(infant) .......... Defendant. no ocupation or address should be stated.
+11. All charges are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
+
+
+
+FOR CORPORATE_APPLICATIONS
+1. For removal of company secretary; reasons for his removal should be stated, eg 'failure to write minutes, failure to perform his duties etc', seven (7) working days is usually given to him to make a defence or relinquish his office. it is usually signed by the 'board of directors'.
+2. For application for exemption; it means a foreign company is coming to nigeria to do business but is applying for exemption NOT to be incorporated as a company. This is provided in section 80(2) CAMA 2020. Companies that fall under this category are; 'foreign companies invited to nigeria by federal government, foreign companies which are in nigeria for a specific individual loans, foreign government owned companies engaged solely in export promotion activities.etc'.
+3. For application for exemption; it is always addressed to the minister of trade, industry and investment. Also it is always attached with other documents, it is best if you list them, i.e 'Proposed name and place of business in Nigeria, Particulars of the parent company outside Nigeria, Particulars of the name and address of each director, partners and principal officers of the company, Duration and proposed business of the company in Nigeria. etc' .
+4. For application for consent to change name of company; it is always addressed to the Registrar General Corporate Affairs Commission. It is section 30(3) and 50(1) of CAMA 2020. The body of the application is like this 'I am directed on behalf of the board of directors of the company, to apply for the approval of the commission, for the name of the company to be changed to ...' .
+5. CAMA means companies and allied matters act 2020
 
 Return only the completed legal document.
 
@@ -697,6 +772,10 @@ Enhance the draft.
 
 Enhance the draft as per the instructions at the bottom of each templates. Also ensure you erase the entire instruction's section after enhancement.
 
+Treat all information, facts, instructions, placeholders, and other materials contained in the template as source materials for drafting purposes only; use them to enhance, complete, and refine the document where appropriate.
+
+Do not refer to the user's request, drafting instructions, AI, counsel requesting the draft, template, existence of placeholders.
+
 Integrate the supplied clauses naturally.
 
 Preserve legal intent.
@@ -704,8 +783,6 @@ Preserve legal intent.
 Use professional drafting language.
 
 Do not duplicate clauses.
-
-Do not refer to the user's request, drafting instructions, AI, counsel requesting the draft, template, existence of placeholders.
 
 Do not introduce contradictory provisions.
 
@@ -816,13 +893,26 @@ FOR PLEADINGS
 7. All pleadings are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
 
 
-For affidavit:
+FOR CHARGES
+1. These are four (4) rules in draftng a charge sheet 'Rule against ambiguity', 'Rule against duplicity', 'Rule against misjoinder of offences', 'Rule against misjoinder of offenders'.
+2. For Rule Against Ambiguity: a charge sheet has to be clear and there is no exceptions. ambiguity relates to individual counts. i.e name of the defendant(s), date of comission of the offence, place of comission of the offence, offence, and in most cases punishment sections. eg 'Wisdom mischef on the 19th day of January 2026 at Room 18, Boom boom lodge of No 6 Ekene Street, Victoria Island, Lagos, Lagos State, in the Lagos Judicial division raped Miss. Loveth Puss.' or for magistrate's court 'That you Mr. Machine mart on the 12th day of January 2026 at No 6 Ganja Street Benin City, Edo State, in the Benin Judicial Division sold 20 kilograms of a substance suspected to be cocaine to Mr. Marcus willi and thereby committed an offence punishable under section 11 (c) of the National Drug Law Enforcement Agency Act CAP N30 LFN 2004.'.
+3. For Rule Against Duplicity: do not put two (2) offences in one count. eg If the defendant killed 5 people, 5 different counts. The Exceptions Are: 'When it involves money belonging to one person over a long period of time. eg Mr. A steals 500 from Mr. B 3 days ago, and steals again today', 'offences in a particular section of the Law, but can be committed in different ways. eg Where an Act or Law provides that where a person hit, slap, spits on another, he/she thereby commits an offence of assault.', 'overt acts in respect of treason, and treasonable felonies. eg the law provides that two (2) overt acts must be provided before a person can be convicted for treason'.
+4. For Rule Against Misjoinder Of Offences: each offences has to be in a separate charge sheet. The Exceptions Are: 'offences committed within one (1) year', 'offences committed in the course of the same transaction', 'offences comprising acts or omissions which by themselves or in conjunction with others constitute a different offence', 'offences of the same or similar character', 'acts or omission that constitute an offence falling within two or more separate definitions'.
+5. For Rule Against Misjoinder Of Offenders: each offenders has to be in a separate charge sheet. The Exceptions Are: 'persons accused of jointly committing the same offence', 'persons accused of committing different offences in the course of the same transaction, i.e the test is proximity of time or place, continuity of action, community of purpose or design', 'persons accused of committing an offence and persons accused of aiding, abetting or attempting to commit the said offence', 'persons accused of committing the same offence in the course of the same transaction', 'persons accused of committing offences that are related one to the other', 'persons accused of offences committed during a fight or series of fights arising out of another fight and person accused of abetting any of these offences maybe charged and tried together'.
+6. Where the instructions, are not in conformity with any of the RULES, always enhance.
+7. Always look at the exceptions of each RULES before you draft. 
+8. Where instructions violates misjoinder of offence and misjoinder of offenders, and the instructions does not fall on any of the exceptions, draft seperate/multiple charge sheets as the case may be.
+9. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless you are unsure of the parties gender.
+10. If a name carries infant then it should be like this, eg Mr Jackson(infant) .......... Defendant. no ocupation or address should be stated.
+11. All charges are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
 
-Target 50 - 400 words.
 
-Preserve sequence.
+FOR RESOLUTION
+1. Some of the laws that may be of assistance are; section 127 CAMA 2020 - increase of share capital, section 333 CAMA 2020 - removal of company secretary, section 55 CAMA 2020 - Re registration of company, section 124 CAMA - approving allotment, section 620 CAMA - member's winding up and to appoint a liquidator, section 635 CAMA - creditor's winding up and  to appoint a liquidator.
 
-Preserve numbering.
+
+
+
 
 `,
         },

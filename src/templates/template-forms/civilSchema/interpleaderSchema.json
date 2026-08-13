@@ -23,7 +23,7 @@
 
         {
             "name": "claimantAddress",
-            "label": "Claimant(s) Address?",
+            "label": "Claimant(s) Address.",
             "type": "name",
             "required": true
         },
@@ -37,7 +37,7 @@
 
         {
             "name": "order",
-            "label": "State the Order and Rule under which this application is brought?",
+            "label": "State the Order and Rule under which this application is brought.",
             "type": "law",
             "required": true
         },

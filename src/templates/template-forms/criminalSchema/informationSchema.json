@@ -1,0 +1,58 @@
+{
+    "fields": [
+
+      {
+          "name": "counselName",
+          "label": "State your full name.",
+          "type": "counselname",
+          "required": true
+      },
+
+      {
+          "name": "complainantName",
+          "label": "Provide the full name(s) of all Complainant(s).",
+          "type": "name",
+          "required": true
+      },
+
+      {
+          "name": "defendantName",
+          "label": "Provide the full name(s) of all Defendant(s).",
+          "type": "name",
+          "required": true
+      },
+
+      {
+          "name": "court",
+          "label": "State the name of the court and state in which this information is brought.",
+          "type": "court",
+          "required": true
+      },
+      {
+          "name": "offence",
+          "label": "For each offence, state the offence, the date it was committed, and the address where it was committed, in that order.",
+          "type": "text",
+          "required": true
+      },
+        {
+            "name": "laws",
+            "label": "State the applicable law and section under which each offence is punishable.",
+            "type": "text",
+            "required": true
+        },
+
+        {
+            "name": "facts",
+            "label": "Provide a full detailed account of the facts and circumstances of the matter.",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "counts",
+            "label": "Specify the number of counts to be included in the Charge Sheet.",
+            "type": "text",
+            "required": true
+        }
+        
+    ]
+}

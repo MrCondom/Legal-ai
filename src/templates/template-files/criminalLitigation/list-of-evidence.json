@@ -1,0 +1,69 @@
+{
+           "list-of-evidence": {
+            "title": "list of evidence",
+            "sections": [
+                {
+                    "type": "heading", 
+                    "value": ["IN THE {{court}} \n",
+                    "IN THE ___\n",
+                    "HOLDEN AT ___"]
+                },
+                {
+                    "type": "suit",
+                    "value": "CHARGE NO: ________"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "BETWEEN"
+                },
+                {
+                    "type": "row",
+                    "left": "{{nameOfPartyOne}} ",
+                    "right": "{{partyOneRole}} "
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "AND"
+                },
+                {
+                    "type": "row",
+                    "left": "{{defendantName}}",
+                    
+                    "right": "Defendant"
+                },
+                {
+                    "type": "heading",
+                    "value": "LIST OF WITNESSES"
+                },
+                {
+                    "type": "text",
+                    "value": "{{witnesses}} "
+                },
+                {
+                    "type": "heading",
+                    "value": "LIST OF DOCUMENTS"
+                },
+                {
+                    "type": "text",
+                    "value": "{{documents}} "
+                },
+                {
+                     "type": "text",
+                     "value": [
+                     "DATED this, {{date}} \n\n",
+                     "_______________\n",
+                     "{{counselName}}"]
+                 },
+                 {
+                   "type": "instructions",
+                   "value": [
+                     "Use this information to enhance the draft.\n\n",
+                     "The role is 'Complainant & Defendant', or 'Claimant & Defendant' use if not specify.\n\n",
+                     "If 'PartyOneRole' is a claimant, then it is a civil matter, it becomes 'SUIT NO:__'.\n\n",
+                     "The draft should be within 300-5000 words.\n\n",
+                     "Use today's date to fill the date section."
+                   ]
+                 }
+            ]
+           }
+        }

@@ -112,6 +112,50 @@ import originatingSchema from "../templates/template-forms/civilSchema/originati
 import appearanceTemplate from "../templates/template-files/civilLitigation/momorandum-of-appearance.json";
 import appearanceSchema from "../templates/template-forms/civilSchema/appearanceSchema.json";
 
+import movingTemplate from "../templates/template-files/civilLitigation/moving-motion.json";
+import movingSchema from "../templates/template-forms/civilSchema/movingSchema.json";
+
+import courtTemplate from "../templates/template-files/civilLitigation/court-applications.json";
+import courtSchema from "../templates/template-forms/civilSchema/courtSchema.json";
+
+//Criminal Litigation
+import northTemplate from "../templates/template-files/criminalLitigation/charge-north.json";
+import northSchema from "../templates/template-forms/civilSchema/northSchema.json";
+
+import chargeTemplate from "../templates/template-files/criminalLitigation/charge-sheet.json";
+import chargeSchema from "../templates/template-forms/civilSchema/chargeSchema.json";
+
+import informationTemplate from "../templates/template-files/criminalLitigation/information.json";
+import informationSchema from "../templates/template-forms/civilSchema/informationSchema.json";
+
+import evidenceTemplate from "../templates/template-files/criminalLitigation/list-of-evidence.json";
+import evidenceSchema from "../templates/template-forms/civilSchema/evidenceSchema.json";
+
+//Corporate Law 
+import applicationTemplate from "../templates/template-files/corporateLaw/corporate-application.json";
+import applicationSchema from "../templates/template-forms/corporateSchema/applicationSchema";
+
+import guaranteeTemplate from "../templates/template-files/corporateLaw/guarantee.json";
+import guaranteeSchema from "../templates/template-forms/corporateSchema/guaranteeSchema";
+
+import memoTemplate from "../templates/template-files/corporateLaw/memorandum-of-association.json";
+import memoSchema from "../templates/template-forms/corporateSchema/memoSchema";
+
+import noticeTemplate from "../templates/template-files/corporateLaw/notice-meeting.json";
+import noticeSchema from "../templates/template-forms/corporateSchema/noticeSchema";
+
+import requisitionTemplate from "../templates/template-files/corporateLaw/requisition.json";
+import requisitionSchema from "../templates/template-forms/corporateSchema/requisitionSchema";
+
+import resolutionTemplate from "../templates/template-files/corporateLaw/resolution.json";
+import resolutionSchema from "../templates/template-forms/corporateSchema/resolutionSchema";
+
+import windingTemplate from "../templates/template-files/corporateLaw/petition-winding-up.json";
+import windingSchema from "../templates/template-forms/corporateSchema/windingSchema";
+
+
+
+
 
 export const templateRegistry = [
   {
@@ -638,10 +682,188 @@ export const templateRegistry = [
     documentFamily: "pleadings",
     tags: [
       "originating summons",
-      "interpreting a law,document, etc"
+      "interpreting a law, document, contract etc"
     ],
     template: originatingTemplate,
     formSchema: originatingSchema,
-  }
+  },
+  
+  {
+    slug: "moving-a-motion",
+    title: "moving a motion",
+    documentFamily: "pleadings",
+    tags: [
+      "entering an appearance",
+      "moving a motion in court"
+    ],
+    template: movingTemplate,
+    formSchema: movingSchema,
+  },
+
+  {
+    slug: "court-applications",
+    title: "court applications",
+    documentFamily: "court_applications",
+    tags: [
+      "statement of compliance",
+      "pre action protocol",
+      "pre action counselling certificate",
+      "fast track",
+      "interrogatories",
+      "CMC notice",
+      "notice to defend"
+    ],
+    template: courtTemplate,
+    formSchema: courtSchema,
+  },
+
+  //CorporateLaw 
+  {
+    slug: "corporate-applications",
+    title: "corporate applications",
+    documentFamily: "corporate_applications",
+    tags: [
+      "application for exemption",
+      "application for consent to change name",
+      "letter of allotment",
+      "letter of regret",
+      "application for investigation",
+      "statutory letter of demand",
+      "notice to remove a company secretary"
+    ],
+    template: applicationTemplate,
+    formSchema: applicationSchema,
+  },
+
+  {
+    slug: "memorandum-of-association",
+    title: "memorandum of association",
+    documentFamily: "memorandum_of_association",
+    tags: [
+      "memorandum of association",
+      "memorandum of association of a company limited by shares"
+    ],
+    template: memoTemplate,
+    formSchema: memoSchema,
+  },
+
+  {
+    slug: "memorandum-of-association-guarantee",
+    title: "memorandum of association of company limited by guarantee",
+    documentFamily: "memorandum_of_association",
+    tags: [
+      "memorandum of association",
+      "memorandum of association of a company limited by guarantee"
+    ],
+    template: guaranteeTemplate,
+    formSchema: guaranteeSchema,
+  },
+
+  {
+    slug: "notice-of-meeting",
+    title: "notice of meeting",
+    documentFamily: "corporate_notice",
+    tags: [
+      "notice of meeting",
+      "21 days notice of meeting"
+    ],
+    template: noticeTemplate,
+    formSchema: noticeSchema,
+  },
+
+  {
+    slug: "requisition-of-meeting",
+    title: "requisition of meeting",
+    documentFamily: "corporate_notice",
+    tags: [
+      "requisition notice for meeting",
+      "requisition of an extra-ordinary general meeting"
+    ],
+    template: requisitionTemplate,
+    formSchema: requisitionSchema,
+  },
+
+  {
+    slug: "company-resolution",
+    title: "company resolution",
+    documentFamily: "resolution",
+    tags: [
+      "board resolution",
+      "company resolution",
+      "resolution to increase share capital",
+      "resolution to change company name",
+      "resolution to remove company secretary",
+      "resolution for re-registration",
+      "resolution for allotment of shares",
+      "member's winding up",
+      "creditor's winding up",
+      "appointment of a liquidator"
+    ],
+    template: resolutionTemplate,
+    formSchema: resolutionSchema,
+  },
+
+  {
+    slug: "petition-winding-up",
+    title: "petition winding up",
+    documentFamily: "petition",
+    tags: [
+      "petition winding up",
+      "petition to wound up a company"
+    ],
+    template: windingTemplate,
+    formSchema: windingSchema,
+  },
+
+  //Criminal Litigation 
+  {
+    slug: "charge-sheet",
+    title: "charge sheet",
+    documentFamily: "charges",
+    tags: [
+      "federal high court charge sheet",
+      "magistrate court in the south charge sheet",
+      "state high court in the north charge sheet",
+      "FCT high court charge sheet",
+      "charge sheet"
+    ],
+    template: chargeTemplate,
+    formSchema: chargeSchema,
+  },
+
+  {
+    slug: "criminal-information",
+    title: "criminal information",
+    documentFamily: "charges",
+    tags: [
+      "state high court in the south charge sheet",
+      "criminal information"
+    ],
+    template: informationTemplate,
+    formSchema: informationSchema,
+  },
+
+  {
+    slug: "charge-sheet-north",
+    title: "charge sheet north",
+    documentFamily: "charges",
+    tags: [
+      "magistrate court in the north charge sheet",
+    ],
+    template: northTemplate,
+    formSchema: northSchema,
+  },
+
+  {
+    slug: "list-of-evidence",
+    title: "list of evidence",
+    documentFamily: "court_applications",
+    tags: [
+      "list of evidence",
+      "list of exhibits"
+    ],
+    template: evidenceTemplate,
+    formSchema: evidenceSchema,
+  },
 
 ];

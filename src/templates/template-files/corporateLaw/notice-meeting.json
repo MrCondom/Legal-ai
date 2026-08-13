@@ -1,0 +1,64 @@
+{
+   "notice_of_meeting": {
+    "title": "notice of meeting",
+    "sections": [
+      {
+        "type": "heading",
+        "value": ["{{detailsOfCompany}} \n",
+          "{{phoneNumber&EmailAddress}}\n\n "
+    ]
+    },
+        {
+            "type": "heading",
+            "value": ["FEDERAL REPUBLIC OF NIGERIA\n\n",
+        "IN THE COMPANY AND ALLIED MATTERS ACT 20__"]
+        },
+        {
+            "type": "subHeading",
+            "value": "NOTICE OF ANNUAL GENERAL MEETING OF __"
+        },
+        {
+            "type": "text",
+            "value": "NOTICE IS HEREBY GIVEN THAT, the {{natureOfMeeting}} of the above-named company will be held at {{location}}, on the {{dateMeeting}} , by ___ o'clock in the __, to transact the following business:"
+        },
+         {
+            "type": "sectionTitle",
+            "value": "Ordinary business"
+        },
+        {
+            "type": "text",
+            "value": "{{ordinaryBusiness}} "
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Special business"
+        },
+        {
+            "type": "text",
+            "value": "{{specialBusiness}}"
+        },
+        {
+            "type": "text",
+            "value": ["A member entitled to attend and vote at the meeting is entitled to appoint a proxy to attend and vote in his/her stead. A proxy does not need to be a member of the company.\n\n",
+            "Dated, this {{date}} \n\n",
+            "By the order of the board of directors\n\n",
+            "_______________  \n\n",
+            "Company secretary"]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "The subHeading of this template can be modified to something related to the instructions, eg 'NOTICE OF 6th ANNUAL GENERAL MEETING OF JAX NIGERIA LIMITED' etc.\n\n",
+            "Examples of ordinary business, 'Presentation of financial statements, directors report and auditors report', 'Re-election of retiring directors', 'Appointment of auditors and fixing their remuneration.', 'Declaration of dividend', 'Appointment of themembers of the audit committee'.\n\n ",
+            "Examples of special business, 'Increase in share capital', 'Alteration of the company's object clause.'\n\n",
+            "Notice is usually given 21 days before the meeting.\n\n",
+            "If it is an extra-ordinary general meeting, get rid of the entire block 'ordinary business, special business, and the proxy block'\n\n",
+            "The 'heading' should be in this sequence, 'name of the company', 'RC number', 'address of company', 'email address', 'phone number'. \n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ] 
+  }
+}

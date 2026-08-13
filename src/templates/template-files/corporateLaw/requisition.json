@@ -1,0 +1,64 @@
+{
+   "requisition_notice_for_meeting": {
+    "title": "requisition notice for meeting",
+    "sections": [
+      {
+        "type": "heading",
+        "value": ["{{detailsOfCompany}} \n",
+          "{{phoneNumber&EmailAddress}}\n\n "
+    ]
+    },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "date",
+            "value": "{{date}} "
+        },
+        {
+            "type": "text3",
+            "value": ["The Board of Directors,\n",
+            "{name and address of company}"
+        ]
+    },
+        {
+            "type": "heading1",
+            "value": "NOTICE OF REQUISITION OF AN EXTRAORDINARY GENERAL MEETING PURSUANT TO SECTION __ OF THE COMPANIES AND ALLIED MATTERS ACT 20__"
+        },
+        {
+            "type": "text",
+            "value": "We, the undersigned, being holders of more than 10% of the paid-up capital of {name of company} limited carrying voting rights at the general meeting as at the date of this notice, require you to convene forthwith an extraordinary general meeting of {name of company} limited for the purpose of considering and, if thought fit, passing the following proposed resolutions:"
+        },
+        {
+            "type": "text",
+            "value": ["{{resolution}}"]
+        },
+        {
+            "type": "text",
+            "value": "We urge that all members of the Board of Directors proceed to convene the extraordinary general meeting of the Company within 21 days from receipt of this requisition, otherwise the undersigned shall proceed to convene the meeting in accordance with the provisions of the Companies and Allied Matters Act 20__, to pass the proposed resolutions."
+        },
+        {
+            "type": "row",
+            "left": "_________",
+            "right": "{{holder}} "
+        },
+    {
+            "type": "row",
+            "left": "_________",
+            "right": "{{holder}} "
+    },
+    {
+      "type": "instructions",
+      "value": [
+        "Use this information to enhance the draft.\n\n",
+        "It is always section 329 CAMA 2020.\n\n",
+        "fill the holder's name with this information. {{holdersNames}}\n\n ",
+        "The draft should be within 300-6000 words.\n\n",
+        "Use today's date to fill the date section."
+      ]
+    }
+] 
+}
+}

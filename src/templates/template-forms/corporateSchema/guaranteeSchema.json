@@ -1,0 +1,32 @@
+{
+    "fields": [
+
+      {
+          "name": "companyName",
+          "label": "Provide the full legal name of the company.",
+          "type": "name",
+          "required": true
+      },
+
+      {
+          "name": "businessObject",
+          "label": "Provide a detailed statement of the company's business objectives and activities.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "companyStatus",
+          "label": "What is the legal status of the company? (e.g., Private Company)",
+          "type": "text",
+          "required": true
+      },
+        {
+            "name": "shareHoldersDetails",
+            "label": "Provide the full names, addresses, occupations, and amounts taken by each subscribers.",
+            "type": "text",
+            "required": true
+        }
+        
+    ]
+}

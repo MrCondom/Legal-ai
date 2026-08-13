@@ -1,0 +1,32 @@
+{
+    "fields": [
+
+      {
+          "name": "detailsOfCompany",
+          "label": "Provide the company's full legal name, RC number, and registered address.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "phoneNumber&EmailAddress",
+          "label": "Provide the company's telephone number(s) and email address.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "holdersNames",
+          "label": "Provide the full names of all persons whose shareholding qualifies them to requisition the meeting.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "resolution",
+          "label": "State the resolutions proposed to be passed at the meeting.",
+          "type": "text",
+          "required": true
+      }
+        
+    ]
+}

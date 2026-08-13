@@ -1,0 +1,103 @@
+{
+           "criminal_information": {
+            "title": "criminal information",
+            "sections": [
+                {
+                    "type": "heading", 
+                    "value": ["IN THE {{court}} \n",
+                    "IN THE ___\n",
+                    "HOLDEN AT ___"]
+                },
+                {
+                    "type": "suit",
+                    "value": "CHARGE NO: ________"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "BETWEEN"
+                },
+                {
+                    "type": "row",
+                    "left": "{{complainantName}} ",
+                    "right": "COMPLAINANT"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "AND"
+                },
+                {
+                    "type": "row",
+                    "left": "{{defendantName}}",
+                    
+                    "right": "Defendant"
+                },
+                {
+                    "type": "text",
+                    "value": "At the session of the high court of ____, holden at ___, on the {{date}} . The court is informed by the attorney-general of the state, on behalf of the state, that the following person;"
+                },
+                {
+                    "type": "text3",
+                    "value": "{{defendantName}} "
+                },
+                {
+                    "type": "text",
+                    "value": "is charged with the following offences."
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "COUNT ONE"
+                },
+                {
+                    "type": "text3",
+                    "value": "Statement of offence"
+                },
+                
+                {
+                    "type": "text3",
+                    "value": "Particulars of offence"
+                },
+                {
+                    "type": "texta",
+                    "value": " {{defendantName}} on the {{dateOfOffence}} at {{addressOfOffence}}, within the ____ Judicial division, committed an offence."
+                },
+               {
+                    "type": "text",
+                    "value": ["DATED this, {{date}} \n\n",
+                    "_______________\n",
+                    " {{counselName}} .\n"
+                    ]
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": ["FOR: Attorney-General of ___ state,\n",
+                    "___ State Ministry Of Justice."]
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "FOR SERVICE ON:"
+                },
+
+                {
+                  "type": "instructions",
+                  "value": [
+                    "Use this information to enhance the draft.\n\n",
+                    "The role is 'Complainant & Defendant', use if not specify.\n\n",
+                    "This charge template is only used in all state high court, in the sourthern part of Nigeria.\n\n",
+                    "If user states the number of count, use it, if they are more than the offence, facts, just repeat counts. {{count}}\n\n ",
+                    "If user states the offences, use it. {{offence}}\n\n",
+                    "If user states the laws, use it but with caution. {{laws}}\n\n",
+                    "Use the facts to enhance this charge sheet. {{facts}}\n\n",
+                    "The complainant is always 'The State', except in lagos where it is 'The State Of Lagos'.\n\n",
+                    "Where there are so many defendants, you may use eg 'john ....... 1st defendant, becky ...... 2nd defendant' or '1. john, 2. becky ....... defendants.'.\n\n",
+                    "The sequence is 'count one', 'statement of offence', 'particulars of offence', 'count two', 'statement of offence', 'particulars of offence' etc. \n\n",
+                    "Statement of offence usually provides the law the defendants are being charged for, most especially the punishment section. eg 'RAPE contrary to section 258 of the Criminal Laws of Lagos State 2015.', 'MURDER contrary to section 223 of the Criminal Laws of Lagos State 2015.' etc\n\n",
+                    "There can be so many counts, even up to count 100, provided the rules are applied properly.\n\n",
+                    "The draft should be within 300-20000 words.\n\n",
+                    "Use today's date to fill the date section."
+                  ]
+                }
+            ]
+          }
+       }
+
+       

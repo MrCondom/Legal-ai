@@ -1,0 +1,39 @@
+{
+    "fields": [
+
+      {
+          "name": "detailsOfCompany",
+          "label": "Provide the company's full legal name, RC number, and registered address.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "phoneNumber&EmailAddress",
+          "label": "Provide the company's telephone number(s) and email address.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "natureOfMeeting",
+          "label": "What is the type of meeting being held? (e.g., 5th Annual General Meeting)",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "location",
+          "label": "Provide the venue and address of the meeting.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "resolution",
+          "label": "State the resolutions passed at the meeting.",
+          "type": "text",
+          "required": true
+      }
+        
+    ]
+}

@@ -1,0 +1,85 @@
+{
+           "company_limited_by_shares": {
+            "title": "company limited by shares",
+            "sections": [
+                {
+                    "type": "heading", 
+                    "value": ["THE FEDERAL REPUBLIC OF NIGERIA\n",
+                    "THE COMPANIES AND ALLIED MATTERS ACT 2020\n",
+                    "COMPANY LIMITED BY GUARANTEE\n\n",
+                    "MEMORANDUM OF ASSOCIATION OF {{companyName}} "]
+                },
+                {
+                    "type": "text",
+                    "value": "1. The name of the company is {{companyName}}."
+                },
+                {
+                    "type": "text",
+                    "value": "2. The registered office of the company is situated in Nigeria."
+                },
+                {
+                    "type": "text",
+                    "value": ["3. The business for which the company is established is to carry on {{businessObject}} .\n\n",
+                      "4. The company shall not directly or indirectly make a donation or gift of its property or funds to a political party, for any political purposes."]
+                },
+                
+               {
+                    "type": "text",
+                    "value": "5. The company is a {{companyStatus}} ."
+                },
+               
+                 {
+                    "type": "text",
+                    "value": "6. The liability of the members is limited by guarantee ."
+                },
+                                {
+                                    "type": "text1",
+                                    "id": "special_clause",
+                                    "value": "Special clause"
+                                },
+                                {
+                                    "type": "text",
+                                    "value": ["7. The income and property of the company shall be applied solely towards the promotion of its objects, and no portion of the income or the property shall be paid or transferred directly or indirectly to the members of the company. However, nothing herein shall prevent the payment in good faith of rumuneration to any servant of the company, or any other person for services actually rendered.\n\n",
+                                    "8. Every member of the company undertakes to contribute to the assets of the company in the event of the company being wound up, where he is a member or within one year afterwards, for payment of debts and liabilities of the company contracted before he ceases to be a member, and the cost, charges and expenses of winding up, which amount shall not be less than N100,000 (one hundred thousand naira).\n\n",
+                                    "9. If upon the winding up and dissolution of the company, there remains after the satisfaction of all its debts and liabilities any property of the company, the same shall not be paid or distributed among the members of the company, but shall be transferred to some other company having objects similar to the objects of the company and such other company shall be determined by the members, prior to the dissolution of the company.\n\n"]
+                                },
+                                {
+                                    "type": "text3",
+                                    "value": "We the several persons, whose names and addresses are subscribed, are desirous, of being formed into a company, in pursuance of this memorandum of association, and we respectively undertake to contribute to the assets of the company in the event of the company being wound up, while we are members or within one year afterwards, for payment of debts and liabilities of the company, and the cost, charges, and expenses of winding up, such amounts as may be required, not exceeding the amounts set opposite our respective names."
+                                },
+
+                {
+                   "type": "table",
+                   "value": "{{shareHoldersDetails}} "
+               },
+               
+                {
+                    "type": "heading",
+                    "value": "TOTAL NUMBER OF SHARES TAKEN: ________________"
+                },
+                {
+                    "type": "text",
+                    "value": "Dated this {{date}} "
+                },
+               {
+                    "type": "address",
+                    "value": ["WITNESS TO THE ABOVE SIGNATURES\n\n",
+                            "NAME: __________________\n",
+                            "ADDRESS:___________________\n",
+                            "OCCUPATION:__________________\n",
+                            "SIGNATURE:__________________"]
+                },
+                {
+                "type": "instructions",
+                "value": [
+                  "Use this information to enhance the draft.\n\n",
+                  "Company limited by guarantee is basically for the promotion of education, health etc\n\n",
+                  "If the business or company is for takeovers, state it eg 'The business for which the company is established is the takeover of Zap Nig ltd, in the manufacturing, supply and distribution of electronic devices.'\n\n",
+                  "'Shareholders Details' should be in a 'table' format, ie 'NAME | OCCUPATION | ADDRESS | SHARES TAKEN | SIGNATURES'.\n\n",
+                  "The draft should be within 300-20000 words.\n\n",
+                  "Use today's date to fill the date section."
+                ]
+              }
+          ]
+        }
+     }

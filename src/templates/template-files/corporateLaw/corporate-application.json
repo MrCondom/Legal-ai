@@ -1,0 +1,47 @@
+{
+   "corporate_application": {
+    "title": "corporate application",
+    "sections": [
+      {
+        "type": "heading",
+        "value": ["{{detailsOfCompany}} \n",
+          "{{phoneNumber&EmailAddress}}\n\n "
+    ]
+    },
+        {
+            "type": "text",
+            "value": "{{addressBlock}} "
+         },
+         {
+             "type": "text",
+             "value": "Dear Sir/Ma"
+         },
+        {
+            "type": "subHeading",
+            "value": "{{subHeading}} "
+        },
+        {
+            "type": "text",
+            "value": "{{whatIsTheApplicationAllAbout}} "
+        },
+        {
+            "type": "text",
+            "value": ["Dated, this {{date}} \n\n",
+            "Secretary\n\n",
+            "_______________"]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "If user provides a subHeading, use it or else create a subHeading as per the instructions. {{subHeading}} \n\n",
+            "When drafting, you could add a date at the top, i.e before address block, or leave it at the bottom, but there has to be only one 'date section'.\n\n",
+            "When drafting, you could add 'Our Ref ___' & 'Your Ref___', most especially applications not directed to any of the members of company.\n\n",
+            "Other relevant information: {{information}}.\n\n",
+            "The draft should be within 100-5000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+   }
+}

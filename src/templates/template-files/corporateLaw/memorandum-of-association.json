@@ -1,0 +1,78 @@
+{
+           "company_limited_by_shares": {
+            "title": "company limited by shares",
+            "sections": [
+                {
+                    "type": "heading", 
+                    "value": ["THE FEDERAL REPUBLIC OF NIGERIA\n",
+                    "THE COMPANIES AND ALLIED MATTERS ACT 2020\n",
+                    "COMPANY LIMITED BY SHARES\n\n",
+                    "MEMORANDUM OF ASSOCIATION OF {{companyName}} "]
+                },
+                {
+                    "type": "text",
+                    "value": "1. The name of the company is {{companyName}}."
+                },
+                {
+                    "type": "text",
+                    "value": "2. The registered office of the company is situated in Nigeria."
+                },
+                {
+                    "type": "text",
+                    "value": ["3. The business for which the company is established is to carry on {{businessObject}} .\n\n",
+                      "4. The company shall not directly or indirectly make a donation or gift of its property or funds to a political party, for any political purposes."]
+                },
+                
+               {
+                    "type": "text",
+                    "value": "5. The company is a {{companyStatus}} ."
+                },
+               
+                 {
+                    "type": "text",
+                    "value": "6. The liability of the members is {{membersLiability}} ."
+                },
+                {
+                    "type": "text",
+                    "value": "7. The authorised share capital of the company is {{authorisedShareCapital}} divided into ____ ordinary shares of ___ naira each (with such respective rights, as are defined in the articles of association, registered herewith)."
+                },
+                {
+                    "type": "text3",
+                    "value": "We the several persons, whose names and addresses are subscribed, are desirous, of being formed into a company, in pursuance of this memorandum of association, and we respectively agree to take the number of shares in the capital of the company set opposite our respective names."
+                },
+
+                {
+                   "type": "table",
+                   "value": "{{shareHoldersDetails}} "
+               },
+               
+                {
+                    "type": "heading",
+                    "value": "TOTAL NUMBER OF SHARES TAKEN: ________________"
+                },
+                {
+                    "type": "text",
+                    "value": "Dated this {{date}} "
+                },
+               {
+                    "type": "address",
+                    "value": ["WITNESS TO THE ABOVE SIGNATURES\n\n",
+                            "NAME: __________________\n",
+                            "ADDRESS:___________________\n",
+                            "OCCUPATION:__________________\n",
+                            "SIGNATURE:__________________"]
+                },
+                {
+                "type": "instructions",
+                "value": [
+                  "Use this information to enhance the draft.\n\n",
+                  "If the business or company is for takeovers, state it eg 'The business for which the company is established is the takeover of Zap Nig ltd, in the manufacturing, supply and distribution of electronic devices.'\n\n",
+                  "'Shareholders Details' should be in a 'table' format, ie 'NAME | OCCUPATION | ADDRESS | SHARES TAKEN | SIGNATURES'.\n\n",
+                  "The 'authorised share capital' should look like this, eg 'The authorised share capital of the company is fifty million naira (N50,000,000) divided into fifty million (50,000,000) ordinary shares of one naira (N1) each ...' or '... of the company is fifty million naira (N50,000,000) divided into twenty-five million (25,000,000) ordinary shares of two naira (N2) each (with such respective rights, as are defined in the articles of association, registered herewith).'\n\n",
+                  "The draft should be within 300-20000 words.\n\n",
+                  "Use today's date to fill the date section."
+                ]
+              }
+          ]
+        }
+     }

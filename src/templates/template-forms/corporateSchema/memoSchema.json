@@ -1,0 +1,45 @@
+{
+    "fields": [
+
+      {
+          "name": "companyName",
+          "label": "Provide the full legal name of the company.",
+          "type": "name",
+          "required": true
+      },
+
+      {
+          "name": "businessObject",
+          "label": "Provide a detailed statement of the company's business objectives and activities.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "companyStatus",
+          "label": "What is the legal status of the company? (e.g., Private Company)",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "membersLiability",
+          "label": "Specify whether the members' liability is limited by shares or unlimited.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "authorisedShareCapital",
+          "label": "State the authorised share capital of the company and the nominal value of each share.",
+          "type": "text",
+          "required": true
+      },
+        {
+            "name": "shareHoldersDetails",
+            "label": "Provide the full names, addresses, occupations, and number of shares subscribed for by each shareholder.",
+            "type": "text",
+            "required": true
+        }
+        
+    ]
+}

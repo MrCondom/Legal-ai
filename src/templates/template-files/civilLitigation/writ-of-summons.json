@@ -1,6 +1,6 @@
 {
-   "originating_summons":{
-    "title": "originating summons",
+   "writ_of_summons":{
+    "title": "writ of summons",
     "sections": [
       {
           "type": "heading", 

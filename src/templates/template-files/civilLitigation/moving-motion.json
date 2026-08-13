@@ -1,0 +1,29 @@
+{
+   "moving_a_motion": {
+    "title": "moving a motion",
+    "sections": [
+        {
+            "type": "text",
+            "value": "COUNSEL: May it please this honourable court, I am {{counselName}} appearing for the {{appearingFor}}."
+        },
+        {
+            "type": "texta",
+            "value": ["1. My Lord before this honourable court is a motion ___, for {{motion}} dated and filed {{date}} .\n\n",
+            "2. My Lord, i bring the motion pursuant to order, {{order}} of the {{court}} (civil procedure) rules 20__ and under the inherent jurisdiction of this court.\n\n",
+            "3. My Lord, i pray to this honourable court for the following reliefs; an order of this court joining {{reliefsSought}} and any such further order or orders as this court may deem fit to grant in the circumstances.\n\n",
+            "4. My Lord, attached to this motion is an affidavit, accompained by {{exhibits}} , and  in compliance with the rules of this court is a written address.\n\n",
+            "5. My Lord, i pray that this honourable court grant the reliefs sought.\n"]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "If there are other counsels, announce their appearance like this eg 'Appearing with me is Simeon E esq.'.\n\n",
+            "Use this, if there are other counsels. {{counselsName}}.\n\n ",
+            "The draft should be within 100-3000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+   }
+}

@@ -1,0 +1,79 @@
+{
+    "fields": [
+
+      {
+          "name": "counselName",
+          "label": "State your full name.",
+          "type": "counselname",
+          "required": true
+      },
+
+      {
+          "name": "appearingFor",
+          "label": "On behalf of which party is the counsel moving this motion? (e.g., Applicant)",
+          "type": "role",
+          "required": true
+      },
+
+      {
+          "name": "motion",
+          "label": "What is this Motion seeking?",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "court",
+          "label": "State the name of the court and the state in which the application is brought.",
+          "type": "court",
+          "required": true
+      },
+      {
+          "name": "order",
+          "label": "State the Order and Rule under which this application is brought.",
+          "type": "law",
+          "required": true
+      },
+      {
+          "name": "reliefsSought",
+          "label": "State the relief(s) sought in this motion?",
+          "type": "relief",
+          "required": true
+      },
+      {
+          "name": "exhibits",
+          "label": "Identify the exhibits and other evidence to be relied upon in support of this Motion.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "whatIsTheApplicationAllAbout",
+          "label": "Briefly describe the purpose of this application.",
+          "type": "text",
+          "required": true
+      },
+        {
+          "name": "information",
+          "label": "Are there any other counsel whose appearance should be recorded alongside the lead counsel?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+        
+        {
+            "name": "counselsName",
+            "label": "Provide the full name(s) of all counsel appearing in this matter.",
+            "type": "name",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        }
+        
+    ]
+}

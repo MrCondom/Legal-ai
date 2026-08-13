@@ -1,0 +1,75 @@
+ {
+           "magistrate's_courts_in_the_north": {
+            "title": "magistrate's courts in the north",
+            "content": [
+                {
+                    "type": "heading", 
+                    "value": ["IN THE MAGISTRATE'S COURT OF {{state}} \n",
+                    "IN THE KANO MAGISTERIAL DISTRICT\n",
+                    "HOLDEN AT ___"]
+                },
+                {
+                    "type": "suit",
+                    "value": "CHARGE NO: ________"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "BETWEEN"
+                },
+                {
+                    "type": "row",
+                    "left": "Commissioner of Police",
+                    "right": "COMPLAINANT"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "AND"
+                },
+                {
+                    "type": "row",
+                    "left": "{{defendantName}}",
+                    
+                    "right": "Defendant"
+                },
+                {
+                    "type": "text",
+                    "value": "I, Chief Magistrate {{magistrate}}, magistrate court grade __, do hereby charge you, {{defendantName}}, as follows:\n"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "Count One"
+                },
+                {
+                    "type": "texta",
+                    "value": "That you, {{defendantName}} on the {{dateOfOffence}} at {{addressOfOffence}}, within the ____ Judicial division, committed an offence punishable under section ___ ."
+                },
+                
+               {
+                    "type": "text",
+                    "value": ["I hereby direct that you will be tried by this court, on the said charge.\n\n",
+                    "DATED this, {{date}} \n\n",
+                    "_______________\n",
+                    "{{magistrate}}\n",
+                    "Chief Magistrate Grade __"]
+                },
+                {
+                  "type": "instructions",
+                  "value": [
+                    "Use this information to enhance the draft.\n\n",
+                    "The role is 'Complainant & Defendant', use if not specify.\n\n",
+                    "This charge template is only used in all magistrate's court in the north.\n\n",
+                    "If user states the number of count, use it, if they are more than the offence, facts, just repeat counts. {{count}}\n\n ",
+                    "If user states the offences, use it. {{offence}}\n\n",
+                    "If user states the laws, use it but with caution. {{laws}}\n\n",
+                    "Use the facts to enhance this charge sheet. {{facts}}\n\n",
+                    "The Complainant in the Magistrate's court,  is 'Commissioner Of Police'.\n\n",
+                    "Where there are so many defendants, you may use eg 'john ....... 1st defendant, becky ...... 2nd defendant' or '1. john, 2. becky ....... defendants.'.\n\n",
+                    "The sequence is 'count one', 'count two', etc. \n\n",
+                    "There can be so many count, even up to count 100, provided the rules are applied properly.\n\n",
+                    "The draft should be within 300-20000 words.\n\n",
+                    "Use today's date to fill the date section."
+                  ]
+                }
+            ]
+          }
+       }

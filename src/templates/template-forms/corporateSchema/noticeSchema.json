@@ -1,0 +1,67 @@
+{
+    "fields": [
+
+      {
+          "name": "detailsOfCompany",
+          "label": "Provide the company's full legal name, RC number, and registered address.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "phoneNumber&EmailAddress",
+          "label": "Provide the company's telephone number(s) and email address.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "natureOfMeeting",
+          "label": "State the type and nature of the meeting. (e.g., 5th Annual General Meeting)",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "location",
+          "label": "Provide the venue and address of the meeting.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "dateMeeting",
+          "label": "State the date on which the meeting is to be held.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "ordinaryBusiness",
+          "label": "Provide details of the ordinary business to be transacted at the meeting.",
+          "type": "text",
+          "required": true
+      },
+      {
+        "name": "information",
+        "label": "Will any special business be transacted at the meeting?" ,
+        "type": "select",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true
+      },
+      
+      {
+          "name": "specialBusiness",
+          "label": "Provide details of the special business to be transacted at the meeting.",
+          "type": "text",
+          "showIf":{
+              "field":"information",
+              "equals":[
+                "Yes"
+              ]
+          }
+      }
+        
+    ]
+}

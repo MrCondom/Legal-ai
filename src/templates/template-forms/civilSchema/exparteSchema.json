@@ -10,7 +10,7 @@
 
         {
             "name": "nameOfPartyOne",
-            "label": "Provide the full name(s) of all the parties comprising Party One?",
+            "label": "Provide the full name(s) of all the parties comprising Party One.",
             "type": "name",
             "required": true
         },
@@ -24,7 +24,7 @@
 
         {
             "name": "nameOfPartyTwo",
-            "label": "Provide the full name(s) of all the parties comprising Party Two?",
+            "label": "Provide the full name(s) of all the parties comprising Party Two.",
             "type": "name",
             "required": true
         },

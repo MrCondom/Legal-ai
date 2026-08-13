@@ -1,0 +1,57 @@
+{
+           "corporate_resolution": {
+            "title": "corporate resolution",
+            "sections": [
+                  {
+                    "type": "heading",
+                    "value": ["{{detailsOfCompany}} \n",
+                      "{{phoneNumber&EmailAddress}}\n\n "
+                ]
+                },
+                {
+                    "type": "heading",
+                    "value": ["FEDERAL REPUBLIC OF NIGERIA\n\n",
+                "IN THE COMPANY AND ALLIED MATTERS ACT __"]
+                },
+                {
+                    "type": "subHeading",
+                    "value": "RESOLUTION"
+                },
+                {
+                    "type": "text",
+                    "value": "At the {{natureOfMeeting}} held on {{date}} at the {{location}} of the company, the resolution was proposed and duly passed:"
+                },
+                {
+                    "type": "texta",
+                    "value": "That {{resolution}} "
+                },
+                {
+                    "type": "text",
+                    "value": "Dated, this {{date}} "
+                },
+               {
+                    "type": "row",
+                    "left": "_______",
+                    "right": "Director"
+                },
+            {
+                    "type": "row",
+                    "left": "_________",
+                    "right": "Director"
+            },
+            {
+              "type": "instructions",
+              "value": [
+                "Use this information to enhance the draft.\n\n",
+                "The subHeading of this template can be modified to something related to the instructions, eg 'RESOLUTION FOR REMOVAL OF Miss. Anita Acholohu AS COMPANY SECRETARY BROUGHT PURSUANT TO SECTION 333 OF THE COMPANIES AND ALLIED MATTERS ACT 2020', 'SPECIAL RESOLUTION FOR RE-REGISTRATION OF JAX LIMITED TO JAX PLC, PURSUANT TO SECTION 55 OF THE COMPANIES AND ALLIED MATTERS ACT, 2020', etc.\n\n",
+                "The 'resolution' part should look like this, eg 'That subject to the consent of the corporate affairs commission, the name of the company, JAX LIMITED be changed to JAXSON NIGERIAN LIMITED'.\n\n ",
+                "The 'heading' should be in this sequence, 'name of the company', 'RC number', 'address of company', 'email address', 'phone number'. \n\n",
+                "The draft should be within 300-6000 words.\n\n",
+                "Use today's date to fill the date section."
+              ]
+            }
+        ] 
+      }
+   }
+
+   
