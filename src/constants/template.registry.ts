@@ -120,38 +120,38 @@ import courtSchema from "../templates/template-forms/civilSchema/courtSchema.jso
 
 //Criminal Litigation
 import northTemplate from "../templates/template-files/criminalLitigation/charge-north.json";
-import northSchema from "../templates/template-forms/civilSchema/northSchema.json";
+import northSchema from "../templates/template-forms/criminalSchema/northSchema.json";
 
 import chargeTemplate from "../templates/template-files/criminalLitigation/charge-sheet.json";
-import chargeSchema from "../templates/template-forms/civilSchema/chargeSchema.json";
+import chargeSchema from "../templates/template-forms/criminalSchema/chargeSchema.json";
 
 import informationTemplate from "../templates/template-files/criminalLitigation/information.json";
-import informationSchema from "../templates/template-forms/civilSchema/informationSchema.json";
+import informationSchema from "../templates/template-forms/criminalSchema/informationSchema.json";
 
 import evidenceTemplate from "../templates/template-files/criminalLitigation/list-of-evidence.json";
-import evidenceSchema from "../templates/template-forms/civilSchema/evidenceSchema.json";
+import evidenceSchema from "../templates/template-forms/criminalSchema/evidenceSchema.json";
 
 //Corporate Law 
 import applicationTemplate from "../templates/template-files/corporateLaw/corporate-application.json";
-import applicationSchema from "../templates/template-forms/corporateSchema/applicationSchema";
+import applicationSchema from "../templates/template-forms/corporateSchema/applicationSchema.json";
 
 import guaranteeTemplate from "../templates/template-files/corporateLaw/guarantee.json";
-import guaranteeSchema from "../templates/template-forms/corporateSchema/guaranteeSchema";
+import guaranteeSchema from "../templates/template-forms/corporateSchema/guaranteeSchema.json";
 
 import memoTemplate from "../templates/template-files/corporateLaw/memorandum-of-association.json";
-import memoSchema from "../templates/template-forms/corporateSchema/memoSchema";
+import memoSchema from "../templates/template-forms/corporateSchema/memoSchema.json";
 
 import noticeTemplate from "../templates/template-files/corporateLaw/notice-meeting.json";
-import noticeSchema from "../templates/template-forms/corporateSchema/noticeSchema";
+import noticeSchema from "../templates/template-forms/corporateSchema/noticeSchema.json";
 
 import requisitionTemplate from "../templates/template-files/corporateLaw/requisition.json";
-import requisitionSchema from "../templates/template-forms/corporateSchema/requisitionSchema";
+import requisitionSchema from "../templates/template-forms/corporateSchema/requisitionSchema.json";
 
 import resolutionTemplate from "../templates/template-files/corporateLaw/resolution.json";
-import resolutionSchema from "../templates/template-forms/corporateSchema/resolutionSchema";
+import resolutionSchema from "../templates/template-forms/corporateSchema/resolutionSchema.json";
 
 import windingTemplate from "../templates/template-files/corporateLaw/petition-winding-up.json";
-import windingSchema from "../templates/template-forms/corporateSchema/windingSchema";
+import windingSchema from "../templates/template-forms/corporateSchema/windingSchema.json";
 
 
 
