@@ -1,0 +1,133 @@
+{
+   "curriculum vitae": {
+    "title": "curriculum vitae",
+    "sections": [
+         {
+            "type": "heading",
+            "value": ["{{nameAddressContactDetails}} "]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "PERSONAL DATA"
+        },
+        {
+            "type": "text",
+            "value": ["DATE OF BIRTH: {{dateOfBirth}} \n\n",
+            "PLACE OF BIRTH: {{placeOfBirth}} \n\n",
+            "SEX: {{sex}} \n\n",
+            "NATIONALITY: {{nationality}} \n\n",
+            "MARITAL STATUS: {{status}}\n\n",
+            "STATE OF ORIGIN: {{state}}\n\n", 
+            "LOCAL GOVERNMENT AREA: {{lga}}\n\n",
+            "GENOTYPE: {{genotype}}"]
+    },
+
+    {
+        "type": "sectionTitle",
+        "value": "PERSONAL QUALIFICATIONS"
+    },
+    {
+        "type": "text",
+        "value": ["e.g., LL.M 2009 \n\n",
+        "{{personalQualifications}} "]
+    },
+        {
+            "type": "sectionTitle",
+            "value": "MISSION STATEMENTS"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. Hard work is always the key to success. Hence, progress and improvement are evidence of sustained hard work.\n\n",
+            "{{missionStatements}} "]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "EDUCATIONAL INSTITUTIONS ATTENDED"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., University of Chicago, United States | 2016\n\n",
+            "{{educationalInstitutions}} "]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "WORK EXPERIENCES"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. Associate Counsel, J&J Chambers 2024-present\n\n",
+            "{{workExperience}} "]
+        },
+         {
+            "type": "sectionTitle",
+            "value": "AWARDS"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. Oil line Scholarship 2015\n\n",
+            "{{awards}} "]
+        },
+         {
+            "type": "sectionTitle",
+            "value": "ASSOCIATIONAL MEMBERSHIP"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. Member, Nigerian Bar Association\n\n",
+            "{{membership}} "]
+        },
+        
+        {
+            "type": "sectionTitle",
+            "value": "PUBLICATIONS"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. 'No trafficking in Nigeria', March 2020\n\n",
+            "{{publications}} "]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "PERSONAL SKILLS"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. Research\n\n",
+            "{{skills}} "]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "INTEREST"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. Writing\n\n",
+            "{{interest}} "]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "LANGUAGES"
+        },
+        {
+            "type": "text",
+            "value": "{{languages}} "
+        },
+        {
+            "type": "sectionTitle",
+            "value": "REFEREES"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. Justice Okon Loveth (rtd) Uyo (+23481xxxxxxxx)\n\n",
+            "{{referees}} "]
+        }, 
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "The draft should be within 500-10000 words.\n\n"
+          ]
+        }
+    ]
+  }
+}

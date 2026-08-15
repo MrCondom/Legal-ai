@@ -44,20 +44,25 @@
                     "value": "is charged with the following offences."
                 },
                 {
-                    "type": "sectionTitle",
+                    "type": "subHeading",
                     "value": "COUNT ONE"
                 },
                 {
-                    "type": "text3",
+                    "type": "sectionTitle",
                     "value": "Statement of offence"
+                },
+
+                {
+                    "type": "text",
+                    "value": " e.g., Armed robbery contrary to section 318 of the criminal law of lagos state."
                 },
                 
                 {
-                    "type": "text3",
+                    "type": "sectionTitle",
                     "value": "Particulars of offence"
                 },
                 {
-                    "type": "texta",
+                    "type": "text",
                     "value": " {{defendantName}} on the {{dateOfOffence}} at {{addressOfOffence}}, within the ____ Judicial division, committed an offence."
                 },
                {
@@ -86,7 +91,6 @@
                     "If user states the number of count, use it, if they are more than the offence, facts, just repeat counts. {{count}}\n\n ",
                     "If user states the offences, use it. {{offence}}\n\n",
                     "If user states the laws, use it but with caution. {{laws}}\n\n",
-                    "Use the facts to enhance this charge sheet. {{facts}}\n\n",
                     "The complainant is always 'The State', except in lagos where it is 'The State Of Lagos'.\n\n",
                     "Where there are so many defendants, you may use eg 'john ....... 1st defendant, becky ...... 2nd defendant' or '1. john, 2. becky ....... defendants.'.\n\n",
                     "The sequence is 'count one', 'statement of offence', 'particulars of offence', 'count two', 'statement of offence', 'particulars of offence' etc. \n\n",

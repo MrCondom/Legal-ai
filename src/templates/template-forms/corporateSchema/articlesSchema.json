@@ -1,0 +1,60 @@
+{
+    "fields": [
+
+      {
+          "name": "companyName",
+          "label": "Provide the full legal name of the company.",
+          "type": "name",
+          "required": true
+      },
+
+      {
+          "name": "businessObject",
+          "label": "Provide a detailed statement of the company's business objectives and activities.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "details",
+          "label": "Provide any necessary details or information required to prepare this application.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "counselName",
+          "label": "State your full name?",
+          "type": "counselname",
+          "required": true
+      },
+        {
+          "name": "information",
+          "label": "Is there any other information you would like considered in this application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+        
+        {
+            "name": "information",
+            "label": "Provide any additional information or specific points you would like addressed in the application.",
+            "type": "facts",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+      },
+        {
+            "name": "firstShareHoldersOfTheCompany",
+            "label": "Provide the full names of all initial shareholders.",
+            "type": "text",
+            "required": true
+        }
+        
+    ]
+}

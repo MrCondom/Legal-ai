@@ -1,0 +1,59 @@
+{
+   "general_letter_writting": {
+    "title": "general_letter_writting",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": "{{date}} "
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "{{title}} "
+        },
+        {
+            "type": "text",
+            "value": "{{detailsOfTheLetter}} "  
+        },
+        {
+            "type": "text",
+            "value": ["Yours faithfully,\n",
+            "______________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

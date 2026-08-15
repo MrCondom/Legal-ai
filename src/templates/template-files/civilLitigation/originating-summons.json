@@ -101,7 +101,7 @@
                      "The role is 'Claimant & Defendant'.\n\n",
                      "In FCT it is 14 days after service, while in Lagos it is always 42 days after service, outside jurisdiction is 42 days for both.\n\n",
                      "To be on the safer side, if the state is located on the southern part of Nigeria, use 42 days.\n\n",
-                     "If Defendant's address is outside jurisdiction, then use this clause before the date 'This writ of summons (or as the case may be) is to be served out of ____ state of nigeria and in the ,  _____ state of nigeria.'\n\n.",
+                     "If Defendant's address is outside jurisdiction, then use this clause before the date 'This originating summons (or as the case may be) is to be served out of {stateTheActionIsInstituted} of nigeria and in the , {defendantsAddress} state of nigeria.' The reason is because the summons is served to the Defendant current address, so he/she can appear in court.\n\n",
                      "The draft should be within 500-10000 words.\n\n",
                      "Use today's date, to fill the date section."]
          }

@@ -1,0 +1,66 @@
+{
+   "application_for_exemption": {
+    "title": "application for exemption",
+    "sections": [
+      {
+        "type": "heading",
+        "value": ["{{detailsOfCompany}} \n",
+          "{{phoneNumber&EmailAddress}}\n\n "
+    ]
+    },
+        {
+            "type": "date",
+            "value": "{{date}} "
+        },
+        {
+            "type": "text",
+            "value": ["The Minister Of Trade, Industry and Investment\n",
+            "Ministry Of Trade Industry and Investment\n",
+            "Federal Republic Of Nigeria\n",
+            "FCT, Abuja\n\n",
+            "Dear Sir/Ma"]
+        },
+        {
+            "type": "subHeading",
+            "value": "APPLICATION FOR EXEMPTION FROM REGISTRATION AS A NIGERIAN COMPANY PURSUANT TO SECTION __ COMPANIES AND ALLIED MATTERS ACT 20__"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., We the above named foreign company, having been invited to Nigeria by the federal government, to carry out the manufacturing of gas in nigeria, for a period of six (6) months, are exempted from registering as a nigerian company.\n\n",
+            "e.g., Please find attached to this application, the necessary documents, as stipulated in section 80(2) of the companies and allied matters act 2020.\n\n",
+            "Thank you\n\n",
+            "Yours faithfully\n",
+            "_______________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{secretary}} \n",
+                "Company secretary\n",
+                "For: {companyName} ."
+        ]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Enclosed:"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. Particulars of Jaxson oil and gas inc. as the parent company outside Nigeria.\n\n",
+            "e.g., 2. Proposed name and place of business in Nigeria.\n\n",
+            "e.g., 3. Particulars of the name and address of each director, partners and principal officers of Jaxson oil and gas inc.\n\n",
+            "e.g., 4. Duration and proposed business of Jaxson oil and gas inc. in Nigeria.\n\n",
+            "etc."]
+        },
+        {
+        "type": "instructions",
+        "value": [
+          "Use this information to enhance the draft.\n\n",
+          "Use this details to draft this application, {{details}}\n\n",
+          "Use this information to enhance the draft, {{information}}\n\n",
+          "The draft should be within 300-6000 words.\n\n",
+          "Use today's date to fill the date section."
+        ]
+      }
+    ]
+  }
+}

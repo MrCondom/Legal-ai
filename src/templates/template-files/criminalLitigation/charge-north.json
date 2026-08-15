@@ -1,7 +1,7 @@
  {
            "magistrate's_courts_in_the_north": {
             "title": "magistrate's courts in the north",
-            "content": [
+            "sections": [
                 {
                     "type": "heading", 
                     "value": ["IN THE MAGISTRATE'S COURT OF {{state}} \n",
@@ -61,7 +61,6 @@
                     "If user states the number of count, use it, if they are more than the offence, facts, just repeat counts. {{count}}\n\n ",
                     "If user states the offences, use it. {{offence}}\n\n",
                     "If user states the laws, use it but with caution. {{laws}}\n\n",
-                    "Use the facts to enhance this charge sheet. {{facts}}\n\n",
                     "The Complainant in the Magistrate's court,  is 'Commissioner Of Police'.\n\n",
                     "Where there are so many defendants, you may use eg 'john ....... 1st defendant, becky ...... 2nd defendant' or '1. john, 2. becky ....... defendants.'.\n\n",
                     "The sequence is 'count one', 'count two', etc. \n\n",

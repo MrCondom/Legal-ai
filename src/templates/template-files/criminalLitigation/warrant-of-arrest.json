@@ -1,0 +1,71 @@
+{
+           "warrant_of_arrest": {
+            "title": "warrant of arrest",
+            "sections": [
+                {
+                    "type": "heading", 
+                    "value": ["IN THE {{court}} \n",
+                    "IN THE ___\n",
+                    "HOLDEN AT ___"]
+                },
+                {
+                    "type": "suit",
+                    "value": "CHARGE NO: ________"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "BETWEEN"
+                },
+                {
+                    "type": "row",
+                    "left": "{{complainantName}} ",
+                    "right": "COMPLAINANT"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "AND"
+                },
+                {
+                    "type": "row",
+                    "left": "{{defendantName}}",
+                    
+                    "right": "Defendant"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": ["To: {{policeOfficerDetails}} \n\n",
+                        "e.g To: Corporal John Musa\n",
+                        "e.g Abacha Divisional police station, Port-Harcourt",
+                        "Rivers-State"
+                    ]
+                },
+                {
+                    "type": "subHeading",
+                    "value": "ARREST FOR THE APPREHENSION OF THE DEFENDANT"
+                },
+
+                {
+                    "type": "text",
+                    "value": ["Complaint on oath has been made on the {{dateOfComplaint}} by one {{norminalComplainant}}, that {{defendantName}} hereinafter called the Defendant, on the {{dateOfCommissionOfTheOffence}} at {{addressWhereOffenceTookPlace}} was involved in {{offence}} contrary to section {{sectionOfTheLaw}}.\n\n ",
+                    "You are hereby commanded to bring the accused before the {{court}}, forthwith to answer to the said complaint and to be dealt with according to law."
+                    ]
+                },
+                {
+                     "type": "text",
+                     "value": ["DATED this, {{date}} \n\n",
+                     "_______________\n",
+                     " {{judge/magistrateName}} .\n"
+                     ]
+                 },
+                 {
+                   "type": "instructions",
+                   "value": [
+                     "Use this information to enhance the draft.\n\n",
+                     "The draft should be within 300-2000 words.\n\n",
+                     "Use today's date to fill the date section."
+                   ]
+                 }
+             ]
+           }
+        }
+           

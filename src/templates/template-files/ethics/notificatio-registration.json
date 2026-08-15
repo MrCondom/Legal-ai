@@ -1,0 +1,68 @@
+{
+  "application_for_notification_for_the_registration_of_a_business name": {
+   "title": "application for notification for the registration of a business name",
+   "sections": [
+     {
+        "type": "heading",
+        "value": ["{{name&addressOfLawFirm}}\n\n",
+          "{{contactAddress}} "
+    ]
+    },
+       {
+           "type": "row",
+           "left": "Our Ref, ______",
+           "right": "Your Ref, _______"
+       },
+       {
+           "type": "suit",
+           "value": "{{date}} "
+       },
+       {
+           "type": "addressBlock",
+           "value": "{{addressBlock}} "
+   },
+   {
+       "type": "text",
+       "value": "Dear Sir/Ma"
+   },
+       {
+           "type": "heading1",
+           "value": "e.g., NOTIFICATION FOR THE REGISTRATION OF COLLINS & CO."
+       },
+       {
+           "type": "text",
+           "value": ["e.g., I have completed the registration of COLLINS & CO, as a business name, as per your instructions.\n\n",
+           "e.g., Attached to this letter are the documents evidencing registration."]
+       },
+       {
+           "type": "texta",
+           "value": ["1. Certificate of registration.\n\n",
+           "2. CAC/BN 01, Application to register business name."]
+       },
+       {
+           "type": "text",
+           "value": ["Please do well to pay the requisite bill, as agreed.\n\n",
+           "Thank you,\n\n",
+           "Yours faithfully,\n",
+       "_____________________"]
+       },
+       {
+           "type": "address",
+           "value": ["{{counselName}} \n",
+               "(Principal partner)\n",
+               "For: {firmName} "
+       ]
+       },
+       {
+         "type": "instructions",
+         "value": [
+           "Use this information to enhance the draft.\n\n",
+           "Use this details to draft this letter, {{details}}\n\n",
+           "Use this information to enhance the draft, {{information}}\n\n",
+           "The draft should be within 300-6000 words.\n\n",
+           "Use today's date to fill the date section."
+         ]
+       }
+   ]
+ }
+}

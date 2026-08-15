@@ -1,0 +1,53 @@
+{
+   "owner's_intention_to_recover_possession": {
+    "title": "owner's intention to recover possession",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "NOTICE TO OCCUPIER OF OWNERS INTENTION TO APPLY TO RECOVER POSSESSION OF PREMISES"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., I, J. J. Esq, counsel to Mr Onos melody, the owner, and on his behalf , do hereby give you notice, that unless peaceful possession of the three (3) bedroom flat with the appurtenances situate at No. 6 iko road, lekki, lagos state, which you hold of the said owner, under a tenancy from year to year, which was determined by a notice to quit dated the 10th day of june, 2024 to 31st day of december, 2024, and which premises are held over and detained from the said owner. The premises are to be delivered to the owner on or before the expiration of seven (7) clear days, from the service of this notice. I shall, on the 8th day of January, 2025 apply to the magistrate's court, ikeja district, for a summon to eject any person from the premises.\n\n",
+            "Dated this, {{date}} \n",
+                "_____________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

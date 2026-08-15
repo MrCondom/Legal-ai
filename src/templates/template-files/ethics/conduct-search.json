@@ -1,0 +1,69 @@
+{
+   "application_to_coduct_search": {
+    "title": "application to conduct search",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": "{{date}} "
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "e.g., APPLICATION TO CONDUCT SEARCH ON JABORI LIMITED"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., We are the external solicitors to Jax limited, which intends to obtain a loan for Jabori limited.\n\n",
+            "e.g., Thus, we kindly seek your permission to conduct a company search on Jabori limited which claims to be a nigerian company, registered under the companies and allied matters act, 2020.\n\n",
+            "e.g., Please find attached to this application are:"]
+        },
+        {
+            "type": "text",
+            "value": ["e.g., 1. Receipt of search fees\n\n",
+            "e.g., 2. Receipt of certified true copy fees\n\n",
+            "e.g., 3. Updated annual returns"]
+        },
+        {
+            "type": "text",
+            "value": ["Thank you,\n\n",
+            "Yours faithfully,\n",
+        "_____________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

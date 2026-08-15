@@ -1,0 +1,52 @@
+{
+   "internal_memorandum": {
+    "title": "internal memorandum",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+    
+        {
+            "type": "subHeading",
+            "value": "INTERNAL MEMORANDUM"
+        },
+        {
+            "type": "sectionTitle",
+            "value": ["e.g., FROM: Senior Partner\n",
+            "e.g., TO: Head of Chamber\n",
+            "{{addressBlock}}\n\n",
+            "DATE:{{date}} \n",
+            "SUBJECT: {{title}} "]
+        },
+        {
+            "type": "text",
+            "value": "Dear Sir/Ma"
+        },
+        {
+            "type": "text",
+            "value": [
+            "e.g., I respectfully wish to communicate my desire to be nominated for sponsorship to a workshop on 'TERRORISM FINANCING PROTECTION IN LEGAL PRACTICE', which is scheduled to hold on 16th July, 2025, at the zonal headquarters of the economic and financial crimes commission (EFCC), Lagos state.\n\n",
+            "e.g., I hope to acquire more knowledge that will help position the firm more strategically.\n\n",
+            "__________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}}\n"
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this memorandum, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+   "minutes": {
+    "title": "minutes",
+    "sections": [
+         {
+            "type": "heading",
+            "value": "e.g MINUTES OF THE FIRST MEETING OF J&J CHAMBERS HELD AT NO. 5 MARINA ROAD, LAGOS ISLAND, LAGOS STATE, ON 10TH JANUARY, 2025 AT 9:00 AM"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "In attendance:"
+        },
+        {
+            "type": "text",
+            "value": "{{attendance}} "
+    },
+        {
+            "type": "sectionTitle",
+            "value": "Present:"
+        },
+        {
+            "type": "text",
+            "value": "{{present}} "
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Absent:"
+        },
+        {
+            "type": "text",
+            "value": "{{absent}} "
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Apology:"
+        },
+        {
+            "type": "text",
+            "value": "{{apology}} "
+        },
+                        {
+            "type": "sectionTitle",
+            "value": "Agenda"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., Appointment of chairman\n\n",
+              "{{agendas}} "
+              ]
+        },
+         {
+            "type": "sectionTitle",
+            "value": "Opening:"
+        },
+        {
+            "type": "text",
+            "value":"e.g., The chairperson confirmed that notice of the meeting was given to all the partners in the law firm. The chairperson also welcomed all the partners to the inaugural meeting."
+        },
+        {
+            "type": "sectionTitle",
+            "value": "e.g., Appointment of chairman"
+        },
+        {
+            "type": "text",
+            "value":"e.g., Mr. Gomba O Esq was appointed the chairman of the partnership and Dr. Joy W as vice chairperson."
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Any other business"
+        },
+        {
+            "type": "text",
+            "value":"e.g., There being no further business, the meeting was concluded with closing remarks from the chairperson and it ended at 2:30 PM."
+        },
+        {
+            "type": "row",
+            "left": "________",
+            "right": "Chaiman"
+        },
+        {
+            "type": "row",
+            "left": "_______",
+            "right": "Secretary"
+        },  
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the minutes, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

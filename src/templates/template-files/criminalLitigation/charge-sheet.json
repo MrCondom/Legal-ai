@@ -40,7 +40,7 @@
                     "value": "Count One"
                 },
                 {
-                    "type": "texta",
+                    "type": "text",
                     "value": "That you, {{defendantName}} on the {{dateOfOffence}} at {{addressOfOffence}}, within the ____ Judicial division, committed an offence punishable under section ___ ."
                 },
                 
@@ -64,7 +64,6 @@
                     "If user states the number of count, use it, if they are more than the offence, facts, just repeat counts. {{count}}\n\n ",
                     "If user states the offences, use it. {{offence}}\n\n",
                     "If user states the laws, use it but with caution. {{laws}}\n\n",
-                    "Use the facts to enhance this charge sheet. {{facts}}\n\n",
                     "The Complainant in the Federal High Court is sometimes 'The Federal Republic Of Nigeria', or 'The Inspector General Of Police' etc, and in the Magistrate's court, it is 'Commissioner Of Police'.\n\n",
                     "Where there are so many defendants, you may use eg 'john ....... 1st defendant, becky ...... 2nd defendant' or '1. john, 2. becky ....... defendants.'.\n\n",
                     "The sequence is 'count one', 'count two', etc. \n\n",

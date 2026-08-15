@@ -1,0 +1,71 @@
+{
+   "articles_of_association": {
+    "title": "articles of association",
+    "sections": [
+        {
+            "type": "heading", 
+            "value": ["THE FEDERAL REPUBLIC OF NIGERIA\n",
+            "THE COMPANIES AND ALLIED MATTERS ACT 20__\n",
+            "COMPANY LIMITED BY _____\n\n",
+            "MEMORANDUM OF ASSOCIATION OF {{companyName}} "]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Company Official Name"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Company's Objectives"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Shareholding Rights"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Powers And Appointment Of Directors"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Pre-emptive Rights upon transfer of shares"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Duties And Appointment Company Secretary "
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Classes Of Shares"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Custody of Common Seal"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Enforcement"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "Interpretation"
+        },
+        {
+            "type": "executionBlock",
+            "value": "{{firstShareHoldersOfTheCompany}} "
+        },
+        {
+        "type": "instructions",
+        "value": [
+          "Use the information below to re structure and draft a complete articles of association.\n\n",
+          "An article of association is basically the costitution of the company.\n\n",
+          "Use this details to draft this article of association, {{details}}\n\n",
+          "Use this details to draft this article of association, {{companyName}}\n\n",
+          "Use this details to draft this article of association, {{businessObject}}\n\n",
+          "Use this information to enhance the draft, {{information}}\n\n",
+          "The draft should be within 500-70000 words.\n\n",
+          "Use today's date to fill the date section."
+        ]
+      }
+  ]
+}
+}

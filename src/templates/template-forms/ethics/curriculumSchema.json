@@ -1,0 +1,176 @@
+{
+    "fields": [
+
+      {
+          "name": "nameAddressContactDetails",
+          "label": "Provide your Full name, Address and Contact Details.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "dateOfBirth",
+          "label": "State your Date of Birth.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "placeOfBirth",
+          "label": "State your Place of Birth.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "sex",
+          "label": "State your Sex.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "nationality",
+          "label": "State your Nationality.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "status",
+          "label": "State your Marital Status.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "state",
+          "label": "What is your State of Origin?",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "lga",
+          "label": "State your Local Government Area.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "genotype",
+          "label": "State your Genotype.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "personalQualifications",
+          "label": "List your academic and professional qualifications.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "missionStatements",
+          "label": "Provide your personal mission statement(s).",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "educationalInstitutions",
+          "label": "List all educational institutions you attended and the dates you attended each.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "workExperience",
+          "label": "List your work experience, including the organisations and dates of employment.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "awards",
+          "label": "List all awards and recognitions you have received.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "membership",
+          "label": "List your professional membership and affiliations.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "skills",
+          "label": "State your personal skills.",
+          "type": "text",
+          "required": true
+      },
+      {
+        "name": "information",
+        "label": "Are you tired?" ,
+        "type": "select",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true
+      },
+
+      {
+          "name": "publications",
+          "label": "List any publications or articles you have authored or contributed to.",
+          "type": "text",
+          "showIf":{
+              "field":"information",
+              "equals":[
+                "No"
+              ]
+          }
+      },
+
+      {
+          "name": "interest",
+          "label": "State your personal interests and hobbies.",
+          "type": "text",
+          "showIf":{
+              "field":"information",
+              "equals":[
+                "No"
+              ]
+          }
+      },
+
+      {
+          "name": "languages",
+          "label": "List all languages you speak.",
+          "type": "text",
+          "showIf":{
+              "field":"information",
+              "equals":[
+                "No"
+              ]
+          }
+      },
+
+      {
+          "name": "referees",
+          "label": "Provide the full names and contact details of all referees.",
+          "type": "text",
+          "showIf":{
+              "field":"information",
+              "equals":[
+                "No"
+              ]
+          }
+      },
+      
+      {
+          "name": "referees",
+          "label": "Alright, provide the full names and contact details of all referees.",
+          "type": "text",
+          "showIf":{
+              "field":"information",
+              "equals":[
+                "Yes"
+              ]
+          }
+      }
+        
+    ]
+}

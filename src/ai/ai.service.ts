@@ -39,150 +39,116 @@ DOCUMENT_IMPROVEMENT
 INVALID
 
 
-Available families are:
+Choose the single template that most closely matches the user's requested document.
+
+Do not select a template merely because it shares a keyword with the request.
+
+Determine the actual document requested from:
+- document type;
+- purpose;
+- parties;
+- legal context;
+- transaction or proceeding;
+- wording of the request.
+
+The user's requested document takes priority over generic keywords.
+
+For example:
+- "application to be a judge" may be a LETTER even though it contains the word "application".
+- "notice of expulsion as a partner" may be a LETTER even though it contains the word "notice".
+- "application for an injunction" may be a COURT_DOCUMENT.
+- "notice of extraordinary general meeting" may be a CORPORATE_DOCUMENT.
+
+Return only the ID of the best matching template.
+
+
+IMPORTANT:
+Classify the request according to the actual document being requested, not merely words such as "application", "notice", "petition", "claim", or "request".
+
+The word "application" does not automatically mean COURT_DOCUMENT.
+
+The word "notice" does not automatically mean CORPORATE_DOCUMENT or COURT_DOCUMENT.
+
+The word "petition" does not automatically mean COURT_DOCUMENT.
+
+Determine the intended document from the complete request and its purpose.
+
+Available document families:
 
 1. DEED
-eg Deed of assignment, Deed of lease, Deed of mortgage etc
+Includes:
+Deed of Assignment, Deed of Conveyance, Deed of Mortgage, Deed of Gift, Deed of Lease, Deed of Assent, Deed of Power of Attorney and other deeds.
 
-Return
+Return:
 {
-"type": "deed",
-"intent": "DRAFT"
+  "type": "deed",
+  "intent": "DRAFT"
 }
+
 
 2. AGREEMENT
-eg Hire purchase agreement, agreement etc
+Includes:
+Hire Purchase Agreements, Partnership Agreements, Shareholders Agreements, Sale Agreements, Tenancy Agreements, Joint Venture Agreements, Memoranda of Understanding, Confidentiality Agreements and other agreements.
 
-Return
+Return:
 {
-"type": "agreement",
-"intent": "DRAFT"
+  "type": "agreement",
+  "intent": "DRAFT"
 }
 
-3. WILLS
-eg Wills
 
-Return
+3. COURT_DOCUMENT
+Includes:
+Motions, Affidavits, Pleadings, Appeals, Written Addresses, Summons, Petitions, Charges, Originating Processes and other documents intended to be filed or used as court processes.
+
+Return:
 {
-"type": "wills",
-"intent": "DRAFT"
+  "type": "court_document",
+  "intent": "DRAFT"
 }
 
-4. LEGAL_OPINION
-eg Legal opinion
 
-Return
+4. CORPORATE_DOCUMENT
+Includes:
+Memoranda of Association, Articles and corporate constitutive documents, Corporate Notices, Minutes, Company Resolutions, Corporate Applications and other company-related documents.
+
+Return:
 {
-"type": "legal_opinion",
-"intent": "DRAFT"
+  "type": "corporate_document",
+  "intent": "DRAFT"
 }
 
-5. MOTION
-eg motion ex parte, motion on notice, motion for joinder of party, garnishee order, moving a motion etc
 
-Return
+5. LETTER
+Includes:
+Application letters, demand letters, notices, correspondence, professional letters, employment-related letters, notices of expulsion, curriculum vitae, quit notice, application for notice of setting up a law firm, notices to partners and other documents primarily intended to be communicated as letters.
+
+Return:
 {
-"type": "motion",
-"intent": "DRAFT"
+  "type": "letter",
+  "intent": "DRAFT"
 }
 
-6. CHARGES
-eg criminal information, charge sheet in the north, charge sheet
 
-Return
+6. WILL
+Includes:
+Wills, Codicils and other testamentary documents.
+
+Return:
 {
-"type": "charges",
-"intent": "DRAFT"
+  "type": "will",
+  "intent": "DRAFT"
 }
 
-7. AFFIDAVIT
-eg affidavit
 
-Return
+7. LEGAL_OPINION
+Includes:
+Legal opinions, legal advice and formal opinions on legal issues.
+
+Return:
 {
-"type": "affidavit",
-"intent": "DRAFT"
-}
-
-8. WRITTEN ADDRESS
-eg written address, final address 
-
-Return
-{
-"type": "written address",
-"intent": "DRAFT"
-}
-
-9. APPEAL
-eg notice of appeal
-
-Return
-{
-"type": "appeal",
-"intent": "DRAFT"
-}
-
-10. PLEADINGS
-eg claim, statement of claim, statement of defence, counter-claim, writ of summons, interpleader summons, originating summons etc
-
-Return
-{
-"type": "pleadings",
-"intent": "DRAFT"
-}
-
-11. PETITIONS
-eg election petition, petition for dissolution of marriage, petition for winding-up
-
-Return
-{
-"type": "petitions",
-"intent": "DRAFT"
-}
-
-12. COURT_APPLICATIONS
-eg list of evidence, notice to defend, CMC notice, pre action protocol etc
-
-Return
-{
-"type": "court_applications",
-"intent": "DRAFT"
-}
-
-13. CORPORATE_APPLICATIONS
-eg application for exemption, letter of allotment, letter of regret, statutory letter of demand etc
-
-Return
-{
-"type": "corporate_applications",
-"intent": "DRAFT"
-}
-
-14. MEMORANDUM_OF_ASSOCIATION
-eg memorandum of association of a company, memorandum of association of a company limited by guarantee
-
-Return
-{
-"type": "memorandum_of_association",
-"intent": "DRAFT"
-}
-
-15. CORPORATE_NOTICE
-eg notice of a meeting, requisition of an extra-ordinary general meeting
-
-Return
-{
-"type": "corporate_notice",
-"intent": "DRAFT"
-}
-
-16. RESOLUTION
-eg resolution to increase share capital, resolution for re-registration, creditor's winding up, appointment of a liquidator etc
-
-Return
-{
-"type": "resolution",
-"intent": "DRAFT"
+  "type": "legal_opinion",
+  "intent": "DRAFT"
 }
 
 
@@ -373,9 +339,41 @@ Only polish language.
 
 Maintain compact legal document formatting with minimal spacing around headings.
 
-Use a clear and consistent hierarchical numbering system for all sections and clauses, to enhance readability, except lead sentences or lead-in-phrases eg 'TAKE NOTICE', 'I APPOINT', 'LET ALL PARTIES', 'NOTICE IS HEREBY GIVEN' etc.
+NUMBERING:
 
-Use Arabic numerals (1, 2, 3 ...) for main sections, Roman numerals (i, ii, iii ...) for subsections, and lowercase letters (a,b,c ...) for sub-subsections. Maintain this numbering structure consistently throughout the document.
+The document's existing legal structure takes priority over stylistic numbering preferences.
+
+Only use these three numbering levels where numbering is appropriate:
+
+1. Main sections: 1, 2, 3, 4, etc.
+2. Subsections: i, ii, iii, iv, etc.
+3. Sub-subsections: a, b, c, d, etc.
+
+Do NOT use decimal or compound numbering such as:
+1.1
+1.2
+1.1.1
+2.1
+2.1.1
+
+Do not convert every paragraph, sentence, charge, allegation, prayer, address, heading, or legal phrase into a numbered item.
+
+Do not number criminal charges, counts, offences, particulars of offence, prayers, statutory provisions, case citations, addresses, introductory lead sentences, or other legally formatted items unless the original document already numbers them.
+
+Do not invent numbering where none is required.
+
+Preserve legally significant existing numbering.
+
+Lead sentences and formal legal expressions must remain unnumbered, including:
+"TAKE NOTICE"
+"I APPOINT"
+"LET ALL PARTIES"
+"NOTICE IS HEREBY GIVEN"
+and similar expressions.
+
+Only introduce or correct numbering where it is clearly appropriate to the structure of the document.
+
+Never use 1.1, 1.2, 1.1.1 or any other decimal/compound numbering.
 
 Do NOT alter legal intent.
 
@@ -417,43 +415,169 @@ Return only the polished document.
 
           Review document.
 
-          First identify the document type.
+          IMPORTANT CLASSIFICATION RULE:
+          
+          Do not classify a document solely from isolated keywords.
+          
+          Determine the document family from the document's overall purpose, structure, legal function, parties, intended recipient, and substantive contents.
+          
+          For example:
+          - "application" does not automatically mean COURT_DOCUMENT.
+          - "notice" does not automatically mean COURT_DOCUMENT or CORPORATE_DOCUMENT.
+          - "petition" does not automatically mean COURT_DOCUMENT.
+          - "demand" does not automatically mean LETTER.
+          - "agreement" does not automatically mean AGREEMENT if the document is actually a deed or another legal instrument.
+          
+          The legal function of the document takes priority over individual words appearing in it.
 
-          Possible types:
-
+          First identify the broad document family.
+          
+          Possible document families:
+          
           DEED
-          WILLS
           AGREEMENT
+          COURT_DOCUMENT
+          CORPORATE_DOCUMENT
           LETTER
+          WILL
           LEGAL_OPINION
-          RESOLUTION
-          AFFIDAVIT
-          MOTION
-          PETITION
           OTHER
-
-
-          Review according to its document type.
-
-          For DEEDS:
-          Any legal document beginning with "Deed of..."
-          belongs to the DEED family.
-
-          For AGREEMENTS:
-          Any legal document having contents bearing "Agreement"
-          belongs to the AGREEMENT family.
-
-          For MOTIONS:
-          Any legal document with contents like  "An Order ..", "A Declaration", "Motion on ..", "Injunction"
-          belongs to the MOTION family.
-
-          For LEGAL_OPINION:
-          Any legal document with contents like "Legal opinion", "Legal advice"
-          belongs to the LEGAL_OPINION family.
-
-          For WILLS:
-          Any legal document with contents like "wills", "codicil", "probate", "letters of administrations"
-          belongs to the WILLS family.
+          
+          
+          DOCUMENT FAMILY CLASSIFICATION RULES:
+          
+          1. DEED
+          
+          A document belongs to the DEED family where it is executed as a deed or is clearly intended to operate as a deed.
+          
+          Examples include:
+          - Deed of Assignment
+          - Deed of Conveyance
+          - Deed of Mortgage
+          - Deed of Gift
+          - Deed of Lease
+          - Deed of Assent
+          - Deed of Power of Attorney
+          - Deed of Transfer
+          - other deeds
+          
+          Do not classify a document as a DEED merely because it concerns land or property.
+          
+          
+          2. AGREEMENT
+          
+          A document belongs to the AGREEMENT family where it records contractual terms, obligations, rights or arrangements between parties and is intended to operate as an agreement rather than a deed or court process.
+          
+          Examples include:
+          - Hire Purchase Agreement
+          - Partnership Agreement
+          - Shareholders Agreement
+          - Sale Agreement
+          - Tenancy Agreement
+          - Joint Venture Agreement
+          - Memorandum of Understanding
+          - Confidentiality Agreement
+          - Service Agreement
+          - other agreements
+          
+          The presence of the word "agreement" alone is not sufficient; consider the substance and structure of the document.
+          
+          
+          3. COURT_DOCUMENT
+          
+          A document belongs to the COURT_DOCUMENT family where it is intended to commence, support, defend, determine, prosecute, respond to or otherwise participate in judicial proceedings.
+          
+          Examples include:
+          - Motions
+          - Affidavits
+          - Statements of Claim
+          - Statements of Defence
+          - Counter-claims
+          - Claims
+          - Writs
+          - Summons
+          - Originating Summons
+          - Originating Motions
+          - Notices of Appeal
+          - Written Addresses
+          - Petitions filed in court
+          - Charges or criminal informations
+          - Garnishee processes
+          - Court applications
+          - Notices to defend
+          - other court processes
+          
+          Words such as "application", "notice", "petition", "claim", "order", "injunction" or "motion" do not automatically make a document a COURT_DOCUMENT. Determine whether the document is actually intended to be filed or used as a court process.
+          
+          
+          4. CORPORATE_DOCUMENT
+          
+          A document belongs to the CORPORATE_DOCUMENT family where it primarily concerns the constitution, management, administration, governance or statutory affairs of a company or other corporate body and is not primarily a court process.
+          
+          Examples include:
+          - Memorandum of Association
+          - Articles or other corporate constitutional documents
+          - Company resolutions
+          - Board resolutions
+          - Shareholder resolutions
+          - Notices of meetings
+          - Requisitions for meetings
+          - Corporate applications
+          - Statutory notices
+          - Letters of allotment
+          - Letters of regret
+          - Company-related notices
+          - other corporate documents
+          
+          A document should not be classified as CORPORATE_DOCUMENT merely because a company is one of the parties.
+          
+          
+          5. LETTER
+          
+          A document belongs to the LETTER family where it is primarily correspondence or a written communication from one person, professional, organisation or entity to another.
+          
+          Examples include:
+          - Application letters
+          - Letters of demand
+          - Solicitor's letters
+          - Notices communicated by letter
+          - Employment-related letters
+          - Letters to government authorities
+          - Letters requesting appointments
+          - Applications to become a judge
+          - Notices of expulsion from a partnership or firm
+          - Professional correspondence
+          - other letters
+          
+          The presence of words such as "application", "notice" or "demand" does not automatically make a document a court or corporate document. Consider the document's intended recipient, purpose and format.
+          
+          
+          6. WILL
+          
+          A document belongs to the WILL family where it contains testamentary dispositions or is intended to operate as a testamentary instrument.
+          
+          Examples include:
+          - Wills
+          - Codicils
+          - Testamentary instruments
+          
+          Probate or letters of administration are not automatically WILLS. Determine whether the document itself is a testamentary instrument or a court/administrative process relating to a deceased person's estate.
+          
+          
+          7. LEGAL_OPINION
+          
+          A document belongs to the LEGAL_OPINION family where it provides a formal legal analysis, advice or opinion on facts, legal issues, applicable law and conclusions.
+          
+          Examples include:
+          - Legal opinions
+          - Formal legal advice
+          - Counsel's opinions
+          - Legal memoranda prepared as legal opinions
+          
+          
+          8. OTHER
+          
+          Use OTHER only where the document cannot reasonably be classified into any of the above families.
 
 
           Return JSON only.

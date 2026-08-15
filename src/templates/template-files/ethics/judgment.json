@@ -1,0 +1,68 @@
+{
+    "notification_of_judgment": {
+    "title": "notification of judgment",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": "{{date}} "
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "e.g., RE: MR IKECHUKWU PROMISE V. ZAP NIG. LIMITED SUIT NO _______"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., i am glad to inform you that judgment in the above suit was delivered on the 6th April, 2025, in your favour and the sum of N50,000,000 (fifty million naira) was awarded to you as damages against the defendant.\n\n",
+            "e.g., while we await the defendant's next line of action, we wish to bring to your attention, that we can take steps to enforce the said judgment. \n\n",
+            "e.g., Please find attached a certified true copy of the judgment.\n\n",
+            "Yours faithfully\n",
+        "________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+            "type": "sectionTitle",
+            "value": "ENCLOSED"
+        },
+        {
+            "type": "text",
+            "value": "1. CTC of court judgment"
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}
+  

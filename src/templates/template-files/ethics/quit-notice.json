@@ -1,0 +1,53 @@
+{
+   "notice_to_quit": {
+    "title": "notice to quit",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "NOTICE TO QUIT"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., I, J. J. Esq, counsel to Mr Onos melody, your landlord, and on his behalf, do hereby give you notice to quit and deliver up possession of the three (3) bedroom flat  with the appurtenances situate at No. 6 iko road, lekki, lagos state, which you occupy as his yearly tenant, from 1st January 2024 to 31st december 2024.\n\n",
+            "Dated this, {{date}} \n",
+                "_____________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

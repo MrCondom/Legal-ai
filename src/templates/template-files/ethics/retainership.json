@@ -1,0 +1,60 @@
+{
+   "application_for_retainership": {
+    "title": "application for retainership",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": "{{date}} "
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "APPLICATION FOR RETAINERSHIP"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., We wish to express our interest, in being appointed as your company retainer.\n\n",
+            "e.g., J&J Chambers is a full-service law firm with proven expertise in Corporate, Litigation and Contractual Matters. We are confident that our legal team, is well-equipped to provide ongoing advisory services, dispute resolution and regulatory support tailored to your company's needs.\n\n",
+            "e.g., By engaging our firm on a retainership basis, your organisation will benefit from timely legal guidance, priority service, and cost-effective access to experienced counsel. We would be delighted to further discuss our terms of engagement, scope of services and retainer structure that best supports your operations.\n\n",
+            "e.g., We look forward to the opportunity to work with you and contribute to the continued success of your organisation.\n\n",
+            "Yours faithfully,\n",
+            "______________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

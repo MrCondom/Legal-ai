@@ -1,0 +1,72 @@
+{
+           "search_warrant": {
+            "title": "search warrant",
+            "sections": [
+                {
+                    "type": "heading", 
+                    "value": ["IN THE {{court}} \n",
+                    "IN THE ___\n",
+                    "HOLDEN AT ___"]
+                },
+                {
+                    "type": "suit",
+                    "value": "CHARGE NO: ________"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "BETWEEN"
+                },
+                {
+                    "type": "row",
+                    "left": "{{complainantName}} ",
+                    "right": "COMPLAINANT"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": "AND"
+                },
+                {
+                    "type": "row",
+                    "left": "{{defendantName}}",
+                    
+                    "right": "Defendant"
+                },
+                {
+                    "type": "sectionTitle",
+                    "value": ["To: {{policeOfficerDetails}} \n\n",
+                        "e.g To: Corporal John Musa\n",
+                        "e.g Abacha Divisional police station, Port-Harcourt",
+                        "Rivers-State"
+                    ]
+                },
+                {
+                    "type": "subHeading",
+                    "value": "SEARCH WARRANT"
+                },
+
+                {
+                    "type": "text",
+                    "value": ["WHEREAS information on oath and in writing has this day been made that there is reasonable ground for believing that there is in {{addressWhereOffenceTookPlace}}, {{offence}} contrary to section {{sectionOfTheLaw}}.\n\n ",
+                    "You are hereby commanded in the name of {state}, with proper assistance, to enter the above named premises and there diligently search for the things aforesaid and if same or any part therof is found, to bring same before this court to be dealt with according to law.\n\n",
+                    "This warrant shall be executed between the hours of 5 o'clock in the forenoon and 8 o'clock at night and may also be executed at any hour during the day or night. "
+                    ]
+                },
+                {
+                     "type": "text",
+                     "value": ["Issued at this, {{date}} \n\n",
+                     "_______________\n",
+                     " {{judge/magistrateName}} .\n"
+                     ]
+                 },
+                 {
+                   "type": "instructions",
+                   "value": [
+                     "Use this information to enhance the draft.\n\n",
+                     "The draft should be within 300-2000 words.\n\n",
+                     "Use today's date to fill the date section."
+                   ]
+                 }
+             ]
+           }
+        }
+           

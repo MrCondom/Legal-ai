@@ -1,0 +1,47 @@
+{
+    "fields": [
+
+      {
+          "name": "name&addressOfLawFirm",
+          "label": "Provide the full legal name and address of the law firm.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "contactAddress",
+          "label": "Provide the law firm's telephone number(s) and email address.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "nameAddressQualificationOfLawyers",
+          "label": "Provide the full names, addresses, and professional qualifications of all lawyers seeking to establish the firm, in that order.",
+          "type": "text",
+          "required": true
+      },
+        {
+          "name": "information",
+          "label": "Is there any other information you would like considered in this application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+        
+        {
+            "name": "information",
+            "label": "Provide any additional information or specific points you would like addressed in the application.",
+            "type": "facts",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        }
+        
+    ]
+}

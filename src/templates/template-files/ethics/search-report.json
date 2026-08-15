@@ -1,0 +1,69 @@
+{
+   "search_report": {
+    "title": "search report",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": "{{date}} "
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "e.g., SEARCH REPORT ON JABORI LIMITED"
+        },
+        {
+            "type": "texta",
+            "value": ["e.g., 1. Name of company:_______________\n\n",
+            "e.g., 2. Date of search:_______________\n\n",
+            "e.g., 3. Place of search:_______________\n\n",
+            "e.g., 4. Registration number:_______________\n\n",
+            "e.g., 5. Date of incorporation:_______________\n\n",
+            "e.g., 6. Objects of the company:_______________\n\n",
+            "e.g., 7. Share capital:_______________\n\n",
+            "etc."]
+        },
+        {
+            "type": "text",
+            "value": ["e.g., The company appears viable and may be granted the loan as requested.\n\n",
+                "Thank you,\n\n",
+            "Yours faithfully,\n",
+        "_____________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-8000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

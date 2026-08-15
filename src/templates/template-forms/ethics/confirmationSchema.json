@@ -1,0 +1,59 @@
+{
+    "fields": [
+
+      {
+          "name": "name&addressOfLawFirm",
+          "label": "Provide the full legal name and address of the law firm.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "contactAddress",
+          "label": "Provide the law firm's telephone number(s) and email address.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "addressBlock",
+          "label": "Provide the full name and address of the person to whom this application is addressed.",
+          "type": "addressBlock",
+          "required": true
+      },
+      {
+          "name": "details",
+          "label": "Provide any necessary details or information required to prepare this application.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "counselName",
+          "label": "State your full name?",
+          "type": "counselname",
+          "required": true
+      },
+        {
+          "name": "information",
+          "label": "Is there any other information you would like considered in this application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+        
+        {
+            "name": "information",
+            "label": "Provide any additional information or specific points you would like addressed in the application.",
+            "type": "facts",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        }
+        
+    ]
+}

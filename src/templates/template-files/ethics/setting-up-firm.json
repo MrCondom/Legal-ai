@@ -1,0 +1,57 @@
+{
+   "notice_of_setting_up_a_law_firm": {
+    "title": "notice of setting up a law firm",
+    "sections": [
+         {
+            "type": "heading",
+            "value": ["{{name&addressOfLawFirm}}\n\n",
+              "{{contactAddress}} "
+        ]
+        },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": " {{date}}"
+        },
+        {
+            "type": "addressBlock",
+            "value": ["The Chairman,\n",
+            "Nigerian Bar Association,\n",
+            "___ branch, ___ State.\n\n",
+            "Dear Sir/Ma,"]
+        },
+        {
+            "type": "heading1",
+            "value": "NOTICE OF ESTABLISHMENT OF A LAW FIRM PURSUANT TO RULE 13 OF THE RULES OF PROFESSIONAL CONDUCT 2023"
+        },
+        {
+            "type": "text",
+            "value": ["NOTICE IS HEREBY GIVEN of the setting up and establishment of the said law firm. It is a partnership between {{nameAddressQualificationOfLawyers}}.\n\n",
+            "The above information is for your kind notice. Thank you.\n\n",
+            "We remain,\n",
+            "Yours faithfully,\n\n",
+            "_______________"]
+        },
+        {
+            "type": "address",
+            "value": ["{partnerName} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

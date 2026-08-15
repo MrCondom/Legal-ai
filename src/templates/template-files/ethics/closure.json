@@ -1,0 +1,59 @@
+{
+   "closure_of_file_after_legal_representation": {
+    "title": "closure of file after legal representation",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": "{{date}} "
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "RE: LEGAL REPRESENTATION"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., We would like to take this opportunity, to express our sincere gratitude for trusting us to represent you in this matter.\n\n",
+            "e.g., We confirm that all your original documents and valuables have been previously returned to you. As the matter is now concluded, we will be closing our file and we trust that the outcome met your satisfactions.\n\n",
+            "e.g., Should you require any further assistance in the future, please do not hesitate to contact us. We thank you for the opportunity to have acted on your behalf.\n\n",
+            "Yours faithfully,\n",
+        "________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

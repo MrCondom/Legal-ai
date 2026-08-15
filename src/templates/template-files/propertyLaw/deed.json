@@ -1,0 +1,81 @@
+{
+  "deed_of_assignment": {
+    "title": "deed of assignment",
+    "parties": [
+        {
+            "id": "partyOne",
+            "role": "____"
+        },
+        {
+            "id": "partyTwo",
+            "role": "____"
+        }
+    ],
+    "sections": [
+        {
+            "type": "text3",
+            "value": "THIS DEED OF ____ is made on the {{date}}. "
+        },
+        {
+        "type": "sectionTitle",
+        "value": "BETWEEN"
+    },
+
+    {
+        "type": "text",
+        "value": "{{partyOne.name}}, a {{partyOne.occupation}} of {{partyOne.address}}  of the ONE PART"
+
+    },
+
+    {
+        "type": "sectionTitle",
+        "value": "AND"
+    },
+
+    {
+        "type": "text",
+        "value": "{{partyTwo.name}}, a {{partyTwo.occupation}} of {{partyTwo.address}}  of the OTHER PART."
+    },
+    {
+            "type": "sectionTitle",
+            "value": "THIS DEED RECITES AS FOLLOWS:"
+    },
+         {
+            "type": "sectionTitle",
+            "value": "THIS DEED WITNESSETH AS FOLLOWS:"
+        },
+         
+        {
+            "type": "text",
+            "value": "IN WITNESS OF WHICH the parties have executed this deed in the manner below the day and year first above written."
+        },
+        {
+            "type": "sectionTitle",
+            "value": "SCHEDULE"
+        },
+         {
+             "type": "execution"
+         },
+         {
+            "type": "sectionTitle",
+            "value": "Prepared By;"
+        },
+        {
+            "type": "address",
+            "value": ["{{lawyerName}} \n",
+            "{{lawFirm}} \n"
+            ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

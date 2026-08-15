@@ -1,0 +1,69 @@
+{
+   "demand_letter": {
+    "title": "demand letter",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": "{{date}} "
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "e.g., DEMAND LETTER FOR THE PAYMENT OF N30,000,000 (THIRTY MILLION NAIRA) ONLY "
+        },
+        {
+            "type": "text",
+            "value": ["e.g., We are solicitors of Mr. Ikechukwu Promise (our client), on whose intructions we write.\n\n",
+            "We have been briefed by our client about the following facts;"]
+        },
+        {
+            "type": "texta",
+            "value": ["e.g., 1. That you entered into a contract with our client, for the supply of empty bottles, dated 20th December,2024, for the sum of N30,000,000 (thirty million naira).\n\n",
+            "e.g., 2. That our client made full payment of the sum of N30,000,000 (thirty million naira )only on 29th December, 2024, via a bank transfer, receipt of which you acknowledged.\n\n",
+            "e.g., 3. That since receipt of the said sum, you have willfully failed to deliver the goods, in spite of several demands."]
+        },
+        {
+            "type": "text",
+            "value": ["e.g, In light of the above, our client is willing to give you 21 days, from the date of this letter to refund the N30,000,000 (thirty million naira) only, failure of which, we will be compelled to take all neccessary legal actions against you.\n\n",
+            "Thank you,\n\n",
+            "Yours faithfully,\n",
+        "_____________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

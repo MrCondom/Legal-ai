@@ -1,0 +1,69 @@
+{
+   "application_for_notice_of_Expulsion_of_a_partner": {
+    "title": "application for notice of Expulsion of a partner",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": "{{date}} "
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "e.g., NOTICE OF EXPULSION PURSUANT TO ARTICLE 12, OF THE PARTNERSHIP AGREEMENT"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., NOTICE IS HEREBY GIVEN, that as a result of a meeting held by all the partners, we have agreed to expel you as a partner, pursuant to article 12 of the partnership agreement.\n\n",
+            "The grounds are as follows:"]
+        },
+        {
+            "type": "texta",
+            "value": ["e.g., 1. Mismanagement of funds and unauthorised withdrawals.\n\n",
+            "e.g., 2. Breakdown of trust due to unethical behavior, that undermines the partnership interests.\n\n",
+            "{{grounds}} "]
+        },
+        {
+            "type": "text",
+            "value": "Dated, this {{date}} "
+        },
+       {
+            "type": "row",
+            "left": "_______",
+            "right": "Parner"
+        },
+    {
+            "type": "row",
+            "left": "______",
+            "right": "Partner"
+},
+{
+  "type": "instructions",
+  "value": [
+    "Use this information to enhance the draft.\n\n",
+    "Use this details to draft this letter, {{details}}\n\n",
+    "Use this information to enhance the draft, {{information}}\n\n",
+    "The draft should be within 300-6000 words.\n\n",
+    "Use today's date to fill the date section."
+  ]
+}
+]
+}
+}

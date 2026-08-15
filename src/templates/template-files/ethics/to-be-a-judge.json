@@ -1,0 +1,72 @@
+{
+   "application_for_appointment_as_a_judge": {
+    "title": "application for appointment as a Judge",
+    "sections": [
+         {
+            "type": "heading",
+            "value": ["{{name&addressOfLawFirm}}\n\n",
+              "{{contactAddress}} "
+        ]
+        },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": " {{date}}"
+        },
+        {
+            "type": "addressBlock",
+            "value": ["The Chairman,\n",
+            "National Judicial Council,\n",
+            "Supreme Court Complex,\n",
+            "Abuja,"
+        ]
+    },
+     {
+            "type": "sectionTitle",
+            "value": "Through"
+        },
+        {
+            "type": "addressBlock",
+            "value": ["The Chairman,\n",
+            "___ State Judicial Service Commission,\n",
+            " {state} .\n\n",
+            "Dear Sir/Ma,"
+        ]
+    },
+        {
+            "type": "heading1",
+            "value": "APPLICATION FOR THE POST OF A JUDICIAL OFFICER"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., I wish to apply for the post of a judicial officer in the Lagos state judiciary.\n\n",
+            "e.g., I am a legal practitioner practicing within the jurisdiction of the state with 19 years post-call experience at the Bar. The purpose of my application, for this noble position is to use my wealth of experience, to improve the administration of justice in the state, through reasonable adjudication.\n\n",
+            "e.g., Please find attached to this letter a copy of my curriculum vitae.\n\n",
+            "Thank you,\n\n",
+            "Yours faithfully,\n",
+            "_______________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

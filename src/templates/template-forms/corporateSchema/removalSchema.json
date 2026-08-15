@@ -1,0 +1,53 @@
+{
+    "fields": [
+
+      {
+          "name": "detailsOfCompany",
+          "label": "Provide the company's full legal name, RC number, and registered address.",
+          "type": "text",
+          "required": true
+      },
+
+      {
+          "name": "phoneNumber&EmailAddress",
+          "label": "Provide the company's telephone number(s) and email address.",
+          "type": "text",
+          "required": true
+      },
+      {
+          "name": "addressBlock",
+          "label": "Provide the full name and address of the person to whom this application is addressed.",
+          "type": "addressBlock",
+          "required": true
+      },
+      {
+          "name": "grounds",
+          "label": "State the grounds for the proposed removal of the secretary.",
+          "type": "text",
+          "required": true
+      },
+        {
+          "name": "information",
+          "label": "Is there any other information you would like considered in this application?" ,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "required": true
+        },
+
+        {
+            "name": "information",
+            "label": "Provide any additional information or specific points you would like addressed in the application.",
+            "type": "facts",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        }
+
+    ]
+}

@@ -1,0 +1,58 @@
+{
+   "confirmation of instruction": {
+    "title": "confirmation of instruction",
+    "sections": [
+      {
+         "type": "heading",
+         "value": ["{{name&addressOfLawFirm}}\n\n",
+           "{{contactAddress}} "
+     ]
+     },
+        {
+            "type": "row",
+            "left": "Our Ref, ______",
+            "right": "Your Ref, _______"
+        },
+        {
+            "type": "suit",
+            "value": "{{date}} "
+        },
+        {
+            "type": "addressBlock",
+            "value": "{{addressBlock}} "
+    },
+    {
+        "type": "text",
+        "value": "Dear Sir/Ma"
+    },
+        {
+            "type": "subHeading",
+            "value": "REQUEST FOR CONFIRMATION OF INSTRUCTION"
+        },
+        {
+            "type": "text",
+            "value": ["e.g., Sequel to an earlier instruction you gave us on the 4th day of january, 2026 to carry out negotiations for the sale of your property located at Plot 5 Ahmadu Bello Way, Central Business District, Abuja for the sum of N10,000,000.00 (Ten Million Naira), we wish to inform you that all negotiations have been concluded for the sale.\n\n",
+            "e.g, We therefore require that you come to our office for further instructions so as to enable us proceed with execution.\n\n",
+            "Yours faithfully,\n",
+            "______________________"]
+        },
+        {
+            "type": "address",
+            "value": ["{{counselName}} \n",
+                "(Principal partner)\n",
+                "For: {firmName} "
+        ]
+        },
+        {
+          "type": "instructions",
+          "value": [
+            "Use this information to enhance the draft.\n\n",
+            "Use this details to draft this letter, {{details}}\n\n",
+            "Use this information to enhance the draft, {{information}}\n\n",
+            "The draft should be within 300-6000 words.\n\n",
+            "Use today's date to fill the date section."
+          ]
+        }
+    ]
+  }
+}

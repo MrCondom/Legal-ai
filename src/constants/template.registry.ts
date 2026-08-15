@@ -22,6 +22,9 @@ import releaseSchema from "../templates/template-forms/propertySchema/releaseSch
 import assentTemplate from "../templates/template-files/propertyLaw/assent.json";
 import assentSchema from "../templates/template-forms/propertySchema/assentSchema.json";
 
+import deedDeedTemplate from "../templates/template-files/criminalLitigation/deed.json";
+import deedDeedSchema from "../templates/template-forms/criminalSchema/deedSchema.json";
+
 import attorneyTemplate from "../templates/template-files/propertyLaw/deed-of-power-of-attorney.json";
 import attorneySchema from "../templates/template-forms/propertySchema/attorneySchema.json";
 
@@ -131,6 +134,12 @@ import informationSchema from "../templates/template-forms/criminalSchema/inform
 import evidenceTemplate from "../templates/template-files/criminalLitigation/list-of-evidence.json";
 import evidenceSchema from "../templates/template-forms/criminalSchema/evidenceSchema.json";
 
+import arrestTemplate from "../templates/template-files/criminalLitigation/warrant-of-arrest.json";
+import arrestSchema from "../templates/template-forms/criminalSchema/arrestSchema.json";
+
+import warrantTemplate from "../templates/template-files/criminalLitigation/search-warrant.json";
+import warrantSchema from "../templates/template-forms/criminalSchema/warrantSchema.json";
+
 //Corporate Law 
 import applicationTemplate from "../templates/template-files/corporateLaw/corporate-application.json";
 import applicationSchema from "../templates/template-forms/corporateSchema/applicationSchema.json";
@@ -153,6 +162,46 @@ import resolutionSchema from "../templates/template-forms/corporateSchema/resolu
 import windingTemplate from "../templates/template-files/corporateLaw/petition-winding-up.json";
 import windingSchema from "../templates/template-forms/corporateSchema/windingSchema.json";
 
+import companyExemptionTemplate from "../templates/template-files/corporateLaw/application-for-exemption.json";
+import companyExemptionSchema from "../templates/template-forms/corporateSchema/companyExemptionSchema.json";
+
+import removalTemplate from "../templates/template-files/corporateLaw/removal-secretary.json";
+import removalSchema from "../templates/template-forms/corporateSchema/removalSchema.json";
+
+import articlesTemplate from "../templates/template-files/corporateLaw/article-of-association.json";
+import articlesSchema from "../templates/template-forms/corporateSchema/articlesSchema.json";
+
+//Ethics
+import confirmationTemplate from "../templates/template-files/ethics/confirmation.json";
+import allSchema from "../templates/template-forms/ethics/confirmationSchema.json";
+import caseClosureTemplate from "../templates/template-files/ethics/closure.json";
+import conductSearchTemplate from "../templates/template-files/ethics/conduct-search.json";
+import demandLetterTemplate from "../templates/template-files/ethics/demand-letter.json";
+import judgmentInformTemplate from "../templates/template-files/ethics/judgment.json";
+import notificatioTemplate from "../templates/template-files/ethics/notificatio-registration.json";
+import ownersIntentionTemplate from "../templates/template-files/ethics/owners-intention.json";
+import quitNoticeTemplate from "../templates/template-files/ethics/quit-notice.json";
+import retainershipTemplate from "../templates/template-files/ethics/retainership.json";
+import searchReportTemplate from "../templates/template-files/ethics/search-report.json";
+import internalMemoTemplate from "../templates/template-files/ethics/internal-memorandum.json";
+
+import expulsionTemplate from "../templates/template-files/ethics/expulsion-of-partner.json";
+import expulsionSchema from "../templates/template-forms/ethics/expulsionSchema.json";
+
+import toBeAJudgeTemplate from "../templates/template-files/ethics/to-be-a-judge.json";
+import toBeAJudgeSchema from "../templates/template-forms/ethics/judgeSchema.json";
+
+import letterWritingTemplate from "../templates/template-files/ethics/letter-writting.json";
+import letterWritingSchema from "../templates/template-forms/ethics/letterWritingSchema.json";
+
+import settingFirmTemplate from "../templates/template-files/ethics/setting-up-firm.json";
+import settingFirmSchema from "../templates/template-forms/ethics/settingFirmSchema.json";
+
+import curriculumTemplate from "../templates/template-files/ethics/curiculum-vitae.json";
+import curriculumSchema from "../templates/template-forms/ethics/curriculumSchema.json";
+
+import minuteTemplate from "../templates/template-files/ethics/minutes.json";
+import minuteSchema from "../templates/template-forms/ethics/minuteSchema.json";
 
 
 
@@ -326,6 +375,17 @@ export const templateRegistry = [
     formSchema: triparteSchema,
   },
   {
+    slug: "deed",
+    title: "deed",
+    documentFamily: "deed",
+    tags: [
+      "deed",
+      "unknown deed"
+    ],
+    template: deedDeedTemplate,
+    formSchema: deedDeedSchema,
+  },
+  {
     slug: "deed-of-release-of-mortgage",
     title: "Deed of Release of Mortgage",
     documentFamily: "deed",
@@ -388,7 +448,7 @@ export const templateRegistry = [
   {
     slug: "motion-ex-parte",
     title: "motion ex parte",
-    documentFamily: "motion",
+    documentFamily: "court_document",
     tags: [
       "interim injunction",
       "mareva injunction",
@@ -403,7 +463,7 @@ export const templateRegistry = [
   {
     slug: "motion-on-notice",
     title: "motion on notice",
-    documentFamily: "motion",
+    documentFamily: "court_document",
     tags: [
       "interlocutory injunction",
       "preliminary objection challenging the jurisdiction of the court",
@@ -418,7 +478,7 @@ export const templateRegistry = [
   {
     slug: "garnishee-order",
     title: "garnishee order",
-    documentFamily: "motion",
+    documentFamily: "court_document",
     tags: [
       "garnishee order",
       "motion to set aside a garnishee order",
@@ -433,7 +493,7 @@ export const templateRegistry = [
   {
     slug: "joinder-of-parties",
     title: "joinder of parties",
-    documentFamily: "motion",
+    documentFamily: "court_document",
     tags: [
       "joinder of parties",
       "misjoinder of parties",
@@ -446,7 +506,7 @@ export const templateRegistry = [
   {
     slug: "originating-motion",
     title: "originating-motion",
-    documentFamily: "motion",
+    documentFamily: "court_document",
     tags: [
       "originating motion",
       "originating motion ex parte",
@@ -460,7 +520,7 @@ export const templateRegistry = [
   {
     slug: "affidavit",
     title: "affidavit",
-    documentFamily: "affidavit",
+    documentFamily: "court_document",
     tags: [
       "affidavit",
       "document supporting motions"
@@ -472,7 +532,7 @@ export const templateRegistry = [
   {
     slug: "written-address",
     title: "written address",
-    documentFamily: "written address",
+    documentFamily: "court_document",
     tags: [
       "written address",
       "final address",
@@ -485,7 +545,7 @@ export const templateRegistry = [
   {
     slug: "motion-in-the-north",
     title: "motion in the north",
-    documentFamily: "motion",
+    documentFamily: "court_document",
     tags: [
       "motion in the north",
       "bail motion in the north",
@@ -497,7 +557,7 @@ export const templateRegistry = [
   {
     slug: "interpleader-summons",
     title: "interpleader summons",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "interpleader summons",
     ],
@@ -508,7 +568,7 @@ export const templateRegistry = [
   {
     slug: "notice-of-appeal",
     title: "notice of appeal",
-    documentFamily: "appeal",
+    documentFamily: "court_document",
     tags: [
       "notice of appeal",
       "appeal document"
@@ -520,7 +580,7 @@ export const templateRegistry = [
   {
     slug: "claim",
     title: "claim",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "particulars of claim",
       "claim",
@@ -535,7 +595,7 @@ export const templateRegistry = [
   {
     slug: "statement-of-claim",
     title: "statement of claim",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "statement of claim",
       "claim at the High courts",
@@ -547,7 +607,7 @@ export const templateRegistry = [
   {
     slug: "set-off",
     title: "set-off",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "set-off",
       "monetary claim against the claimant",
@@ -559,7 +619,7 @@ export const templateRegistry = [
   {
     slug: "statement-of-defence",
     title: "statement of defence",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "statement of defence",
     ],
@@ -570,7 +630,7 @@ export const templateRegistry = [
   {
     slug: "counter-claim",
     title: "counter claim",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "defendant's claim",
       "counter-claim",
@@ -582,7 +642,7 @@ export const templateRegistry = [
   {
     slug: "reply",
     title: "reply",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "claimant's reply",
       "reply",
@@ -594,7 +654,7 @@ export const templateRegistry = [
   {
     slug: "petition",
     title: "petition",
-    documentFamily: "petitions",
+    documentFamily: "court_document",
     tags: [
       "petition",
     ],
@@ -605,7 +665,7 @@ export const templateRegistry = [
   {
     slug: "election-petition",
     title: "election petition",
-    documentFamily: "petitions",
+    documentFamily: "court_document",
     tags: [
       "election petition",
     ],
@@ -616,7 +676,7 @@ export const templateRegistry = [
   {
     slug: "marriage-petition",
     title: "marriage petition",
-    documentFamily: "petitions",
+    documentFamily: "court_document",
     tags: [
       "dissolution of marriage",
       "marriage petition"
@@ -628,7 +688,7 @@ export const templateRegistry = [
   {
     slug: "reply-to-petition",
     title: "reply to petition",
-    documentFamily: "petitions",
+    documentFamily: "court_document",
     tags: [
       "reply to election petition",
       "respondent's reply to election petition"
@@ -640,7 +700,7 @@ export const templateRegistry = [
   {
     slug: "memorandum-of-appearance",
     title: "memorandum of appearance",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "memorandum of appearance",
       "conditional memorandum of appearance",
@@ -654,7 +714,7 @@ export const templateRegistry = [
   {
     slug: "notice-of-discontinuance",
     title: "notice of discontinuance",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "notice of discontinuance",
       "claimant's notice to discontinue the suit"
@@ -666,7 +726,7 @@ export const templateRegistry = [
   {
     slug: "writ-of-summons",
     title: "writ of summons",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "writ of summons",
       "commencement of an action in the high court",
@@ -679,7 +739,7 @@ export const templateRegistry = [
   {
     slug: "originating-summons",
     title: "originating summons",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "originating summons",
       "interpreting a law, document, contract etc"
@@ -691,7 +751,7 @@ export const templateRegistry = [
   {
     slug: "moving-a-motion",
     title: "moving a motion",
-    documentFamily: "pleadings",
+    documentFamily: "court_document",
     tags: [
       "entering an appearance",
       "moving a motion in court"
@@ -703,7 +763,7 @@ export const templateRegistry = [
   {
     slug: "court-applications",
     title: "court applications",
-    documentFamily: "court_applications",
+    documentFamily: "court_document",
     tags: [
       "statement of compliance",
       "pre action protocol",
@@ -721,7 +781,7 @@ export const templateRegistry = [
   {
     slug: "corporate-applications",
     title: "corporate applications",
-    documentFamily: "corporate_applications",
+    documentFamily: "corporate_document",
     tags: [
       "application for exemption",
       "application for consent to change name",
@@ -738,7 +798,7 @@ export const templateRegistry = [
   {
     slug: "memorandum-of-association",
     title: "memorandum of association",
-    documentFamily: "memorandum_of_association",
+    documentFamily: "corporate_document",
     tags: [
       "memorandum of association",
       "memorandum of association of a company limited by shares"
@@ -750,7 +810,7 @@ export const templateRegistry = [
   {
     slug: "memorandum-of-association-guarantee",
     title: "memorandum of association of company limited by guarantee",
-    documentFamily: "memorandum_of_association",
+    documentFamily: "corporate_document",
     tags: [
       "memorandum of association",
       "memorandum of association of a company limited by guarantee"
@@ -762,7 +822,7 @@ export const templateRegistry = [
   {
     slug: "notice-of-meeting",
     title: "notice of meeting",
-    documentFamily: "corporate_notice",
+    documentFamily: "corporate_document",
     tags: [
       "notice of meeting",
       "21 days notice of meeting"
@@ -774,7 +834,7 @@ export const templateRegistry = [
   {
     slug: "requisition-of-meeting",
     title: "requisition of meeting",
-    documentFamily: "corporate_notice",
+    documentFamily: "corporate_document",
     tags: [
       "requisition notice for meeting",
       "requisition of an extra-ordinary general meeting"
@@ -786,7 +846,7 @@ export const templateRegistry = [
   {
     slug: "company-resolution",
     title: "company resolution",
-    documentFamily: "resolution",
+    documentFamily: "corporate_document",
     tags: [
       "board resolution",
       "company resolution",
@@ -806,7 +866,7 @@ export const templateRegistry = [
   {
     slug: "petition-winding-up",
     title: "petition winding up",
-    documentFamily: "petition",
+    documentFamily: "court_document",
     tags: [
       "petition winding up",
       "petition to wound up a company"
@@ -815,11 +875,45 @@ export const templateRegistry = [
     formSchema: windingSchema,
   },
 
+  {
+    slug: "exemption-to-register-as-a-company",
+    title: "application for exemption to register as a company in nigeria",
+    documentFamily: "corporate_document",
+    tags: [
+      "application for exemption to register as a company in nigeria",
+    ],
+    template: companyExemptionTemplate,
+    formSchema: companyExemptionSchema,
+  },
+
+  {
+    slug: "removal-of-company-secretary",
+    title: "notice for removal of company secretary",
+    documentFamily: "corporate_document",
+    tags: [
+      "notice for removal of company secretary",
+      "removal of company secretary"
+    ],
+    template: removalTemplate,
+    formSchema: removalSchema,
+  },
+  {
+    slug: "article-of-association",
+    title: "article of association",
+    documentFamily: "corporate_document",
+    tags: [
+      "article of association",
+      "company constitution"
+    ],
+    template: articlesTemplate,
+    formSchema: articlesSchema,
+  },
+
   //Criminal Litigation 
   {
     slug: "charge-sheet",
     title: "charge sheet",
-    documentFamily: "charges",
+    documentFamily: "court_document",
     tags: [
       "federal high court charge sheet",
       "magistrate court in the south charge sheet",
@@ -834,7 +928,7 @@ export const templateRegistry = [
   {
     slug: "criminal-information",
     title: "criminal information",
-    documentFamily: "charges",
+    documentFamily: "court_document",
     tags: [
       "state high court in the south charge sheet",
       "criminal information"
@@ -846,7 +940,7 @@ export const templateRegistry = [
   {
     slug: "charge-sheet-north",
     title: "charge sheet north",
-    documentFamily: "charges",
+    documentFamily: "court_document",
     tags: [
       "magistrate court in the north charge sheet",
     ],
@@ -857,7 +951,7 @@ export const templateRegistry = [
   {
     slug: "list-of-evidence",
     title: "list of evidence",
-    documentFamily: "court_applications",
+    documentFamily: "court_document",
     tags: [
       "list of evidence",
       "list of exhibits"
@@ -866,4 +960,228 @@ export const templateRegistry = [
     formSchema: evidenceSchema,
   },
 
+  {
+    slug: "arrest-warrant",
+    title: "arrest warrant",
+    documentFamily: "court_document",
+    tags: [
+      "arrest warrant",
+      "warrant of arrest"
+    ],
+    template: arrestTemplate,
+    formSchema: arrestSchema,
+  },
+
+  {
+    slug: "search-warrant",
+    title: "search warrant",
+    documentFamily: "court_document",
+    tags: [
+      "search warrant",
+    ],
+    template: warrantTemplate,
+    formSchema: warrantSchema,
+  },
+
+  //Ethics
+  {
+    slug: "confirmation-of-instruction",
+    title: "Application for confirmation of instruction",
+    documentFamily: "letter",
+    tags: [
+      "application for confirmation of instruction",
+      "letter for confirmation of instruction",
+      "confirmation of instruction"
+    ],
+    template: confirmationTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "closure-of-file-after-legal-representation",
+    title: "Application for closure of file after legal representation",
+    documentFamily: "letter",
+    tags: [
+      "application for closure of file after legal representation",
+      "letter for closure of file after legal representation",
+      "closure of file after legal representation"
+    ],
+    template: caseClosureTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "application-to-conduct search",
+    title: "Application to conduct search",
+    documentFamily: "letter",
+    tags: [
+      "application to conduct search",
+      "letter to conduct search",
+    ],
+    template: conductSearchTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "demand-letter",
+    title: "demand letter",
+    documentFamily: "letter",
+    tags: [
+      "demand letter",
+    ],
+    template: demandLetterTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "notification of judgment",
+    title: "Application for notification of judgment",
+    documentFamily: "letter",
+    tags: [
+      "application for notification of judgment",
+      "letter for notification of judgment",
+    ],
+    template: judgmentInformTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "application-for-notification-for-the-registration-of-a-business name",
+    title: "application for notification for the registration of a business name",
+    documentFamily: "letter",
+    tags: [
+      "application for notification for the registration of a business name",
+      "letter for notification for the registration of a business name",
+    ],
+    template: notificatioTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "owner's-intention-to-recover-possession",
+    title: "owner's intention to recover possession",
+    documentFamily: "letter",
+    tags: [
+      "owner's intention to recover possession",
+    ],
+    template: ownersIntentionTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "quit-notice",
+    title: "quit notice",
+    documentFamily: "letter",
+    tags: [
+      "notice to quit",
+      "quit notice"
+    ],
+    template: quitNoticeTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "application-for-retainership",
+    title: "application for retainership",
+    documentFamily: "letter",
+    tags: [
+      "application for retainership",
+      "letter for retainership",
+    ],
+    template: retainershipTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "search-report",
+    title: "search report",
+    documentFamily: "letter",
+    tags: [
+      "search report",
+    ],
+    template: searchReportTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "application-for-notice-of-Expulsion-of-a-partner",
+    title: "application for notice of Expulsion of a partner",
+    documentFamily: "letter",
+    tags: [
+      "application for notice of Expulsion of a partner",
+      "letter for notice of Expulsion of a partner",
+    ],
+    template: expulsionTemplate,
+    formSchema: expulsionSchema,
+  },
+
+  {
+    slug: "letter-writing",
+    title: "letter writing",
+    documentFamily: "letter",
+    tags: [
+      "letter writing",
+      "application"
+    ],
+    template: letterWritingTemplate,
+    formSchema: letterWritingSchema,
+  },
+
+  {
+    slug: "application-for-appointment-as-a-Judge",
+    title: "application for appointment as a Judge",
+    documentFamily: "letter",
+    tags: [
+      "application for appointment as a Judge",
+    ],
+    template: toBeAJudgeTemplate,
+    formSchema: toBeAJudgeSchema,
+  },
+
+  {
+    slug: "application-for-notice-of-setting-up-a-law-firm",
+    title: "application for notice of setting up a law firm",
+    documentFamily: "letter",
+    tags: [
+      "application for notice of setting up a law firm",
+    ],
+    template: settingFirmTemplate,
+    formSchema: settingFirmSchema,
+  },
+
+  {
+    slug: "curriculum-vitae",
+    title: "curriculum vitae",
+    documentFamily: "letter",
+    tags: [
+      "curiculum vitae",
+    ],
+    template: curriculumTemplate,
+    formSchema: curriculumSchema,
+  },
+
+  {
+    slug: "internal-memorandum",
+    title: "internal memorandum",
+    documentFamily: "letter",
+    tags: [
+      "internal memorandum",
+    ],
+    template: internalMemoTemplate,
+    formSchema: allSchema,
+  },
+
+  {
+    slug: "minutes",
+    title: "minutes",
+    documentFamily: "corporate_document",
+    tags: [
+      "minutes",
+      "record meetings"
+    ],
+    template: minuteTemplate,
+    formSchema: minuteSchema,
+  }
+
+  
 ];
