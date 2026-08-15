@@ -1,4 +1,4 @@
-import { courtDocumentRules } from './court-document.rules';
+import { courtDocumentRules } from "./court-document";
 
 export const familyRules = {
   deed: '',

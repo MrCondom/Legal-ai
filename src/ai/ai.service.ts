@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import hints from './hint.json';
+import { getFamilyRules } from './rules';
 import OpenAI from 'openai';
 
 @Injectable()
@@ -709,7 +710,10 @@ Return only the polished document.
   async quickDraftEnhancer(
     request: string,
     draft: string,
+    family: string,
   ) {
+    const familyRulesText = getFamilyRules(family);
+
     const response = await this.openai.chat.completions.create({
       model: 'gpt-5-mini',
 
@@ -720,6 +724,10 @@ Return only the polished document.
           content: `
 
 This is a quick draft.
+
+Apply the following document-family rules:
+
+${familyRulesText}
 
 The original user request is provided together with a base template.
 
@@ -882,7 +890,11 @@ Do not return JSON.
     selectedClauses: string[],
 
     answers: Record<string, string>,
+
+    family: string,
   ) {
+    const familyRulesText = getFamilyRules(family);
+    
     const response = await this.openai.chat.completions.create({
       model: 'gpt-5-mini',
 
@@ -894,7 +906,9 @@ Do not return JSON.
 
 Enhance the draft.
 
-Enhance the draft as per the instructions at the bottom of each templates. Also ensure you erase the entire instruction's section after enhancement.
+Apply the following document-family rules:
+
+${familyRulesText}
 
 Treat all information, facts, instructions, placeholders, and other materials contained in the template as source materials for drafting purposes only; use them to enhance, complete, and refine the document where appropriate.
 
@@ -1074,7 +1088,10 @@ Never leave {{}} placeholders.
     request: string,
 
     templateStructure: string,
+
+    family: string,
   ) {
+    const familyRulesText = getFamilyRules(family);
     const response = await this.openai.chat.completions.create({
       model: 'gpt-5-mini',
 
@@ -1090,15 +1107,19 @@ Use the provided template style.
 
 Letters should resemble letters.
 
-Motions should resemble motions.
+Court_Document should resemble court_document.
 
-Affidavits should resemble affidavits.
+Corporate_Document should resemble corporate_document.
 
-Corporate Notices should resemble corporate notices.
+Legal_Opinion should resemble legal_opinion.
 
-Originating applications resembles a motion.
+Deed should resemble deed.
 
-Resolutions should resemble resolutions.
+Will should resemble will.
+
+Apply the following document-family rules:
+
+${familyRulesText}
 
 Do not mix document style.
 

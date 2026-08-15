@@ -53,9 +53,10 @@ export class AiController {
     body: {
         draft: string;
         request: string;
+        family: string;
     },
   ) {
-    return this.aiService.quickDraftEnhancer(body.draft, body.request,);
+    return this.aiService.quickDraftEnhancer(body.draft, body.request, body.family);
   }
 
   @Post('custom-enhance')
@@ -66,7 +67,9 @@ export class AiController {
 
       clauses: string[];
 
-      answers: Record<string, string>;
+        answers: Record<string, string>;
+
+        family: string
     },
   ) {
     return this.aiService.customDraftEnhancer(
@@ -75,6 +78,8 @@ export class AiController {
       body.clauses,
 
       body.answers,
+
+      body.family,
     );
   }
 
@@ -84,13 +89,17 @@ export class AiController {
     body: {
       request: string;
 
-      templateType: string;
+        templateType: string;
+
+        family: string;
     },
   ) {
     return this.aiService.generateUnknownDraft(
       body.request,
 
       body.templateType,
+
+      body.family
     );
   }
 }

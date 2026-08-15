@@ -333,7 +333,7 @@ export class AssistantService {
 
     const document = this.templates.flattenTemplate(template.content);
 
-    const enhanced = await this.ai.quickDraftEnhancer(request, document);
+    const enhanced = await this.ai.quickDraftEnhancer(request, document, template.documentFamily);
 
     const polished = await this.ai.polishDraft(enhanced);
 
@@ -405,7 +405,9 @@ export class AssistantService {
 
       clauses.map((c) => c.content),
 
-      answers
+      answers,
+      
+      template.documentFamily
     );
 
     const polished = await this.ai.polishDraft(enhanced);
@@ -452,6 +454,8 @@ export class AssistantService {
       request,
 
       document,
+
+      template.documentFamily,
     );
 
     const polished = await this.ai.polishDraft(generated);
