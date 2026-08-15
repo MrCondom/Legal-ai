@@ -25,7 +25,7 @@ import { CREDIT_COST } from '../constants/credits';
 
 import { getConversationMessage } from '../constants/conversation';
 
-import { ReviewDocumentFamily } from './checks/review.check';
+import { ReviewDocumentFamily } from '../ai/checks/review.check';
 
 export interface WorkflowFound {
   status: 'FOUND';
@@ -523,9 +523,21 @@ export class AssistantService {
      //throw new ForbiddenException('Feature available only for PRO users');
      //}
 
+     const parsed = await this.ai.inferTemplate(text)
+ 
+     if (parsed.intent !== 'DOCUMENT_REVIEW') {
+       throw new BadRequestException(
+         'The document could not be identified for review.',
+       );
+     }
+ 
+     const documentFamily =
+       parsed.type.toUpperCase() as ReviewDocumentFamily;
+
+    
     await this.billing.consumeCredits(userId, CREDIT_COST.REVIEW);
 
-    return this.ai.reviewDocument(document, documentFamily);
+    return this.ai.reviewDocument(document, documentFamily)
   }
 
   //////////////////////////////////////////////////////
@@ -593,7 +605,7 @@ export class AssistantService {
     const documentFamily =
       parsed.type.toUpperCase() as ReviewDocumentFamily;
 
-    const review = await this.ai.reviewDocument(text, dodocumentFamily);
+    const review = await this.ai.reviewDocument(text, documentFamily);
 
     if (!review.validDocument) {
       await this.billing.consumeCredits(userId, CREDIT_COST.INVALID_QUERY);
