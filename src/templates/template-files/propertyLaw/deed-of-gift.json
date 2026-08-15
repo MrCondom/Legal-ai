@@ -100,7 +100,7 @@
      },
     {
         "type": "instructions:",
-        "value": "Use this information to enhance the draft: {{CofODetails}} \n"
+        "value": "Use this information to enhance the draft, {{CofODetails}} \n"
     }
     ]
   }

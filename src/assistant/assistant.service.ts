@@ -333,6 +333,12 @@ export class AssistantService {
 
     const document = this.templates.flattenTemplate(template.content);
 
+    if (!template.documentFamily) {
+      throw new BadRequestException(
+        'Template document family missing',
+      );
+    }
+    
     const enhanced = await this.ai.quickDraftEnhancer(request, document, template.documentFamily);
 
     const polished = await this.ai.polishDraft(enhanced);
@@ -400,6 +406,12 @@ export class AssistantService {
 
     const finalDocument = this.templates.flattenTemplate(templateWithExecution);
 
+    if (!template.documentFamily) {
+      throw new BadRequestException(
+        'Template document family missing',
+      );
+    }
+    
     const enhanced = await this.ai.customDraftEnhancer(
       finalDocument,
 
@@ -449,7 +461,13 @@ export class AssistantService {
     const template = await this.ai.chooseBestTemplate(request, templates);
 
     const document = this.templates.flattenTemplate(template.content);
-
+    
+    if (!template.documentFamily) {
+      throw new BadRequestException(
+        'Template document family missing',
+      );
+    }
+    
     const generated = await this.ai.generateUnknownDraft(
       request,
 

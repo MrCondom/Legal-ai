@@ -65,8 +65,9 @@
                 },
                 {
                   "type": "instructions",
-                  "value": ["Use this information to enhance the draft: The draft should be within 500 - 20000 words.\n\n",
-                    "If it is for a consideration add and enhance, with this format or else ignore, 'AND IT IS DECLARED that in consideration of the sum of {{amount}} already paid by the donee to the donor (the receipt of which the donor acknowledges), this power of attorney shall be irrevocable for a period of {{months}} from the {{date}}.' "]
+                  "value": ["Use this information to enhance the draft.\n\n",
+                    "The draft should be within 500 - 20000 words.\n\n",
+                    "If it is for a consideration use this, 'AND IT IS DECLARED that in consideration of the sum of {{amount}} already paid by the donee to the donor (the receipt of which the donor acknowledges), this power of attorney shall be irrevocable for a period of {{months}} from the {{date}}.' "]
                 }
             ]
            }

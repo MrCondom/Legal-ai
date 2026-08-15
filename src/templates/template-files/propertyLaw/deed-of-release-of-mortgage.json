@@ -72,7 +72,8 @@
                 },
                 {
                   "type": "instructions",
-                  "value": ["Use this information to enhance the draft: The draft should be within 500 - 5000 words\n\n",
+                  "value": ["Use this information to enhance the draft.\n\n",
+                          "The draft should be within 500 - 5000 words\n\n",
                           "Due date the mortgage amount was paid {{dateDue}} "
                   ]
                 }

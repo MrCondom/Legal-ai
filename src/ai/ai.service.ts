@@ -753,7 +753,7 @@ Do not substantially rewrite.
 
 Improve punctuation.
 
-Always get rid of the instructions section at the bottom of the template.
+Always remove any template instructions, drafting notes, examples or instructional section from the final document.
 
 Do not increase document length.
 
@@ -762,102 +762,6 @@ Replace all placeholders with realistics name, address, occupation and scenerio.
 Quick draft should be direct, sweet, professional, moderately small, accurate and easy to understand.
 
 Generate realistics Nigerian examples.
-
-FOR DEED:
-1. Input at least 1 or 2 covenants, and where covenants are more than 3 reduce it.
-2. Create an execution part, where none is provided.
-3. Do not modify these;
-NOW THIS DEED WITNESSETH AS FOLLOWS
-THIS DEED WITNESSETH AS FOLLOWS
-THIS DEED RECITES AS FOLLOWS:
-ACKNOWLEDGEMENT FOR SAFE CUSTODY AND PRODUCTION OF DOCUMENT
-WHEREAS
-BACKGROUND
-in consideration of
-the receipt of which the ... hereby acknowledges
-the ... conveys (or assigns) unto the ... ALL that
-TO HOLD the same unto the
-THE SCHEDULE REFERRED TO
-ALL THAT
-IN WITNESS OF WHICH
-SIGNED, SEALED AND DELIVERED
-12. Enhance contents of BACKGROUND as per what is provided in the source of title.
-13. Enhance execution part as the case may be.
-14. Enhance clause or covenants. e.g a Mortgage clause bears vendor or something else, modify to mortgagor.
-
-FOR AGREEMENT:
-1. Do not substantially increase word count.
-2. Dates should be like this; e.g 2nd October, 2020.
-3. Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
-4. Amounts should carry a currency sign. if no currency is provided the default is Naira.
-5. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
-
-FOR LEGAL_OPINION:
-1. Create realistics Nigerian scenerio.
-2. The output must read as a completed legal opinion, not as an explanation of how the opinion was generated.
-3. Do not invent facts that are not contained in the supplied material.
-4. The 'intoduction' must introduce the subject matter, purpose and background of the legal opinion. it must not describe who requested the opinion or how the opinion was prepared.
-
-FOR MOTION
-1. The HEADING should be, in full capital letter and should be centralised.
-2. The HEADING should look like this, eg 'IN THE HIGH COURT OF LAGOS STATE', 'IN THE LAGOS JUDICIAL DIVISION or IN THE IKEJA JUDICIAL DIVISION', 'HOLDEN IN LAGOS or HOLDEN AT IKEJA', or for magistrate courts 'IN THE MAGISTRATES' COURT OF LAGOS STATE', 'IN THE LAGOS MAGISTRATE DISTRICT or IN THE IKEJA MAGISTERIAL DISTRICT', 'HOLDEN AT LAGOS'.
-3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Applicant
-4. Motion ex parte has no service. i.e the motion is not served on the other party.
-5. All motion ex parte are filled together with a motion on notice. so most times, it is stated in the ex parte motion. eg for an Interim Injunction: AN ORDER restraining ___ pending the hearing of the Motion on notice already filed before the court and AN ORDER restraining ___ pending the determination of the substantive suit.
-6. For Anton Piller: AN ORDER ___ restraining the ___ for destroying copyright materials, that is to be used as evidence.
-7. For Mareva injunction: AN ORDER ___ restraining the ___ from removing his assets from jurisdiction.
-8. For Misjoinder: AN ORDER ___ striking out ___ in this suit.
-9. For Renewal of writ: AN ORDER ___ extending the lifespan of the writ of summons and other originating processes in the suit for three (3) months.
-10. For Substituted service: AN ORDER ___ granting leave on the ____ to effect substituted service on the ____, by way of advertising in two (2) daily national newspapers.
-11. For Amending a writ: AN ORDER ___ granting leave to the __ to amend his writ of summons, as stated in the proposed amended writ of of summons.
-12. For Joinder of party(s): AN ORDER ___ joining ___ as ___ in this suit.
-13. For Leave to sue in representative capacity: AN ORDER ___ granting leave to the ___ to commence this action in a representative capacity on behalf of himself and the ___.
-14. For Jurisdiction: AN ORDER __ striking this suit for lack of jurisdiction.
-15. For Summary judgement: AN ORDER ___ to be entered for the ___ enabling him to recover ___ owed to him by the ___.
-16. For Garnishee order: A GARNISHEE ORDER NISI attaching the sum of ___, standing to the credit of the judgment debtor in Account number: ___, at the ___ branch of the garnishee, in satisfaction of the judgment in favour of the judgment creditor/applicant in this case.
-17. For Enforcement of Fundamental Human Rights: A DECLARATION that the arrest of the applicant by the ___ is unlawful and unconstitutional and AN ORDER __ compelling the ___ to release the applicant from prison.
-18. For Trinity Prayers: AN ORDER FOR EXTENSION OF TIME to seek leave to appeal the decision of the __ high court delivered by honourable Justice __ on the __ in suit No: ____, AN ORDER GRANTING LEAVE TO APPEAL, and AN ORDER FOR EXTENSION OF TIME WITHIN WHICH TO FILE AN APPEAL.
-19. For Setting aside garnishee order: AN ORDER setting aside the garnishee order nisi made on the ___.
-20. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
-21. The date should look like this, eg Dated this 31st day of january, 2026.
-22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
-23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
-24. if the content of the draft is related to criminal law, SUIT NO: should become CHARGE NO: eg motion for bail.
-25. Motions are served to the other party except Ex Parte motion. so 'For Service:' should always end like this eg 'For Service', 'The Respondent'.
-26. For Bail application; it must be stated that every person is presumed innocent until the contrary, name(s)of surety must also be provided.
-
-
-FOR PLEADINGS
-1. The HEADING should be, in full capital letter and should be centralised.
-2. The HEADING should look like this, eg 'IN THE HIGH COURT OF LAGOS STATE', 'IN THE LAGOS JUDICIAL DIVISION or IN THE IKEJA JUDICIAL DIVISION', 'HOLDEN IN LAGOS or HOLDEN AT IKEJA', or for magistrate courts 'IN THE MAGISTRATES' COURT OF LAGOS STATE', 'IN THE LAGOS MAGISTRATE DISTRICT or IN THE IKEJA MAGISTERIAL DISTRICT', 'HOLDEN AT LAGOS'.
-3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Claimant.
-4. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
-5. The date should look like this, eg Dated this 31st day of january, 2026.
-6. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
-7. All pleadings are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
-
-
-FOR CHARGES
-1. These are four (4) rules in draftng a charge sheet 'Rule against ambiguity', 'Rule against duplicity', 'Rule against misjoinder of offences', 'Rule against misjoinder of offenders'.
-2. For Rule Against Ambiguity: a charge sheet has to be clear and there is no exceptions. ambiguity relates to individual counts. i.e name of the defendant(s), date of comission of the offence, place of comission of the offence, offence, and in most cases punishment sections. eg 'Wisdom mischef on the 19th day of January 2026 at Room 18, Boom boom lodge of No 6 Ekene Street, Victoria Island, Lagos, Lagos State, in the Lagos Judicial division raped Miss. Loveth Puss.' or for magistrate's court 'That you Mr. Machine mart on the 12th day of January 2026 at No 6 Ganja Street Benin City, Edo State, in the Benin Judicial Division sold 20 kilograms of a substance suspected to be cocaine to Mr. Marcus willi and thereby committed an offence punishable under section 11 (c) of the National Drug Law Enforcement Agency Act CAP N30 LFN 2004.'.
-3. For Rule Against Duplicity: do not put two (2) offences in one count. eg If the defendant killed 5 people, 5 different counts. The Exceptions Are: 'When it involves money belonging to one person over a long period of time. eg Mr. A steals 500 from Mr. B 3 days ago, and steals again today', 'offences in a particular section of the Law, but can be committed in different ways. eg Where an Act or Law provides that where a person hit, slap, spits on another, he/she thereby commits an offence of assault.', 'overt acts in respect of treason, and treasonable felonies. eg the law provides that two (2) overt acts must be provided before a person can be convicted for treason'.
-4. For Rule Against Misjoinder Of Offences: each offences has to be in a separate charge sheet. The Exceptions Are: 'offences committed within one (1) year', 'offences committed in the course of the same transaction', 'offences comprising acts or omissions which by themselves or in conjunction with others constitute a different offence', 'offences of the same or similar character', 'acts or omission that constitute an offence falling within two or more separate definitions'.
-5. For Rule Against Misjoinder Of Offenders: each offenders has to be in a separate charge sheet. The Exceptions Are: 'persons accused of jointly committing the same offence', 'persons accused of committing different offences in the course of the same transaction, i.e the test is proximity of time or place, continuity of action, community of purpose or design', 'persons accused of committing an offence and persons accused of aiding, abetting or attempting to commit the said offence', 'persons accused of committing the same offence in the course of the same transaction', 'persons accused of committing offences that are related one to the other', 'persons accused of offences committed during a fight or series of fights arising out of another fight and person accused of abetting any of these offences maybe charged and tried together'.
-6. Where the instructions, are not in conformity with any of the RULES, always enhance.
-7. Always look at the exceptions of each RULES before you draft. 
-8. Where instructions violates misjoinder of offence and misjoinder of offenders, and the instructions does not fall on any of the exceptions, draft seperate/multiple charge sheets as the case may be.
-9. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless you are unsure of the parties gender.
-10. If a name carries infant then it should be like this, eg Mr Jackson(infant) .......... Defendant. no ocupation or address should be stated.
-11. All charges are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
-
-
-
-FOR CORPORATE_APPLICATIONS
-1. For removal of company secretary; reasons for his removal should be stated, eg 'failure to write minutes, failure to perform his duties etc', seven (7) working days is usually given to him to make a defence or relinquish his office. it is usually signed by the 'board of directors'.
-2. For application for exemption; it means a foreign company is coming to nigeria to do business but is applying for exemption NOT to be incorporated as a company. This is provided in section 80(2) CAMA 2020. Companies that fall under this category are; 'foreign companies invited to nigeria by federal government, foreign companies which are in nigeria for a specific individual loans, foreign government owned companies engaged solely in export promotion activities.etc'.
-3. For application for exemption; it is always addressed to the minister of trade, industry and investment. Also it is always attached with other documents, it is best if you list them, i.e 'Proposed name and place of business in Nigeria, Particulars of the parent company outside Nigeria, Particulars of the name and address of each director, partners and principal officers of the company, Duration and proposed business of the company in Nigeria. etc' .
-4. For application for consent to change name of company; it is always addressed to the Registrar General Corporate Affairs Commission. It is section 30(3) and 50(1) of CAMA 2020. The body of the application is like this 'I am directed on behalf of the board of directors of the company, to apply for the approval of the commission, for the name of the company to be changed to ...' .
-5. CAMA means companies and allied matters act 2020
 
 Return only the completed legal document.
 
@@ -914,6 +818,8 @@ Treat all information, facts, instructions, placeholders, and other materials co
 
 Do not refer to the user's request, drafting instructions, AI, counsel requesting the draft, template, existence of placeholders.
 
+Always remove any template instructions, drafting notes, examples or instructional section from the final document.
+
 Integrate the supplied clauses naturally.
 
 Preserve legal intent.
@@ -928,129 +834,7 @@ Preserve clause numbering.
 
 Maintain sequence.
 
-FOR DEED:
-1. Do not substantially increase word count.
-2. Dates should be like this; e.g 2nd October, 2020.
-3. Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
-4. Amounts should carry a currency sign. if no currency is provided the default is Naira.
-5. If no state is provided, use property state, or vendor's, seller's, lessor's, assignor's, donor's, mortgagor's state.
-6. Franking is totally optional, and can be left blank.
-7. All clauses or covenants should be replaced in the '{{clause}}' placeholder or in a clause or cvenant's section.
-8. All clauses or convenants should be numbered.
-9. If some covenants or clauses do not belong in the same Heading, create a Heading for that clause or covenant. eg Donor's clauses & Donee's clauses.
-10. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
-11. Do not modify these;
-NOW THIS DEED WITNESSETH AS FOLLOWS
-THIS DEED WITNESSETH AS FOLLOWS
-THIS DEED RECITES AS FOLLOWS:
-ACKNOWLEDGEMENT FOR SAFE CUSTODY AND PRODUCTION OF DOCUMENT
-WHEREAS
-BACKGROUND
-in consideration of
-the receipt of which the ... hereby acknowledges
-the ... conveys (or assigns) unto the ... ALL that
-TO HOLD the same unto the
-THE SCHEDULE REFERRED TO
-ALL THAT
-IN WITNESS OF WHICH
-SIGNED, SEALED AND DELIVERED
-12. Enhance contents of BACKGROUND as per what is provided in the source of title.
-13. Enhance execution part as the case may be.
-14. Enhance clause or covenants. e.g a Mortgage clause bears vendor or something else, modify to mortgagor.
-
-FOR LEGAL_OPINION:
-Laws that may be of assistance, if no laws are provided.
-1. 1999 Constitution Of Nigeria.
-2. Nigeria Land Use Act.
-3. Companies And Alied Matters Act 2020.
-4. International Treaties And Conventions.
-5. Tenancy Laws.
-6. Recovery Of Premises Laws.
-7. Wills Act.
-8. Cybercrime Act.
-9. Terrorism Act.
-10. Evidence Act.
-11. Criminal And Penal Act.
-12. Administration Of Criminal Justice Act.
-13. Trade Union Act.
-14. Labour Act.
-15. Fundamental Rights (Enforcement Procedure) Rules.
-16. Electoral Act.
-17. Other Relevant Laws as the case may be
-18. The output must read as a completed legal opinion, not as an explanation of how the opinion was generated.
-19. Do not invent facts that are not contained in the supplied material.
-20. The 'intoduction' must introduce the subject matter, purpose and background of the legal opinion. it must not describe who requested the opinion or how the opinion was prepared.
-21. The supplied 'full facts' and 'other relevant information' are source materials, not headings or sections to be reproduced.
-
-
-FOR AGREEMENT:
-1. Do not substantially increase word count.
-2. Dates should be like this; e.g 2nd October, 2020.
-3. Amounts should be in figure and in words; e.g 5,000,000.00 or Five Million Naira Only
-4. Amounts should carry a currency sign. if no currency is provided the default is Naira.
-5. All clauses or covenants should be replaced in the '{{clause}}' placeholder or in a clause or cvenant's section.
-6. All clauses or convenants should be numbered.
-7. If some covenants or clauses do not belong in the same Heading, create a Heading for that clause or covenant. eg Donor's clauses & Donee's clauses.
-8. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
-
-FOR MOTION
-1. The HEADING should be, in full capital letter and should be centralised.
-2. The HEADING should look like this, eg 'IN THE HIGH COURT OF LAGOS STATE', 'IN THE LAGOS JUDICIAL DIVISION or IN THE IKEJA JUDICIAL DIVISION', 'HOLDEN IN LAGOS or HOLDEN AT IKEJA', or for magistrate courts 'IN THE MAGISTRATES' COURT OF LAGOS STATE', 'IN THE LAGOS MAGISTRATE DISTRICT or IN THE IKEJA MAGISTERIAL DISTRICT', 'HOLDEN AT LAGOS'.
-3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Applicant
-4. Motion ex parte has no service. i.e the motion is not served on the other party.
-5. All motion ex parte are filled together with a motion on notice. so most times, it is stated in the ex parte motion. eg for an Interim Injunction: AN ORDER restraining ___ pending the hearing of the Motion on notice already filed before the court and AN ORDER restraining ___ pending the determination of the substantive suit.
-6. For Anton Piller: AN ORDER ___ restraining the ___ for destroying copyright materials, that is to be used as evidence.
-7. For Mareva injunction: AN ORDER ___ restraining the ___ from removing his assets from jurisdiction.
-8. For Misjoinder: AN ORDER ___ striking out ___ in this suit.
-9. For Renewal of writ: AN ORDER ___ extending the lifespan of the writ of summons and other originating processes in the suit for three (3) months.
-10. For Substituted service: AN ORDER ___ granting leave on the ____ to effect substituted service on the ____, by way of advertising in two (2) daily national newspapers.
-11. For Amending a writ: AN ORDER ___ granting leave to the __ to amend his writ of summons, as stated in the proposed amended writ of of summons.
-12. For Joinder of party(s): AN ORDER ___ joining ___ as ___ in this suit.
-13. For Leave to sue in representative capacity: AN ORDER ___ granting leave to the ___ to commence this action in a representative capacity on behalf of himself and the ___.
-14. For Jurisdiction: AN ORDER __ striking this suit for lack of jurisdiction.
-15. For Summary judgement: AN ORDER ___ to be entered for the ___ enabling him to recover ___ owed to him by the ___.
-16. For Garnishee order: A GARNISHEE ORDER NISI attaching the sum of ___, standing to the credit of the judgment debtor in Account number: ___, at the ___ branch of the garnishee, in satisfaction of the judgment in favour of the judgment creditor/applicant in this case.
-17. For Enforcement of Fundamental Human Rights: A DECLARATION that the arrest of the applicant by the ___ is unlawful and unconstitutional and AN ORDER __ compelling the ___ to release the applicant from prison.
-18. For Trinity Prayers: AN ORDER FOR EXTENSION OF TIME to seek leave to appeal the decision of the __ high court delivered by honourable Justice __ on the __ in suit No: ____, AN ORDER GRANTING LEAVE TO APPEAL, and AN ORDER FOR EXTENSION OF TIME WITHIN WHICH TO FILE AN APPEAL.
-19. For Setting aside garnishee order: AN ORDER setting aside the garnishee order nisi made on the ___.
-20. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
-21. The date should look like this, eg Dated this 31st day of january, 2026.
-22. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
-23. An originating motion is used to commence an action in court and therefore always includes an Applicant and a Respondent.
-24. if the content of the draft is related to criminal law, SUIT NO: should become CHARGE NO: eg motion for bail.
-25. Motions are served to the other party except Ex Parte motion. so 'For Service:' should always end like this eg 'For Service', 'The Respondent'.
-
-
-FOR PLEADINGS
-1. The HEADING should be, in full capital letter and should be centralised.
-2. The HEADING should look like this, eg 'IN THE HIGH COURT OF LAGOS STATE', 'IN THE LAGOS JUDICIAL DIVISION or IN THE IKEJA JUDICIAL DIVISION', 'HOLDEN IN LAGOS or HOLDEN AT IKEJA', or for magistrate courts 'IN THE MAGISTRATES' COURT OF LAGOS STATE', 'IN THE LAGOS MAGISTRATE DISTRICT or IN THE IKEJA MAGISTERIAL DISTRICT', 'HOLDEN AT LAGOS'.
-3. Party role should be directly opposite the name, that is at the right hand side. eg Jackson Chinedu .......... Claimant.
-4. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless the party is a company, organization or you are unsure of the parties gender.
-5. The date should look like this, eg Dated this 31st day of january, 2026.
-6. If a name carries infant, lunatic, partner, then it should be like this, eg Mr Jackson(infant) .......... Applicant. no ocupation or address should be stated.
-7. All pleadings are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
-
-
-FOR CHARGES
-1. These are four (4) rules in draftng a charge sheet 'Rule against ambiguity', 'Rule against duplicity', 'Rule against misjoinder of offences', 'Rule against misjoinder of offenders'.
-2. For Rule Against Ambiguity: a charge sheet has to be clear and there is no exceptions. ambiguity relates to individual counts. i.e name of the defendant(s), date of comission of the offence, place of comission of the offence, offence, and in most cases punishment sections. eg 'Wisdom mischef on the 19th day of January 2026 at Room 18, Boom boom lodge of No 6 Ekene Street, Victoria Island, Lagos, Lagos State, in the Lagos Judicial division raped Miss. Loveth Puss.' or for magistrate's court 'That you Mr. Machine mart on the 12th day of January 2026 at No 6 Ganja Street Benin City, Edo State, in the Benin Judicial Division sold 20 kilograms of a substance suspected to be cocaine to Mr. Marcus willi and thereby committed an offence punishable under section 11 (c) of the National Drug Law Enforcement Agency Act CAP N30 LFN 2004.'.
-3. For Rule Against Duplicity: do not put two (2) offences in one count. eg If the defendant killed 5 people, 5 different counts. The Exceptions Are: 'When it involves money belonging to one person over a long period of time. eg Mr. A steals 500 from Mr. B 3 days ago, and steals again today', 'offences in a particular section of the Law, but can be committed in different ways. eg Where an Act or Law provides that where a person hit, slap, spits on another, he/she thereby commits an offence of assault.', 'overt acts in respect of treason, and treasonable felonies. eg the law provides that two (2) overt acts must be provided before a person can be convicted for treason'.
-4. For Rule Against Misjoinder Of Offences: each offences has to be in a separate charge sheet. The Exceptions Are: 'offences committed within one (1) year', 'offences committed in the course of the same transaction', 'offences comprising acts or omissions which by themselves or in conjunction with others constitute a different offence', 'offences of the same or similar character', 'acts or omission that constitute an offence falling within two or more separate definitions'.
-5. For Rule Against Misjoinder Of Offenders: each offenders has to be in a separate charge sheet. The Exceptions Are: 'persons accused of jointly committing the same offence', 'persons accused of committing different offences in the course of the same transaction, i.e the test is proximity of time or place, continuity of action, community of purpose or design', 'persons accused of committing an offence and persons accused of aiding, abetting or attempting to commit the said offence', 'persons accused of committing the same offence in the course of the same transaction', 'persons accused of committing offences that are related one to the other', 'persons accused of offences committed during a fight or series of fights arising out of another fight and person accused of abetting any of these offences maybe charged and tried together'.
-6. Where the instructions, are not in conformity with any of the RULES, always enhance.
-7. Always look at the exceptions of each RULES before you draft. 
-8. Where instructions violates misjoinder of offence and misjoinder of offenders, and the instructions does not fall on any of the exceptions, draft seperate/multiple charge sheets as the case may be.
-9. Always provide titles for the parties. eg 'Mr' or 'Mrs', unless you are unsure of the parties gender.
-10. If a name carries infant then it should be like this, eg Mr Jackson(infant) .......... Defendant. no ocupation or address should be stated.
-11. All charges are served to the DEFENDANT. so 'For Service:' should always end like this eg 'For Service', 'The Defendant'.
-
-
-FOR RESOLUTION
-1. Some of the laws that may be of assistance are; section 127 CAMA 2020 - increase of share capital, section 333 CAMA 2020 - removal of company secretary, section 55 CAMA 2020 - Re registration of company, section 124 CAMA - approving allotment, section 620 CAMA - member's winding up and to appoint a liquidator, section 635 CAMA - creditor's winding up and  to appoint a liquidator.
-
-
-
-
+Do not return JSON.
 
 `,
         },

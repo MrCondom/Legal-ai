@@ -46,7 +46,7 @@ GENERAL COURT DOCUMENT RULES
 
 MOTION RULES
 
-1.  For bail applications, state the presumption of innocence where appropriate and provide the required surety information where supplied.
+1. For bail applications, state the presumption of innocence where appropriate and provide the required surety information where supplied.
 
 2. Where the matter concerns criminal proceedings, use CHARGE NO. rather than SUIT NO. where appropriate.
 
@@ -60,7 +60,7 @@ MOTION RULES
 
 7. Where appropriate, identify the document as being for service on the relevant party.
 
-8. For an interim injunction, where applicable, distinguish the interim relief from the substantive relief and the pending Motion on Notice.
+8. For an interim injunction, where applicable, distinguish the interim relief from the substantive relief and the pending Motion on Notice. e.g., AN ORDER restraining ___ pending the hearing of the Motion on notice already filed before the court and AN ORDER restraining ___ pending the determination of the substantive suit.
 
 9. For an Anton Piller order, frame the relief around preservation or protection of evidence and prevention of destruction or interference with relevant materials.
 
@@ -70,11 +70,11 @@ MOTION RULES
 
 12. For misjoinder, frame the relief around striking out the improperly joined party or process where appropriate.
 
-13. For renewal of a writ, frame the relief around extending the lifespan of the relevant originating process.
+13. For renewal of a writ, frame the relief around extending the lifespan of the relevant originating process. e.g., AN ORDER ___ extending the lifespan of the writ of summons and other originating processes in the suit for three (3) months.
 
-14. For substituted service, specify the proposed method of substituted service where instructed.
+14. For substituted service, specify the proposed method of substituted service where instructed. e.g., AN ORDER ___ granting leave on the ____ to effect substituted service on the ____, by way of advertising in two (2) daily national newspapers.
 
-15. For amendment of a writ or originating process, frame the relief around leave to amend the relevant process.
+15. For amendment of a writ or originating process, frame the relief around leave to amend the relevant process. e.g., AN ORDER ___ granting leave to the __ to amend his writ of summons, as stated in the proposed amended writ of of summons.
 
 16. For representative proceedings, frame the relief around leave to commence or continue the action in a representative capacity where applicable.
 
@@ -82,9 +82,9 @@ MOTION RULES
 
 18. For summary judgment, frame the relief around judgment for the appropriate claimant/applicant for the amount or relief claimed.
 
-19. For garnishee proceedings, use the appropriate garnishee terminology and distinguish a Garnishee Order Nisi where applicable.
+19. For garnishee proceedings, use the appropriate garnishee terminology and distinguish a Garnishee Order Nisi where applicable. e.g., A GARNISHEE ORDER NISI attaching the sum of ___, standing to the credit of the judgment debtor in Account number: ___, at the ___ branch of the garnishee, in satisfaction of the judgment in favour of the judgment creditor/applicant in this case.
 
-20. For fundamental-rights proceedings, frame declarations and consequential orders according to the rights and facts supplied.
+20. For fundamental-rights proceedings, frame declarations and consequential orders according to the rights and facts supplied. e.g., A DECLARATION that the arrest of the applicant by the ___ is unlawful and unconstitutional and AN ORDER __ compelling the ___ to release the applicant from prison.
 
 21. For Trinity Prayers, use AN ORDER FOR EXTENSION OF TIME to seek leave to appeal the decision of the __ high court delivered by honourable Justice __ on the __ in suit No: ____, AN ORDER GRANTING LEAVE TO APPEAL, and AN ORDER FOR EXTENSION OF TIME WITHIN WHICH TO FILE AN APPEAL.
 
@@ -163,6 +163,78 @@ RULE AGAINST MISJOINDER OF OFFENDERS
 20. Charges are served on the Defendant where service is required.
 
 21. If a defendant is an infant, preserve the appropriate description and do not add inappropriate occupation or address information.
+
+CRIMINAL INFORMATION RULES
+
+22. Where the document is a Criminal Information intended for a State High Court in Southern Nigeria, preserve the Criminal Information format supplied by the template.
+
+23. The sequence for each count shall be:
+
+COUNT ONE
+
+STATEMENT OF OFFENCE
+
+[offence and applicable law]
+
+PARTICULARS OF OFFENCE
+
+[particulars]
+
+COUNT TWO
+
+STATEMENT OF OFFENCE
+
+[offence and applicable law]
+
+PARTICULARS OF OFFENCE
+
+[particulars]
+
+and so forth.
+
+24. Each count must contain a separate Statement of Offence and Particulars of Offence.
+
+25. The Statement of Offence should ordinarily identify the offence and the applicable statutory provision, including the punishment provision where appropriate.
+
+26. The Particulars of Offence should state the defendant's name, relevant date or period, place of commission, judicial division where appropriate, conduct constituting the offence and other material particulars necessary to identify the allegation.
+
+27. Where the template states:
+
+"At the session of the High Court ... the Court is informed by the Attorney-General ..."
+
+the defendant's name should appear immediately thereafter without unnecessarily adding the defendant's occupation, residential address or other personal particulars.
+
+28. The complainant in a State criminal information should ordinarily be stated as "THE STATE", except where the applicable State format requires a different designation, such as "THE STATE OF LAGOS".
+
+29. Where the user supplies the number of counts, use that number where supported by the facts and offences supplied.
+
+30. Do not create additional offences merely to reach the requested number of counts.
+
+31. Where the requested number of counts exceeds the offences or factual allegations supplied, additional counts may only be created by properly separating distinct offences or legally supportable allegations contained in the supplied facts.
+
+32. Do not duplicate the same offence merely to increase the number of counts.
+
+33. Common criminal drafting terminology may be used where appropriate and supported by the offence alleged, including expressions such as "TO WIT" and "WHILST ARMED".
+
+34. "TO WIT" may be used to introduce or particularise the specific conduct or offence where appropriate.
+
+35. "WHILST ARMED" or similar terminology should only be used where the facts and applicable offence provision support an allegation that the accused was armed.
+
+36. Do not insert criminal terminology merely because it is commonly used if it changes or exaggerates the allegation.
+
+37. The final Criminal Information must read as a completed court document and must not contain template instructions, drafting notes or explanations.
+
+38. For Criminal Information, preserve the supplied heading, CHARGE NO., BETWEEN/AND structure, Attorney-General section, count sequence, Statement of Offence, Particulars of Offence, dating section and service section.
+
+39. The defendant's name appearing after the introductory Attorney-General paragraph should not ordinarily contain occupation or address unless such information is legally required by the particular form being used.
+
+40. Where multiple defendants are charged, clearly identify them and maintain consistent numbering or designation throughout the Criminal Information.
+
+41. Apply the rules against ambiguity, duplicity and misjoinder before finalising the counts.
+
+42. Where separate counts are required because of duplicity or misjoinder, restructure the Criminal Information accordingly while preserving the user's intended allegations.
+
+43. The completed Criminal Information should ordinarily contain between 300 and 20,000 words where the template or drafting context requires a word range.
 
 
 AFFIDAVIT RULES
