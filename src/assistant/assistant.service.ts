@@ -515,7 +515,6 @@ export class AssistantService {
   //////////////////////////////////////////////////////
 
   async reviewExistingDocument(userId: string, document: string,
-    documentFamily: ReviewDocumentFamily,
   ) {
     const user = await this.users.getProfile(userId);
 
@@ -523,7 +522,7 @@ export class AssistantService {
      //throw new ForbiddenException('Feature available only for PRO users');
      //}
 
-     const parsed = await this.ai.inferTemplate(text)
+     const parsed = await this.ai.inferTemplate(document)
  
      if (parsed.intent !== 'DOCUMENT_REVIEW') {
        throw new BadRequestException(
