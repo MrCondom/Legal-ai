@@ -25,6 +25,8 @@ import { CREDIT_COST } from '../constants/credits';
 
 import { getConversationMessage } from '../constants/conversation';
 
+import { ReviewDocumentFamily } from './checks/review.check';
+
 export interface WorkflowFound {
   status: 'FOUND';
 
@@ -512,7 +514,9 @@ export class AssistantService {
 
   //////////////////////////////////////////////////////
 
-  async reviewExistingDocument(userId: string, document: string) {
+  async reviewExistingDocument(userId: string, document: string,
+    documentFamily: ReviewDocumentFamily,
+  ) {
     const user = await this.users.getProfile(userId);
 
     //if (user.plan !== 'PRO') {
@@ -521,7 +525,7 @@ export class AssistantService {
 
     await this.billing.consumeCredits(userId, CREDIT_COST.REVIEW);
 
-    return this.ai.reviewDocument(document);
+    return this.ai.reviewDocument(document, documentFamily);
   }
 
   //////////////////////////////////////////////////////
@@ -578,7 +582,18 @@ export class AssistantService {
       );
     }
 
-    const review = await this.ai.reviewDocument(text);
+    const parsed = await this.ai.inferTemplate(text)
+
+    if (parsed.intent !== 'DOCUMENT_REVIEW') {
+      throw new BadRequestException(
+        'The uploaded document could not be identified for review.',
+      );
+    }
+
+    const documentFamily =
+      parsed.type.toUpperCase() as ReviewDocumentFamily;
+
+    const review = await this.ai.reviewDocument(text, dodocumentFamily);
 
     if (!review.validDocument) {
       await this.billing.consumeCredits(userId, CREDIT_COST.INVALID_QUERY);

@@ -1,5 +1,5 @@
 import { Body, Controller, Post } from '@nestjs/common';
-
+import { ReviewDocumentFamily } from './checks/review.check';
 import { AiService } from './ai.service';
 
 @Controller('ai')
@@ -30,10 +30,11 @@ export class AiController {
   review(
     @Body()
     body: {
-      document: string;
+        document: string;
+        documentFamily: ReviewDocumentFamily
     },
   ) {
-    return this.aiService.reviewDocument(body.document);
+    return this.aiService.reviewDocument(body.document, body.documentFamily);
   }
 
   @Post('improve')
