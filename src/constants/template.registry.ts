@@ -22,8 +22,8 @@ import releaseSchema from "../templates/template-forms/propertySchema/releaseSch
 import assentTemplate from "../templates/template-files/propertyLaw/assent.json";
 import assentSchema from "../templates/template-forms/propertySchema/assentSchema.json";
 
-import deedDeedTemplate from "../templates/template-files/criminalLitigation/deed.json";
-import deedDeedSchema from "../templates/template-forms/criminalSchema/deedSchema.json";
+import deedDeedTemplate from "../templates/template-files/propertyLaw/deed.json";
+import deedDeedSchema from "../templates/template-forms/propertySchema/deedSchema.json";
 
 import attorneyTemplate from "../templates/template-files/propertyLaw/deed-of-power-of-attorney.json";
 import attorneySchema from "../templates/template-forms/propertySchema/attorneySchema.json";
