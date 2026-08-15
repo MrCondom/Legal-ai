@@ -65,20 +65,23 @@
         ]
         },
         {
-                   "type": "instructions",
-                   "value": ["Use this information to enhance the draft:\n",
-                     "Default role is 'Applicant & Respondent', use if not specify.\n\n",
-                     "Use this fact to enhance the draft: {[facts]}.\n\n",
-                     "Other informations: {{information}}.\n\n ",
-                     "It should be in this sequence, eg 'I Jackson Chinedu, Adult, Christain, of Rumuodomaya Town', do hereby __.\n\n",
-                     "The subHeading of this template can be modified to something related to the instructions. eg AFFIDAVIT IN SUPPORT OF ..., etc\n\n",
-                     "The end of every affidavit should look like, 'That i swear (or I depose) to this affidavit in good faith believing the contents to be true and correct to the best of my knowledge and in accordance with the oaths act 2004, LFN.'.\n\n ",
-                     "It should always look like this, eg 'Sworn to at the high court registry of lagos state'.\n\n",
-                     "if there is a party three, include it like this eg BETWEEN Jackson(Applicant) and John(Defendant) and johnson(party sought to be joined).\n\n",
-                     "Party Three: {{partyThree}} {{partThreeRole}}.\n\n",
-                     "The draft should be within 500-5000 words.\n\n",
-                     "Use today's date, to fill the date section."]
-         }
+          "type": "instructions",
+          "value": [
+            "Use the supplied facts and information to enhance and complete the affidavit.",
+            "Default party role: Applicant & Respondent, where no role is specified.",
+            "Use this to enhance the draft, {{facts}}.\n\n",
+            "Use this to enhance this affidavit, {{information}}.\n\n ",
+            "Identify the deponent by name and appropriate personal description where supplied.",
+            "The subHeading may be adapted to the purpose of the affidavit, e.g. AFFIDAVIT IN SUPPORT OF ...",
+            "Where a third party is supplied, include the party and appropriate role in the BETWEEN/AND structure.",
+            "Party three, {{partyThree}} {{partyThreeRole}}.\n\n ",
+            "State facts as matters within the deponent's knowledge, information or belief as appropriate, without introducing unsupported facts.",
+            "End with the prescribed deposition/jurat wording and preserve the formal execution structure.",
+            "Use today's date where a date is required and none is supplied.",
+            "Draft within 500-5000 words."
+          ]
+        }
+
     ]
    }
 }

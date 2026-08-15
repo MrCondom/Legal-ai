@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import hints from './hint.json';
+import { reviewChecks, ReviewDocumentFamily } from './checks/review.check';
 import { getFamilyRules } from './rules';
 import OpenAI from 'openai';
 
@@ -396,8 +396,9 @@ Return only the polished document.
     return response.choices?.[0]?.message?.content ?? '';
   }
 
-  async reviewDocument(document: string) {
-    const draftingHintsText = JSON.stringify(hints, null, 2);
+  async reviewDocument(document: string, documentFamily: ReviewDocumentFamily,
+  ) {
+  const checks = reviewChecks[documentFamily];
 
     const response = await this.openai.chat.completions.create({
       model: 'gpt-5',
@@ -410,11 +411,16 @@ Return only the polished document.
 
           You are a senior Nigerian legal reviewer.
 
-          Use this draft hints.
+          The document family has already been selected by the application.
 
-          ${draftingHintsText}
+          DOCUMENT FAMILY
+          ${documentFamily}
+          
+          Apply ONLY the review checks supplied for this document family.
 
-          Review document.
+          Do not apply review checks belonging to another document family.
+
+          Review the uploaded document against the applicable checks.
 
           IMPORTANT CLASSIFICATION RULE:
           
@@ -586,7 +592,7 @@ Return only the polished document.
       Format:
     {
       "validDocument":true,
-      "documentType": "DEED",
+      "documentType": "${documentFamily}",
       "riskLevel": "LOW" | "MEDIUM" | "HIGH" | "VERY HIGH",
       "issues": [
         "...",

@@ -3,7 +3,7 @@
 
       {
         "name": "partyOneExecution",
-        "label": "Which best describes Party One ?",
+        "label": "Which best describes Party One.",
         "type": "select",
         "options": [
           "Individual",
@@ -18,7 +18,7 @@
 
         {
             "name": "partyOneName",
-            "label": "Party One's Legal Name?",
+            "label": "Party One's Legal Name.",
             "type": "text",
         
             "showIf":{
@@ -35,7 +35,7 @@
 
         {
             "name": "partyOneOccupation",
-            "label": "Party One's Occupation?" ,
+            "label": "Party One's Occupation." ,
             "type": "occupation",
             "required": true,
             "showIf":{

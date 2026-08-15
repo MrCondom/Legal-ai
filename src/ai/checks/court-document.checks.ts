@@ -1,0 +1,153 @@
+export const courtDocumentChecks = {
+  general: [
+    'The court document is correctly identified by its purpose and procedural function.',
+    'The appropriate court is identified.',
+    'The appropriate judicial division or magisterial district is stated where applicable.',
+    'The place of sitting is stated where applicable.',
+    'The correct suit number, charge number or appeal number is used where applicable.',
+    'The parties are properly identified.',
+    'Party names and roles are correctly aligned.',
+    'The document is internally consistent.',
+    'Dates, names, facts and other material particulars are consistent.',
+    'The document does not contain material ambiguity or contradictory provisions.',
+    'The document contains the structure appropriate to the particular court process.',
+  ],
+
+  parties: [
+    'The appropriate party designations are used.',
+    'Individual parties have appropriate titles where applicable.',
+    'Companies and other legal entities are properly identified.',
+    'Party roles remain consistent throughout the document.',
+    'Additional parties are properly identified where applicable.',
+    'The capacity in which a party appears is clear where required.',
+  ],
+
+  heading: [
+    'The court heading is in the appropriate form.',
+    'The court name is correctly stated.',
+    'The judicial division or magisterial district is correctly stated.',
+    'The place of sitting is correctly stated.',
+    'The heading is appropriately positioned and presented in capital letters where required.',
+  ],
+
+  pleadings: [
+    'The pleading contains the material facts necessary to establish or defend the claim.',
+    'Material facts are distinguished from evidence and legal argument.',
+    'The cause of action is sufficiently disclosed where applicable.',
+    'The reliefs sought correspond with the pleaded facts.',
+    'The parties necessary to the action are properly joined.',
+    'The pleading does not contain unnecessary or irrelevant allegations.',
+    'The pleading does not contain contradictory material facts.',
+    'Jurisdictional issues apparent from the document are addressed where applicable.',
+    'Limitation issues apparent from the facts are considered where applicable.',
+    'Locus standi is apparent where relevant.',
+    'Applicable pre-action requirements are addressed where relevant.',
+    'Address for service is provided where required.',
+  ],
+
+  motions: [
+    'The type of motion is correctly identified.',
+    'The reliefs sought are clearly stated.',
+    'The grounds supporting the application are stated where required.',
+    'The motion is consistent with the affidavit or other supporting process.',
+    'The appropriate respondent or opposing party is identified.',
+    'Service requirements are properly addressed.',
+    'Ex parte and on-notice procedures are distinguished where applicable.',
+    'Interim and substantive reliefs are properly distinguished where applicable.',
+  ],
+
+  affidavits: [
+    'The deponent is properly identified.',
+    'The deponent has a legally appropriate description.',
+    'The affidavit contains numbered factual depositions where appropriate.',
+    'Facts are stated as facts within the deponent’s knowledge, information or belief as appropriate.',
+    'The affidavit does not improperly become a written address or argumentative submission.',
+    'The jurat is present.',
+    'The execution section is present.',
+    'The Commissioner for Oaths or other appropriate authority is identified where applicable.',
+    'The affidavit is consistent with the application or process it supports.',
+  ],
+
+  writtenAddresses: [
+    'The written address is properly structured.',
+    'The introduction is clear.',
+    'The relevant facts are accurately summarised.',
+    'Issues for determination are properly identified where required.',
+    'Legal arguments correspond with the issues.',
+    'Arguments are supported by relevant authorities where supplied or appropriate.',
+    'The conclusion corresponds with the reliefs or position advanced.',
+    'The list of authorities is included where appropriate.',
+    'The written address does not improperly introduce unsupported facts.',
+  ],
+
+  charges: [
+    'The charge is properly identified as a criminal process.',
+    'The appropriate complainant or prosecuting authority is identified.',
+    'The defendant is properly identified.',
+    'The number of counts corresponds with the offences and facts supplied.',
+    'Each count clearly identifies the offence alleged.',
+    'Each count identifies the applicable statutory provision where required.',
+    'The particulars of the offence contain the material particulars necessary to identify the allegation.',
+    'The defendant, date or relevant period and place of commission are stated where required.',
+    'The charge is sufficiently clear and unambiguous.',
+    'The charge does not improperly combine distinct offences in one count.',
+    'The defendants are not improperly joined.',
+    'Recognised exceptions to duplicity or misjoinder are considered where applicable.',
+    'The charge uses criminal terminology only where supported by the facts and applicable law.',
+  ],
+
+  criminalInformation: [
+    'The Criminal Information follows the applicable prescribed structure.',
+    'The complainant is correctly identified according to the applicable jurisdiction.',
+    'The Attorney-General or appropriate prosecuting authority is properly identified.',
+    'The defendant is properly identified.',
+    'Each count contains a separate Statement of Offence.',
+    'Each count contains separate Particulars of Offence.',
+    'The Statement of Offence identifies the applicable statutory provision where required.',
+    'The Particulars contain the material facts necessary to identify the allegation.',
+    'Counts are properly numbered and sequential.',
+    'The counts do not improperly duplicate offences.',
+    'The counts do not create improper joinder.',
+  ],
+
+  appeals: [
+    'The decision being appealed is clearly identified.',
+    'The court that delivered the decision is identified.',
+    'The date of the decision or judgment is stated where supplied.',
+    'The appellant and respondent are properly identified.',
+    'The grounds of appeal are separately and clearly stated where required.',
+    'The grounds correspond with the decision being challenged.',
+    'The reliefs sought correspond with the grounds of appeal.',
+    'The applicable appeal procedure is followed where determinable.',
+  ],
+
+  service: [
+    'The appropriate party for service is identified.',
+    'The document identifies the address for service where required.',
+    'The method of service is appropriate where specified.',
+    'The document does not incorrectly state that an ex parte process requires service.',
+    'Where substituted service is sought, the proposed method is stated where applicable.',
+  ],
+
+  execution: [
+    'The document is properly dated where required.',
+    'Required signatures are present.',
+    'Counsel is properly identified where applicable.',
+    'The address of counsel or law firm is stated where required.',
+    'The appropriate execution or attestation section is present.',
+  ],
+
+  compliance: [
+    'The document complies with the applicable court rules where determinable.',
+    'Applicable statutory requirements are addressed.',
+    'Applicable procedural requirements are addressed.',
+    'The document does not improperly apply rules belonging to another type of court process.',
+    'The final document contains no drafting instructions, template notes or AI commentary.',
+  ],
+
+  quality: [
+    'No material procedural requirement apparent from the document has been omitted.',
+    'No material relief, allegation or procedural step contradicts another part of the document.',
+    'The document reads as a complete court process.',
+  ],
+};
