@@ -1,0 +1,373 @@
+{
+    "fields": [
+
+      {
+        "name": "partyOneExecution",
+        "label": "Which best describes Party One?",
+        "type": "select",
+        "options": [
+          "Individual",
+          "Company",
+          "Infant",
+          "Illiterate",
+          "Attorney",
+          "Family Property"
+        ],
+        "required": true
+      },
+
+        {
+            "name": "partyOneName",
+            "label": "Party One's Legal Name?",
+            "type": "text",
+        
+            "showIf":{
+                 "field":"partyOneExecution",
+                "equals":[
+                  "Individual",
+                  "Infant",
+                  "Illiterate",
+                  "Family Property",
+                  "Attorney"
+                ] 
+            }
+        },
+
+        {
+            "name": "partyOneOccupation",
+            "label": "Party One's Occupation?" ,
+            "type": "occupation",
+            "required": true,
+            "showIf":{
+                "field":"partyOneExecution",
+                "equals":[
+                  "Individual",
+                  "Illiterate",
+                  "Family Property",
+                  "Attorney"
+                ]
+            }
+        },
+
+        {
+          "name":"partyOneCompanyName",
+          "label":"Company name?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Company"
+          }
+        },
+
+        {
+            "name": "partyOneAddress",
+            "label": "Party One's Address?",
+            "type": "address",
+            "required": true
+        },
+
+        
+        {
+          "name": "partyTwoExecution",
+          "label": "Which best describes Party Two?",
+          "type": "select",
+          "options": [
+            "Individual",
+            "Company",
+            "Infant",
+            "Illiterate",
+            "Attorney",
+            "Family Property"
+          ],
+          "required": true
+        },
+
+        {
+            "name": "partyTwoName",
+            "label": "Party Two's Legal Name?",
+            "type": "text",
+            "showIf":{
+                "field":"partyTwoExecution",
+                "equals":[
+                  "Individual",
+                  "Infant",
+                  "Illiterate",
+                  "Family Property",
+                  "Attorney"
+                ]
+            }
+        },
+
+        {
+          "name":"partyTwoCompanyName",
+          "label":"Company name?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Company"
+          }
+        },
+        
+        {
+            "name": "partyTwoOccupation",
+            "label": "Party Two's Occupation?" ,
+            "type": "occupation",
+            "required": true,
+            "showIf":{
+                "field":"partyTwoExecution",
+                "equals":[
+                  "Individual",
+                  "Illiterate",
+                  "Family Property",
+                  "Attorney"
+                ]
+            }
+        },
+
+        {
+            "name": "partyTwoAddress",
+            "label": "Party Two's Address?",
+            "type": "address",
+            "required": true
+        },
+
+        {
+            "name": "propertyDescription",
+            "label": "How would you describe the Property?",
+            "type": "property",
+            "required": true
+        },
+
+        {
+            "name": "propertyAddress",
+            "label": "What is the property's address?",
+            "type": "address",
+            "required": true
+        },
+        
+        {
+            "name": "details",
+            "label": "Provide any necessary details or information required to prepare this deed.",
+            "type": "text",
+            "required": true
+        },
+          {
+            "name": "information",
+            "label": "Is there any other information you would like considered in this deed?" ,
+            "type": "select",
+            "options": [
+              "Yes",
+              "No"
+            ],
+            "required": true
+          },
+          
+          {
+              "name": "information",
+              "label": "Provide any additional information or specific points you would like addressed in this deed.",
+              "type": "facts",
+              "showIf":{
+                  "field":"information",
+                  "equals":[
+                    "Yes"
+                  ]
+              }
+              },
+
+        {
+            "name": "resolutionDate",
+            "label": "On what date did the company pass the resolution approving this transaction?",
+            "type": "date",
+            "required": true,
+            "showIf":{
+                "field":"partyTwoExecution",
+                "equals":"Company"
+            }
+        },
+
+        {
+            "name": "resolutionDate",
+            "label": "On what date did the company pass the resolution approving this transaction?",
+            "type": "date",
+            "required": true,
+            "showIf":{
+                "field":"partyOneExecution",
+                "equals":"Company"
+            }
+        },
+
+        {
+            "name": "lawyerName",
+            "label": "Lawyer's full name.",
+            "type": "franking",
+            "required": "true"
+        },
+
+        {
+            "name": "lawFirm",
+            "label": "Law firm name and address.",
+            "type": "franking",
+            "required": "false"
+        },
+        
+        {
+          "name":"interpreterName",
+          "label":"Interpreter's name?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Illiterate"
+          }
+        },
+
+        {
+          "name":"interpreterName",
+          "label":"Interpreter's name?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Illiterate"
+          }
+        },
+
+        {
+          "name":"interpreterAddress",
+          "label":"Interpreter's address?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Illiterate"
+          }
+        },
+
+        {
+          "name":"interpreterAddress",
+          "label":"Interpreter's address?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Illiterate"
+          }
+        },
+
+        {
+          "name":"interpretedLanguage",
+          "label":"What language did the interpreter interpret to the party?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Illiterate"
+          }
+        },
+
+        {
+          "name":"interpretedLanguage",
+          "label":"What language did the interpreter interpret to the party?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Illiterate"
+          }
+        },
+        
+        {
+          "name":"attorneyName",
+          "label":"Attorney's full name?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Attorney"
+          }
+        },
+
+        {
+          "name":"attorneyName",
+          "label":"Attorney's full name?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Attorney"
+          }
+        },
+
+        {
+          "name":"powerOfAttorneyExecutionDate",
+          "label":"On what date was the power of attorney executed?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Attorney"
+          }
+        },
+
+        {
+          "name":"powerOfAttorneyExecutionDate",
+          "label":"On what date was the power of attorney executed?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Attorney"
+          }
+        },
+
+        {
+          "name":"date&placeOfRegistrationOfPowerOfAttorney",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Attorney"
+          }
+        },
+
+        {
+          "name":"date&placeOfRegistrationOfPowerOfAttorney",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Attorney"
+          }
+        },
+        
+        {
+          "name":"partyOneFamilyHead",
+          "label":"Family Head's full name?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Family Property"
+          }
+        },
+
+        {
+          "name":"partyTwoFamilyHead",
+          "label":"Family Head's full name?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Family Property"
+          }
+        },
+
+        {
+          "name":"memberName",
+          "label":"What is the name of the family member to this deed?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Family Property"
+          }
+        },
+
+        {
+          "name":"memberName",
+          "label":"What is the name of the family member to this deed?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Family Property"
+          }
+        },
+
+        {
+          "name":"name&addressOfFamily",
+          "label":"What is the name and address of the represented family?",
+          "showIf":{
+              "field":"partyOneExecution",
+              "equals":"Family Property"
+          }
+        },
+
+        {
+          "name":"name&addressOfFamily",
+          "label":"What is the name and address of the represented family?",
+          "showIf":{
+              "field":"partyTwoExecution",
+              "equals":"Family Property"
+          }
+        }
+    ]
+}

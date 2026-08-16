@@ -1,0 +1,121 @@
+{
+  "deed_of_partition": {
+    "title": "deed of partition",
+    "parties": [
+        {
+            "id": "partyOne",
+            "role": "First Party"
+        },
+        {
+            "id": "partyTwo",
+            "role": "Second Party"
+        }
+    ],
+    "sections": [
+      {
+        "type": "heading",
+        "value": "THIS DEED OF PARTITION is made this {{date}} ."
+      },
+      {
+        "type": "sectionTitle",
+        "value": "BETWEEN"
+      },
+      {
+        "type": "text",
+        "value": "{{partyOne.name}}, a {{partyOne.occupation}} of {{partyOne.address}} (hereinafter referred to as the 'First Party' which expression shall, where the context so admits, include his/her heirs, legal representatives, and assigns) of the FIRST PART."
+      },
+      {
+        "type": "sectionTitle",
+        "value": "AND"
+      },
+      {
+        "type": "text",
+        "value": "{{partyTwo.name}}, a {{partyTwo.occupation}} of {{partyTwo.address}} (hereinafter referred to as the 'Second Party' which expression shall, where the context so admits, include his/her heirs, legal representatives, and assigns) of the SECOND PART."
+      },
+      {
+        "type": "text",
+        "value": "(The First Party and Second Party are hereinafter collectively referred to as the 'Parties')."
+      },
+      {
+        "type": "sectionTitle",
+        "value": "WHEREAS"
+      },
+      {
+        "type": "text",
+        "value": [
+          "e.g., 1. The Parties are the joint owners / beneficiaries / tenants in common of ALL THAT parcel of land and the improvements thereon situate, lying, and being at Rumuodomaya Town, Port Harcourt, Nigeria (hereinafter referred to as the 'Entire Property').\n\n",
+          "e.g., 2. The Entire Property is covered by a  Certificate of Occupancy and  Deed of Assignment dated 15th June, 2004 and registered as [Insert Registration Details, e.g., No. __ at Page __ in Volume __] at the Lands Registry Office, of Rivers State.\n\n",
+          "e.g., 3. The Parties have mutually agreed to partition and divide the Entire Property between themselves so that the First Party shall henceforth hold the partitioned portion in severalty and absolutely, free from any claim or encumbrance by the Second Party.\n\n",
+          "e.g., 4. A Registered Surveyor, Dr. Peters Akwu, has prepared a Partition Survey Plan No. CCN/RV0 36/2026 dated 18th July, 2026, delineating the partitioned portion of the Entire Property."
+        ]
+      },
+      {
+        "type": "sectionTitle",
+        "value": "NOW THIS DEED WITNESSES AS FOLLOWS:"
+      },
+      {
+        "type": "sectionTitle",
+        "value": "PARTITION AND GRANT TO THE FIRST PARTY"
+      },
+      {
+        "type": "text",
+        "value": "In pursuance of the said agreement and in consideration of the premises, the Second Party as Beneficial Owner hereby conveys, releases, and confirms unto the First Party ALL THAT {{propertyDescription}} situate at {{propertyAddress}}, which is more particularly described in the Schedule hereto; TO HOLD the same unto and to the use of the First Party in severalty and absolutely, discharged from all claims and demands of the Second Party."
+      },
+      {
+        "type": "sectionTitle",
+        "value": "COVENANTS FOR TITLE AND QUIET ENJOYMENT"
+      },
+      {
+        "type": "text",
+        "value": [
+          "1. Each Party hereby covenants with the other that the Party so covenanting has not done or permitted any act or thing whereby the portion released to the other Party is or may be encumbered or prejudicially affected in title, estate, or otherwise.\n\n",
+          "2. The First Party shall peaceably and quietly hold, possess, and enjoy the partitioned portion without any lawful eviction, interruption, or disturbance from the Second Party or any person rightfully claiming under or in trust for the Second Party.\n\n",
+          "3. The Parties shall execute such further documents or do such acts as may be reasonably required to perfectly vest title of the partitioned portion in the First Party."
+        ]
+      },
+      {
+        "type": "sectionTitle",
+        "value": "CUSTODY OF TITLE DOCUMENTS"
+      },
+      {
+        "type": "text",
+        "value": "The Parties agree that the original Deed of Assignment covering the Entire Property shall remain in the custody of the First Party, who hereby gives an acknowledgment of the right of the other Party to the production of the same and to delivery of copies thereof, and an undertaking for its safe custody."
+      },
+      {
+        "type": "sectionTitle",
+        "value": "SCHEDULE"
+      },
+      {
+        "type": "text",
+        "value": [
+          "e.g., ALL THAT parcel of land measuring approximately 900 Square Meters situate at Rumuodomaya Town, Port Harcourt, Nigeria, delineated on Survey Plan No. CCN/RV0 36/2026 dated 18th July, 2026, and bounded as follows:\n\n",
+          "• On the North by: ____\n",
+          "• On the South by: ____\n",
+          "• On the East by: ___\n",
+          "• On the West by: _____"
+        ]
+      },
+      {
+        "type": "sectionTitle",
+        "value": "IN WITNESS WHEREOF"
+      },
+      {
+        "type": "text",
+        "value": "The Parties hereto have set their hands and seals the day and year first above written."
+      },
+      {
+          "type": "execution"
+      },
+      {
+        "type": "instructions",
+        "value": [
+          "Use this information to enhance the draft.\n\n",
+          "Use this details to draft this letter, {{details}}\n\n",
+          "Use this information to enhance the draft, {{information}}\n\n",
+          "The draft should be within 300-6000 words.\n\n",
+          "Use today's date to fill the date section."
+        ]
+      }
+    ]
+  }
+}

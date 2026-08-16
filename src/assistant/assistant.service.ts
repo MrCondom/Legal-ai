@@ -518,9 +518,9 @@ export class AssistantService {
   ) {
     const user = await this.users.getProfile(userId);
 
-    //if (user.plan !== 'PRO') {
-     //throw new ForbiddenException('Feature available only for PRO users');
-     //}
+    if (user.plan !== 'PRO') {
+     throw new ForbiddenException('Feature available only for PRO users');
+     }
 
      const parsed = await this.ai.inferTemplate(document)
  
@@ -546,18 +546,18 @@ export class AssistantService {
     file: Express.Multer.File,
   ) {
 
-    //const user = await this.users.getProfile(userId);
+    const user = await this.users.getProfile(userId);
 
 
-    //if (!user) {
-      //throw new NotFoundException('User not found');
-      // }
+    if (!user) {
+      throw new NotFoundException('User not found');
+       }
 
-    //if (user.plan !== 'PRO') {
-      //throw new ForbiddenException({
-       //code: "PRO_REQUIRED",
-       //message: "Feature available only for PRO users"});
-       //}
+    if (user.plan !== 'PRO') {
+      throw new ForbiddenException({
+       code: "PRO_REQUIRED",
+       message: "Feature available only for PRO users"});
+       }
 
     console.log(userId);
     console.log(file.originalname);
@@ -604,6 +604,8 @@ export class AssistantService {
     const documentFamily =
       parsed.type.toUpperCase() as ReviewDocumentFamily;
 
+    await this.billing.consumeCredits(userId, CREDIT_COST.REVIEW);
+
     const review = await this.ai.reviewDocument(text, documentFamily);
 
     if (!review.validDocument) {
@@ -613,8 +615,6 @@ export class AssistantService {
         "This is not a legal document. Please upload a legal draft for review"
       );
     }
-
-    await this.billing.consumeCredits(userId, CREDIT_COST.REVIEW);
 
     return {
       review,
@@ -626,17 +626,17 @@ export class AssistantService {
   ////////////////////////////////////////////
 
   async suggestImprovements(userId: string, document: string, review: any,) {
-    //const user = await this.users.getProfile(userId);
+    const user = await this.users.getProfile(userId);
 
-    //if (!user) {
-      //throw new NotFoundException('User not found');
-      // }
+    if (!user) {
+      throw new NotFoundException('User not found');
+       }
 
-    //if (user.plan !== 'PRO') {
-      //throw new ForbiddenException({
-       //code: "PRO_REQUIRED",
-       //message: "Feature available only for PRO users"});
-       //}
+    if (user.plan !== 'PRO') {
+      throw new ForbiddenException({
+       code: "PRO_REQUIRED",
+       message: "Feature available only for PRO users"});
+       }
 
     await this.billing.consumeCredits(userId, CREDIT_COST.IMPROVEMENT);
 

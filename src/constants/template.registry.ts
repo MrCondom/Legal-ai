@@ -22,6 +22,9 @@ import releaseSchema from "../templates/template-forms/propertySchema/releaseSch
 import assentTemplate from "../templates/template-files/propertyLaw/assent.json";
 import assentSchema from "../templates/template-forms/propertySchema/assentSchema.json";
 
+import partitionTemplate from "../templates/template-files/propertyLaw/partition.json";
+import partitionSchema from "../templates/template-forms/propertySchema/partitionSchema.json";
+
 import deedDeedTemplate from "../templates/template-files/propertyLaw/deed.json";
 import deedDeedSchema from "../templates/template-forms/propertySchema/deedSchema.json";
 
@@ -212,7 +215,7 @@ import minuteSchema from "../templates/template-forms/ethics/minuteSchema.json";
 export const templateRegistry = [
   {
     slug: "deed-of-conveyance",
-    title: "Deed of Conveyance",
+    title: "deed of Conveyance",
     documentFamily: "deed",
     tags: [
       "property",
@@ -227,7 +230,7 @@ export const templateRegistry = [
 
   {
     slug: "deed-of-assignment",
-    title: "Deed of Assignment",
+    title: "deed of Assignment",
     documentFamily: "deed",
     tags: [
       "property",
@@ -242,7 +245,7 @@ export const templateRegistry = [
 
   {
     slug: "assent",
-    title: "Deed of Assent",
+    title: "deed of assent",
     documentFamily: "deed",
     tags: [
       "property",
@@ -258,7 +261,7 @@ export const templateRegistry = [
 
   {
     slug: "deed-of-power-attorney",
-    title: "Deed of Power of Attorney",
+    title: "deed of power of attorney",
     documentFamily: "deed",
     tags: [
       "property",
@@ -272,9 +275,9 @@ export const templateRegistry = [
   },
 
   {
-    slug: "wills",
-    title: "Wills",
-    documentFamily: "wills",
+    slug: "will",
+    title: "Will",
+    documentFamily: "will",
     tags: [
       "testator",
       "testamentory instrument",
@@ -288,7 +291,7 @@ export const templateRegistry = [
 
   {
     slug: "deed-of-lease",
-    title: "Deed of lease",
+    title: "deed of lease",
     documentFamily: "deed",
     tags: [
       "3 years and above tenancy",
@@ -302,8 +305,22 @@ export const templateRegistry = [
   },
 
   {
+    slug: "deed-of-partition",
+    title: "deed of partition",
+    documentFamily: "deed",
+    tags: [
+      "partition",
+      "family partition",
+      "deed of partition",
+      "partitioner",
+    ],
+    template: partitionTemplate,
+    formSchema: partitioinSchema,
+  },
+
+  {
     slug: "tenancy-agreement",
-    title: "Tenancy agreement",
+    title: "tenancy agreement",
     documentFamily: "agreement",
     tags: [
       "3 years below",
@@ -318,7 +335,7 @@ export const templateRegistry = [
 
   {
     slug: "hire-purchase-agreement",
-    title: "Hire Purchase agreement",
+    title: "hire purchase agreement",
     documentFamily: "agreement",
     tags: [
       "hire",
@@ -333,7 +350,7 @@ export const templateRegistry = [
 
   {
     slug: "deed-of-gift",
-    title: "Deed of Gift",
+    title: "deed of gift",
     documentFamily: "deed",
     tags: [
       "property",
@@ -348,7 +365,7 @@ export const templateRegistry = [
 
   {
     slug: "deed-of-mortgage",
-    title: "Deed of Mortgage",
+    title: "deed of mortgage",
     documentFamily: "deed",
     tags: [
       "property",
@@ -363,7 +380,7 @@ export const templateRegistry = [
 
   {
     slug: "deed-of-triparte-mortgage",
-    title: "Deed of Triparte Mortgage",
+    title: "deed of triparte mortgage",
     documentFamily: "deed",
     tags: [
       "property",
@@ -390,7 +407,7 @@ export const templateRegistry = [
   },
   {
     slug: "deed-of-release-of-mortgage",
-    title: "Deed of Release of Mortgage",
+    title: "deed of release of mortgage",
     documentFamily: "deed",
     tags: [
       "property",
@@ -404,7 +421,7 @@ export const templateRegistry = [
   },
   {
     slug: "deed-of-transfer-of-shares",
-    title: "Deed of Transfer of Shares",
+    title: "deed of transfer of shares",
     documentFamily: "deed",
     tags: [
       "shares",
@@ -419,7 +436,7 @@ export const templateRegistry = [
 
   {
     slug: "agreement-template",
-    title: "Agreement",
+    title: "agreement",
     documentFamily: "agreement",
     tags: [
       "partnership agreement",
@@ -786,6 +803,7 @@ export const templateRegistry = [
     documentFamily: "court_document",
     tags: [
       "ruling on a motion",
+      "decision of a court",
       "judgment",
       "court ruling"
     ],

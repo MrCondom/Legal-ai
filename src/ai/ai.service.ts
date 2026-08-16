@@ -100,7 +100,7 @@ Return:
 
 3. COURT_DOCUMENT
 Includes:
-Motions, Affidavits, Pleadings, Appeals, Written Addresses, Summons, Petitions, Charges, Originating Processes and other documents intended to be filed or used as court processes.
+Motions, Affidavits, Pleadings, Appeals, Written Addresses, Summons, Petitions, Rulings, Charges, Originating Processes and other documents intended to be filed or used as court processes.
 
 Return:
 {
