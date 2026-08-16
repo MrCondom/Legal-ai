@@ -3,28 +3,28 @@
 
       {
           "name": "counselName",
-          "label": "State your full name?",
+          "label": "State your full name.",
           "type": "counselname",
           "required": true
       },
 
       {
           "name": "claimantName",
-          "label": "Provide the full name(s) of all Claimant(s)?",
+          "label": "Provide the full name(s) of all Claimant(s).",
           "type": "name",
           "required": true
       },
 
       {
           "name": "defendantName",
-          "label": "Provide the full name(s) of all Defendant(s)?",
+          "label": "Provide the full name(s) of all Defendant(s).",
           "type": "name",
           "required": true
       },
 
       {
           "name": "court",
-          "label": "State the name of the court and the state in which the application is brought?",
+          "label": "State the name of the court and the state in which the application is brought.",
           "type": "court",
           "required": true
       },
@@ -41,7 +41,7 @@
 
           {
               "name": "admits&deny&state",
-              "label": "State the paragraphs of the Defendant's Statement of Claim that you admit and provide any necessary additional information?",
+              "label": "State the paragraphs of the Defendant's Statement of Claim that you admit and provide any necessary additional information.",
               "type": "text",
               "showIf":{
                   "field":"admit",
@@ -53,7 +53,7 @@
 
           {
               "name": "admits&deny&state",
-              "label": "Provide a full detailed account of the facts, events, and circumstances giving rise to this claim??",
+              "label": "Provide a full detailed account of the facts, events, and circumstances giving rise to this claim.",
               "type": "text",
               "showIf":{
                   "field":"admit",

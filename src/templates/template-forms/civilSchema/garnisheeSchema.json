@@ -3,28 +3,28 @@
 
         {
             "name": "counselName",
-            "label": "State your full name?",
+            "label": "State your full name.",
             "type": "counselname",
             "required": true
         },
 
         {
             "name": "judgmentCreditor",
-            "label": "Provide the full name(s) of all Judgment Creditor(s)?",
+            "label": "Provide the full name(s) of all Judgment Creditor(s).",
             "type": "name",
             "required": true
         },
 
         {
           "name": "creditorRole",
-          "label": "What is the Judgment Creditor's role in this matter? (eg Applicant)",
+          "label": "What is the Judgment Creditor's role in this matter? (e.g., Applicant)",
           "type": "role",
           "required": true
         },
 
         {
             "name": "judgmentDebtor",
-            "label": "Provide the full name(s) of all Judgment Debitor(s)?",
+            "label": "Provide the full name(s) of all Judgment Debtor(s).",
             "type": "name",
             "required": true
         },
@@ -52,14 +52,14 @@
 
         {
             "name": "court",
-            "label": "State the name of the court and the state in which the application is brought?",
+            "label": "State the name of the court and the state in which the application is brought.",
             "type": "court",
             "required": true
         },
 
         {
             "name": "order",
-            "label": "State the Order and Rule under which this application is brought?",
+            "label": "State the Order and Rule under which this application is brought.",
             "type": "law",
             "required": true
         },
@@ -84,7 +84,7 @@
         
         {
             "name": "grounds",
-            "label": "Provide any additional information, facts, or grounds relevant to this application?",
+            "label": "Provide any additional information, facts, or grounds relevant to this application.",
             "type": "facts",
             "showIf":{
                 "field":"information",
@@ -95,7 +95,7 @@
         },
         {
             "name": "lawFirm",
-            "label": "Law firm name and address?",
+            "label": "Law firm name and address.",
             "type": "address",
             "required": "false"
         }

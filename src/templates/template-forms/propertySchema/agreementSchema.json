@@ -3,7 +3,7 @@
 
       {
         "name": "partyOneExecution",
-        "label": "Which best describes Party One.",
+        "label": "Which best describes Party One?",
         "type": "select",
         "options": [
           "Individual",
@@ -18,7 +18,7 @@
 
         {
             "name": "partyOneName",
-            "label": "Party One's Legal Name.",
+            "label": "Party One's Legal Name?",
             "type": "text",
         
             "showIf":{
@@ -35,7 +35,7 @@
 
         {
             "name": "partyOneOccupation",
-            "label": "Party One's Occupation." ,
+            "label": "Party One's Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -142,7 +142,7 @@
 
         {
             "name": "additionalParties",
-            "label": "State the full names, occupation and addresses of the other party/parties?",
+            "label": "State the full names, occupation and addresses of the other party/parties.",
             "type": "executorsName",
             "showIf":{
                 "field":"parties",
@@ -154,7 +154,7 @@
 
         {
             "name": "fullAgreement",
-            "label": "Provide a full description of the agreement, including its key terms and obligations?",
+            "label": "Provide a full description of the agreement, including its key terms and obligations.",
             "type": "agreement",
             "required": true
         },
@@ -172,7 +172,7 @@
         
         {
             "name": "additionalInformation",
-            "label": "Provide any additional information?",
+            "label": "Provide any additional information.",
             "type": "agreement",
             "showIf":{
                 "field":"information",
@@ -296,7 +296,7 @@
 
         {
           "name":"date&placeOfRegistrationOfPowerOfAttorney",
-          "label":"On what date and in which state was the Power of Attorney Registerd?",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
           "showIf":{
               "field":"partyOneExecution",
               "equals":"Attorney"
@@ -305,7 +305,7 @@
 
         {
           "name":"date&placeOfRegistrationOfPowerOfAttorney",
-          "label":"On what date and in which state was the Power of Attorney Registerd?",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
           "showIf":{
               "field":"partyTwoExecution",
               "equals":"Attorney"

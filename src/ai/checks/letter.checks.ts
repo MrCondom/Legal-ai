@@ -10,6 +10,11 @@ export const letterChecks = {
     'The tone is appropriate for the purpose and recipient.',
     'The letter is clear, professional and unambiguous.',
     'The letter does not contain unsupported material facts.',
+    'The letter does not contain unnecessary repetition.',
+    'The letter does not contain contradictory statements.',
+    'The requested action or response is clearly stated.',
+    'Any material deadline is clearly identified.',
+    'The letter reads as complete professional correspondence.',
   ],
 
   correspondence: [
@@ -20,6 +25,9 @@ export const letterChecks = {
     'The signatory is properly identified.',
     'The signatory has the appropriate capacity.',
     'The intended recipient is clearly distinguished from copied recipients where applicable.',
+    'The recipient is addressed by the appropriate title or designation where applicable.',
+    'The letter is addressed to the appropriate office, authority or person.',
+    'The letter is not incorrectly addressed to an individual where the proper recipient is an institution or office.',
   ],
 
   references: [
@@ -28,6 +36,8 @@ export const letterChecks = {
     'The sender’s reference is included where applicable.',
     'Our Ref. and Your Ref. are correctly distinguished where applicable.',
     'The reference corresponds with the subject matter or correspondence where applicable.',
+    'Previous correspondence is properly identified where relied upon.',
+    'The date of previous correspondence is stated where material.',
   ],
 
   legalLetters: [
@@ -38,6 +48,11 @@ export const letterChecks = {
     'Any deadline or period is clearly stated where applicable.',
     'The consequences of non-compliance are stated where appropriate.',
     'The letter does not improperly present unsupported legal conclusions as established facts.',
+    'The legal basis for the demand or request is sufficiently identified where necessary.',
+    'The letter distinguishes facts from legal submissions or opinions.',
+    'The letter does not make allegations of fraud, crime, illegality or misconduct without sufficient factual basis.',
+    'Material documents relied upon are identified.',
+    'Where a legal right is asserted, the factual basis for the right is apparent.',
   ],
 
   demandLetters: [
@@ -47,6 +62,23 @@ export const letterChecks = {
     'The time for compliance is stated where applicable.',
     'The consequences of failure to comply are appropriately stated.',
     'The demand is consistent with the facts supplied.',
+    'The demand does not seek an unclear or impossible remedy.',
+    'Any interest, penalty, contractual charge or other amount claimed is identified and explained where applicable.',
+    'The letter identifies the agreement, transaction, invoice, judgment or other instrument giving rise to the demand where applicable.',
+    'The demand distinguishes the principal sum from interest, costs and other charges where applicable.',
+    'The letter does not make an unsupported threat of criminal proceedings for a purely civil dispute.',
+  ],
+
+  noticesAndPreAction: [
+    'Where the letter constitutes a statutory notice, the applicable statutory requirement is identified where determinable.',
+    'The required notice period is correctly stated where determinable.',
+    'The date from which the notice period runs is clear.',
+    'The recipient is given sufficient information to understand the claim or proposed action.',
+    'Any applicable pre-action requirement is addressed.',
+    'The letter does not incorrectly describe ordinary correspondence as a statutory notice.',
+    'The letter does not incorrectly describe a statutory notice as a court process.',
+    'Where a notice is required before commencement of proceedings, the notice requirement is expressly addressed where applicable.',
+    'The proposed proceedings or consequence of non-compliance is sufficiently identified where appropriate.',
   ],
 
   organisationAndGovernment: [
@@ -56,6 +88,9 @@ export const letterChecks = {
     'The requested action is clearly identified.',
     'Relevant supporting information is included where necessary.',
     'Any required reference to previous correspondence is included.',
+    'The letter does not incorrectly address an officer who lacks apparent responsibility for the subject matter.',
+    'Where correspondence is directed to a government authority, the relevant ministry, department, agency or office is properly identified where determinable.',
+    'Where an application is made to a regulatory authority, the regulatory purpose of the application is clear.',
   ],
 
   applicationsAndRequests: [
@@ -64,6 +99,9 @@ export const letterChecks = {
     'The request is clearly and specifically stated.',
     'Relevant qualifications, facts or supporting information are included where applicable.',
     'The letter contains sufficient information for the recipient to understand and act upon the request.',
+    'Any supporting documents required for the application are identified.',
+    'Any applicable fee, receipt or evidence of payment is identified where relevant.',
+    'The requested relief or administrative action is clearly distinguished from background information.',
   ],
 
   employmentAndProfessional: [
@@ -72,12 +110,90 @@ export const letterChecks = {
     'Material employment or professional terms are clearly stated where applicable.',
     'Any relevant notice period or effective date is stated where applicable.',
     'The letter is appropriate to its professional purpose.',
+    'Any resignation, appointment, termination or acceptance is expressed clearly.',
+    'The effective date of the employment or professional event is stated where applicable.',
+  ],
+
+  legalPractitionerLetters: [
+    'The legal practitioner or law firm sending the letter is properly identified.',
+    'The name of the law firm is stated where appropriate.',
+    'The address of the law firm is stated where required.',
+    'The legal practitioner signing the letter is properly identified.',
+    'The capacity of the signatory is clear.',
+    'Where the letter is issued on behalf of a client, the client is properly identified.',
+    'The relationship between the solicitor and the client is clear where material.',
+    'The letter does not falsely suggest that the solicitor has authority beyond the authority supplied.',
+    'The letter distinguishes the solicitor’s position from the client’s factual position where necessary.',
+    'Where the letter concerns a company, the company’s proper legal name is used.',
+    'Where the letter concerns a court proceeding, the suit number and parties are correctly identified where applicable.',
+    'Where the letter concerns a transaction, the relevant agreement, instrument or transaction is identified.',
+    'Where legal fees are demanded, the nature and basis of the fees are sufficiently identified.',
+  ],
+
+  retainershipAndSolicitorFees: [
+    'The proposed retainer or engagement is clearly identified.',
+    'The scope of legal services is stated or sufficiently indicated.',
+    'The proposed retainer fee is clearly stated where applicable.',
+    'The period covered by the retainer is stated where applicable.',
+    'The payment terms are stated where applicable.',
+    'Any additional fees outside the retainer are identified where applicable.',
+    'Disbursements and third-party expenses are distinguished from professional fees where applicable.',
+    'The letter identifies whether fees are payable monthly, annually, per matter or on another agreed basis.',
+    'Any applicable tax or statutory charge is identified where appropriate.',
+    'The client is informed of any material condition attached to the proposed engagement.',
+    'The letter does not create an unintended solicitor-client relationship merely by expressing an intention to negotiate a retainer.',
+  ],
+
+  feeDemands: [
+    'The client or person liable for the fee is properly identified.',
+    'The legal service giving rise to the fee is identified.',
+    'The professional fee is clearly distinguished from disbursements.',
+    'The amount demanded is clearly stated.',
+    'The applicable invoice or fee note is identified where applicable.',
+    'The payment deadline is stated.',
+    'The payment method or account details are provided where appropriate.',
+    'The consequences of non-payment are stated where appropriate.',
+    'The letter does not demand an amount inconsistent with the supporting invoice or agreement.',
+  ],
+
+  lawFirmEstablishment: [
+    'The notice clearly states that a law firm has been established or set up.',
+    'The name of the law firm is stated.',
+    'The address of the newly established law firm is stated.',
+    'The legal practitioners comprising the firm are identified.',
+    'Each person identified as a legal practitioner is described as such only where the supplied information supports that status.',
+    'The qualifications or professional particulars of the legal practitioners are stated where required.',
+    'The partnership or ownership structure is accurately described where supplied.',
+    'The principal partner or appropriate responsible legal practitioner is identified where applicable.',
+    'The appropriate professional body or authority is addressed.',
+    'The relevant branch of the Nigerian Bar Association is correctly identified where applicable.',
+    'The applicable professional rule or regulatory basis relied upon is correctly identified where supplied.',
+    'The letter does not describe a non-lawyer as a legal practitioner.',
+    'The address of the firm is consistent throughout the notice.',
+    'The notice does not omit the identity of the lawyers comprising the firm.',
+  ],
+
+  searchApplications: [
+    'The applicant or law firm requesting the search is identified.',
+    'The entity or subject of the proposed search is clearly identified.',
+    'The purpose of the search is stated where relevant.',
+    'The authority or registry to conduct the search is properly addressed.',
+    'The applicable search fee is identified where applicable.',
+    'Evidence of payment of search fees is identified where applicable.',
+    'Certified true copy fees are identified where applicable.',
+    'Relevant supporting documents are identified.',
+    'The requested search is clearly distinguished from a request for certified copies.',
+    'The entity proposed to be searched is correctly named.',
+    'Where a company search is requested, the company’s proper registered name is stated.',
   ],
 
   attachments: [
     'Referenced documents or attachments are identified.',
     'Documents referred to as attached are actually identified in the letter.',
     'The letter does not rely on an attachment that is not identified.',
+    'Each material attachment referred to in the body is included in the attachment list where applicable.',
+    'Receipts, certificates, agreements or other supporting documents are identified where relied upon.',
+    'The attachment description is sufficiently specific to identify the document.',
   ],
 
   legalCompliance: [
@@ -85,13 +201,114 @@ export const letterChecks = {
     'Any applicable pre-action or statutory notice requirement is addressed where relevant.',
     'The letter does not incorrectly present ordinary correspondence as a court process.',
     'The letter does not incorrectly apply requirements belonging to deeds, agreements or court documents.',
+    'Any legally required notice period is correctly stated where determinable.',
+    'Any required statutory recipient is correctly identified where determinable.',
+    'The letter does not make a representation of law that is inconsistent with the supplied legal framework.',
   ],
 
   quality: [
-    'The letter contains no unnecessary repetition.',
-    'The letter does not contain contradictory statements.',
-    'The requested action or response is clear.',
-    'The letter reads as complete professional correspondence.',
-    'The final document contains no drafting instructions, template notes or AI commentary.',
+    'No material requirement apparent from the purpose of the letter has been omitted.',
+    'No material request, demand or statement contradicts another part of the letter.',
+    'The document is sufficiently complete for its intended purpose.',
+    'The letter uses professional legal language appropriate to the circumstances.',
+    'The letter does not contain drafting instructions.',
+    'The letter does not contain template notes.',
+    'The letter does not contain AI commentary.',
+    'The final document does not expose internal drafting variables or placeholders.',
   ],
+  
+  curriculumVitaeGeneral: [
+      'The CV clearly identifies the applicant.',
+      'The applicant’s full name is stated.',
+      'The applicant’s contact information is provided.',
+      'The applicant’s location or address is provided where appropriate.',
+      'The CV is internally consistent.',
+      'Dates, qualifications, institutions and employment history are consistent.',
+      'The CV is professionally structured.',
+      'The CV is concise and relevant to its intended purpose.',
+      'The CV does not contain unsupported qualifications or professional claims.',
+      'The CV does not contain unnecessary personal information.',
+    ],
+  
+    curriculumVitaePersonalInformation: [
+      'The applicant’s full legal or professional name is correctly stated.',
+      'A functional telephone number is provided where appropriate.',
+      'A professional email address is provided.',
+      'The applicant’s location is stated where appropriate.',
+      'Contact details are internally consistent.',
+      'The CV does not contain inappropriate or unnecessary sensitive personal information.',
+    ],
+  
+    curriculumVitaeProfessionalSummary: [
+      'A professional summary or career objective is provided where appropriate.',
+      'The summary accurately reflects the applicant’s experience and qualifications.',
+      'The summary is relevant to the intended position or profession.',
+      'The summary does not contain exaggerated or unsupported claims.',
+      'The summary is concise and professionally written.',
+    ],
+  
+    curriculumVitaeEducation: [
+      'Educational institutions are properly identified.',
+      'Qualifications are correctly stated.',
+      'Courses or areas of study are stated where relevant.',
+      'Dates of attendance or completion are consistent where supplied.',
+      'Qualifications are presented in a logical chronological order.',
+      'Professional qualifications are distinguished from academic qualifications.',
+    ],
+  
+    curriculumVitaeEmploymentHistory: [
+      'Employers are properly identified.',
+      'Job titles or positions are stated.',
+      'Employment dates are stated where available.',
+      'Employment history is arranged in an appropriate chronological order.',
+      'Responsibilities are clearly described.',
+      'Material achievements are distinguished from ordinary job duties.',
+      'Employment dates do not contain unexplained material contradictions.',
+      'The applicant does not appear to hold overlapping positions where the supplied facts make such overlap impossible.',
+    ],
+  
+    curriculumVitaeLegalProfessionalExperience: [
+      'Legal experience is clearly identified where applicable.',
+      'Law firms, chambers, courts, companies or organisations are properly identified.',
+      'The applicant’s role or designation is clearly stated.',
+      'Areas of legal practice are identified where relevant.',
+      'Litigation, corporate, commercial, property or other legal experience is accurately described.',
+      'Court appearances or legal responsibilities are not exaggerated.',
+      'Professional qualifications are distinguished from practical experience.',
+    ],
+  
+    curriculumVitaeSkills: [
+      'Relevant professional skills are identified.',
+      'Technical skills are accurately stated.',
+      'Legal research, drafting or advocacy skills are identified where applicable.',
+      'The skills listed are reasonably supported by the applicant’s education or experience.',
+      'The CV does not contain an excessive or irrelevant list of skills.',
+    ],
+  
+    curriculumVitaeProfessionalMemberships: [
+      'Professional memberships are identified where applicable.',
+      'The name of the professional body is correctly stated.',
+      'Membership status is accurately described.',
+      'Membership dates are consistent where supplied.',
+      'Professional memberships are not presented as qualifications unless they are qualifications.',
+    ],
+  
+    curriculumVitaeReferences: [
+      'References are included where appropriate.',
+      'Referees are properly identified.',
+      'The relationship between the applicant and referee is clear.',
+      'Referee contact information is stated where appropriate.',
+      'The CV does not invent or fabricate references.',
+    ],
+  
+    curriculumVitaeQuality: [
+      'The CV contains no unnecessary repetition.',
+      'The CV is free from material contradictions.',
+      'The CV is appropriately formatted.',
+      'The CV is readable and professionally presented.',
+      'The CV contains no drafting instructions.',
+      'The CV contains no template notes.',
+      'The CV contains no AI commentary.',
+    ],
+
 };

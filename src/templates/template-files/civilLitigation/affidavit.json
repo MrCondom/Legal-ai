@@ -40,7 +40,7 @@
         },
         {
             "type": "text",
-            "value": "I {{partyOneDetails}} , do hereby make oath and state as follows;\n\n"
+            "value": "I {{deponentDetails}} , do hereby make oath and state as follows;\n\n"
              
         },
       

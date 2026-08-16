@@ -3,28 +3,28 @@
 
         {
             "name": "counselName",
-            "label": "State your full name?",
+            "label": "State your full name.",
             "type": "counselname",
             "required": true
         },
 
         {
             "name": "nameOfPartyOne",
-            "label": "Provide the full name(s) of all the parties comprising Party One?",
+            "label": "Provide the full name(s) of all the parties comprising Party One.",
             "type": "name",
             "required": true
         },
 
         {
           "name": "partyOneRole",
-          "label": "What is Party One's role in this matter? (eg Claimant/Applicant)",
+          "label": "What is Party One's role in this matter? (e.g., Claimant/Applicant)",
           "type": "role",
           "required": true
         },
 
         {
             "name": "nameOfPartyTwo",
-            "label": "Provide the full name(s) of all the parties comprising Party Two?",
+            "label": "Provide the full name(s) of all the parties comprising Party Two.",
             "type": "name",
             "required": true
         },
@@ -38,28 +38,28 @@
 
         {
             "name": "soughtToBeJoined",
-            "label": "Provide the full name(s) of all parties sought to be joined in this application?",
+            "label": "Provide the full name(s) of all parties sought to be joined in this application.",
             "type": "name",
             "required": true
         },
 
         {
             "name": "court",
-            "label": "State the name of the court and the state in which the application is brought?",
+            "label": "State the name of the court and the state in which the application is brought.",
             "type": "court",
             "required": true
         },
 
         {
             "name": "order",
-            "label": "State the Order and Rule under which this application is brought?",
+            "label": "State the Order and Rule under which this application is brought.",
             "type": "law",
             "required": true
         },
 
         {
             "name": "orderSought",
-            "label": "State the relief(s) or order(s) sought in this application?",
+            "label": "State the relief(s) or order(s) sought in this application.",
             "type": "relief",
             "required": true
         },
@@ -77,7 +77,7 @@
         
         {
             "name": "grounds",
-            "label": "Provide any additional information, facts, or grounds relevant to this application?",
+            "label": "Provide any additional information, facts, or grounds relevant to this application.",
             "type": "facts",
             "showIf":{
                 "field":"information",
@@ -88,7 +88,7 @@
         },
         {
             "name": "lawFirm",
-            "label": "Law firm name and address?",
+            "label": "Law firm name and address.",
             "type": "address",
             "required": "false"
         }

@@ -159,7 +159,7 @@
 
         {
             "name": "surveyPlanDetails",
-            "label": "Provide the survey plan details?",
+            "label": "Provide the survey plan details.",
             "type": "surveyPlan",
             "required": true
         },
@@ -173,7 +173,7 @@
 
         {
             "name": "surveyorParticulars",
-            "label": "Provide the surveyor's name and address?",
+            "label": "Provide the surveyor's name and address.",
             "type": "surveyor",
             "required": "true"
         },
@@ -305,7 +305,7 @@
 
         {
           "name":"date&placeOfRegistrationOfPowerOfAttorney",
-          "label":"On what date and in which state was the Power of Attorney Registerd?",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
           "showIf":{
               "field":"partyOneExecution",
               "equals":"Attorney"
@@ -314,7 +314,7 @@
 
         {
           "name":"date&placeOfRegistrationOfPowerOfAttorney",
-          "label":"On what date and in which state was the Power of Attorney Registerd?",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
           "showIf":{
               "field":"partyTwoExecution",
               "equals":"Attorney"

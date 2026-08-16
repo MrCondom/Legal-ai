@@ -121,6 +121,9 @@ import movingSchema from "../templates/template-forms/civilSchema/movingSchema.j
 import courtTemplate from "../templates/template-files/civilLitigation/court-applications.json";
 import courtSchema from "../templates/template-forms/civilSchema/courtSchema.json";
 
+import courtRulingTemplate from "../templates/template-files/civilLitigation/ruling.json";
+import courtRulingSchema from "../templates/template-forms/civilSchema/rulingSchema.json";
+
 //Criminal Litigation
 import northTemplate from "../templates/template-files/criminalLitigation/charge-north.json";
 import northSchema from "../templates/template-forms/criminalSchema/northSchema.json";
@@ -777,6 +780,19 @@ export const templateRegistry = [
     formSchema: courtSchema,
   },
 
+  {
+    slug: "court-ruling",
+    title: "court ruling",
+    documentFamily: "court_document",
+    tags: [
+      "ruling on a motion",
+      "judgment",
+      "court ruling"
+    ],
+    template: courtRulingTemplate,
+    formSchema: courtRulingSchema,
+  },
+
   //CorporateLaw 
   {
     slug: "corporate-applications",
@@ -917,7 +933,7 @@ export const templateRegistry = [
     tags: [
       "federal high court charge sheet",
       "magistrate court in the south charge sheet",
-      "state high court in the north charge sheet",
+      "all state high court in the north charge sheet. e.g., Kano, Kaduna, Sokoto, Borno, FCT State etc",
       "FCT high court charge sheet",
       "charge sheet"
     ],
@@ -930,7 +946,7 @@ export const templateRegistry = [
     title: "criminal information",
     documentFamily: "court_document",
     tags: [
-      "state high court in the south charge sheet",
+      "all state high court in the south charge sheet. e.g., Enugu, Rivers, Abia, Calabar, Lagos, Osun State etc",
       "criminal information"
     ],
     template: informationTemplate,

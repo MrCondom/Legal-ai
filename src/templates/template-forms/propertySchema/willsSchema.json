@@ -75,7 +75,7 @@
 
         {
             "name": "will",
-            "label": "State how you wish your property and assets to be distributed upon your death?",
+            "label": "State how you wish your property and assets to be distributed upon your death.",
             "type": "wills",
             "required": true
         }

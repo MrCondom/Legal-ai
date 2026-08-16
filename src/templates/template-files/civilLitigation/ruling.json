@@ -1,0 +1,78 @@
+{
+   "ruling_of_court": {
+    "title": "ruling of court",
+    "sections": [
+        {
+            "type": "heading", 
+            "value": ["IN THE {{court}} \n",
+                    "IN THE __ JUDICIAL DIVISION\n",
+                         "HOLDEN AT __\n",
+            "BEFORE HIS LORDSHIP, HONOURABLE JUSTICE {{judgeName}} "]
+        },
+        {
+            "type": "suit",
+            "value": "SUIT NO: ________"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "BETWEEN"
+        },
+        {
+            "type": "row",
+            "left": "{{nameOfPartyOne}}",
+            "right": "{{partyOneRole}}"
+        },
+        {
+            "type": "sectionTitle",
+            "value": "AND"
+        },
+        {
+            "type": "row",
+            "left": "{{nameOfPartyTwo}}",
+            "right": "{{partyTwoRole}}"
+        },
+        {
+            "type": "subHeading",
+            "value": "ENROLMENT ORDER"
+        },
+        {
+            "type": "text",
+            "value": "e.g., UPON THIS MOTION EX-PARTE dated and filed on the 14th day of January, 2019 praying this Honourable Court for the following orders:"
+        },
+        {
+            "type": "text",
+            "value": "e.g., AN ORDER of interim injunction restraining the 2nd Defendant from further proceeding with the hearing of Charge No: CCT/ABJ/01/19 between The Federal Republic of Nigeria V. Jackson Clark."
+        },
+        {
+            "type": "subHeading",
+            "value": "IT IS HEREBY ORDERED AS FOLLOWS:\n\n"
+         },
+         {
+             "type": "text",
+             "value": "e.g., 1. That the Defendant/Respondent shall step aside as the Chief Justice of Nigeria and Chairman National Judicial Council over allegation of contravening the provisions of the Code of Conduct and Tribunal Act Cap C15 Laws of the Federation 2004 pending the determination of the Motion on Notice dated 10 January 2019."
+         },
+         {
+             "type": "sectionTitle",
+             "value": "ISSUED AT {state} UNDER THE HAND AND SEAL OF THE HONOURABLE JUSTICE {{judgeName}} ."
+         },
+         {
+             "type": "text",
+             "value":["This, {{date}} \n\n",
+               "____________________\n\n",
+               "Registrar"]
+        },
+
+        {
+                   "type": "instructions",
+                   "value": ["Use this information to enhance the draft:\n",
+                     "Use this to enhance this draft, {{reliefsSought}} .\n\n",
+                     "Use this to enhance this draft, {{facts}}\n\n",
+                     "Use this to enhance this draft, {{information}}\n\n",
+                     "Party Three: {{partyThree}} {{partThreeRole}}.\n\n",
+                     "If it is a proper judgment, then use this format, e.g., 'INTRODUCTION', 'FACTS', 'RELIEFS SOUGHT', 'ARGUMENTS', 'JUDGMENT'. \n\n",
+                     "The draft should be within 500-10000 words.\n\n",
+                     "Use today's date, to fill the date section."]
+         }
+    ]
+   }
+}

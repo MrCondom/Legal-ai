@@ -2,16 +2,9 @@
     "fields": [
 
         {
-            "name": "counselName",
+            "name": "judgeName",
             "label": "State your full name.",
             "type": "counselname",
-            "required": true
-        },
-
-        {
-            "name": "court",
-            "label": "State the name of the court and the state in which the application is brought.",
-            "type": "court",
             "required": true
         },
 
@@ -45,7 +38,7 @@
 
         {
           "name": "party",
-          "label": "Is there a Party Three in this application?" ,
+          "label": "Is there a Party Three in this matter?" ,
           "type": "select",
           "options": [
             "Yes",
@@ -79,33 +72,24 @@
         },
 
         {
-            "name": "fullFacts",
-            "label": "Provide a full detailed account of the facts, events, and circumstances giving rise to this application.",
-            "type": "facts",
+            "name": "court",
+            "label": "State the name of the court and the state in which the application is brought.",
+            "type": "court",
             "required": true
         },
 
         {
-          "name": "argument",
-          "label": "Do you have any legal argument to provide in support of this application?" ,
-          "type": "select",
-          "options": [
-            "Yes",
-            "No"
-          ],
-          "required": true
+            "name": "reliefsSought",
+            "label": "State the relief(s) sought in the proceedings leading to this ruling or judgment.",
+            "type": "relief",
+            "required": true
         },
 
         {
-            "name": "argument",
-            "label": "Provide the legal arguments in support of this application.",
+            "name": "facts",
+            "label": "Provide a full detailed account of the facts, events, and circumstances giving rise to this ruling or judgment.",
             "type": "facts",
-            "showIf":{
-                "field":"argument",
-                "equals":[
-                  "Yes"
-                ]
-            }
+            "required": true
         },
 
         {
@@ -121,7 +105,7 @@
         
         {
             "name": "information",
-            "label": "Provide any additional information, issues, or specific points you would like addressed in the application.",
+            "label": "Provide any additional information, issues, or specific points you would like addressed in this ruling or judgment.",
             "type": "facts",
             "showIf":{
                 "field":"information",

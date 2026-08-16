@@ -3,7 +3,7 @@
 
       {
         "name": "partyOneExecution",
-        "label": "Which best describes Party One.",
+        "label": "Which best describes Party One?",
         "type": "select",
         "options": [
           "Individual",
@@ -18,7 +18,7 @@
 
         {
             "name": "partyOneName",
-            "label": "Party One's Legal Name.",
+            "label": "Party One's Legal Name?",
             "type": "text",
         
             "showIf":{
@@ -35,7 +35,7 @@
 
         {
             "name": "partyOneOccupation",
-            "label": "Party One's Occupation." ,
+            "label": "Party One's Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -51,7 +51,7 @@
 
         {
           "name":"partyOneCompanyName",
-          "label":"Company name.",
+          "label":"Company name?",
           "showIf":{
               "field":"partyOneExecution",
               "equals":"Company"
@@ -60,7 +60,7 @@
 
         {
             "name": "partyOneAddress",
-            "label": "Party One's Address.",
+            "label": "Party One's Address?",
             "type": "address",
             "required": true
         },
@@ -68,7 +68,7 @@
         
         {
           "name": "partyTwoExecution",
-          "label": "Which best describes Party Two.",
+          "label": "Which best describes Party Two?",
           "type": "select",
           "options": [
             "Individual",
@@ -83,7 +83,7 @@
 
         {
             "name": "partyTwoName",
-            "label": "Party Two's Legal Name.",
+            "label": "Party Two's Legal Name?",
             "type": "text",
             "showIf":{
                 "field":"partyTwoExecution",
@@ -99,7 +99,7 @@
 
         {
           "name":"partyTwoCompanyName",
-          "label":"Company name.",
+          "label":"Company name?",
           "showIf":{
               "field":"partyTwoExecution",
               "equals":"Company"
@@ -108,7 +108,7 @@
         
         {
             "name": "partyTwoOccupation",
-            "label": "Party Two's Occupation." ,
+            "label": "Party Two's Occupation?" ,
             "type": "occupation",
             "required": true,
             "showIf":{
@@ -124,7 +124,7 @@
 
         {
             "name": "partyTwoAddress",
-            "label": "Party Two's Address.",
+            "label": "Party Two's Address?",
             "type": "address",
             "required": true
         },
@@ -182,21 +182,21 @@
 
         {
             "name": "lawyerName",
-            "label": "Lawyer's full name",
+            "label": "Lawyer's full name.",
             "type": "franking",
             "required": "true"
         },
 
         {
             "name": "lawFirm",
-            "label": "Law firm name and address",
+            "label": "Law firm name and address.",
             "type": "franking",
             "required": "false"
         },
         
         {
           "name":"interpreterName",
-          "label":"Interpreter's name",
+          "label":"Interpreter's name?",
           "showIf":{
               "field":"partyOneExecution",
               "equals":"Illiterate"
@@ -205,7 +205,7 @@
 
         {
           "name":"interpreterName",
-          "label":"Interpreter's name.",
+          "label":"Interpreter's name?",
           "showIf":{
               "field":"partyTwoExecution",
               "equals":"Illiterate"
@@ -214,7 +214,7 @@
 
         {
           "name":"interpreterAddress",
-          "label":"Interpreter's address.",
+          "label":"Interpreter's address?",
           "showIf":{
               "field":"partyOneExecution",
               "equals":"Illiterate"
@@ -223,7 +223,7 @@
 
         {
           "name":"interpreterAddress",
-          "label":"Interpreter's address.",
+          "label":"Interpreter's address?",
           "showIf":{
               "field":"partyTwoExecution",
               "equals":"Illiterate"
@@ -250,7 +250,7 @@
         
         {
           "name":"attorneyName",
-          "label":"Attorney's full name.",
+          "label":"Attorney's full name?",
           "showIf":{
               "field":"partyOneExecution",
               "equals":"Attorney"
@@ -286,7 +286,7 @@
 
         {
           "name":"date&placeOfRegistrationOfPowerOfAttorney",
-          "label":"On what date and in which state was the Power of Attorney Registerd?",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
           "showIf":{
               "field":"partyOneExecution",
               "equals":"Attorney"
@@ -295,7 +295,7 @@
 
         {
           "name":"date&placeOfRegistrationOfPowerOfAttorney",
-          "label":"On what date and in which state was the Power of Attorney Registerd?",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
           "showIf":{
               "field":"partyTwoExecution",
               "equals":"Attorney"
@@ -304,7 +304,7 @@
         
         {
           "name":"partyOneFamilyHead",
-          "label":"Family Head's full name.",
+          "label":"Family Head's full name?",
           "showIf":{
               "field":"partyOneExecution",
               "equals":"Family Property"
@@ -313,7 +313,7 @@
 
         {
           "name":"partyTwoFamilyHead",
-          "label":"Family Head's full name.",
+          "label":"Family Head's full name?",
           "showIf":{
               "field":"partyTwoExecution",
               "equals":"Family Property"

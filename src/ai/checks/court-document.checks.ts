@@ -13,6 +13,33 @@ export const courtDocumentChecks = {
     'The document contains the structure appropriate to the particular court process.',
   ],
 
+  jurisdiction: [
+    'The subject matter falls within the jurisdiction of the identified court.',
+    'Any apparent exclusive jurisdiction of another court is considered.',
+    'Where a Federal High Court, National Industrial Court, Magistrates Court, State High Court or FCT High Court is involved, the subject matter is checked against the jurisdiction of that court.',
+    'Where a statutory body, company, employment relationship, taxation matter, admiralty matter, intellectual property matter or other federally regulated subject is involved, possible specialised or exclusive jurisdiction is considered.',
+    'Where both parties are companies, the document is checked for subject-matter jurisdiction rather than assuming that incorporation under CAMA determines jurisdiction.',
+    'The territorial jurisdiction of the court is considered.',
+    'The material facts giving rise to the cause of action are considered in determining territorial jurisdiction.',
+    'The residence, business location or relevant place of the defendant is considered where applicable.',
+    'The location of the transaction, property, contract performance or other material event is considered where applicable.',
+    'Where the cause of action appears to have arisen substantially or entirely outside the territorial jurisdiction of the court, the document is flagged for territorial-jurisdiction review.',
+    'Where an action appears to have been deliberately instituted in a different territorial jurisdiction despite the absence of a sufficient territorial connection, possible forum shopping or abuse of process is flagged for legal review.',
+    'The system does not automatically treat filing outside the place where the cause of action arose as invalid where another legally recognised territorial connection exists.',
+    'Any statutory exception or special jurisdictional rule applicable to the particular proceeding is considered.',
+  ],
+
+  venue: [
+    'The place of commencement is consistent with the applicable venue rules.',
+    'The judicial division or registry selected has a legally recognised connection with the matter.',
+    'The place where the cause of action arose is considered.',
+    'The location of the defendant or defendant’s business is considered where relevant.',
+    'The location of the subject matter is considered where relevant.',
+    'Where substantial events occurred in another State, the document is checked for possible territorial-jurisdiction or venue issues.',
+    'Possible forum shopping is distinguished from a legitimate choice between courts or divisions having concurrent jurisdiction.',
+    'Where forum shopping is alleged, the system does not treat it as established merely because the proceeding was filed outside the State where some events occurred.',
+  ],
+
   parties: [
     'The appropriate party designations are used.',
     'Individual parties have appropriate titles where applicable.',
@@ -20,6 +47,8 @@ export const courtDocumentChecks = {
     'Party roles remain consistent throughout the document.',
     'Additional parties are properly identified where applicable.',
     'The capacity in which a party appears is clear where required.',
+    'A company is identified by its correct registered name where supplied.',
+    'The legal capacity of a party suing or being sued in a representative capacity is stated where required.',
   ],
 
   heading: [
@@ -43,6 +72,40 @@ export const courtDocumentChecks = {
     'Locus standi is apparent where relevant.',
     'Applicable pre-action requirements are addressed where relevant.',
     'Address for service is provided where required.',
+    'Material facts necessary to establish a special defence are pleaded where applicable.',
+    'Facts relied upon to establish illegality are specifically pleaded where required.',
+    'Fraud is specifically pleaded where alleged.',
+    'Facts relied upon to establish a crime are specifically pleaded where relevant.',
+    'Facts relied upon to establish a condition precedent are pleaded where applicable.',
+    'Unenforceability of a document or transaction is specifically pleaded where relied upon.',
+    'Estoppel is specifically pleaded where relied upon.',
+    'Laches, acquiescence or undue influence is specifically pleaded where relied upon.',
+    'Waiver is specifically pleaded where relied upon.',
+    'Special damages are specifically pleaded and particularised.',
+    'Material facts relied upon to bring a transaction within a particular statute are pleaded where necessary.',
+    'A written agreement relied upon by a party is properly pleaded where applicable.',
+    'Where a claim depends upon inheritance or succession, the relevant ancestry or succession facts are pleaded where necessary.',
+    'Where res ipsa loquitur is relied upon, the necessary facts supporting its application are pleaded.',
+  ],
+
+  statementOfClaim: [
+    'The claimant and defendant are correctly designated.',
+    'The material facts constituting the cause of action are pleaded.',
+    'The facts necessary to establish each material element of the claim are pleaded.',
+    'The reliefs claimed arise from the material facts pleaded.',
+    'Special damages are particularised where claimed.',
+    'Documents forming the foundation of the claim are properly identified where applicable.',
+    'Any condition precedent apparent from the facts is pleaded.',
+  ],
+
+  statementOfDefence: [
+    'The defendant responds to the material averments in the statement of claim.',
+    'Material allegations intended to be denied are specifically denied or otherwise properly answered.',
+    'The defence does not merely contain general or evasive denials where specific response is required.',
+    'Any affirmative defence is specifically pleaded.',
+    'Any special defence relied upon is clearly pleaded.',
+    'Any counterclaim is properly identified and supported by material facts where applicable.',
+    'The reliefs sought by counterclaim correspond with the facts pleaded.',
   ],
 
   motions: [
@@ -54,6 +117,13 @@ export const courtDocumentChecks = {
     'Service requirements are properly addressed.',
     'Ex parte and on-notice procedures are distinguished where applicable.',
     'Interim and substantive reliefs are properly distinguished where applicable.',
+    'The affidavit and written address support the reliefs sought.',
+    'The motion does not seek relief unsupported by the facts or affidavit.',
+  ],
+
+  motionIrregularity: [
+    'Where a motion seeks to terminate proceedings for procedural irregularity and another motion seeks to regularise the same irregularity, the order of hearing prescribed by the applicable rules and authorities is considered.',
+    'A motion seeking regularisation of an irregularity is considered before a motion seeking termination based solely on that irregularity where applicable.',
   ],
 
   affidavits: [
@@ -68,6 +138,12 @@ export const courtDocumentChecks = {
     'The affidavit is consistent with the application or process it supports.',
   ],
 
+  interpleader: [
+    'The affidavit supporting an application for interpleader summons addresses whether the applicant claims an interest in the subject matter other than costs.',
+    'The affidavit addresses whether the applicant colludes with any claimant.',
+    'The affidavit addresses the applicant’s willingness to pay or transfer the subject matter into court or otherwise deal with it as directed by the court.',
+  ],
+
   writtenAddresses: [
     'The written address is properly structured.',
     'The introduction is clear.',
@@ -78,6 +154,18 @@ export const courtDocumentChecks = {
     'The conclusion corresponds with the reliefs or position advanced.',
     'The list of authorities is included where appropriate.',
     'The written address does not improperly introduce unsupported facts.',
+  ],
+
+  writOfSummons: [
+    'The writ correctly identifies the claimant and defendant.',
+    'The endorsement of the claim is consistent with the statement of claim or intended action.',
+    'The defendant is properly commanded to enter appearance within the applicable period.',
+    'The applicable period for entering appearance is determined from the relevant court rules and circumstances of service.',
+    'Where the defendant is to be served outside the jurisdiction, the applicable rules governing time for appearance and service out of jurisdiction are considered.',
+    'The prescribed memorandum of appearance is identified where applicable.',
+    'The requirements for service of the memorandum of appearance are considered.',
+    'The originating process is accompanied by the documents required by the applicable rules.',
+    'The writ is consistent with the jurisdiction and venue of the court.',
   ],
 
   charges: [
@@ -127,6 +215,7 @@ export const courtDocumentChecks = {
     'The method of service is appropriate where specified.',
     'The document does not incorrectly state that an ex parte process requires service.',
     'Where substituted service is sought, the proposed method is stated where applicable.',
+    'Where service is outside jurisdiction, the applicable statutory and procedural requirements are considered.',
   ],
 
   execution: [
@@ -135,6 +224,19 @@ export const courtDocumentChecks = {
     'Counsel is properly identified where applicable.',
     'The address of counsel or law firm is stated where required.',
     'The appropriate execution or attestation section is present.',
+  ],
+
+  judgment: [
+    'The judgment identifies the parties and proceeding correctly.',
+    'The claims or reliefs before the court are clearly stated.',
+    'The material issues arising from the pleadings are identified.',
+    'The evidence relevant to each material issue is considered.',
+    'The court makes findings of fact on the material issues.',
+    'The applicable law is considered after the relevant factual findings.',
+    'The reasoning connects the findings of fact to the applicable law.',
+    'The final decision corresponds with the issues determined.',
+    'The orders made correspond with the decision and reliefs determined.',
+    'The judgment does not determine matters that were not properly before the court.',
   ],
 
   compliance: [

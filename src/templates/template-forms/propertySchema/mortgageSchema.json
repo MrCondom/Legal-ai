@@ -162,7 +162,7 @@
 
         {
             "name": "landedProperty",
-            "label": "Is the subject property a landed a property?",
+            "label": "Is the subject property a landed property?",
             "type": "select",
             "options": [
               "Yes",
@@ -191,7 +191,7 @@
 
         {
             "name": "surveyPlanDetails",
-            "label": "Provide the survey plan details?",
+            "label": "Provide the survey plan details.",
             "type": "surveyPlan",
             "required": true,
             "showIf":{
@@ -202,7 +202,7 @@
 
         {
             "name": "CofODetails",
-            "label": "Provide the C of O (Certificate of Occupancy) details?",
+            "label": "Provide the C of O (Certificate of Occupancy) details.",
             "type": "CofO",
             "required": true,
             "showIf":{
@@ -346,7 +346,7 @@
 
         {
           "name":"date&placeOfRegistrationOfPowerOfAttorney",
-          "label":"On what date and in which state was the Power of Attorney Registerd?",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
           "showIf":{
               "field":"partyOneExecution",
               "equals":"Attorney"
@@ -355,7 +355,7 @@
 
         {
           "name":"date&placeOfRegistrationOfPowerOfAttorney",
-          "label":"On what date and in which state was the Power of Attorney Registerd?",
+          "label":"On what date and in which state was the Power of Attorney Registered?",
           "showIf":{
               "field":"partyTwoExecution",
               "equals":"Attorney"

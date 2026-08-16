@@ -3,7 +3,7 @@
 
       {
           "name": "counselName",
-          "label": "State your full name?",
+          "label": "State your full name.",
           "type": "counselname",
           "required": true
       },

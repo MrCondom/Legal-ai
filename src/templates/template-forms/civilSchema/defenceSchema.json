@@ -3,28 +3,28 @@
 
       {
           "name": "counselName",
-          "label": "State your full name?",
+          "label": "State your full name.",
           "type": "counselname",
           "required": true
       },
 
       {
           "name": "claimantName",
-          "label": "Provide the full name(s) of all Claimant(s)?",
+          "label": "Provide the full name(s) of all Claimant(s).",
           "type": "name",
           "required": true
       },
 
       {
           "name": "defendantName",
-          "label": "Provide the full name(s) of all Defendant(s)?",
+          "label": "Provide the full name(s) of all Defendant(s).",
           "type": "name",
           "required": true
       },
 
       {
           "name": "court",
-          "label": "State the name of the court and the state in which the application is brought?",
+          "label": "State the name of the court and the state in which the application is brought.",
           "type": "court",
           "required": true
       },
@@ -32,7 +32,7 @@
 
           {
               "name": "admits&deny&state",
-              "label": "State the paragraphs of the Claimant's Statement of Claim that you admit or deny?",
+              "label": "State the paragraphs of the Claimant's Statement of Claim that you admit or deny.",
               "type": "text",
               "required": true
           },
@@ -50,7 +50,7 @@
         
         {
             "name": "information",
-            "label": "Provide any additional information or specific points you would like addressed in the claim?",
+            "label": "Provide any additional information or specific points you would like addressed in the claim.",
             "type": "facts",
             "showIf":{
                 "field":"information",

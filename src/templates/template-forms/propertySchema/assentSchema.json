@@ -80,14 +80,14 @@
 
         {
             "name": "dateOFDeath",
-            "label": "State the date of the testator's death?",
+            "label": "State the date of the testator's death.",
             "type": "date",
             "required": true
         },
         
         {
           "name": "executors",
-          "label": "Is there more than one executors?" ,
+          "label": "Is there more than one executor?" ,
           "type": "select",
           "options": [
             "Yes",
@@ -98,7 +98,7 @@
 
         {
             "name": "executorsDetails",
-            "label": "State the full names, occupation and addresses of the other executor(s)?",
+            "label": "State the full names, occupation and addresses of the other executor(s).",
             "type": "executorsName",
             "showIf":{
                 "field":"executors",

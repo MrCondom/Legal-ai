@@ -148,5 +148,499 @@
         ],
         "premium": false,
         "content": "To indemnify the purchaser, his executors, assigns and successors-in-title with the entire purchase price, expenses, costs and all other demand incidental to the purchase price and development of the piece or parcel of land conveyed, in the event of any defects in the Vendors' title to the property or right to convey the same, or the vendor unsuccessfully defending his rights against any claimants or claimants."
-    }
-]
+    },
+
+    
+    {
+      "title": "title covenant clause",
+      "family": "deed",
+      "documents": [
+        "deed of assignment",
+        "deed of conveyance",
+        "deed of gift",
+        "deed of assent",
+        "deed of partition",
+        "deed of transfer of shares"
+      ],
+      "keywords": [
+        "title",
+        "ownership",
+        "right to convey",
+        "authority",
+        "transfer"
+      ],
+      "premium": false,
+      "content": "The VENDOR hereby covenants with the PURCHASER that the VENDOR has good and valid title to the property and full right, power and authority to convey, transfer and assign the same to the PURCHASER and that the PURCHASER shall peacefully hold and enjoy the property without any lawful interruption or interference by the VENDOR or any person claiming through or under the VENDOR."
+    },
+  
+    {
+      "title": "encumbrances clause",
+      "family": "deed",
+      "documents": [
+        "deed of assignment",
+        "deed of conveyance",
+        "deed of gift",
+        "deed of assent",
+        "deed of partition"
+      ],
+      "keywords": [
+        "encumbrance",
+        "mortgage",
+        "charge",
+        "lien",
+        "claim",
+        "restriction"
+      ],
+      "premium": false,
+      "content": "The VENDOR hereby covenants that the property is free from all mortgages, charges, liens, leases, claims, interests, restrictions, encumbrances and other adverse interests whatsoever, save as may be expressly disclosed in this Deed, and that the VENDOR shall indemnify the PURCHASER against any loss, claim, liability or expense arising from any undisclosed encumbrance affecting the property."
+    },
+  
+    {
+      "title": "perfection of title clause",
+      "family": "deed",
+      "documents": [
+        "deed of assignment",
+        "deed of conveyance",
+        "deed of gift",
+        "deed of assent",
+        "deed of mortgage",
+        "deed of transfer of shares"
+      ],
+      "keywords": [
+        "perfection",
+        "title",
+        "registration",
+        "consent",
+        "stamping",
+        "authority"
+      ],
+      "premium": false,
+      "content": "The parties shall do all such acts and execute all such documents as may be reasonably necessary for the stamping, registration, perfection and completion of the title or interest created or transferred under this Deed, including obtaining any consent, approval, certificate or authority required by law."
+    },
+  
+    {
+      "title": "property preservation clause",
+      "family": "deed",
+      "documents": [
+        "deed of assignment",
+        "deed of conveyance",
+        "deed of gift",
+        "deed of lease",
+        "deed of mortgage"
+      ],
+      "keywords": [
+        "preserve",
+        "property",
+        "damage",
+        "alteration",
+        "maintenance",
+        "condition"
+      ],
+      "premium": false,
+      "content": "The VENDOR shall pending completion and delivery of possession take reasonable care to preserve the property and shall not remove, damage, materially alter, transfer, charge or otherwise deal with the property in any manner that may adversely affect the interest of the PURCHASER."
+    },
+  
+    {
+      "title": "cost clause",
+      "family": "deed",
+      "documents": [
+        "deed of assignment",
+        "deed of conveyance",
+        "deed of gift",
+        "deed of assent",
+        "deed of partition",
+        "deed of mortgage",
+        "deed of transfer of shares",
+        "lease",
+        "tenancy agreement",
+        "sale agreement"
+      ],
+      "keywords": [
+        "costs",
+        "expenses",
+        "fees",
+        "charges",
+        "transaction costs"
+      ],
+      "premium": false,
+      "content": "All costs, charges, fees and expenses incidental to the preparation, execution, stamping, registration and completion of this instrument shall be borne by {{costBearer}}, unless otherwise expressly agreed by the parties."
+    },
+  
+    {
+      "title": "solicitor fee clause",
+      "family": "will",
+      "documents": [
+        "will"
+      ],
+      "keywords": [
+        "solicitor",
+        "legal fee",
+        "professional fee",
+        "executor",
+        "estate",
+        "fees"
+      ],
+      "premium": false,
+      "content": "I direct that all reasonable legal fees and professional charges properly incurred by my Solicitor in connection with the preparation, execution, interpretation, administration or other lawful matters relating to this Will and the administration of my Estate shall be paid out of my Estate as an expense of administration."
+    },
+  
+    {
+      "title": "amendment clause",
+      "family": "agreement",
+      "documents": [
+        "sale agreement",
+        "lease",
+        "tenancy agreement",
+        "hire purchase agreement",
+        "joint-venture agreement",
+        "partnership agreement",
+        "loan agreement",
+        "settlement agreement"
+      ],
+      "keywords": [
+        "amend",
+        "variation",
+        "modification",
+        "alteration",
+        "written agreement"
+      ],
+      "premium": false,
+      "content": "No amendment, variation or modification of this Agreement shall be valid or binding unless it is made in writing and duly executed by or on behalf of all the parties."
+    },
+  
+    {
+      "title": "waiver clause",
+      "family": "agreement",
+      "documents": [
+        "sale agreement",
+        "lease",
+        "tenancy agreement",
+        "hire purchase agreement",
+        "joint-venture agreement",
+        "partnership agreement",
+        "loan agreement",
+        "settlement agreement"
+      ],
+      "keywords": [
+        "waiver",
+        "delay",
+        "failure",
+        "enforcement",
+        "rights"
+      ],
+      "premium": false,
+      "content": "No failure or delay by any party in exercising any right, power or remedy under this Agreement shall operate as a waiver of that right, power or remedy, nor shall any single or partial exercise of any right, power or remedy preclude any further exercise of the same or any other right, power or remedy."
+    },
+  
+    {
+      "title": "severability clause",
+      "family": "agreement",
+      "documents": [
+        "sale agreement",
+        "lease",
+        "tenancy agreement",
+        "hire purchase agreement",
+        "joint-venture agreement",
+        "partnership agreement",
+        "loan agreement",
+        "settlement agreement",
+        "power of attorney"
+      ],
+      "keywords": [
+        "severability",
+        "invalid",
+        "unenforceable",
+        "provision",
+        "validity"
+      ],
+      "premium": false,
+      "content": "If any provision of this Agreement is or becomes invalid, illegal or unenforceable in whole or in part under any applicable law, such provision or part thereof shall, to the extent of such invalidity, illegality or unenforceability, be deemed severed from this Agreement, and the remaining provisions shall continue in full force and effect."
+    },
+  
+    {
+      "title": "jurisdiction clause",
+      "family": "agreement",
+      "documents": [
+        "sale agreement",
+        "lease",
+        "tenancy agreement",
+        "hire purchase agreement",
+        "joint-venture agreement",
+        "partnership agreement",
+        "loan agreement",
+        "settlement agreement",
+        "deed of assignment",
+        "deed of conveyance",
+        "deed of mortgage"
+      ],
+      "keywords": [
+        "jurisdiction",
+        "court",
+        "legal proceedings",
+        "dispute",
+        "venue"
+      ],
+      "premium": false,
+      "content": "The parties hereby submit to the jurisdiction of the courts of {{jurisdiction}} in respect of any dispute, claim, matter or proceeding arising out of or in connection with this Agreement, without prejudice to any other jurisdiction available to the parties by law."
+    },
+  
+    {
+      "title": "counterparts clause",
+      "family": "agreement",
+      "documents": [
+        "sale agreement",
+        "lease",
+        "hire purchase agreement",
+        "joint-venture agreement",
+        "partnership agreement",
+        "loan agreement",
+        "settlement agreement"
+      ],
+      "keywords": [
+        "counterparts",
+        "execution",
+        "copies",
+        "signature",
+        "electronic signature"
+      ],
+      "premium": false,
+      "content": "This Agreement may be executed in any number of counterparts, each of which when executed shall constitute an original, but all of which together shall constitute one and the same instrument."
+    },
+
+    {
+        "title": "cumulative remedies clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "lease",
+          "tenancy agreement",
+          "hire purchase agreement",
+          "joint-venture agreement",
+          "partnership agreement",
+          "loan agreement",
+          "mortgage agreement",
+          "settlement agreement"
+        ],
+        "keywords": [
+          "remedies",
+          "rights",
+          "breach",
+          "enforcement",
+          "cumulative"
+        ],
+        "premium": true,
+        "content": "All rights, powers and remedies conferred upon any party under this Agreement shall be cumulative and shall be in addition to and not exclusive of any other right, power or remedy available to such party whether under this Agreement, at law or otherwise, and the exercise or failure to exercise any one or more such rights, powers or remedies shall not prevent or prejudice the exercise of any other right, power or remedy."
+      },
+    
+      {
+        "title": "irrevocable authority clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "loan agreement",
+          "mortgage agreement",
+          "deed of assignment",
+          "deed of conveyance",
+          "hire purchase agreement"
+        ],
+        "keywords": [
+          "irrevocable",
+          "authority",
+          "power",
+          "consent",
+          "act",
+          "execute"
+        ],
+        "premium": true,
+        "content": "To the extent permitted by law, the PARTY GRANTING THE AUTHORITY hereby irrevocably authorises and empowers the OTHER PARTY, upon the occurrence of the circumstances expressly provided for in this Agreement, to do and execute all such lawful acts, matters and things as may be reasonably necessary to give effect to the rights and obligations contained herein, and the PARTY GRANTING THE AUTHORITY undertakes to ratify and confirm all lawful acts done pursuant to such authority."
+      },
+    
+      {
+        "title": "priority clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "lease",
+          "hire purchase agreement",
+          "joint-venture agreement",
+          "partnership agreement",
+          "loan agreement",
+          "mortgage agreement",
+          "settlement agreement"
+        ],
+        "keywords": [
+          "priority",
+          "conflict",
+          "inconsistency",
+          "agreement",
+          "schedule",
+          "annexure"
+        ],
+        "premium": true,
+        "content": "In the event of any conflict, inconsistency or discrepancy between the provisions of this Agreement and any schedule, annexure, instrument or other document executed in connection with the transaction, the provisions of this Agreement shall prevail to the extent of such conflict or inconsistency, unless the parties expressly agree otherwise in writing."
+      },
+    
+      {
+        "title": "escrow clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "property sale agreement",
+          "joint-venture agreement",
+          "loan agreement",
+          "settlement agreement"
+        ],
+        "keywords": [
+          "escrow",
+          "deposit",
+          "stakeholder",
+          "release",
+          "condition",
+          "funds"
+        ],
+        "premium": true,
+        "content": "Any sum or document agreed by the parties to be held in escrow shall be delivered to the agreed escrow agent or stakeholder and shall be held pending the occurrence or satisfaction of the relevant condition specified by the parties. The escrowed sum or document shall be released only in accordance with the agreed terms or upon the joint written instructions of the parties or pursuant to a lawful order of a court or other competent authority."
+      },
+    
+      {
+        "title": "automatic termination clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "lease",
+          "tenancy agreement",
+          "hire purchase agreement",
+          "joint-venture agreement",
+          "partnership agreement",
+          "loan agreement",
+          "settlement agreement"
+        ],
+        "keywords": [
+          "termination",
+          "default",
+          "automatic",
+          "breach",
+          "expiry",
+          "termination event"
+        ],
+        "premium": true,
+        "content": "This Agreement shall automatically terminate upon the occurrence of any of the following events: {{terminationEvents}}, provided that such termination shall be subject to any notice, cure period, statutory protection or other requirement imposed by applicable law. Upon termination, the rights and obligations which by their nature are intended to survive termination shall remain in full force and effect."
+      },
+    
+      {
+        "title": "warranty clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "lease",
+          "hire purchase agreement",
+          "joint-venture agreement",
+          "partnership agreement",
+          "loan agreement",
+          "mortgage agreement",
+          "settlement agreement"
+        ],
+        "keywords": [
+          "warranty",
+          "representation",
+          "authority",
+          "ownership",
+          "validity",
+          "compliance"
+        ],
+        "premium": true,
+        "content": "Each party warrants to the other that it has full legal capacity, authority and power to enter into and perform this Agreement, that the execution and performance of this Agreement does not breach any obligation binding upon it, and that all material representations and warranties expressly made by it in connection with this transaction are true and accurate in all material respects as at the date of execution and shall remain so for the period expressly specified in this Agreement."
+      },
+    
+      {
+        "title": "disclosure warranty clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "property sale agreement",
+          "joint-venture agreement",
+          "partnership agreement",
+          "loan agreement",
+          "mortgage agreement"
+        ],
+        "keywords": [
+          "disclosure",
+          "information",
+          "material",
+          "concealment",
+          "representation",
+          "warranty"
+        ],
+        "premium": true,
+        "content": "The DISCLOSING PARTY warrants that, to the best of its knowledge and belief, it has disclosed to the OTHER PARTY all material information within its knowledge which is reasonably relevant to the transaction and which, if withheld or materially misstated, would reasonably be expected to affect the OTHER PARTY's decision to enter into this Agreement. The DISCLOSING PARTY shall promptly notify the OTHER PARTY of any material change in such information occurring before completion."
+      },
+    
+      {
+        "title": "cure period clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "lease",
+          "tenancy agreement",
+          "hire purchase agreement",
+          "joint-venture agreement",
+          "partnership agreement",
+          "loan agreement",
+          "mortgage agreement",
+          "settlement agreement"
+        ],
+        "keywords": [
+          "cure",
+          "remedy",
+          "default",
+          "breach",
+          "notice",
+          "period"
+        ],
+        "premium": true,
+        "content": "Where a party commits a breach of this Agreement capable of remedy, the non-defaulting party shall give written notice specifying the nature of the breach and requiring it to be remedied within {{curePeriod}} days from receipt of the notice. If the defaulting party fails to remedy the breach within the prescribed period, the non-defaulting party may exercise any right or remedy available to it under this Agreement or applicable law, including termination where permitted."
+      },
+    
+      {
+        "title": "non-refundable deposit clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "property sale agreement",
+          "hire purchase agreement",
+          "lease"
+        ],
+        "keywords": [
+          "deposit",
+          "non-refundable",
+          "commitment",
+          "purchase",
+          "reservation",
+          "withdrawal"
+        ],
+        "premium": true,
+        "content": "The sum of {{depositAmount}} paid by the PURCHASER as deposit shall constitute a non-refundable deposit and shall be applied towards the purchase price or other sums payable under this Agreement upon completion. Subject to applicable law and the express terms of this Agreement, the deposit shall not be refundable merely by reason of the PURCHASER's withdrawal from, abandonment of or failure to complete the transaction where such withdrawal, abandonment or failure is attributable to the PURCHASER."
+      },
+    
+      {
+        "title": "deposit forfeiture clause",
+        "family": "agreement",
+        "documents": [
+          "sale agreement",
+          "property sale agreement",
+          "hire purchase agreement",
+          "lease"
+        ],
+        "keywords": [
+          "deposit",
+          "forfeiture",
+          "default",
+          "withdrawal",
+          "breach",
+          "completion"
+        ],
+        "premium": true,
+        "content": "If the PURCHASER fails to complete the transaction in accordance with the terms of this Agreement by reason of a default attributable to the PURCHASER, the VENDOR shall, subject to applicable law and any mandatory requirement concerning deposits or penalties, be entitled to retain or forfeit the deposit of {{depositAmount}} as agreed compensation for the PURCHASER's default, without prejudice to any other rights or remedies available to the VENDOR under this Agreement or applicable law."
+      }
+  ]
+  

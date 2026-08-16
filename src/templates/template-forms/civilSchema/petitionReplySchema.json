@@ -3,28 +3,28 @@
 
       {
           "name": "counselName",
-          "label": "State your full name?",
+          "label": "State your full name.",
           "type": "counselname",
           "required": true
       },
 
       {
           "name": "petitionerName",
-          "label": "Provide the full name(s) of all Petitioner(s)?",
+          "label": "Provide the full name(s) of all Petitioner(s).",
           "type": "name",
           "required": true
       },
 
       {
           "name": "respondentName",
-          "label": "Provide the full name(s) of all Respondent(s)?",
+          "label": "Provide the full name(s) of all Respondent(s).",
           "type": "name",
           "required": true
       },
 
       {
           "name": "court",
-          "label": "State the name of the court or tribunal and the state in which the application is brought?",
+          "label": "State the name of the court or tribunal and the state in which the application is brought.",
           "type": "court",
           "required": true
       },
@@ -38,7 +38,7 @@
 
       {
           "name": "dateElectionWasHeld",
-          "label": "State the date on which the election was held?",
+          "label": "State the date on which the election was held.",
           "type": "date",
           "required": true
       },
@@ -46,14 +46,14 @@
 
           {
               "name": "admits&deny&state",
-              "label": "Identify the paragraphs of the Petition that you admit or deny, and state your response to it?",
+              "label": "Identify the paragraphs of the Petition that you admit or deny, and state your response to it.",
               "type": "text",
               "required": true
           },
           
         {
             "name": "lawFirm",
-            "label": "Law firm name and address?",
+            "label": "Law firm name and address.",
             "type": "address",
             "required": "false"
         }

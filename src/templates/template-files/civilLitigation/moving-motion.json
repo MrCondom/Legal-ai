@@ -18,6 +18,7 @@
           "type": "instructions",
           "value": [
             "Use this information to enhance the draft.\n\n",
+            "Heading of court, Suit No, Parties Role, Address Block and For Service, are prohibited, because this not a template, but a speech.\n\n",
             "If there are other counsels, announce their appearance like this eg 'Appearing with me is Simeon E esq.'.\n\n",
             "Use this, if there are other counsels. {{counselsName}}.\n\n ",
             "The draft should be within 100-3000 words.\n\n",

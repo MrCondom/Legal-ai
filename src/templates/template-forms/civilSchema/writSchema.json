@@ -3,7 +3,7 @@
 
         {
             "name": "counselName",
-            "label": "State your full name?",
+            "label": "State your full name.",
             "type": "counselname",
             "required": true
         },
@@ -11,21 +11,21 @@
         
         {
             "name": "nameOfPartyOne",
-            "label": "Provide the full name(s) of all the Claimants?",
+            "label": "Provide the full name(s) of all the Claimants.",
             "type": "name",
             "required": true
         },
 
         {
             "name": "nameOfPartyTwo",
-            "label": "Provide the full name(s) of all the Defendants?",
+            "label": "Provide the full name(s) of all the Defendants.",
             "type": "name",
             "required": true
         },
 
         {
             "name": "addressOfPartyTwo",
-            "label": "Defendant(s) Address?",
+            "label": "Defendant(s)' Address.",
             "type": "address",
             "required": true
         },
@@ -46,7 +46,7 @@
 
         {
             "name": "lawFirm",
-            "label": "Law firm name and address?",
+            "label": "Law firm name and address.",
             "type": "address",
             "required": "false"
         }
