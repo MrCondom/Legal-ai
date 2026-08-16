@@ -315,7 +315,7 @@ export const templateRegistry = [
       "partitioner",
     ],
     template: partitionTemplate,
-    formSchema: partitioinSchema,
+    formSchema: partitionSchema,
   },
 
   {
