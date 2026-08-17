@@ -90,12 +90,6 @@ export class AssistantService {
     const user = await this.users.getProfile(userId);
     const credit = await this.checkCredits(userId);
     const history = await this.getHistory(userId);
-    
-    console.log("========DATABASE DRAFT CHECK========");
-    console.log("USER ID:", userId);
-    console.log("DRAFT COUNT:", history.length);
-    console.log("DRAFTS:", JSON.stringify(history, null, 2));
-    console.log("================");
 
     return {
       message: getConversationMessage(user, history),
