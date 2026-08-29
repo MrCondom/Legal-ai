@@ -189,6 +189,9 @@ export class AssistantService {
 
     userId: string,
   ): Promise<WorkflowResult> {
+    
+    console.log(`[cDRAFT AI REQUEST] User: ${userId}`);
+    
     const credit = await this.checkCredits(userId);
 
     if (!credit.allowed) {
@@ -204,9 +207,6 @@ export class AssistantService {
     if (!parsed) {
       throw new Error('AI failed');
     }
-    console.log("AI RESULT");
-    console.log(parsed);
-    console.log("TYPE:", parsed.type);
 
     if (parsed.intent === 'DOCUMENT_REVIEW') {
       return {
@@ -225,8 +225,6 @@ export class AssistantService {
     }
 
     const templates = await this.templates.getTemplatesByFamily(parsed.type);
-    console.log("TEMPLATES FOUND");
-    console.log(templates);
 
     if (templates.length === 0) {
       return {
@@ -559,8 +557,7 @@ export class AssistantService {
        message: "Feature available only for PRO users"});
        }
 
-    console.log(userId);
-    console.log(file.originalname);
+       console.log(`[cDRAFT AI REVIEW REQUEST] User: ${userId}`);
 
     const extension = file.originalname
       .split(".")
