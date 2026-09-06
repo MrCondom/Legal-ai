@@ -25,6 +25,18 @@
           ],
           "required": true
         },
+
+        {
+            "name": "opinion",
+            "label": "Do you have any suggestions or views that you think might assist us in preparing the opinion?",
+            "type": "facts",
+            "showIf":{
+                "field":"information",
+                "equals":[
+                  "Yes"
+                ]
+            }
+        },
         
         {
             "name": "information",

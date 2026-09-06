@@ -39,6 +39,7 @@
              "type": "instructions",
              "value": ["Use this information to enhance the draft:\n",
                "Full Facts: {{facts}} \n\n",
+               "Suggestions: {{opinion}} \n\n",
                "Other Relevant Information: {{information}}\n\n ",
                "The draft should be within 500-10000 words.\n\n",
                "Use today's date, to fill the date section."]
