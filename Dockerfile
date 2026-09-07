@@ -1,4 +1,4 @@
-FROM node:20-bullseye-slim AS builder
+FROM node:20-bookworm-slim AS builder
 
 # Create working directory
 WORKDIR /app
@@ -16,7 +16,7 @@ COPY . .
 RUN npm run build
 
 
-FROM node:20-bullseye-slim
+FROM node:20-bookworm-slim
 WORKDIR /app
 RUN apt-get update && apt-get install -y \
 git \
