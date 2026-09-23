@@ -105,12 +105,18 @@ export class AiController {
   }
 
   @Post('rpc/ask')
-  askRPCReader(
+  async askRPCReader(
     @Body()
     body: {
       selectedText: string;
     },
   ) {
-    return this.aiService.askReaderAI(body.selectedText);
+    const response = await this.aiService.askReaderAI(
+      body.selectedText,
+    );
+
+    return {
+      response,
+    };
   }
 }
