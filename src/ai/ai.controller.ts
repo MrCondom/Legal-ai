@@ -103,4 +103,14 @@ export class AiController {
       body.family
     );
   }
+
+  @Post('rpc/ask')
+  askRPCReader(
+    @Body()
+    body: {
+      selectedText: string;
+    },
+  ) {
+    return this.aiService.askReaderAI(body.selectedText);
+  }
 }

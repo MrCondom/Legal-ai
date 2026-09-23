@@ -1,10 +1,11 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable, Logger,} from '@nestjs/common';
 import { reviewChecks, ReviewDocumentFamily } from './checks/review.check';
 import { getFamilyRules } from './rules';
 import OpenAI from 'openai';
 
 @Injectable()
 export class AiService {
+  private readonly logger = new Logger(AiService.name);
   private parseJson(content: string) {
     try {
       return JSON.parse(content);
@@ -792,4 +793,87 @@ ${templateStructure}
 
     return response.choices?.[0]?.message?.content ?? '';
   }
+
+  async askReaderAI(selectedText: string) {
+    if (
+      typeof selectedText !== 'string' ||
+      !selectedText.trim()
+    ) {
+      throw new BadRequestException(
+        'Selected text is required.',
+      );
+    }
+
+    if (selectedText.length > 10000) {
+      throw new BadRequestException(
+        'Selected text cannot exceed 10000 characters.',
+      );
+    }
+
+    this.logger.log(
+      `RPC request made. Selected text length: ${selectedText.length} characters`,
+    );
+
+    const response =
+      await this.openai.chat.completions.create({
+        model: 'gpt-5-mini',
+
+        messages: [
+          {
+            role: 'system',
+
+            content: `
+You are the AI reading assistant inside a Nigerian legal reading application.
+
+The material being read is the Rules of Professional Conduct 2023 for lawyers.
+
+The reader has selected a portion of the legal text.
+
+Your task is ONLY to:
+
+1. Summarize the selected text in simple language.
+2. Give one short and practical illustration that helps the reader understand the selected text.
+
+IMPORTANT RULES:
+
+- Do not ask the reader questions.
+- Do not create a conversation.
+- Do not provide legal advice.
+- Do not provide unrelated information.
+- Do not invent legal rules.
+- Do not introduce information that is not contained or reasonably implied by the selected text.
+- Preserve the meaning of the original legal provision.
+- Make the explanation easy for a law student or lawyer to understand.
+- Keep the response concise.
+- The illustration must be clearly identified as an illustration and must not be presented as an actual legal rule.
+
+Return ONLY this format:
+
+Summary:
+
+[Simple explanation]
+
+Simple illustration:
+
+[One practical illustration]
+
+SELECTED TEXT:
+
+${selectedText}
+`,
+          },
+        ],
+      });
+
+    const result =
+      response.choices?.[0]?.message?.content ?? '';
+
+    this.logger.log(
+      `RPC AI response completed. Response length: ${result.length} characters`,
+    );
+
+    return result;
+  }
 }
+
+
