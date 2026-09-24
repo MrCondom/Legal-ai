@@ -46,18 +46,33 @@ model Clause {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  email     String   @unique
-  name      String?
-  subscription Boolean  @default(false)
-  everSubscribed Boolean @default(false)
+  id                  String   @id @default(uuid())
+  email               String   @unique
+  name                String?
+  subscription        Boolean  @default(false)
+  everSubscribed      Boolean  @default(false)
   subscriptionExpiry  DateTime?
-  subscriptionId  String?
-  plan String?          
-  credits Int @default(0)
-  creditResetAt DateTime?
-  lastBillingCycleId String?
-  createdAt DateTime @default(now())
+  subscriptionId      String?
+  plan                String?
+  credits             Int      @default(0)
+  creditResetAt       DateTime?
+  lastBillingCycleId  String?
+  createdAt           DateTime @default(now())
 
-  drafts Draft[]
+  drafts          Draft[]
+  creditPurchases CreditPurchase[]
+}
+
+model CreditPurchase {
+  id            String   @id @default(uuid())
+  userId        String
+  purchaseToken String   @unique
+  productId     String
+  credits       Int
+  consumed      Boolean  @default(false)
+  createdAt     DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId])
 }
