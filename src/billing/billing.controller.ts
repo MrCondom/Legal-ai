@@ -3,9 +3,11 @@ import { BillingService } from './billing.service';
 
 @Controller('billing')
 export class BillingController {
-  constructor(private readonly billingService: BillingService) { }
+  constructor(
+    private readonly billingService: BillingService,
+  ) {}
 
-  @Post("reward")
+  @Post('reward')
   rewardCredit(
     @Body() body: { userId: string },
   ) {
@@ -14,7 +16,6 @@ export class BillingController {
       1,
     );
   }
-
 
   @Post('verify')
   verifySubscription(
@@ -31,6 +32,22 @@ export class BillingController {
       body.purchaseToken,
       body.productId,
       body.plan,
+    );
+  }
+
+  @Post('verify-credit-purchase')
+  verifyCreditPurchase(
+    @Body()
+    body: {
+      userId: string;
+      purchaseToken: string;
+      productId: string;
+    },
+  ) {
+    return this.billingService.verifyCreditPurchase(
+      body.userId,
+      body.purchaseToken,
+      body.productId,
     );
   }
 }

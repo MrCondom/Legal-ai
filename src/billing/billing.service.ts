@@ -135,4 +135,105 @@ export class BillingService {
       },
     });
   }
+  
+  async verifyCreditPurchase(
+    userId: string,
+    purchaseToken: string,
+    productId: string,
+  ) {
+    try {
+      if (productId !== 'credits_20') {
+        throw new UnauthorizedException('Invalid product');
+      }
+  
+      const authClient = await this.auth.getClient();
+  
+      const response =
+        await this.androidPublisher.purchases.products.get({
+          auth: authClient as any,
+          packageName: 'com.jaxman.cdraft',
+          productId,
+          token: purchaseToken,
+        });
+  
+      const data = response.data;
+  
+      console.log(
+        'GOOGLE CREDIT PURCHASE:',
+        JSON.stringify(data, null, 2),
+      );
+  
+      if (data.purchaseState !== 0) {
+        throw new UnauthorizedException(
+          'Purchase not completed',
+        );
+      }
+  
+      // Prevent duplicate crediting
+      const existingPurchase =
+        await this.prisma.creditPurchase.findUnique({
+          where: {
+            purchaseToken,
+          },
+        });
+  
+      if (existingPurchase) {
+        return {
+          success: true,
+          message: 'Purchase already processed',
+          credits: existingPurchase.credits,
+        };
+      }
+  
+      // Add credits and record purchase together
+      await this.prisma.$transaction(async (tx) => {
+        await tx.user.update({
+          where: {
+            id: userId,
+          },
+          data: {
+            credits: {
+              increment: 20,
+            },
+          },
+        });
+  
+        await tx.creditPurchase.create({
+          data: {
+            userId,
+            purchaseToken,
+            productId,
+            credits: 20,
+          },
+        });
+      });
+  
+      // Consume the Google Play purchase
+      await this.androidPublisher.purchases.products.consume({
+        auth: authClient as any,
+        packageName: 'com.jaxman.cdraft',
+        productId,
+        token: purchaseToken,
+      });
+  
+      return {
+        success: true,
+        message: '20 credits added',
+        credits: 20,
+      };
+    } catch (error) {
+      console.log(
+        'Credit purchase verification error:',
+        error,
+      );
+  
+      if (error instanceof UnauthorizedException) {
+        throw error;
+      }
+  
+      throw new UnauthorizedException(
+        'Invalid credit purchase',
+      );
+    }
+  }
 }

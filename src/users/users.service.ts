@@ -20,7 +20,7 @@ export class UsersService {
       data: {
         email,
         name,
-        credits: 5,
+        credits: 10,
         subscription: false,
         plan: "FREE"
       },
