@@ -551,11 +551,11 @@ export class AssistantService {
       throw new NotFoundException('User not found');
        }
 
-    if (user.plan !== 'PRO') {
-      throw new ForbiddenException({
-       code: "PRO_REQUIRED",
-       message: "Feature available only for PRO users"});
-       }
+    //if (user.plan !== 'PRO') {
+     // throw new ForbiddenException({
+     //  code: "PRO_REQUIRED",
+     //  message: "Feature available only for PRO users"});
+     //  }
 
        console.log(`[cDRAFT AI REVIEW REQUEST] User: ${userId}`);
 
@@ -629,11 +629,11 @@ export class AssistantService {
       throw new NotFoundException('User not found');
        }
 
-    if (user.plan !== 'PRO') {
-      throw new ForbiddenException({
-       code: "PRO_REQUIRED",
-       message: "Feature available only for PRO users"});
-       }
+   // if (user.plan !== 'PRO') {
+    //  throw new ForbiddenException({
+    //   code: "PRO_REQUIRED",
+     //  message: "Feature available only for PRO users"});
+     //  }
 
     await this.billing.consumeCredits(userId, CREDIT_COST.IMPROVEMENT);
 
