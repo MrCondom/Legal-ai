@@ -147,7 +147,20 @@ export class BillingService {
       }
   
       const authClient = await this.auth.getClient();
-  
+      
+      const accessToken = await authClient.getAccessToken();
+      
+      console.log(
+        'GOOGLE AUTH TOKEN AVAILABLE:',
+        !!accessToken.token
+      );
+      
+      if (!accessToken.token) {
+        throw new UnauthorizedException(
+          'Google authentication token was not generated'
+        );
+      }
+      
       const response =
         await this.androidPublisher.purchases.products.get({
           auth: authClient as any,
