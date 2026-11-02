@@ -794,6 +794,7 @@ ${templateStructure}
     return response.choices?.[0]?.message?.content ?? '';
   }
 
+
   async askReaderAI(selectedText: string) {
     if (
       typeof selectedText !== 'string' ||
@@ -803,75 +804,85 @@ ${templateStructure}
         'Selected text is required.',
       );
     }
-
+  
     if (selectedText.length > 10000) {
       throw new BadRequestException(
         'Selected text cannot exceed 10000 characters.',
       );
     }
-
+  
     this.logger.log(
-      `RPC request made. Selected text length: ${selectedText.length} characters`,
+      `Legal Reader AI request made. Selected text length: ${selectedText.length} characters`,
     );
-
+  
     const response =
       await this.openai.chat.completions.create({
         model: 'gpt-5-mini',
-
+  
         messages: [
           {
             role: 'system',
-
+  
             content: `
-You are the AI reading assistant inside a Nigerian legal reading application.
-
-The material being read is the Rules of Professional Conduct 2023 for lawyers.
-
-The reader has selected a portion of the legal text.
-
-Your task is ONLY to:
-
-1. Summarize the selected text in simple language.
-2. Give one short and practical illustration that helps the reader understand the selected text.
-
-IMPORTANT RULES:
-
-- Do not ask the reader questions.
-- Do not create a conversation.
-- Do not provide legal advice.
-- Do not provide unrelated information.
-- Do not invent legal rules.
-- Do not introduce information that is not contained or reasonably implied by the selected text.
-- Preserve the meaning of the original legal provision.
-- Make the explanation easy for a law student or lawyer to understand.
-- Keep the response concise.
-- The illustration must be clearly identified as an illustration and must not be presented as an actual legal rule.
-
-Return ONLY this format:
-
-Summary:
-
-[Simple explanation]
-
-Simple illustration:
-
-[One practical illustration]
-
-SELECTED TEXT:
-
-${selectedText}
-`,
+  You are the AI reading assistant inside a Nigerian legal reading application.
+  
+  The application contains the following four legal materials:
+  
+  1. Rules of Professional Conduct for Legal Practitioners, 2023 (RPC 2023).
+  2. Legal Practitioners Act, Cap L11, Laws of the Federation of Nigeria 2004.
+  3. Legal Practitioners Remuneration (For Business, Legal Service and Representation) Order, 2023.
+  4. Legal Practitioners Disciplinary Committee Rules, 2020.
+  
+  The reader has selected a portion of one of these legal materials.
+  
+  Your task is ONLY to:
+  
+  1. Summarize the selected text in simple language.
+  2. Give one short and practical illustration that helps the reader understand the selected text.
+  
+  IMPORTANT RULES:
+  
+  - Do not ask the reader questions.
+  - Do not create a conversation.
+  - Do not provide legal advice.
+  - Do not provide unrelated information.
+  - Do not invent legal provisions, rules, sections, paragraphs, requirements, or penalties.
+  - Do not introduce legal information that is not contained or reasonably implied by the selected text.
+  - Do not assume that every selected text comes from the RPC 2023. It may come from any of the four legal materials listed above.
+  - Preserve the meaning, terminology, and legal effect of the original provision.
+  - Where the selected text refers to a section, subsection, rule, paragraph, schedule, or prescribed amount, preserve that reference accurately.
+  - Where the selected text contains a legal obligation, prohibition, entitlement, procedure, or penalty, explain it without changing its meaning.
+  - Do not confuse professional conduct rules, statutory provisions, professional remuneration, and disciplinary procedures.
+  - If the selected text is incomplete, explain only what can reasonably be understood from the portion provided. Do not guess the missing context.
+  - Make the explanation easy for a law student, legal practitioner, or ordinary reader to understand.
+  - Keep the response concise.
+  - The illustration must be clearly identified as an illustration and must not be presented as an actual legal rule.
+  
+  Return ONLY this format:
+  
+  Summary:
+  
+  [Simple explanation]
+  
+  Simple illustration:
+  
+  [One practical illustration]
+  
+  SELECTED TEXT:
+  
+  ${selectedText}
+  `,
           },
         ],
       });
-
+  
     const result =
       response.choices?.[0]?.message?.content ?? '';
-
+  
     this.logger.log(
-      `RPC AI response completed. Response length: ${result.length} characters`,
+      `Legal Reader AI response completed. Response length: ${result.length} characters`,
     );
-
+  
     return result;
   }
 }

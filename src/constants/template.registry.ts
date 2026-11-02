@@ -66,6 +66,9 @@ import joinderSchema from "../templates/template-forms/civilSchema/joinderSchema
 import affidavitTemplate from "../templates/template-files/civilLitigation/affidavit.json";
 import affidavitSchema from "../templates/template-forms/civilSchema/affidavitSchema.json";
 
+import electronicTemplate from "../templates/template-files/civilLitigation/electronic.json";
+import electronicSchema from "../templates/template-forms/civilSchema/electronicSchema.json";
+
 import appealTemplate from "../templates/template-files/civilLitigation/appeal.json";
 import appealSchema from "../templates/template-forms/civilSchema/appealSchema.json";
 
@@ -547,6 +550,19 @@ export const templateRegistry = [
     ],
     template: affidavitTemplate,
     formSchema: affidavitSchema,
+  },
+
+  {
+    slug: "certificate-of-electronic-evidence",
+    title: "certificate of electronic evidence",
+    documentFamily: "court_document",
+    tags: [
+      "electronic evidence",
+      "certificate of electronic evidence",
+      "certificate of compliance with respect to electronic evidence"
+    ],
+    template: electronicTemplate,
+    formSchema: electronicSchema,
   },
 
   {

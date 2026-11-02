@@ -111,9 +111,6 @@ PLEADING RULES
 
 
 
-
-CHARGE RULES
-
 CHARGE RULES
 
 1. Determine the applicable court and jurisdiction before drafting the charge.
@@ -320,6 +317,9 @@ the defendant's name should appear immediately thereafter without unnecessarily 
 
 79. The completed Criminal Information should ordinarily contain between 300 and 20,000 words where the template or drafting context requires a word range.
 
+80. Where two or more laws criminalise the same offence, include separate counts in the charge, charging the defendant independently under each applicable law. Do not consolidate the offences into a single count.
+
+81. Do not exclude a defendant from a conspiracy charge merely because they joined later. Where the defendant subsequently participated individually in the commission of the conspired offence, include them in the conspiracy count, in line with Ogunjobi v. State (SC, 2026).
 
 AFFIDAVIT RULES
 

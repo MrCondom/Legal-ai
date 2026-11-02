@@ -67,17 +67,17 @@
         {
           "type": "instructions",
           "value": [
-            "Use the supplied facts and information to enhance and complete the affidavit.",
-            "Default party role: Applicant & Respondent, where no role is specified.",
+            "Use the supplied facts and information to enhance and complete the affidavit.\n",
+            "Default party role: Applicant & Respondent, where no role is specified.\n",
             "Use this to enhance the draft, {{facts}}.\n\n",
             "Use this to enhance this affidavit, {{information}}.\n\n ",
-            "Identify the deponent by name and appropriate personal description where supplied.",
-            "The subHeading may be adapted to the purpose of the affidavit, e.g. AFFIDAVIT IN SUPPORT OF ...",
-            "Where a third party is supplied, include the party and appropriate role in the BETWEEN/AND structure.",
+            "Identify the deponent by name and appropriate personal description where supplied.\n",
+            "The subHeading may be adapted to the purpose of the affidavit, e.g. AFFIDAVIT IN SUPPORT OF ...\n",
+            "Where a third party is supplied, include the party and appropriate role in the BETWEEN/AND structure.\n",
             "Party three, {{partyThree}} {{partyThreeRole}}.\n\n ",
-            "State facts as matters within the deponent's knowledge, information or belief as appropriate, without introducing unsupported facts.",
-            "End with the prescribed deposition/jurat wording and preserve the formal execution structure.",
-            "Use today's date where a date is required and none is supplied.",
+            "State facts as matters within the deponent's knowledge, information or belief as appropriate, without introducing unsupported facts.\n",
+            "End with the prescribed deposition/jurat wording and preserve the formal execution structure.\n",
+            "Use today's date where a date is required and none is supplied.\n",
             "Draft within 500-5000 words."
           ]
         }
