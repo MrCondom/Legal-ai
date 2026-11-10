@@ -119,4 +119,21 @@ export class AiController {
       response,
     };
   }
+
+  @Post('spending-analysis')
+    async analyseSpending(
+      @Body() body: {
+        spendingSummary: any;
+      },
+    ) {
+      const analysis =
+        await this.aiService.analyseSpending(
+          body.spendingSummary,
+        );
+  
+      return {
+        success: true,
+        analysis,
+      };
+    }
 }
