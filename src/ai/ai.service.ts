@@ -20,7 +20,7 @@ export class AiService {
 
   async inferTemplate(request: string) {
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-5-mini',
+      model: 'gpt-6-luna',
 
       messages: [
         {
@@ -262,7 +262,7 @@ or
       .join('\n');
 
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-5-mini',
+      model: 'gpt-6-luna',
 
       messages: [
         {
@@ -313,7 +313,7 @@ or
 
   async polishDraft(draft: string) {
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-5-mini',
+      model: 'gpt-6-luna',
 
       messages: [
         {
@@ -402,7 +402,7 @@ Return only the polished document.
   const checks = reviewChecks[documentFamily];
 
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-5',
+      model: 'gpt-6.1-sol',
 
       messages: [
         {
@@ -414,14 +414,27 @@ Return only the polished document.
 
           The document family has already been selected by the application.
 
-          DOCUMENT FAMILY
+          
+          DOCUMENT FAMILY:
           ${documentFamily}
           
-          Apply ONLY the review checks supplied for this document family.
-
-          Do not apply review checks belonging to another document family.
-
-          Review the uploaded document against the applicable checks.
+          DOCUMENT FAMILY REVIEW CHECKS:
+          
+          ${JSON.stringify(checks, null, 2)}
+          
+          REVIEW INSTRUCTIONS:
+          
+          1. Apply every applicable review check supplied above.
+          2. Do not apply checks belonging to another document family.
+          3. Examine the uploaded document against each applicable check.
+          4. Identify missing clauses, defective provisions, inconsistencies, omissions and other legal deficiencies.
+          5. Do not assume a requirement has been satisfied merely because a related heading exists.
+          6. Distinguish between an actual defect and information that cannot be verified from the document.
+          7. Do not invent facts or assume missing information.
+          8. Do not flag a provision as defective merely because it uses different wording where its legal effect is substantially equivalent.
+          9. Report only genuine issues supported by the document and applicable review checks.
+          10. Do not invent statutory requirements, legal provisions or mandatory clauses.
+          11. Assess the overall risk level based on the seriousness and cumulative effect of the identified issues.
 
 
           Return JSON only.
@@ -475,7 +488,7 @@ Return only the polished document.
 
   async suggestImprovements(document: string, review: any) {
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-5-mini',
+      model: 'gpt-6.1-sol',
 
       messages: [
         {
@@ -558,7 +571,7 @@ Return only the polished document.
     const familyRulesText = getFamilyRules(family);
 
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-5-mini',
+      model: 'gpt-6.1-sol',
 
       messages: [
         {
@@ -643,7 +656,7 @@ Do not return JSON.
     const familyRulesText = getFamilyRules(family);
     
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-5-mini',
+      model: 'gpt-6.1-sol',
 
       messages: [
         {
@@ -720,7 +733,7 @@ Never leave {{}} placeholders.
   ) {
     const familyRulesText = getFamilyRules(family);
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-5-mini',
+      model: 'gpt-6.1-sol',
 
       messages: [
         {
@@ -817,7 +830,7 @@ ${templateStructure}
   
     const response =
       await this.openai.chat.completions.create({
-        model: 'gpt-5-mini',
+        model: 'gpt-6-luna',
   
         messages: [
           {
