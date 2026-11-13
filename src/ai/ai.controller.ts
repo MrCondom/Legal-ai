@@ -1,10 +1,15 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { ReviewDocumentFamily } from './checks/review.check';
 import { AiService } from './ai.service';
+import { AiRateLimitService } from './ai-rate-limit.service';
 
 @Controller('ai')
 export class AiController {
-  constructor(private readonly aiService: AiService) {}
+
+  constructor(
+    private readonly aiService: AiService,
+    private readonly aiRateLimitService: AiRateLimitService,
+  ) {}
 
   @Post('infer-template')
   inferTemplate(
@@ -30,34 +35,44 @@ export class AiController {
   review(
     @Body()
     body: {
-        document: string;
-        documentFamily: ReviewDocumentFamily
+      document: string;
+      documentFamily: ReviewDocumentFamily;
     },
   ) {
-    return this.aiService.reviewDocument(body.document, body.documentFamily);
+    return this.aiService.reviewDocument(
+      body.document,
+      body.documentFamily,
+    );
   }
 
   @Post('improve')
   improve(
     @Body()
     body: {
-        document: string;
-        review: any;
+      document: string;
+      review: any;
     },
   ) {
-    return this.aiService.suggestImprovements(body.document, body.review);
+    return this.aiService.suggestImprovements(
+      body.document,
+      body.review,
+    );
   }
 
   @Post('quick-enhance')
   enhanceQuick(
     @Body()
     body: {
-        draft: string;
-        request: string;
-        family: string;
+      draft: string;
+      request: string;
+      family: string;
     },
   ) {
-    return this.aiService.quickDraftEnhancer(body.draft, body.request, body.family);
+    return this.aiService.quickDraftEnhancer(
+      body.draft,
+      body.request,
+      body.family,
+    );
   }
 
   @Post('custom-enhance')
@@ -65,21 +80,15 @@ export class AiController {
     @Body()
     body: {
       draft: string;
-
       clauses: string[];
-
-        answers: Record<string, string>;
-
-        family: string
+      answers: Record<string, string>;
+      family: string;
     },
   ) {
     return this.aiService.customDraftEnhancer(
       body.draft,
-
       body.clauses,
-
       body.answers,
-
       body.family,
     );
   }
@@ -89,28 +98,30 @@ export class AiController {
     @Body()
     body: {
       request: string;
-
-        templateType: string;
-
-        family: string;
+      templateType: string;
+      family: string;
     },
   ) {
     return this.aiService.generateUnknownDraft(
       body.request,
-
       body.templateType,
-
-      body.family
+      body.family,
     );
   }
 
-  @Post('rpc/ask')
-  async askRPCReader(
+  // Legal Reader AI
+  // Both routes share the same global limit.
+
+  @Post(['rpc/ask', 'legal-reader/ask'])
+  async askLegalReader(
     @Body()
     body: {
       selectedText: string;
     },
   ) {
+
+    this.aiRateLimitService.consume('legalReader');
+
     const response = await this.aiService.askReaderAI(
       body.selectedText,
     );
@@ -120,20 +131,26 @@ export class AiController {
     };
   }
 
+  // cFinance AI
+
   @Post('spending-analysis')
-    async analyseSpending(
-      @Body() body: {
-        spendingSummary: any;
-      },
-    ) {
-      const analysis =
-        await this.aiService.analyseSpending(
-          body.spendingSummary,
-        );
-  
-      return {
-        success: true,
-        analysis,
-      };
-    }
+  async analyseSpending(
+    @Body()
+    body: {
+      spendingSummary: any;
+    },
+  ) {
+
+    this.aiRateLimitService.consume('cfinance');
+
+    const analysis =
+      await this.aiService.analyseSpending(
+        body.spendingSummary,
+      );
+
+    return {
+      success: true,
+      analysis,
+    };
+  }
 }
