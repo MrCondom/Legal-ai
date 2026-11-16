@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
+
 import { AiService } from './ai.service';
 import { AiController } from './ai.controller';
+import { JaxChatController } from './jaxchat.controller';
 import { AiRateLimitService } from './ai-rate-limit.service';
 
 @Module({
@@ -11,6 +13,7 @@ import { AiRateLimitService } from './ai-rate-limit.service';
 
   controllers: [
     AiController,
+    JaxChatController,
   ],
 
   exports: [
