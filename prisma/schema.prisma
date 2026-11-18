@@ -90,3 +90,12 @@ model ManagedApp {
 
   @@index([name])
 }
+
+model AiRequestUsage {
+  id          BigInt   @id @default(autoincrement())
+  application String
+  createdAt   DateTime @default(now()) @db.Timestamptz(3)
+
+  @@index([application, createdAt])
+}
+

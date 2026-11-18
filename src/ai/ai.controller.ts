@@ -110,7 +110,7 @@ export class AiController {
   }
 
   // Legal Reader AI
-  // Both routes share the same global limit.
+  // RPC and Legal Reader share one rate limit.
 
   @Post(['rpc/ask', 'legal-reader/ask'])
   async askLegalReader(
@@ -120,7 +120,7 @@ export class AiController {
     },
   ) {
 
-    this.aiRateLimitService.consume('legalReader');
+    await this.aiRateLimitService.consume('legalReader');
 
     const response = await this.aiService.askReaderAI(
       body.selectedText,
@@ -141,7 +141,7 @@ export class AiController {
     },
   ) {
 
-    this.aiRateLimitService.consume('cfinance');
+    await this.aiRateLimitService.consume('cfinance');
 
     const analysis =
       await this.aiService.analyseSpending(
