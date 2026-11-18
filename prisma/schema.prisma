@@ -88,6 +88,8 @@ model ManagedApp {
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 
+  researchReports ResearchReport[]
+
   @@index([name])
 }
 
@@ -99,3 +101,16 @@ model AiRequestUsage {
   @@index([application, createdAt])
 }
 
+model ResearchReport {
+  id           String   @id @default(uuid())
+  appId        String
+  researchType String
+  title        String
+  inputData    Json?
+  report       String
+  createdAt    DateTime @default(now())
+
+  app ManagedApp @relation(fields: [appId], references: [id], onDelete: Cascade)
+
+  @@index([appId, createdAt])
+}
