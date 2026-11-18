@@ -76,3 +76,17 @@ model CreditPurchase {
 
   @@index([userId])
 }
+
+model ManagedApp {
+  id             String   @id @default(uuid())
+  name           String
+  packageName    String   @unique
+  playStoreUrl   String
+  category       String?
+  description    String?
+  targetAudience String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([name])
+}

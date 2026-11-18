@@ -10,6 +10,7 @@ import { UsersModule } from './users/users.module';
 import { BillingModule } from './billing/billing.module';
 import { ClausesModule } from './clauses/clauses.module';
 import { AssistantModule } from './assistant/assistant.module';
+import { AppIntelligenceModule } from './app-intelligence/app-intelligence.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { AssistantModule } from './assistant/assistant.module';
     BillingModule,
     ClausesModule,
     AssistantModule,
+    AppIntelligenceModule,
   ],
   controllers: [AppController],
   providers: [AppService],
