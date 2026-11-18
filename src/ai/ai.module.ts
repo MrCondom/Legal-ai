@@ -5,7 +5,13 @@ import { AiController } from './ai.controller';
 import { JaxChatController } from './jaxchat.controller';
 import { AiRateLimitService } from './ai-rate-limit.service';
 
+import { PrismaModule } from '../prisma/prisma.module';
+
 @Module({
+  imports: [
+    PrismaModule,
+  ],
+
   providers: [
     AiService,
     AiRateLimitService,
@@ -18,6 +24,7 @@ import { AiRateLimitService } from './ai-rate-limit.service';
 
   exports: [
     AiService,
+    AiRateLimitService,
   ],
 })
 export class AiModule {}
