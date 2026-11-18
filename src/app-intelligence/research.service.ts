@@ -55,73 +55,149 @@ export class ResearchService {
       );
     }
 
+    // ==========================================
+    // RESEARCH INSTRUCTIONS
+    // ==========================================
+
     const researchInstructions = {
       GENERAL_ANALYSIS: `
-Analyse this application comprehensively.
+Perform a concise analysis of this application.
 
-Cover:
-1. Overview of the application.
-2. Target audience.
-3. Strengths.
-4. Weaknesses and potential limitations.
-5. Feature evaluation.
-6. Market positioning.
-7. Monetisation opportunities.
-8. Overall assessment.
+Focus on:
+1. What the application does and its intended audience.
+2. Its strongest features and advantages.
+3. Its weaknesses and potential limitations.
+4. Its market positioning based on available information.
+5. Monetisation opportunities, where relevant.
+6. The most important improvements.
 
+Avoid lengthy explanations.
+Focus on findings that could influence development decisions.
 `,
 
       COMPETITOR_COMPARISON: `
-Compare this application with the competitor information supplied.
+Perform a concise comparison between this application
+and the competitor information supplied.
 
-Cover:
-1. Overview of both applications.
+Focus on:
+1. Main differences between the applications.
 2. Feature comparison.
-3. Strengths of each application.
-4. Weaknesses of each application.
-5. Competitive advantages.
-6. Missing features and opportunities.
-7. Ways to differentiate the registered application.
-8. Overall competitive assessment.
+3. Strengths and weaknesses of each.
+4. Competitive advantages.
+5. Missing features and opportunities.
+6. How the registered application can differentiate itself.
 
-If competitor information is insufficient, explain the limitations.
-Do not invent competitor features or statistics.
+Only compare information that is actually available.
 
+If competitor information is insufficient,
+clearly explain what cannot be established.
+
+Never invent competitor features, ratings or statistics.
 `,
 
       IMPROVEMENT_RECOMMENDATIONS: `
-Evaluate this application and recommend practical improvements.
+Evaluate this application and identify its most valuable
+improvement opportunities.
 
-Cover:
-1. User experience improvements.
-2. New feature recommendations.
-3. Performance and usability considerations.
+Focus on:
+1. User experience and interface improvements.
+2. Useful feature additions.
+3. Performance and usability.
 4. Monetisation opportunities.
-5. User retention strategies.
-6. Marketing and growth opportunities.
-7. Development priorities.
-8. Recommended action plan.
+5. User retention.
+6. Development priorities.
 
-Prioritise recommendations according to usefulness and practicality.
+Provide specific, practical recommendations.
 
+Prioritise improvements by their likely impact
+and implementation practicality.
+
+Avoid generic suggestions that could apply to any application.
 `,
+
     };
+
+    // ==========================================
+    // MAIN AI PROMPT
+    // ==========================================
 
     const prompt = `
 You are the App Intelligence Research Analyst for JaxChat.
 
-Your task is to produce a useful, structured application research report.
+Produce a concise, useful and decision-focused research report.
 
-IMPORTANT RULES:
-- Use the information actually provided.
+Your objective is to help the developer understand the application
+and identify its most important opportunities and weaknesses.
+
+STRICT OUTPUT REQUIREMENTS:
+
+1. LENGTH
+- Keep the report between 400 and 600 words where possible.
+- Never exceed 600 words.
+- Prioritise important findings over lengthy explanations.
+
+2. STRUCTURE
+
+Use this structure:
+
+QUICK SUMMARY
+
+Write a brief summary of the most important findings
+in approximately 3 to 5 sentences.
+
+KEY FINDINGS
+
+Present 4 to 6 important findings as short bullet points.
+
+DETAILED ANALYSIS
+
+Provide the relevant analysis for the selected research type.
+Use short paragraphs and concise bullet points.
+
+RECOMMENDATIONS
+
+Provide 3 to 5 practical recommendations.
+Each recommendation must explain what should be done
+and briefly why it matters.
+
+PRIORITY ACTIONS
+
+Identify the most important actions using:
+HIGH PRIORITY
+MEDIUM PRIORITY
+LOW PRIORITY
+
+Only include priorities that are genuinely relevant.
+
+FINAL ASSESSMENT
+
+End with a brief conclusion of no more than 3 sentences.
+
+3. FORMATTING
+- Use plain text headings.
+- Do not use Markdown heading symbols such as # or ##.
+- Do not use lengthy numbered sections.
+- Use simple bullet points.
+- Keep paragraphs short.
+- Avoid excessive spacing.
+- Do not repeat the same findings in different sections.
+
+4. ACCURACY
+- Use only information actually provided.
 - Do not pretend to have accessed the internet.
-- Do not invent Play Store ratings, downloads, reviews, competitors,
-  market statistics or other factual information.
+- Do not invent Play Store ratings, downloads, reviews,
+  competitor features, market statistics or other facts.
 - Clearly distinguish supplied facts from your assessments.
-- Identify assumptions where necessary.
-- Give practical recommendations.
-- Be analytical, objective and detailed.
-- Use clear headings and organised sections.
+- Label important assumptions as ASSUMPTION.
+- If information is unavailable, say so briefly.
+- Never present an estimate as a verified fact.
+
+5. QUALITY
+- Be analytical, objective and practical.
+- Avoid generic recommendations.
+- Do not explain obvious concepts.
+- Avoid unnecessary introductions and lengthy conclusions.
+- Focus on information that helps the developer make decisions.
 
 REGISTERED APPLICATION:
 
@@ -141,9 +217,7 @@ ${additionalInformation || 'No additional information provided.'}
 RESEARCH INSTRUCTIONS:
 ${researchInstructions[data.researchType]}
 
-Generate a professional research report with a suitable title.
-
-End with a concise overall conclusion.
+Generate the report now.
 `;
 
     const report = await this.aiService.askJaxChat([
@@ -160,6 +234,10 @@ End with a concise overall conclusion.
           ? 'Competitor Comparison'
           : 'Improvement Recommendations'
     }`;
+
+    // ==========================================
+    // SAVE REPORT
+    // ==========================================
 
     const savedReport = await this.prisma.researchReport.create({
       data: {
