@@ -76,23 +76,41 @@ Focus on findings that could influence development decisions.
 `,
 
       COMPETITOR_COMPARISON: `
-Perform a concise comparison between this application
-and the competitor information supplied.
+Perform a live web-based comparison between this application
+and relevant competing applications.
 
-Focus on:
+You MUST use live web search.
+
+Search for:
+
+1. The registered application's public Google Play listing.
+2. Three to five potentially competing applications.
+3. Their public Google Play listings where available.
+4. Their publicly available features and descriptions.
+5. Their positioning and intended audiences.
+
+Compare:
+
 1. Main differences between the applications.
-2. Feature comparison.
-3. Strengths and weaknesses of each.
+2. Features and functionality.
+3. Strengths and weaknesses.
 4. Competitive advantages.
 5. Missing features and opportunities.
 6. How the registered application can differentiate itself.
 
-Only compare information that is actually available.
+IMPORTANT:
 
-If competitor information is insufficient,
-clearly explain what cannot be established.
+- Prefer official Google Play listings as sources.
+- Use the supplied Play Store URL to identify the registered application.
+- Do not assume applications are competitors merely because they share a category.
+- Explain why each identified application is a potential competitor.
+- Do not invent ratings, downloads, reviews or features.
+- If information cannot be verified, say so.
+- Distinguish verified findings from your assessments.
+- Include clickable source URLs for important findings.
+- State when a listing or source could not be accessed.
+- Do not present assumptions as verified facts.
 
-Never invent competitor features, ratings or statistics.
 `,
 
       IMPROVEMENT_RECOMMENDATIONS: `
@@ -114,7 +132,6 @@ and implementation practicality.
 
 Avoid generic suggestions that could apply to any application.
 `,
-
     };
 
     // ==========================================
@@ -132,6 +149,7 @@ and identify its most important opportunities and weaknesses.
 STRICT OUTPUT REQUIREMENTS:
 
 1. LENGTH
+
 - Keep the report between 400 and 600 words where possible.
 - Never exceed 600 words.
 - Prioritise important findings over lengthy explanations.
@@ -163,6 +181,7 @@ and briefly why it matters.
 PRIORITY ACTIONS
 
 Identify the most important actions using:
+
 HIGH PRIORITY
 MEDIUM PRIORITY
 LOW PRIORITY
@@ -174,6 +193,7 @@ FINAL ASSESSMENT
 End with a brief conclusion of no more than 3 sentences.
 
 3. FORMATTING
+
 - Use plain text headings.
 - Do not use Markdown heading symbols such as # or ##.
 - Do not use lengthy numbered sections.
@@ -183,16 +203,18 @@ End with a brief conclusion of no more than 3 sentences.
 - Do not repeat the same findings in different sections.
 
 4. ACCURACY
-- Use only information actually provided.
-- Do not pretend to have accessed the internet.
+
+- Use only verified information and information actually provided.
+- For competitor research, use the live web search results.
 - Do not invent Play Store ratings, downloads, reviews,
   competitor features, market statistics or other facts.
-- Clearly distinguish supplied facts from your assessments.
+- Clearly distinguish verified facts from your assessments.
 - Label important assumptions as ASSUMPTION.
 - If information is unavailable, say so briefly.
 - Never present an estimate as a verified fact.
 
 5. QUALITY
+
 - Be analytical, objective and practical.
 - Avoid generic recommendations.
 - Do not explain obvious concepts.
@@ -220,12 +242,25 @@ ${researchInstructions[data.researchType]}
 Generate the report now.
 `;
 
-    const report = await this.aiService.askJaxChat([
+    // ==========================================
+    // SELECT AI RESEARCH METHOD
+    // ==========================================
+
+    const messages = [
       {
-        role: 'user',
+        role: 'user' as const,
         content: prompt,
       },
-    ]);
+    ];
+
+    const report =
+      data.researchType === 'COMPETITOR_COMPARISON'
+        ? await this.aiService.askJaxChatWithWebSearch(messages)
+        : await this.aiService.askJaxChat(messages);
+
+    // ==========================================
+    // REPORT TITLE
+    // ==========================================
 
     const title = `${app.name} - ${
       data.researchType === 'GENERAL_ANALYSIS'

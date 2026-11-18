@@ -1265,6 +1265,80 @@ Do not unnecessarily repeat information.
   }
 
   // ==================================================
+  // JAXCHAT — LIVE WEB RESEARCH
+  // ==================================================
+  
+  async askJaxChatWithWebSearch(
+    messages: Array<{
+      role: 'user' | 'assistant';
+      content: string;
+    }>,
+  ) {
+    if (!Array.isArray(messages) || messages.length === 0) {
+      throw new BadRequestException('Messages are required.');
+    }
+  
+    if (messages.length > 20) {
+      throw new BadRequestException(
+        'Conversation history cannot exceed 20 messages.',
+      );
+    }
+  
+    for (const message of messages) {
+      if (
+        !message ||
+        !['user', 'assistant'].includes(message.role) ||
+        typeof message.content !== 'string' ||
+        !message.content.trim()
+      ) {
+        throw new BadRequestException('Invalid message format.');
+      }
+    }
+  
+    const totalLength = messages.reduce(
+      (total, message) => total + message.content.length,
+      0,
+    );
+  
+    if (totalLength > 50000) {
+      throw new BadRequestException(
+        'Conversation is too large.',
+      );
+    }
+  
+    this.logger.log('JaxChat live web research started.');
+  
+    const response = await this.openai.responses.create({
+      model: 'gpt-6-astra',
+  
+      tools: [
+        {
+          type: 'web_search',
+          search_context_size: 'medium',
+        },
+      ],
+  
+      tool_choice: 'required',
+  
+      input: messages,
+    });
+  
+    const result = response.output_text ?? '';
+  
+    if (!result.trim()) {
+      throw new InternalServerErrorException(
+        'Live web research could not generate a response.',
+      );
+    }
+  
+    this.logger.log(
+      `JaxChat live web research completed. Response length: ${result.length} characters`,
+    );
+  
+    return result;
+  }
+
+  // ==================================================
   // JAXIMAGE — IMAGE GENERATION
   // ==================================================
 
